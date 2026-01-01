@@ -1,0 +1,72 @@
+.home-intro {
+    opacity: 0;
+    max-width: 69vw;
+    margin: 10rem auto 10rem auto;
+    line-height: 1.7;
+    text-align: center;
+    transform: translateY(20px);
+    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+.projects-section {
+    max-width: 1280px;
+    margin: auto;
+
+    li {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    li.fade-in-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    li a {
+        display: block;
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        background-color: $fg-color;
+
+        .project-image {
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            border-radius: 0.25rem;
+            object-fit: cover;
+            transition: ease 450ms;
+        }
+
+        .project-image img:hover {
+            transform: scale3d(1.05, 1.05, 1);
+            
+        }
+
+        &:hover {
+            background-color: $overlay-color;
+            transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            transition-duration: 0.25s;
+        }
+    }
+
+    li + li {
+        margin-top: 80px;
+    }
+
+    h3 {
+        margin-top: 4px;
+        margin-bottom: 6px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

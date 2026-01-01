@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+*::selection {
+    background: $rp-highlight-med;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    color: $text-color;
+    background-color: $bg-color;
+    font-family: $font-body-stack;
+    font-size: 1.1rem;
+    line-height: 1.5;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: $font-display-stack;
+    }
+
+    @each $heading, $size in $heading-sizes {
+        #{$heading} {
+            font-size: $size;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="about-section">
+    <h1>About me</h1>
+    <h5>What drives me into designing experience</h5>
+    <div class="about-image">
+        {{ if .Params.image }}
+            {{ $image := resources.Get .Params.image }}
+            {{ if $image }}
+            <img src="{{ $image.RelPermalink}}" alt="About image">
+            {{ end }}
+        {{ end }}
+    </div>
+    <article>
+        {{ .Content }}
+    </article>
+</div>
+{{ end }} 

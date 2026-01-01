@@ -1,0 +1,25 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="Kisei - Tuan Son">
+  <title>{{ .Site.Title }}</title>
+  {{ with resources.Get "sass/main.scss" }}
+  {{ $opts := dict
+    "enableSourceMap" hugo.IsDevelopment
+    "outputStyle" (cond hugo.IsDevelopment "expanded" "compressed")
+    "targetPath" "css/main.css"
+    "transpiler" "dartsass"
+    "vars" site.Params.styles
+    "includePaths" (slice "node_modules/bootstrap/scss")
+  }}
+  {{ with . | toCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+</head>

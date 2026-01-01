@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <div class="home-intro">
+    {{ .Content }}
+  </div>
+  <ul class="projects-section">
+   {{ range where .Site.RegularPages "Type" "work" }}
+    <li><a href="{{ .RelPermalink }}">
+      <div class="project-image">
+          {{ if .Params.image }}
+            {{ $image := resources.Get .Params.image }}
+            {{ if $image }}
+              <img src="{{ $image.RelPermalink}}" alt="Project image">
+            {{ end }}
+          {{ end }}
+      </div>
+      <h3>{{ .LinkTitle }}</h3>
+      <p>{{ .Params.description }}</p>
+    </a></li>
+    {{ end }}
+  </ul>
+{{ end }}

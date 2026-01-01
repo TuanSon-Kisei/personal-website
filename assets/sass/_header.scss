@@ -1,0 +1,54 @@
+a {
+        color: $text-color;
+        text-decoration: none;
+}
+
+//Styling header
+header {
+    max-width: 100%;
+    padding: 0 70px 0 70px;
+    margin: 2vw auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    .left {
+        flex: 1;
+        justify-content: flex-start;
+        text-align: start;
+
+        .header-title {
+        font-family: $font-display-stack;
+        font-size: 2rem;
+        text-transform: uppercase;
+        }
+    }
+
+    nav {
+        flex: 1;
+        justify-content: flex-end;
+        text-align: end;
+
+        .right {
+            display: flex;
+            justify-content: end;
+            gap: 18px;
+
+            li {
+                padding: 0.8rem;
+                border-radius: 0.75rem;
+                &:hover {
+                    background-color: $overlay-color;
+                    transition-duration: 500ms;
+                }
+
+                &:has(a:focus),
+                &:has(a:active) {
+                    box-shadow: 0 0 0 1px inset $rp-foam;
+                    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                    transition-duration: 0.15s;
+                }
+            }
+        }
+    }
+}
