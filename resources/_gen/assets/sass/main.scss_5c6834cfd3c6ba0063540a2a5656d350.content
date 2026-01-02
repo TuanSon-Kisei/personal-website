@@ -110,7 +110,7 @@ header nav .right li:hover {
   transition-duration: 500ms;
 }
 header nav .right li:has(a:focus), header nav .right li:has(a:active) {
-  box-shadow: 0 0 0 1px inset #56949f;
+  box-shadow: 0 0 2px 2px #56949f;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-duration: 0.15s;
 }
