@@ -33,7 +33,7 @@ body {
   background-color: #faf4ed;
   font-family: "Atkinson Hyperlegible Next", sans-serif;
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 body ul {
   padding: 0;
