@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/atkinson-hyperlegible-next-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "LINE Seed Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("/fonts/line-seed-sans-bold.woff2");
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+*::selection {
+  background: #dfdad9;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  color: #575279;
+  background-color: #faf4ed;
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+body ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+body h1, body h2, body h3, body h4 {
+  font-family: "LINE Seed Sans", sans-serif;
+}
+body h1 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
+body h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+body h3 {
+  font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+}
+body h4 {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+}
+body h5 {
+  font-size: clamp(1.15rem, 2vw, 1.25rem);
+}
+body h6 {
+  font-size: 1rem;
+}
+
+a {
+  color: #575279;
+  text-decoration: none;
+}
+
+header {
+  max-width: 100%;
+  padding: 0 70px 0 70px;
+  margin: 2vw auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+header .left {
+  flex: 1;
+  justify-content: flex-start;
+  text-align: start;
+}
+header .left .header-title {
+  font-family: "LINE Seed Sans", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+header nav {
+  flex: 1;
+  justify-content: flex-end;
+  text-align: end;
+}
+header nav .right {
+  display: flex;
+  justify-content: end;
+  gap: 18px;
+}
+header nav .right li {
+  padding: 0.8rem;
+  border-radius: 0.75rem;
+}
+header nav .right li:hover {
+  background-color: #f2e9e1;
+  transition-duration: 500ms;
+}
+header nav .right li:has(a:focus), header nav .right li:has(a:active) {
+  box-shadow: 0 0 2px 2px #56949f;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 0.15s;
+}
+
+footer {
+  padding: 4rem 0 3rem 0;
+  text-align: center;
+}
+
+.home-intro {
+  opacity: 0;
+  max-width: 69vw;
+  margin: 10rem auto 10rem auto;
+  line-height: 1.7;
+  text-align: center;
+  transform: translateY(20px);
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+
+.projects-section {
+  max-width: 1280px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: auto;
+}
+.projects-section li {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.projects-section li.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.projects-section li a {
+  display: block;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  background-color: #fffaf3;
+}
+.projects-section li a .project-image {
+  overflow: hidden;
+}
+.projects-section li a .project-image img {
+  width: 100%;
+  border-radius: 0.25rem;
+  object-fit: cover;
+  transition: ease 450ms;
+}
+.projects-section li a .project-image img:hover {
+  transform: scale3d(1.05, 1.05, 1);
+}
+.projects-section li a:hover {
+  background-color: #f2e9e1;
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition-duration: 0.25s;
+}
+.projects-section li a:focus {
+  box-shadow: 0 0 2px 2px #56949f;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 0.15s;
+}
+.projects-section li + li {
+  margin-top: 80px;
+}
+.projects-section h3 {
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+.projects-section p {
+  margin: 0;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.about-section {
+  max-width: 40vw;
+  text-align: center;
+  word-break: break-all;
+  margin: auto;
+}
+.about-section article {
+  text-align: left;
+}
+
+/*# sourceMappingURL=main.css.map */

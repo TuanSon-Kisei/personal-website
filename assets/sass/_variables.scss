@@ -23,18 +23,18 @@ $font-display-stack: 'LINE Seed Sans', sans-serif;
 
 //Font size for headings
 $heading-sizes: (
-    h1: 3rem,
-    h2: 2rem,
-    h3: 1.75rem,
-    h4: 1.5rem,
-    h5: 1.25rem,
-    h6: 1rem
+    h1: clamp(1.75rem, 5vw, 2.5rem),
+    h2: clamp(1.5rem, 4vw, 2rem),
+    h3: clamp(1.35rem, 3.5vw, 1.75rem),
+    h4: clamp(1.25rem, 3vw, 1.5rem),
+    h5: clamp(1.15rem, 2vw, 1.25rem),
+    h6: 1rem,
 );
 
 
 //Color schemes refernced from Rose Pine Dawn
-$bg-color: #faf4ed !default;
-$fg-color: #fffaf3 !default;
+$bg-color: #faf4ed;
+$fg-color: #fffaf3;
 $overlay-color: #f2e9e1;
 $muted-color:#9893a5;
 $suble-color: #797593;
