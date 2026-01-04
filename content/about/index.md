@@ -7,9 +7,9 @@ I'm Tuan Son, but I'm preferably called Kisei (my online presence). Growing up i
 
 When I first discovered UX design in 2023, I found the joy of understanding individual experiences and frustrations and gather them into a big single picture to solve their problems, make their life a little more smooth and more fun every day. And I jumped right in the field, slowly creating values for others by small or large. 
 
-I specialize in education, healthcare and small businesses, creating intuitive, user-centered and business sustainable experiences that empower human. I'm constantly driven by the opportunity to learn and grow by doing anything I can do, whether shaping design systems, talking about business strategy and making sense of data.
+I am specializing in education, healthcare and small businesses, creating intuitive, user-centered and business sustainable experiences that empower human. I'm constantly driven by the opportunity to learn and grow by doing anything I can do, whether shaping design systems, discussing about business strategy and making sense of data.
 
-If you want to have a talk, I will happily share a coffee and sweets chat session about design, ideas or whatever on your mind.
+If you want to have a talk, I will happily share a coffee and sweets chat session about design, ideas or whatever on your mind. I can be easily reached at your convenience via either Linkedin or Email or heck even Discord.
 
 
 

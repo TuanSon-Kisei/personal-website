@@ -69,6 +69,9 @@ body h5 {
 body h6 {
   font-size: 1rem;
 }
+body p {
+  margin: 0;
+}
 
 a {
   color: #575279;
@@ -118,8 +121,28 @@ header nav .right li:has(a:focus), header nav .right li:has(a:active) {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 50%;
   padding: 3rem 0;
-  text-align: center;
+  margin: auto;
+  align-items: center;
+  gap: 16px;
+}
+footer .social-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .social-line svg {
+  width: 32px;
+  height: 32px;
+  transition: ease 0.7s;
+}
+footer .social-line svg:hover {
+  transform: translateY(-10px);
 }
 
 .home-intro {
@@ -195,6 +218,9 @@ footer {
   max-width: 800px;
   padding: 0 1em;
   word-break: keep-all;
+}
+.about-section article p + p {
+  margin-top: 16px;
 }
 
 .page-404 {

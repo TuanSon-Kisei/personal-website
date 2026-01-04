@@ -10,5 +10,9 @@
         max-width: 800px;
         padding: 0 1em;
         word-break: keep-all;
+
+        p + p {
+            margin-top: 16px;
+        }
     }
 }
