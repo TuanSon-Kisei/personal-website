@@ -1,11 +1,15 @@
 ---
 image:
+title: About me
+description: What got me into product design landscape
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea variari voluptas distinguique possit, augeri amplificarique non possit. At etiam.
+I'm Tuan Son, but I'm preferably called Kisei (my online presence). Growing up in Hanoi, a place which has the perfect blend the ever-changing modern movements and rich historic and cultural values in human, it always make me wonder how people navigating their daily life. 
 
-Doceat iniurias et omnis monstret vias, quae ad amicos pertinerent, negarent esse per se ipsa esse contentam. Sed possunt haec quadam ratione dici non necesse est. Tribus igitur modis video esse a nostris de amicitia disputatum.
+When I first discovered UX design in 2023, I found the joy of understanding individual experiences and frustrations and gather them into a big single picture to solve their problems, make their life a little more smooth and more fun every day. And I jumped right in the field, slowly creating values for others by small or large. 
 
-Est, non expeteretur, si nihil tale metuamus. Iam illud quidem adduci vix possum, ut ea, quae senserit ille, tibi non vera videantur. Vide, quantum, inquam, fallare, Torquate. Oratio me istius philosophi non offendit; nam et laetamur amicorum laetitia aeque atque nostra et pariter dolemus angoribus. Quocirca eodem modo sapiens erit.
+I specialize in education, healthcare and small businesses, creating intuitive, user-centered and business sustainable experiences that empower human. I'm constantly driven by the opportunity to learn and grow by doing anything I can do, whether shaping design systems, talking about business strategy and making sense of data.
+
+If you want to have a talk, I will happily share a coffee and sweets chat session about design, ideas or whatever on your mind.
 
 
 

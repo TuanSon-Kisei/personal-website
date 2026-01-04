@@ -1,11 +1,8 @@
 .home-intro {
-    opacity: 0;
     max-width: 69vw;
     margin: 10rem auto 10rem auto;
-    line-height: 1.7;
     text-align: center;
-    transform: translateY(20px);
-    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+    animation: fadeInUp 0.3s ease-in;
 }
 .projects-section {
     max-width: 1280px;
@@ -26,7 +23,7 @@
 
     li a {
         display: block;
-        padding: 2.5rem;
+        padding: 2rem 1.5rem;
         border-radius: 0.75rem;
         background-color: $fg-color;
 
@@ -70,11 +67,5 @@
 
     p {
         margin: 0;
-    }
-}
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
     }
 }

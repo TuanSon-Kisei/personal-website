@@ -1,0 +1,17 @@
+.page-404 {
+    text-align: center;
+    
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    pre {
+        margin: 0 auto;
+        transform: scale(0.8);
+    }
+
+    span {
+        font-family: $font-display-stack;
+        font-size: 5rem;
+    }
+}

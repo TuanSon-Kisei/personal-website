@@ -1,10 +1,14 @@
 .about-section {
-    max-width: 40vw;
     text-align: center;
     word-break: break-all;
     margin: auto;
+    animation: fadeInUp 0.4s ease;
 
     article {
+        margin: auto;
         text-align: left;
+        max-width: 800px;
+        padding: 0 1em;
+        word-break: keep-all;
     }
 }
