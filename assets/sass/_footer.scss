@@ -15,10 +15,14 @@ footer {
         gap: 20px;
     }
 
+    .social-line a {
+        cursor: pointer;
+    }
+
     .social-line svg {
         width: 32px;
         height: 32px;
-        transition: ease 0.7s;
+        transition: ease 0.5s;
 
         &:hover {
             transform: translateY(-10px);

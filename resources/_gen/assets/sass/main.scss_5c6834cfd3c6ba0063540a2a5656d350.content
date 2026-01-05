@@ -136,10 +136,13 @@ footer .social-line {
   align-items: center;
   gap: 20px;
 }
+footer .social-line a {
+  cursor: pointer;
+}
 footer .social-line svg {
   width: 32px;
   height: 32px;
-  transition: ease 0.7s;
+  transition: ease 0.5s;
 }
 footer .social-line svg:hover {
   transform: translateY(-10px);
