@@ -4,14 +4,15 @@
   </div>
   <ul class="projects-section">
    {{ range where .Site.RegularPages "Type" "work" }}
+    {{ $project := . }}
     <li><a href="{{ .RelPermalink }}">
       <div class="project-image">
-          {{ if .Params.image }}
-            {{ $image := resources.Get .Params.image }}
-            {{ if $image }}
-              <img src="{{ $image.RelPermalink}}" alt="Project image">
-            {{ end }}
+        {{ with .Params.cover }}
+          {{ $image := $project.Resources.GetMatch . }}
+          {{ with $image }}
+            <img src="{{ .RelPermalink }}" alt="{{ $project.Title }}">
           {{ end }}
+        {{ end }}
       </div>
       <h3>{{ .LinkTitle }}</h3>
       <p>{{ .Params.description }}</p>

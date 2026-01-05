@@ -8,54 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b1fb1001636cfb3f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "_index"
-            }
-          },
-          {
-            "id": "f5733dfc4310928f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "A.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "A"
-            }
-          },
-          {
-            "id": "cc3c01d43503c5c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "B.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "B"
-            }
-          },
-          {
             "id": "ec2206c924a582ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/index.md",
+                "file": "readmate/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -63,8 +21,7 @@
               "title": "index"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -228,10 +185,20 @@
   },
   "active": "ec2206c924a582ee",
   "lastOpenFiles": [
+    "petfren/index.md",
+    "dede/index.md",
+    "readmate/images/hero.jpg",
+    "readmate/images",
+    "petfren/images/hero.jpg",
+    "petfren/images",
+    "dede/images/hero.jpg",
+    "dede/images",
+    "dede/hero.jpg",
+    "readmate/index.md",
+    "about/index.md",
     "project-3.md",
     "project-2.md",
     "project-1.md",
-    "about/index.md",
     "_index.md"
   ]
 }

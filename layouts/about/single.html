@@ -2,14 +2,15 @@
 <div class="about-section">
     <h1>{{ .Params.title }}</h1>
     <h5>{{ .Params.description }}</h5>
-    <div class="about-image">
+    {{/*  <div class="about-image">
         {{ if .Params.image }}
             {{ $image := resources.Get .Params.image }}
             {{ if $image }}
             <img src="{{ $image.RelPermalink}}" alt="About image">
             {{ end }}
         {{ end }}
-    </div>
+    </div>  */}}
+    <img src="https://picsum.photos/1080" alt="Lorem ipsum image">
     <article>
         {{ .Content }}
     </article>
