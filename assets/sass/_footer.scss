@@ -2,17 +2,20 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 50%;
-    padding: 3rem 0;
-    margin: auto;
+    margin: 3vw auto;
     align-items: center;
-    gap: 16px;
+    
     
     .social-line {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
+    }
+
+    .social-line p {
+        text-align: center;
+        margin: auto;
     }
 
     .social-line a {
@@ -23,6 +26,7 @@ footer {
         width: 32px;
         height: 32px;
         transition: ease 0.5s;
+        margin: 16px auto;
 
         &:hover {
             transform: translateY(-10px);

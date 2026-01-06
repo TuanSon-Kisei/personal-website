@@ -1,5 +1,15 @@
 .project-content {
-    max-width: 800px;
+    max-width: 1300px;
     margin: auto;
     word-break: keep-all;
+    padding: 0 36px;
+
+    h1 {
+        text-align: center;
+    }
+
+    article {
+        
+        text-align: left;
+    }
 }

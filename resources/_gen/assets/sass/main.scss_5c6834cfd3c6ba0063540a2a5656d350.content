@@ -124,17 +124,18 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 50%;
-  padding: 3rem 0;
-  margin: auto;
+  margin: 3vw auto;
   align-items: center;
-  gap: 16px;
 }
 footer .social-line {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+footer .social-line p {
+  text-align: center;
+  margin: auto;
 }
 footer .social-line a {
   cursor: pointer;
@@ -143,6 +144,7 @@ footer .social-line svg {
   width: 32px;
   height: 32px;
   transition: ease 0.5s;
+  margin: 16px auto;
 }
 footer .social-line svg:hover {
   transform: translateY(-10px);
@@ -152,13 +154,13 @@ footer .social-line svg:hover {
   max-width: 69vw;
   margin: 10rem auto 10rem auto;
   text-align: center;
+  line-height: 1.7;
   animation: fadeInUp 0.3s ease-in;
 }
 
 .projects-section {
   max-width: 1280px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0 1.5rem;
   margin: auto;
 }
 .projects-section li {
@@ -210,9 +212,16 @@ footer .social-line svg:hover {
 }
 
 .project-content {
-  max-width: 800px;
+  max-width: 1300px;
   margin: auto;
   word-break: keep-all;
+  padding: 0 36px;
+}
+.project-content h1 {
+  text-align: center;
+}
+.project-content article {
+  text-align: left;
 }
 
 .about-section {
