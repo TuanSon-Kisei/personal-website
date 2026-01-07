@@ -1,5 +1,5 @@
 a {
-        color: $text-color;
+        color: $rp-dawn-text;
         text-decoration: none;
 }
 
@@ -29,26 +29,100 @@ header {
         justify-content: flex-end;
         text-align: end;
 
-        .right {
+        ul {
             display: flex;
             justify-content: end;
             gap: 18px;
 
-            li {
-                padding: 0.8rem;
-                border-radius: 0.75rem;
+            a {
+                display: inline-block;
+                padding: 0.5rem;
+                border-radius: 8px;
+
+
                 &:hover {
-                    background-color: $overlay-color;
-                    transition-duration: 500ms;
+                    background-color: $rp-dawn-overlay;
                 }
 
-                &:has(a:focus),
-                &:has(a:active) {
-                    box-shadow: 0 0 2px 2px $rp-foam;
-                    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                    transition-duration: 0.15s;
+                &:focus {
+                    box-shadow: 0 0 4px 2px $rp-dawn-foam;
                 }
             }
         }
+
+        #dark-mode-toggle {
+            align-items: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            padding: 0.5rem;
+            background-color: transparent;
+            border-radius: 0.75rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 300ms ease;
+
+            &:hover {
+                background-color: $rp-dawn-overlay;
+            }
+
+            svg {
+                width: 24px;
+                height: 24px;
+                transition: transform 500ms ease;
+
+                path {
+                    stroke: $rp-dawn-text;
+                    transition: stroke 300ms ease;
+                }
+            }
+
+            .cs-sun,
+            .cs-moon {
+                transition: opacity 300ms ease;
+            }
+
+            .cs-sun {
+                display: block;
+                opacity: 1;
+            }
+
+            .cs-moon {
+                display: none;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+body.dark-mode {
+    header nav .right a {
+        &:hover {
+            background-color: $rp-overlay;
+        }
+
+        &:focus,
+        &:active {
+            box-shadow: $rp-foam;
+        }
+    }
+    #dark-mode-toggle {
+
+            &:hover {
+                background-color: $rp-overlay;
+            }
+
+            svg path {
+                stroke: $rp-text;
+            }
+
+            .cs-sun {
+                display: none;
+                opacity: 0;
+            }
+
+            .cs-moon {
+                display: block;
+                opacity: 1;
+            }
     }
 }

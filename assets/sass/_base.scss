@@ -5,7 +5,7 @@
 }
 
 *::selection {
-    background: $rp-highlight-med;
+    background: $rp-dawn-highlight-med;
 }
 
 html {
@@ -13,8 +13,8 @@ html {
 }
 
 body {
-    color: $text-color;
-    background-color: $bg-color;
+    color: $rp-dawn-text;
+    background-color: $rp-dawn-base;
     font-family: $font-body-stack;
     font-size: 1.1rem;
     line-height: 1.5;
@@ -37,5 +37,44 @@ body {
 
     p {
         margin: 0;
+    }
+
+    a {
+        color: $rp-dawn-text;
+        text-decoration: none;
+        transition: background-color 500ms ease;
+
+        &:focus-visible {
+            box-shadow: 0 0 4px 2px $rp-dawn-foam;
+        }
+    }
+
+    footer {
+        svg {
+            fill: $rp-dawn-text;
+        }
+    }
+}
+
+body.dark-mode {
+    h1, h2, h3, h4, h5, h6, p {
+        color: $rp-text;
+    }
+    background-color: $rp-base;
+
+    ::selection {
+        background: $rp-highlight-med;
+    }
+
+    a {
+        color: $rp-text;
+
+        &:focus-visible {
+            box-shadow: $rp-foam;
+        }
+    }
+
+    footer {
+        color: $rp-text;
     }
 }

@@ -21,11 +21,14 @@
         transform: translateY(0);
     }
 
-    li a {
+    a {
         display: block;
         padding: 2rem 1.5rem;
         border-radius: 0.75rem;
-        background-color: $fg-color;
+        background-color: $rp-dawn-surface;
+        border-radius: 1em;
+        transition: all 300ms ease;
+        
 
         .project-image {
             overflow: hidden;
@@ -44,13 +47,13 @@
         }
 
         &:hover {
-            background-color: $overlay-color;
+            background-color: $rp-dawn-overlay;
             transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
             transition-duration: 0.25s;
         }
 
         &:focus {
-            box-shadow: 0 0 2px 2px $rp-foam;
+            box-shadow: 0 0 2px 2px $rp-dawn-foam;
             transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
             transition-duration: 0.15s;
         }
@@ -67,5 +70,26 @@
 
     p {
         margin: 0;
+    }
+}
+
+body.dark-mode {
+    .projects-section li {
+        a {
+            background-color: $rp-surface;
+
+            &:hover {
+                background-color: $rp-overlay;
+            }
+
+            &:focus {
+                background-color: $rp-overlay;
+                box-shadow: 0 0 2px 2px $rp-foam;
+            }
+        }
+
+        p {
+            color: $rp-subtle;
+        }
     }
 }
