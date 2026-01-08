@@ -1,35 +1,51 @@
 footer {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    margin: 2vw auto;
-    align-items: center;
-    
-    
-    .social-line {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
+    border-top: 1px solid;
+    border-color: lighten($color: $rp-dawn-muted, $amount: 20%);
+    padding: 0 3rem;
+    margin: 3vw 0 1vw 0;
 
-    .social-line p {
-        text-align: center;
-        margin: auto;
-    }
+    section {
+        
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-bottom: 7rem;
+        padding-top: 2rem;
 
-    .social-line a {
-        cursor: pointer;
-    }
+        #copy-email-button {
+            border: none;
+            background-color: $rp-dawn-base;
+            font-family: $font-body-stack;
+            color: $rp-dawn-text;
+            font-size: 1rem;
+            padding-inline: 0.5rem;
+            padding-block: 0.2em;            
+            cursor: pointer;
 
-    .social-line svg {
-        width: 32px;
-        height: 32px;
-        transition: ease 0.5s;
-        margin: 16px auto;
+            
 
-        &:hover {
-            transform: translateY(-10px);
+            .icon,
+            .text {
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+            &:hover {
+                background-color: $rp-dawn-overlay;
+                border-radius: 8px;
+
+            }
+        }
+
+        .socials {
+            a {
+                cursor: pointer;
+
+                &:hover {
+                    color: $rp-dawn-foam;
+                    transition: 400ms ease;
+                }
+            }
         }
     }
 }

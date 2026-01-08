@@ -7,10 +7,17 @@
 }
 @font-face {
   font-family: "LINE Seed Sans";
-  font-style: normal;
+  font-style: bold;
   font-display: swap;
   font-weight: 700;
   src: url("/fonts/line-seed-sans-bold.woff2");
+}
+@font-face {
+  font-family: "LINE Seed Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/line-seed-sans-regular.woff2");
 }
 @keyframes fadeInUp {
   from {
@@ -40,7 +47,7 @@ body {
   color: #575279;
   background-color: #faf4ed;
   font-family: "Atkinson Hyperlegible Next", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 body ul {
@@ -48,8 +55,12 @@ body ul {
   margin: 0;
   list-style-type: none;
 }
-body h1, body h2, body h3, body h4 {
+body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "LINE Seed Sans", sans-serif;
+  padding: 0;
+}
+body h4, body h5, body h6 {
+  font-weight: 400;
 }
 body h1 {
   font-size: clamp(1.75rem, 5vw, 2.75rem);
@@ -64,7 +75,7 @@ body h4 {
   font-size: clamp(1.25rem, 3vw, 1.5rem);
 }
 body h5 {
-  font-size: clamp(1.15rem, 2vw, 1.25rem);
+  font-size: clamp(1.05rem, 2vw, 1.15rem);
 }
 body h6 {
   font-size: 1rem;
@@ -78,10 +89,7 @@ body a {
   transition: background-color 500ms ease;
 }
 body a:focus-visible {
-  box-shadow: 0 0 4px 2px #56949f;
-}
-body footer svg {
-  fill: #575279;
+  box-shadow: 0 0 1px 2px #56949f;
 }
 
 body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6, body.dark-mode p {
@@ -110,7 +118,7 @@ a {
 
 header {
   max-width: 100%;
-  padding: 0 70px 0 70px;
+  padding: 0 3.5rem;
   margin: 2vw auto;
   display: flex;
   align-items: center;
@@ -123,8 +131,7 @@ header .left {
 }
 header .left .header-title {
   font-family: "LINE Seed Sans", sans-serif;
-  font-size: 2rem;
-  text-transform: uppercase;
+  font-size: 1.25rem;
 }
 header nav {
   flex: 1;
@@ -145,7 +152,7 @@ header nav ul a:hover {
   background-color: #f2e9e1;
 }
 header nav ul a:focus {
-  box-shadow: 0 0 4px 2px #56949f;
+  box-shadow: 0 0 0 2px #56949f;
 }
 header nav #dark-mode-toggle {
   align-items: center;
@@ -205,33 +212,43 @@ body.dark-mode #dark-mode-toggle .cs-moon {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  margin: 2vw auto;
-  align-items: center;
+  border-top: 1px solid;
+  border-color: rgb(205.0606060606, 202.6363636364, 211.3636363636);
+  padding: 0 3rem;
+  margin: 3vw 0 1vw 0;
 }
-footer .social-line {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+footer section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 7rem;
+  padding-top: 2rem;
 }
-footer .social-line p {
-  text-align: center;
-  margin: auto;
-}
-footer .social-line a {
+footer section #copy-email-button {
+  border: none;
+  background-color: #faf4ed;
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+  color: #575279;
+  font-size: 1rem;
+  padding-inline: 0.5rem;
+  padding-block: 0.2em;
   cursor: pointer;
 }
-footer .social-line svg {
-  width: 32px;
-  height: 32px;
-  transition: ease 0.5s;
-  margin: 16px auto;
+footer section #copy-email-button .icon,
+footer section #copy-email-button .text {
+  vertical-align: middle;
+  display: inline-block;
 }
-footer .social-line svg:hover {
-  transform: translateY(-10px);
+footer section #copy-email-button:hover {
+  background-color: #f2e9e1;
+  border-radius: 8px;
+}
+footer section .socials a {
+  cursor: pointer;
+}
+footer section .socials a:hover {
+  color: #56949f;
+  transition: 400ms ease;
 }
 
 .home-intro {

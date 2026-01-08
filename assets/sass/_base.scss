@@ -16,7 +16,7 @@ body {
     color: $rp-dawn-text;
     background-color: $rp-dawn-base;
     font-family: $font-body-stack;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5;
 
     ul {
@@ -25,8 +25,12 @@ body {
         list-style-type: none;
     }
 
-    h1, h2, h3, h4 {
+    h1, h2, h3, h4, h5, h6 {
         font-family: $font-display-stack;
+        padding: 0;
+    }
+    h4, h5, h6 {
+            font-weight: 400;
     }
 
     @each $heading, $size in $heading-sizes {
@@ -45,13 +49,7 @@ body {
         transition: background-color 500ms ease;
 
         &:focus-visible {
-            box-shadow: 0 0 4px 2px $rp-dawn-foam;
-        }
-    }
-
-    footer {
-        svg {
-            fill: $rp-dawn-text;
+            box-shadow: 0 0 1px 2px $rp-dawn-foam;
         }
     }
 }
@@ -60,6 +58,7 @@ body.dark-mode {
     h1, h2, h3, h4, h5, h6, p {
         color: $rp-text;
     }
+    
     background-color: $rp-base;
 
     ::selection {
