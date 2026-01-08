@@ -3,14 +3,15 @@
         <div>
             <h3>Say hello. I love hearing from people - whatever on your mind or just connect.</h3>
             <button id="copy-email-button">
-                <span class="text">kisei.tuanson.work@gmail.com</span>
+                <span class="text" id="text">kisei.tuanson.work@gmail.com</span>
                 <span class="icon">
-                    
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 5.4C4 4.622 4.622 4 5.4 4h7.2c.778 0 1.4.622 1.4 1.4V6a1 1 0 1 0 2 0v-.6C16 3.518 14.482 2 12.6 2H5.4A3.394 3.394 0 0 0 2 5.4v7.2C2 14.482 3.518 16 5.4 16H6a1 1 0 1 0 0-2h-.6c-.778 0-1.4-.622-1.4-1.4z"/><path fill="currentColor" d="M9 11.4A2.4 2.4 0 0 1 11.4 9h7.2a2.4 2.4 0 0 1 2.4 2.4v7.2a2.4 2.4 0 0 1-2.4 2.4h-7.2A2.4 2.4 0 0 1 9 18.6z"/></svg>
                 </span>
             </button>
         </div>
-        <div class="socials">
+        <div class="grid-left">
+            <div class="socials">
+                <h5>Contacts</h5>
             <a>
                 <h5>LinkedIn</h5>
             </a>
@@ -20,9 +21,26 @@
             <a>
                 <h5>Gitlab</h5>
             </a>
+            </div>
+            <div class="navigation">
+                <h5>Navigation</h5>
+                <a>
+                    <h5>Work</h5>
+                </a>
+                <a>
+                    <h5>About</h5>
+                </a>
+                <a>
+                    <h5>Resume</h5>
+                </a>
+            </div>
         </div>
     </section>
     <p>
-        © 2026 Tuan Son - Kisei. Designed and code with love in Hanoi, Vietnam.
+        © 2026 Tuan Son - Kisei. Designed and code with love by Kisei.
     </p>
+    <sl-alert id="copy-toast" variant="success" duration="2000" closable>
+        <sl-icon slot="icon" name="check-circle"></sl-icon>
+        Copied to clipboard.
+    </sl-alert>
 </footer>

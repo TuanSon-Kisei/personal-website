@@ -6,11 +6,11 @@ footer {
     margin: 3vw 0 1vw 0;
 
     section {
-        
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 4fr 2fr;
         margin-bottom: 7rem;
         padding-top: 2rem;
+        
 
         #copy-email-button {
             border: none;
@@ -21,8 +21,13 @@ footer {
             padding-inline: 0.5rem;
             padding-block: 0.2em;            
             cursor: pointer;
+            transition: all 0.3s ease;
 
-            
+            .icon {
+                margin-left: 4px;
+                width: 16px;
+                height: 16px;
+            }
 
             .icon,
             .text {
@@ -37,7 +42,16 @@ footer {
             }
         }
 
-        .socials {
+        .grid-left {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            gap: 7rem;
+
+            h5:not(a h5) {
+                font-weight: 700;
+            }
+
             a {
                 cursor: pointer;
 
@@ -48,4 +62,6 @@ footer {
             }
         }
     }
+    
+    
 }

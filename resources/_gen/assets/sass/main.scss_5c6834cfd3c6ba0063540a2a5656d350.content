@@ -220,7 +220,7 @@ footer {
 }
 footer section {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 4fr 2fr;
   margin-bottom: 7rem;
   padding-top: 2rem;
 }
@@ -233,6 +233,12 @@ footer section #copy-email-button {
   padding-inline: 0.5rem;
   padding-block: 0.2em;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+footer section #copy-email-button .icon {
+  margin-left: 4px;
+  width: 16px;
+  height: 16px;
 }
 footer section #copy-email-button .icon,
 footer section #copy-email-button .text {
@@ -243,10 +249,19 @@ footer section #copy-email-button:hover {
   background-color: #f2e9e1;
   border-radius: 8px;
 }
-footer section .socials a {
+footer section .grid-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 7rem;
+}
+footer section .grid-left h5:not(a h5) {
+  font-weight: 700;
+}
+footer section .grid-left a {
   cursor: pointer;
 }
-footer section .socials a:hover {
+footer section .grid-left a:hover {
   color: #56949f;
   transition: 400ms ease;
 }
