@@ -29,8 +29,7 @@ footer {
             font-family: $font-body-stack;
             color: $rp-dawn-text;
             font-size: 1rem;
-            padding-inline: 0.5rem;
-            padding-block: 0.2em;            
+            padding-inline: 0.5rem;           
             cursor: pointer;
             transition: all 0.3s ease;
 
@@ -48,7 +47,7 @@ footer {
 
             &:hover {
                 background-color: $rp-dawn-overlay;
-                border-radius: 8px;
+                border-radius: 6px;
 
             }
         }
