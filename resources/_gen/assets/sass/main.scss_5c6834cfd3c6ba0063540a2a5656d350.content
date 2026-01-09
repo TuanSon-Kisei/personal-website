@@ -7,17 +7,17 @@
 }
 @font-face {
   font-family: "LINE Seed Sans";
-  font-style: bold;
+  font-style: normal;
   font-display: swap;
   font-weight: 700;
-  src: url("/fonts/line-seed-sans-bold.woff2");
+  src: url("/fonts/line-seed-sans-bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "LINE Seed Sans";
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: url("/fonts/line-seed-sans-regular.woff2");
+  src: url("/fonts/line-seed-sans-regular.woff2") format("woff2");
 }
 @keyframes fadeInUp {
   from {
@@ -214,7 +214,7 @@ body.dark-mode #dark-mode-toggle .cs-moon {
 footer {
   width: 100%;
   border-top: 1px solid;
-  border-color: rgb(205.0606060606, 202.6363636364, 211.3636363636);
+  border-color: rgb(178.5303030303, 174.8181818182, 188.1818181818);
   padding: 0 3rem;
   margin: 3vw 0 1vw 0;
 }

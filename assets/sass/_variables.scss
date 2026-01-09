@@ -10,10 +10,10 @@
 //Display font
 @font-face {
     font-family: 'LINE Seed Sans';
-    font-style: bold;
+    font-style: normal;
     font-display: swap;
     font-weight: 700;
-    src: url('/fonts/line-seed-sans-bold.woff2');
+    src: url('/fonts/line-seed-sans-bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -21,7 +21,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url('/fonts/line-seed-sans-regular.woff2');
+    src: url('/fonts/line-seed-sans-regular.woff2') format('woff2');
 }
 
 //Typography used
