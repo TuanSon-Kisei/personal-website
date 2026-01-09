@@ -9,6 +9,7 @@
     max-width: 1280px;
     padding: 0 1.5rem;
     margin: auto;
+    margin-bottom: 6rem;
 
     li {
         opacity: 0;
@@ -60,7 +61,7 @@
     }
 
     li + li {
-        margin-top: 80px;
+        margin-top: 5em;
     }
 
     h3 {

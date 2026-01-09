@@ -218,11 +218,24 @@ footer {
   padding: 0 3rem;
   margin: 3vw 0 1vw 0;
 }
+@media screen and (max-width: 767px) {
+  footer {
+    padding: 0 1rem;
+  }
+}
 footer section {
   display: grid;
   grid-template-columns: 4fr 2fr;
   margin-bottom: 7rem;
   padding-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+  footer section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
 }
 footer section #copy-email-button {
   border: none;
@@ -265,6 +278,27 @@ footer section .grid-left a:hover {
   color: #56949f;
   transition: 400ms ease;
 }
+@media screen and (max-width: 767px) {
+  footer section .grid-left {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+}
+
+body.dark-mode footer {
+  border-color: rgb(86.625, 83.475, 105.525);
+}
+body.dark-mode #copy-email-button {
+  background-color: #191724;
+  color: #e0def4;
+}
+body.dark-mode #copy-email-button:hover {
+  background-color: #26233a;
+}
+body.dark-mode a:hover h5 {
+  color: #9ccfd8;
+}
 
 .home-intro {
   max-width: 69vw;
@@ -278,6 +312,7 @@ footer section .grid-left a:hover {
   max-width: 1280px;
   padding: 0 1.5rem;
   margin: auto;
+  margin-bottom: 6rem;
 }
 .projects-section li {
   opacity: 0;
@@ -319,7 +354,7 @@ footer section .grid-left a:hover {
   transition-duration: 0.15s;
 }
 .projects-section li + li {
-  margin-top: 80px;
+  margin-top: 5em;
 }
 .projects-section h3 {
   margin-top: 4px;
