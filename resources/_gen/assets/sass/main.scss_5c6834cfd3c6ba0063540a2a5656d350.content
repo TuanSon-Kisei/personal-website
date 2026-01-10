@@ -57,6 +57,7 @@ body ul {
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "LINE Seed Sans", sans-serif;
+  margin: 0;
   padding: 0;
 }
 body h4, body h5, body h6 {
@@ -242,6 +243,7 @@ footer section #copy-email-button {
   background-color: #faf4ed;
   font-family: "Atkinson Hyperlegible Next", sans-serif;
   color: #575279;
+  margin-top: 2.5rem;
   font-size: 1rem;
   padding-inline: 0.5rem;
   cursor: pointer;
@@ -272,10 +274,17 @@ footer section .grid-left h5:not(a h5) {
 }
 footer section .grid-left a {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2rem;
 }
 footer section .grid-left a:hover {
   color: #56949f;
   transition: 400ms ease;
+}
+footer section .grid-left a:visited {
+  color: #907aa9;
 }
 @media screen and (max-width: 767px) {
   footer section .grid-left {

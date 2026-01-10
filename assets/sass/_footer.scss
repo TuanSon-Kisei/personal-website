@@ -28,6 +28,7 @@ footer {
             background-color: $rp-dawn-base;
             font-family: $font-body-stack;
             color: $rp-dawn-text;
+            margin-top: 2.5rem;
             font-size: 1rem;
             padding-inline: 0.5rem;           
             cursor: pointer;
@@ -64,10 +65,18 @@ footer {
 
             a {
                 cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                margin-top: 2rem;
 
                 &:hover {
                     color: $rp-dawn-foam;
                     transition: 400ms ease;
+                }
+
+                &:visited {
+                    color: $rp-dawn-iris;
                 }
             }
 
