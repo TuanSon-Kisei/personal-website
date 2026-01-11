@@ -1,15 +1,24 @@
 .home-intro {
     max-width: 69vw;
-    margin: 10rem auto 10rem auto;
+    margin: 8rem auto;
     text-align: center;
-    line-height: 1.7;
+    line-height: 1.4;
     animation: fadeInUp 0.3s ease-in;
 }
 .projects-section {
-    max-width: 1280px;
-    padding: 0 1.5rem;
+    max-width: 1200px;
+    padding: 0 1rem;
     margin: auto;
     margin-bottom: 6rem;
+
+    .year-chip {
+        border-radius: 100px;
+        border: 1px solid $rp-dawn-highlight-high;
+        background-color: $rp-dawn-base;
+        padding: 0.5rem 0.5rem;
+        font-family: $font-display-stack;
+        color: $rp-dawn-subtle;
+    }
 
     li {
         opacity: 0;
@@ -31,14 +40,14 @@
         transition: all 300ms ease;
         
 
-        .project-image {
+        .project-image { 
+            margin-top: 1rem;
             overflow: hidden;
         }
 
         .project-image img {
-            width: 100%;
-            border-radius: 0.25rem;
-            object-fit: cover;
+            max-width: 100%;
+            height: auto;
             transition: ease 450ms;
         }
 
@@ -61,7 +70,7 @@
     }
 
     li + li {
-        margin-top: 5em;
+        margin-top: 3em;
     }
 
     h3 {
@@ -75,7 +84,8 @@
 }
 
 body.dark-mode {
-    .projects-section li {
+    .projects-section 
+    li {
         a {
             background-color: $rp-surface;
 
@@ -92,5 +102,11 @@ body.dark-mode {
         p {
             color: $rp-subtle;
         }
+    }
+
+    .year-chip {
+        background-color: $rp-base;
+        border: $rp-highlight-high;
+        color: $rp-subtle;
     }
 }

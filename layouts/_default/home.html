@@ -6,6 +6,7 @@
    {{ range where .Site.RegularPages "Type" "work" }}
     {{ $project := . }}
     <li><a href="{{ .RelPermalink }}">
+      <span class="year-chip">{{ .Params.year }}</span>
       <div class="project-image">
         {{ with .Params.cover }}
           {{ $image := $project.Resources.GetMatch . }}

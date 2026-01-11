@@ -1,7 +1,8 @@
 ---
-title: "UX Foundation: Petfren 2024"
-description: My very first step into product design landscape
+title: Petfren
+description: Built a way to make teaching Maths to your kids more fun and less headache
 type: work
-cover: images/hero.jpg
+cover: images/hero.webp
+year: "2024"
 ---
 This is C markdown on homepage

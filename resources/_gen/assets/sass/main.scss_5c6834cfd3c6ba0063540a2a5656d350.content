@@ -47,8 +47,8 @@ body {
   color: #575279;
   background-color: #faf4ed;
   font-family: "Atkinson Hyperlegible Next", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 body ul {
   padding: 0;
@@ -119,11 +119,16 @@ a {
 
 header {
   max-width: 100%;
-  padding: 0 3.5rem;
+  padding: 0 3rem;
   margin: 2vw auto;
   display: flex;
   align-items: center;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  header {
+    padding: 0 1rem;
+  }
 }
 header .left {
   flex: 1;
@@ -131,7 +136,6 @@ header .left {
   text-align: start;
 }
 header .left .header-title {
-  font-family: "LINE Seed Sans", sans-serif;
   font-size: 1.25rem;
 }
 header nav {
@@ -234,7 +238,7 @@ footer section {
   footer section {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 3rem;
   }
 }
@@ -243,7 +247,7 @@ footer section #copy-email-button {
   background-color: #faf4ed;
   font-family: "Atkinson Hyperlegible Next", sans-serif;
   color: #575279;
-  margin-top: 2.5rem;
+  margin-block: 1.5rem;
   font-size: 1rem;
   padding-inline: 0.5rem;
   cursor: pointer;
@@ -269,6 +273,9 @@ footer section .grid-left {
   justify-content: end;
   gap: 7rem;
 }
+footer section .grid-left div:first-of-type {
+  margin-bottom: 1.5rem;
+}
 footer section .grid-left h5:not(a h5) {
   font-weight: 700;
 }
@@ -277,7 +284,7 @@ footer section .grid-left a {
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 footer section .grid-left a:hover {
   color: #56949f;
@@ -289,7 +296,7 @@ footer section .grid-left a:visited {
 @media screen and (max-width: 767px) {
   footer section .grid-left {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: flex-start;
   }
 }
@@ -310,17 +317,25 @@ body.dark-mode a:hover h5 {
 
 .home-intro {
   max-width: 69vw;
-  margin: 10rem auto 10rem auto;
+  margin: 8rem auto;
   text-align: center;
-  line-height: 1.7;
+  line-height: 1.4;
   animation: fadeInUp 0.3s ease-in;
 }
 
 .projects-section {
-  max-width: 1280px;
-  padding: 0 1.5rem;
+  max-width: 1200px;
+  padding: 0 1rem;
   margin: auto;
   margin-bottom: 6rem;
+}
+.projects-section .year-chip {
+  border-radius: 100px;
+  border: 1px solid #cecacd;
+  background-color: #faf4ed;
+  padding: 0.5rem 0.5rem;
+  font-family: "LINE Seed Sans", sans-serif;
+  color: #797593;
 }
 .projects-section li {
   opacity: 0;
@@ -340,12 +355,12 @@ body.dark-mode a:hover h5 {
   transition: all 300ms ease;
 }
 .projects-section a .project-image {
+  margin-top: 1rem;
   overflow: hidden;
 }
 .projects-section a .project-image img {
-  width: 100%;
-  border-radius: 0.25rem;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
   transition: ease 450ms;
 }
 .projects-section a .project-image img:hover {
@@ -362,7 +377,7 @@ body.dark-mode a:hover h5 {
   transition-duration: 0.15s;
 }
 .projects-section li + li {
-  margin-top: 5em;
+  margin-top: 3em;
 }
 .projects-section h3 {
   margin-top: 4px;
@@ -385,18 +400,28 @@ body.dark-mode .projects-section li a:focus {
 body.dark-mode .projects-section li p {
   color: #908caa;
 }
+body.dark-mode .year-chip {
+  background-color: #191724;
+  border: #524f67;
+  color: #908caa;
+}
 
 .project-content {
-  max-width: 1300px;
+  max-width: 50rem;
   margin: auto;
   word-break: keep-all;
-  padding: 0 36px;
+  animation: fadeInUp 0.4s ease;
 }
 .project-content h1 {
-  text-align: center;
+  line-height: 1.4;
 }
 .project-content article {
   text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .project-content {
+    padding: 3rem 1rem;
+  }
 }
 
 .about-section {

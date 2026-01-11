@@ -1,15 +1,18 @@
 .project-content {
-    max-width: 1300px;
+    max-width: 50rem;
     margin: auto;
     word-break: keep-all;
-    padding: 0 36px;
+    animation: fadeInUp 0.4s ease;
 
     h1 {
-        text-align: center;
+        line-height: 1.4;
     }
 
     article {
-        
         text-align: left;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 3rem 1rem;
     }
 }

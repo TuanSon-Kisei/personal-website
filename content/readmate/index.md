@@ -1,7 +1,8 @@
 ---
-title: UI Foundation 2024
-description: Reimagine of the long-lost experience when finding books to read
+title: Readmate
+description: Reimagine the experience of purchasing books online
 type: work
 cover: images/hero.jpg
+year: "2024"
 ---
 This is B markdown on home page

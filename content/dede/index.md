@@ -1,8 +1,9 @@
 ---
-title: "Lollypop Designathon 2025: Dede"
-description: Building an app that raise young Vietnamese awareness when navigating chaotic traffic
+title: Dede
+description: AI native app for learning traffics laws in Vietnam
 type: work
-cover: images/hero.jpg
+cover: images/hero.webp
+year: "2025"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et.
 ## 1

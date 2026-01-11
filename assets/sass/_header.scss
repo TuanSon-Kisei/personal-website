@@ -6,11 +6,15 @@ a {
 //Styling header
 header {
     max-width: 100%;
-    padding: 0 3.5rem;
+    padding: 0 3rem;
     margin: 2vw auto;
     display: flex;
     align-items: center;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+        padding: 0 1rem;
+    }
 
     .left {
         flex: 1;
@@ -18,7 +22,6 @@ header {
         text-align: start;
 
         .header-title {
-        font-family: $font-display-stack;
         font-size: 1.25rem;
         }
     }
