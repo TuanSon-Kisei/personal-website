@@ -2,6 +2,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta author="Kisei - Tuan Son">
+  {{ partial "opengraph.hrml" . }}
   <title>{{ .Site.Title }}</title>
   {{ with resources.Get "sass/main.scss" }}
   {{ $opts := dict

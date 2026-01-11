@@ -186,6 +186,7 @@
   "active": "ec2206c924a582ee",
   "lastOpenFiles": [
     "readmate/index.md",
+    "_index.md",
     "petfren/index.md",
     "dede/index.md",
     "readmate/images/hero.jpg",
@@ -198,7 +199,6 @@
     "about/index.md",
     "project-3.md",
     "project-2.md",
-    "project-1.md",
-    "_index.md"
+    "project-1.md"
   ]
 }
