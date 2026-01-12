@@ -19,6 +19,13 @@
   font-weight: 400;
   src: url("/fonts/line-seed-sans-regular.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Adwaita Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/adwaita-mono-regular.ttf") format("ttf");
+}
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -47,7 +54,7 @@ body {
   color: #575279;
   background-color: #faf4ed;
   font-family: "Atkinson Hyperlegible Next", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   line-height: 1.6;
 }
 body ul {
@@ -248,7 +255,7 @@ footer section #copy-email-button {
   font-family: "Atkinson Hyperlegible Next", sans-serif;
   color: #575279;
   margin-block: 1.5rem;
-  font-size: 1rem;
+  font-size: inherit;
   padding-inline: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -299,6 +306,11 @@ footer section .grid-left a:visited {
     gap: 1.5rem;
     justify-content: flex-start;
   }
+}
+footer p {
+  font-family: "Adwaita Mono", monospace;
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 
 body.dark-mode footer {
@@ -425,6 +437,8 @@ body.dark-mode .year-chip {
 }
 
 .about-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   text-align: center;
   word-break: break-all;
   margin: auto;
@@ -434,11 +448,29 @@ body.dark-mode .year-chip {
   margin: auto;
   text-align: left;
   max-width: 800px;
-  padding: 0 1em;
+  padding: 5rem 1em;
   word-break: keep-all;
 }
+.about-section article h1 {
+  margin-bottom: 1.5rem;
+}
 .about-section article p + p {
-  margin-top: 16px;
+  margin-top: 1rem;
+}
+.about-section article a:hover {
+  text-decoration: underline;
+  color: #286983;
+}
+.about-section .about-image {
+  width: 400px;
+}
+.about-section .about-image img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+.about-section .about-image img:hover {
+  transform: rotateZ("15");
 }
 
 .page-404 {

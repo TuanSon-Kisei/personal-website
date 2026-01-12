@@ -1,4 +1,6 @@
 .about-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     text-align: center;
     word-break: break-all;
     margin: auto;
@@ -8,11 +10,36 @@
         margin: auto;
         text-align: left;
         max-width: 800px;
-        padding: 0 1em;
+        padding: 5rem 1em;
         word-break: keep-all;
 
+        h1 {
+            margin-bottom: 1.5rem;
+        }
+
         p + p {
-            margin-top: 16px;
+            margin-top: 1rem;
+        }
+
+        a {
+            &:hover {
+                text-decoration: underline;
+                color: $rp-dawn-pine;
+            }
+        }
+    }
+
+    .about-image {
+        width: 400px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: rotateZ('15');
+            }
         }
     }
 }

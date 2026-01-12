@@ -24,9 +24,19 @@
     src: url('/fonts/line-seed-sans-regular.woff2') format('woff2');
 }
 
+//Monoface font
+@font-face {
+    font-family: 'Adwaita Mono';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url('/fonts/adwaita-mono-regular.ttf') format('ttf');
+}
+
 //Typography used
 $font-body-stack: 'Atkinson Hyperlegible Next', sans-serif;
 $font-display-stack: 'LINE Seed Sans', sans-serif;
+$font-mono-stack: 'Adwaita Mono', monospace;
 
 
 //Font size for headings
