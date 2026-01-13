@@ -56,6 +56,7 @@ body {
   font-family: "Atkinson Hyperlegible Next", sans-serif;
   font-size: 1.125rem;
   line-height: 1.6;
+  transition: all 0.3s ease;
 }
 body ul {
   padding: 0;
@@ -83,7 +84,7 @@ body h4 {
   font-size: clamp(1.25rem, 3vw, 1.5rem);
 }
 body h5 {
-  font-size: clamp(1.05rem, 2vw, 1.15rem);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
 }
 body h6 {
   font-size: 1rem;
@@ -179,6 +180,9 @@ header nav #dark-mode-toggle {
 }
 header nav #dark-mode-toggle:hover {
   background-color: #f2e9e1;
+}
+header nav #dark-mode-toggle:focus {
+  box-shadow: 0 0 1px 2px #56949f;
 }
 header nav #dark-mode-toggle svg {
   width: 24px;
@@ -419,7 +423,7 @@ body.dark-mode .year-chip {
 }
 
 .project-content {
-  max-width: 50rem;
+  max-width: 60rem;
   margin: auto;
   word-break: keep-all;
   animation: fadeInUp 0.4s ease;
@@ -428,7 +432,25 @@ body.dark-mode .year-chip {
   line-height: 1.4;
 }
 .project-content article {
+  display: flex;
+  flex-direction: column;
   text-align: left;
+}
+.project-content article h2 {
+  margin-block: 1em;
+}
+.project-content article hr {
+  border: none;
+  border-top: 1px solid #cecacd;
+  margin: 0.1em 0;
+}
+.project-content article p {
+  margin-bottom: 1em;
+}
+.project-content article p img {
+  max-width: 100%;
+  height: auto;
+  padding-block: 1rem;
 }
 @media screen and (max-width: 767px) {
   .project-content {

@@ -1,16 +1,22 @@
 ---
 title: Dede
-description: AI native app for learning traffics laws in Vietnam
+description: AI native app for helping young peeps navigating the chaotic traffics of Vietnam
 type: work
 cover: images/hero.webp
 year: "2025"
+timeline: 24hr design marathon
+team:
+role:
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et.
-## 1
-Alterum, quae vis sit, quae quidque efficiat, de materia disseruerunt, vim et causam efficiendi reliquerunt. Sed hoc commune vitium, illae Epicuri propriae ruinae: censet enim eadem illa atomorum, in quo admirer, cur in gravissimis rebus non delectet eos sermo patrius, cum idem fabellas Latinas ad verbum e Graecis expressas non inviti legant. Quis enim tam inimicus paene nomini Romano est.
-## 2
-Tum erant, ad quorum iudicium elaboraret, et sunt illius scripta leviora, ut urbanitas summa appareat, doctrina mediocris. Ego autem quem timeam lectorem, cum ad me de virtute misisti. Sed ex eo est consecutus? -- Laudem.
-## 3
-Eum necesse est aut in dolore. Omnis autem privatione doloris putat Epicurus terminari summam voluptatem, ut postea variari voluptas distinguique possit, augeri amplificarique non possit. At etiam Athenis, ut e patre audiebam facete et urbane Stoicos irridente, statua est in eo, qui ita sit affectus, et firmitatem animi nec mortem nec dolorem timentis, quod mors sensu careat, dolor in reprehenderit.
-## 4
-Et causam efficiendi reliquerunt. Sed hoc commune vitium, illae Epicuri propriae ruinae: censet enim eadem illa individua et solida corpora ferri deorsum suo pondere ad lineam, numquam fore ut atomus altera alteram posset attingere itaque ** attulit rem commenticiam.
+![hero.webp](images/hero.webp)
+## Overview
+In September 2025, I had privilege to join one of the most famous competition in Product Design field of Vietnam: Lollypop Designathon. Designathon is a unique event where teams match against each other in a 24hr race to research and deliver their solution matched with the given subject of the game.
+![Lollypop Designathon 2025 poster](https://lollypop.design/wp-content/uploads/2025/10/Lollypop-Designathon-Vietnam-2025-San-choi-thiet-ke-UIUX.webp)
+
+---
+
+## Problem Space
+The young college student population presents a unique challenge of moving from their idyllic home to a relatively busy chaotic landscape of the city. They know virtually nothing about traffic laws despite they already had a driving license. Only after accidentally violated one of our many many gimmicky and unique traffic laws in the city did they learn that one specific piece forever.
+
+---
+## The Challenge

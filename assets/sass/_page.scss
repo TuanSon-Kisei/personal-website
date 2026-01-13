@@ -1,5 +1,5 @@
 .project-content {
-    max-width: 50rem;
+    max-width: 60rem;
     margin: auto;
     word-break: keep-all;
     animation: fadeInUp 0.4s ease;
@@ -9,7 +9,29 @@
     }
 
     article {
+        display: flex;
+        flex-direction: column;
         text-align: left;
+
+        h2 {
+            margin-block: 1em;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid $rp-dawn-highlight-high;
+            margin: 0.1em 0;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        p img {
+            max-width: 100%;
+            height: auto;
+            padding-block: 1rem;
+        }
     }
 
     @media screen and (max-width: 767px) {
