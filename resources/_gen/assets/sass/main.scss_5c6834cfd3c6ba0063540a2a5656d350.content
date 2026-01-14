@@ -457,7 +457,7 @@ body.dark-mode .year-chip {
   height: auto;
   padding-block: 1rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .project-content {
     padding: 3rem 1rem;
   }

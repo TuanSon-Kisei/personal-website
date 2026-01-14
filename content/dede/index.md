@@ -16,7 +16,7 @@ In September 2025, I had privilege to join one of the most famous competition in
 ---
 
 ## Problem Space
-The young college student population presents a unique challenge of moving from their idyllic home to a relatively busy chaotic landscape of the city. They know virtually nothing about traffic laws despite they already had a driving license. Only after accidentally violated one of our many many gimmicky and unique traffic laws in the city did they learn that one specific piece forever.
+Let's say you wanted to ride your motorbike or drive your car the first time in Hanoi. But you don't know any ins or outs things to be careful when participate in Hanoi's traffics. 
 
 ---
 ## The Challenge

@@ -36,11 +36,11 @@
         p img {
             max-width: 100%;
             height: auto;
-            padding-block: 1rem;
+            padding-block: 1rem;    
         }
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         padding: 3rem 1rem;
     }
 }
