@@ -423,18 +423,23 @@ body.dark-mode .year-chip {
 }
 
 .project-content {
-  max-width: 60rem;
-  margin: auto;
   word-break: keep-all;
   animation: fadeInUp 0.4s ease;
+  text-align: center;
 }
 .project-content h1 {
   line-height: 1.4;
+  margin-bottom: 2rem;
+}
+.project-content h5 {
+  margin-bottom: 2.5rem;
 }
 .project-content article {
-  display: flex;
-  flex-direction: column;
+  max-width: 70rem;
   text-align: left;
+  margin: 0 auto;
+  width: auto;
+  position: relative;
 }
 .project-content article h2 {
   margin-block: 1em;
