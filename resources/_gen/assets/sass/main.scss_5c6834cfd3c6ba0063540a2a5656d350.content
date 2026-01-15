@@ -297,12 +297,9 @@ footer section .grid-left a {
   gap: 4px;
   margin-top: 1.5rem;
 }
-footer section .grid-left a:hover {
+footer section .grid-left a:hover h5, footer section .grid-left a:hover svg {
   color: #56949f;
   transition: 400ms ease;
-}
-footer section .grid-left a:visited {
-  color: #907aa9;
 }
 @media screen and (max-width: 767px) {
   footer section .grid-left {
@@ -423,6 +420,7 @@ body.dark-mode .year-chip {
 }
 
 .project-content {
+  margin: 3vw auto;
   word-break: keep-all;
   animation: fadeInUp 0.4s ease;
   text-align: center;

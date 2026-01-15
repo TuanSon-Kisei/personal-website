@@ -74,14 +74,13 @@ footer {
                 align-items: center;
                 gap: 4px;
                 margin-top: 1.5rem;
+                
 
                 &:hover {
-                    color: $rp-dawn-foam;
-                    transition: 400ms ease;
-                }
-
-                &:visited {
-                    color: $rp-dawn-iris;
+                    h5, svg {
+                        color: $rp-dawn-foam;
+                        transition: 400ms ease;
+                    }
                 }
             }
 
