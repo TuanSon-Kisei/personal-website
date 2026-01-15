@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "eda00229a91c0054",
+        "id": "a71e40adb31baa14",
         "type": "tabs",
         "children": [
           {
-            "id": "747c05f896e77891",
+            "id": "3f9c4d2c1ec8ec95",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -183,10 +183,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "747c05f896e77891",
+  "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
-    "dede/images/img1.webp",
+    "dede/images/img2.webp",
     "dede/index.md",
+    "petfren/index.md",
+    "images.md",
+    "dede/images/img1.webp",
     "dede/images/hero.webp",
     "dede/images/Slide 16:9 - 2.webp",
     "petfren/images/hero.webp",
@@ -195,13 +198,11 @@
     "about/index.md",
     "readmate/images/hero.webp",
     "readmate/images/174_1x_shots_so.webp",
-    "petfren/index.md",
     "petfren/images/Slide 16:9 - 1.webp",
     "dede/images/Slide 16:9 - 1.webp",
     "_index.md",
     "readmate/images/hero.jpg",
     "readmate/images",
-    "petfren/images/hero.jpg",
     "petfren/images",
     "dede/images",
     "project-3.md",

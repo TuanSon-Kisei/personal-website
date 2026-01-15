@@ -26,3 +26,4 @@ This is also becoming a heavy burden on the government too. The government impos
 ## Tackling the Problem
 This problem provided a huge opportunity to learn more about the huge gap between Vietnam's traffic regulations and its actual application to real life. And that's what we wanted to solve for.
 ![](images/img2.webp)
+
