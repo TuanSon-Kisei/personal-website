@@ -55,7 +55,7 @@ body {
   background-color: #faf4ed;
   font-family: "Atkinson Hyperlegible Next", sans-serif;
   font-size: 1.125rem;
-  line-height: 1.6;
+  line-height: 1.5;
   transition: all 0.3s ease;
 }
 body ul {
@@ -440,12 +440,12 @@ body.dark-mode .year-chip {
   position: relative;
 }
 .project-content article h2 {
-  margin-block: 1em;
+  margin-block: 1rem;
 }
 .project-content article hr {
   border: none;
   border-top: 1px solid #cecacd;
-  margin: 0.1em 0;
+  margin-bottom: 4rem;
 }
 .project-content article p {
   margin-bottom: 1em;

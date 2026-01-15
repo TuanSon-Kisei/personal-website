@@ -1,0 +1,8 @@
+{
+  "obsidian-velocity@@theme-paint-dark": "nord",
+  "obsidian-velocity@@color-highlight-rgb": "var(--highlight-cyan-rgb)",
+  "obsidian-velocity@@enable-special-text": true,
+  "obsidian-velocity@@enable-special-code": true,
+  "obsidian-velocity@@theme-paint-light": "beige",
+  "obsidian-velocity@@file-line-width": 42.25
+}

@@ -1,6 +1,7 @@
 {
-  "cssTheme": "Things",
+  "cssTheme": "Velocity",
   "interfaceFontFamily": "Inter",
   "textFontFamily": "Inter",
-  "monospaceFontFamily": "Red Hat Mono"
+  "monospaceFontFamily": "Red Hat Mono",
+  "theme": "moonstone"
 }

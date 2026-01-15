@@ -20,18 +20,6 @@
               "icon": "lucide-file",
               "title": "index"
             }
-          },
-          {
-            "id": "d5399aa5f9d72788",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.4"
-            }
           }
         ]
       }
@@ -197,11 +185,12 @@
   },
   "active": "747c05f896e77891",
   "lastOpenFiles": [
+    "dede/images/img1.webp",
+    "dede/index.md",
     "dede/images/hero.webp",
     "dede/images/Slide 16:9 - 2.webp",
     "petfren/images/hero.webp",
     "petfren/images/Slide 16:9 - 3.webp",
-    "dede/index.md",
     "readmate/index.md",
     "about/index.md",
     "readmate/images/hero.webp",
@@ -214,7 +203,6 @@
     "readmate/images",
     "petfren/images/hero.jpg",
     "petfren/images",
-    "dede/images/hero.jpg",
     "dede/images",
     "project-3.md",
     "project-2.md",
