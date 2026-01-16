@@ -465,10 +465,10 @@ body.dark-mode .year-chip {
 .about-section {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  text-align: center;
   word-break: break-all;
   margin: auto;
   animation: fadeInUp 0.4s ease;
+  align-items: center;
 }
 .about-section article {
   margin: auto;
@@ -488,7 +488,7 @@ body.dark-mode .year-chip {
   color: #286983;
 }
 .about-section .about-image {
-  width: 400px;
+  width: 960px;
 }
 .about-section .about-image img {
   max-width: 100%;

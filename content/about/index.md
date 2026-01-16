@@ -1,5 +1,5 @@
 ---
-image:
+image: images/about-me.webp
 title: About me
 description:
 ---

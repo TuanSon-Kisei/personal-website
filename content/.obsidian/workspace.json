@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dede/index.md",
+                "file": "about/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -185,8 +185,8 @@
   },
   "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
-    "dede/images/img2.webp",
     "dede/index.md",
+    "dede/images/img2.webp",
     "petfren/index.md",
     "images.md",
     "dede/images/img1.webp",
@@ -201,7 +201,6 @@
     "petfren/images/Slide 16:9 - 1.webp",
     "dede/images/Slide 16:9 - 1.webp",
     "_index.md",
-    "readmate/images/hero.jpg",
     "readmate/images",
     "petfren/images",
     "dede/images",
