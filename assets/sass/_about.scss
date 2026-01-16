@@ -1,20 +1,21 @@
 .about-section {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     word-break: break-all;
     margin: auto;
     animation: fadeInUp 0.4s ease;
     align-items: center;
-
+    
     @media screen and (max-width: 768px) {
-        
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 1em;
     }
 
     article {
         margin: auto;
         text-align: left;
         max-width: 800px;
-        padding: 5rem 1em;
+        padding: 3em 1rem;
         word-break: keep-all;
 
         h1 {
@@ -34,16 +35,13 @@
     }
 
     .about-image {
-        width: 960px;
+        flex-grow: 1;
+        
 
         img {
             max-width: 100%;
             height: auto;
-            transition: all 0.3s ease;
-
-            &:hover {
-                transform: rotateZ('15');
-            }
+            padding-inline: 1rem;
         }
     }
 }
