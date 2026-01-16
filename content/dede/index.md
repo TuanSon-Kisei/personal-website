@@ -21,9 +21,13 @@ The daily traffics in big cities are often chaotic and unpredictable at times. T
 This is also becoming a heavy burden on the government too. The government imposed stricter laws, hoping them will curb the traffic violation cases, but in turns created reinforcement loop for both of the parties.
 ![](images/img1.webp)
 
-
 ---
+
 ## Tackling the Problem
 This problem provided a huge opportunity to learn more about the huge gap between Vietnam's traffic regulations and its actual application to real life. And that's what we wanted to solve for.
 ![](images/img2.webp)
+
+---
+
+## Research
 

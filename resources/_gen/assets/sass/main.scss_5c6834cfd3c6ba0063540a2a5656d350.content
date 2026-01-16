@@ -454,6 +454,7 @@ body.dark-mode .year-chip {
   max-width: 100%;
   height: auto;
   padding-block: 1rem;
+  border-radius: 16px;
 }
 @media screen and (max-width: 768px) {
   .project-content {
