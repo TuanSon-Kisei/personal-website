@@ -500,6 +500,10 @@ body.dark-mode .year-chip {
   max-width: 100%;
   height: auto;
   padding-inline: 1rem;
+  transition: transform 0.5s ease;
+}
+.about-section .about-image img:hover {
+  transform: rotate(5deg);
 }
 
 .page-404 {
