@@ -1,0 +1,58 @@
+.alert {
+  display: flex;  
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.alert-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.alert-success .alert-icon { 
+    background-color: lighten($color: $rp-dawn-pine, $amount: 55);
+    color: $rp-dawn-pine;
+    border-color: $rp-dawn-pine; 
+}
+.alert-warning .alert-icon { 
+    background-color: lighten($color: $rp-dawn-gold, $amount: 35);
+    color: $rp-dawn-gold;
+    border-color: $rp-dawn-gold; 
+}
+.alert-error .alert-icon { 
+    background-color: lighten($color: $rp-dawn-rose, $amount: 20);
+    color: $rp-dawn-rose;
+    border-color: $rp-dawn-rose; 
+}
+
+body.dark-mode {
+    .alert-content {
+        color: $rp-text;
+    }
+
+    .alert-success .alert-icon { 
+    background-color: lighten($color: $rp-dawn-pine, $amount: 55);
+    color: $rp-dawn-pine;
+    border-color: $rp-dawn-pine; 
+    }
+    .alert-warning .alert-icon { 
+    background-color: lighten($color: $rp-dawn-gold, $amount: 35);
+    color: $rp-dawn-gold;
+    border-color: $rp-dawn-gold; 
+    }
+    .alert-error .alert-icon { 
+    background-color: $rp-rose;
+    color: $rp-rose;
+    border-color: $rp-dawn-rose; 
+    }
+}

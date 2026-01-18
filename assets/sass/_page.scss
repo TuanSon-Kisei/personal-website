@@ -14,7 +14,7 @@
     }
 
     article {
-        max-width: 70rem;
+        max-width: 60rem;
         text-align: left;
         margin: 0 auto;
         width: auto;
@@ -27,7 +27,7 @@
         hr {
             border: none;
             border-top: 1px solid $rp-dawn-highlight-high;
-            margin-bottom: 4rem;
+            padding-bottom: 2rem;
         }
 
         p {
@@ -37,8 +37,7 @@
         p img {
             max-width: 100%;
             height: auto;
-            padding-block: 1rem;
-            border-radius: 16px;    
+            padding-top: 0.5em;
         }
     }
 

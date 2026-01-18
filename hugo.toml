@@ -3,3 +3,6 @@ languageCode = 'en-us'
 title = 'Tuan Son - Kisei'
 [params]
 ogImage = "/images/open-graph-image.jpg"
+[module]
+  [[module.imports]]
+    path = "github.com/KKKZOZ/hugo-admonitions"

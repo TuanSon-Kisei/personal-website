@@ -29,5 +29,12 @@ This problem provided a huge opportunity to learn more about the huge gap betwee
 
 ---
 
-## Research
+## User Research
+
+I interviewed various high-school and colleague students to listen to their frustrations when participating in traffics. And these are the key insights my team and I synthesized:
+
+{{< alert type="error" >}} Outdated traffic laws knowledge{{< /alert >}}
+{{< alert type="error" >}} Uninteresting   {{< /alert >}}
+{{< alert type="error" >}} Only know new regulations through words of mouth  {{< /alert >}}
+
 
