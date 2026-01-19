@@ -22,7 +22,8 @@ header {
         text-align: start;
 
         .header-title {
-        font-size: 1.25rem;
+            font-family: $font-mono-stack;
+            font-size: 1rem;
         }
     }
 
@@ -34,13 +35,12 @@ header {
         ul {
             display: flex;
             justify-content: end;
-            gap: 18px;
+            gap: 1rem;
 
             a {
                 display: inline-block;
                 padding: 0.5rem;
                 border-radius: 8px;
-
 
                 &:hover {
                     background-color: $rp-dawn-overlay;
