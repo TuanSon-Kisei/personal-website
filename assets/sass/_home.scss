@@ -7,9 +7,13 @@
 }
 .projects-section {
     max-width: 1200px;
-    padding: 0 1rem;
+    padding-inline: 3rem;
     margin: auto;
     margin-bottom: 6rem;
+
+    @media screen and (max-width: 767px) {
+        padding-inline: 1rem;
+    }
 
     .year-chip {
         border-radius: 100px;
