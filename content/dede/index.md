@@ -9,6 +9,9 @@ team:
 role:
 ---
 ![hero.webp](images/hero.webp)
+
+---
+
 ## Overview
 In September 2025, I had privilege to join one of the most famous competition in Product Design field of Vietnam: Lollypop Designathon. Designathon is a unique event where teams match against each other in a 24hr race to research and deliver their solution matched with the given subject of the game.
 ![Lollypop Designathon 2025 poster](https://lollypop.design/wp-content/uploads/2025/10/Lollypop-Designathon-Vietnam-2025-San-choi-thiet-ke-UIUX.webp)
@@ -31,10 +34,21 @@ This problem provided a huge opportunity to learn more about the huge gap betwee
 
 ## User Research
 
-I interviewed various high-school and colleague students to listen to their frustrations when participating in traffics. And these are the key insights my team and I synthesized:
+I and my team conducted survey and interviewed various high-school and colleague students to listen to their frustrations when participating in traffics. And these are the key insights my team and I synthesized:
 
 {{< alert type="error" >}} Outdated traffic laws knowledge{{< /alert >}}
-{{< alert type="warning" >}} Uninteresting   {{< /alert >}}
-{{< alert type="success" >}} Only know new regulations through words of mouth  {{< /alert >}}
+{{< alert type="error" >}} Uninteresting method when teaching updated regulations {{< /alert >}}
+{{< alert type="error" >}} Only know new regulations through words of mouth  {{< /alert >}}
 
+The issue is clear: nobody actually bother to learn new and updated traffic regulations when the government's message is uninteresting, failed to grab attention.
 
+![](images/img3.webp)
+
+---
+
+## Turn insights into opportunities
+
+Guided by user research and online survey, we turned these three key pain points: outdated knowledge, uninteresting method when teaching updated regulations and only know new laws through words of mouth--- into corresponding opportunity goals for our designs.
+
+![An image showing three charts of the survey](images/img4.webp)
+![An image showing three rectangle notes speaking about goals](images/img5.webp)
