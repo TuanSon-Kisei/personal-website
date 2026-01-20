@@ -1,3 +1,10 @@
 {{- $options := dict "targetPath" "js/bundle.js" -}}
 {{- $jsBundle := resources.Get "js/index.js" | js.Build $options | resources.Minify | fingerprint -}}
 <script src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
+<script src="https://unpkg.com/swup@4"></script>  
+<script src="https://unpkg.com/@swup/fade-theme@2"></script> 
+<script>
+    const swup = new Swup({
+        plugins: [new SwupFadeTheme()]
+    })
+</script>

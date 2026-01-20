@@ -1,6 +1,6 @@
 ---
 title: Petfren
-description: Built a way to make teaching Maths to your kids more fun and less headache
+description: A smart tutor assistant app for both parents and kids learning Math
 type: work
 cover: images/hero.webp
 year: "2024"

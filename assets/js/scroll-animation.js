@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+function initScrollAnimation() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -14,4 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     projectItems.forEach(item => {
         observer.observe(item);
     });
-})
+}
+
+document.addEventListener('DOMContentLoaded', initScrollAnimation);
+document.addEventListener('swup:content:replace', initScrollAnimation);
