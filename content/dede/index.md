@@ -60,4 +60,10 @@ To achieve our team's goal of creating comprehensible and engaging platform for 
 
 ---
 
-## Focusing on a united goal
+## Focusing on a focal goal
+My UXR found that when participants join the road, they quickly found difficulty so due to **obscured** and **complex** existing traffic system which **very hard** to notice of within a short time, this leads to **accidental** traffic violations. My approach was to how I can design features that **non-invasive** and **recognisable** about the problems and they must also be **engaging** and **humorous** for generation Z whom is our target audience.
+
+---
+
+## Designing Dede
+As I worked on a variety of different concepts and ideations, with back-to-forth conversations with our leader and other designer buddies, we were able to pinpoint restrictions and thoroughly select, modify and debate between design patterns and interactions to produce deliverables. Through this process, we quickly gained alignment around what needs to be done and landed with the concept of "Alarms."
