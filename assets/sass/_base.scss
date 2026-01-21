@@ -63,6 +63,16 @@ body {
         }
     }
 
+    svg {
+        width: 24px;
+        height: 24px;
+        transition: transform 500ms ease;
+
+        path {
+            stroke: $rp-dawn-text;
+            }
+        }
+
     @media screen and (prefers-reduced-motion: reduce) { 
         --swup-fade-theme-duration: 0s;
     }
@@ -96,5 +106,9 @@ body.dark-mode {
 
     footer {
         color: $rp-text;
+    }
+
+    svg path {
+        stroke: $rp-text;
     }
 }

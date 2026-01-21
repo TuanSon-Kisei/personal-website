@@ -52,3 +52,12 @@ Guided by user research and online survey, we turned these three key pain points
 
 ![An image showing three charts of the survey](images/img4.webp)
 ![An image showing three rectangle notes speaking about goals](images/img5.webp)
+
+---
+
+## Team Coordination & Feature Ownership
+To achieve our team's goal of creating comprehensible and engaging platform for teaching and spreading traffic regulations awareness, we divided tasks for our focused features set. I took ownership and **co-led the design research process of our app's features**, prioritized **informative** and **simplicity** to help users deal with **complex traffic laws**.
+
+---
+
+## Focusing on a united goal

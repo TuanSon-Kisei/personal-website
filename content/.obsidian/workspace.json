@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readmate/index.md",
+                "file": "dede/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3185289d1ea7fc29",
@@ -185,8 +186,8 @@
   },
   "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
-    "petfren/index.md",
     "readmate/index.md",
+    "petfren/index.md",
     "dede/index.md",
     "dede/images/img3.webp",
     "dede/images/img5.webp",
