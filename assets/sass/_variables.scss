@@ -20,12 +20,8 @@
     700
 );
 
-@include font-face("LINE Seed Sans", "/fonts/line-seed-sans-bold.woff2", 700);
-@include font-face(
-    "LINE Seed Sans",
-    "/fonts/line-seed-sans-regular.woff2",
-    400
-);
+@include font-face("LINE Seed Sans", "/fonts/line-seed-sans-bold", 700);
+@include font-face("LINE Seed Sans", "/fonts/line-seed-sans-regular", 400);
 
 //Monoface font
 @font-face {
