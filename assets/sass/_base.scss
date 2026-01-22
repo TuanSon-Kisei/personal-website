@@ -63,6 +63,12 @@ body {
         }
     }
 
+    hr {
+        border: none;
+        border-top: 1px solid $rp-dawn-highlight-high;
+        padding-bottom: 1.5rem;
+    }
+
     svg {
         width: 24px;
         height: 24px;
@@ -96,6 +102,10 @@ body.dark-mode {
         &:focus-visible {
             box-shadow: $rp-foam;
         }
+    }
+
+    hr {
+        border-color: adjust-color($color: $rp-highlight-high, $lightness: 0%);
     }
 
     footer {

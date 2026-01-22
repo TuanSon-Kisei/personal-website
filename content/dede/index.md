@@ -76,5 +76,6 @@ While the initial screen conveyed most information, we ultimately decided to hid
 {{< alert type="warning" >}} Users might confuse "Xu" - a digital currency point as real money {{< /alert >}}
 
 
+
 ### Home and Challenge iteration
 

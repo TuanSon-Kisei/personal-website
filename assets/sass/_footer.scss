@@ -1,7 +1,7 @@
 footer {
     width: 100%;
     border-top: 1px solid;
-    border-color: lighten($color: $rp-dawn-muted, $amount: 10%);
+    border-color: lighten($color: $rp-dawn-highlight-high, $amount: 0%);
     padding: 0 3rem;
     margin: 3vw 0 1vw 0;
 
@@ -21,7 +21,6 @@ footer {
             gap: 2rem;
             margin-bottom: 3rem;
         }
-        
 
         #copy-email-button {
             border: none;
@@ -30,7 +29,7 @@ footer {
             color: $rp-dawn-text;
             margin-block: 1.5rem;
             font-size: inherit;
-            padding-inline: 0.5rem;           
+            padding-inline: 0.5rem;
             cursor: pointer;
             transition: all 0.3s ease;
 
@@ -49,7 +48,6 @@ footer {
             &:hover {
                 background-color: $rp-dawn-overlay;
                 border-radius: 6px;
-
             }
         }
 
@@ -59,9 +57,8 @@ footer {
             justify-content: end;
             gap: 7rem;
 
-
             div:first-of-type {
-                margin-bottom: 1.5rem
+                margin-bottom: 1.5rem;
             }
 
             h5:not(a h5) {
@@ -74,10 +71,10 @@ footer {
                 align-items: center;
                 gap: 4px;
                 margin-top: 1.5rem;
-                
 
                 &:hover {
-                    h5, svg {
+                    h5,
+                    svg {
                         color: $rp-dawn-foam;
                         transition: 400ms ease;
                     }
@@ -96,13 +93,11 @@ footer {
         font-family: $font-mono-stack;
         text-transform: uppercase;
         font-size: 0.8rem;
-        
     }
 }
 body.dark-mode {
-
     footer {
-        border-color: darken($color: $rp-muted, $amount: 10);
+        border-color: darken($color: $rp-highlight-high, $amount: 0);
     }
 
     #copy-email-button {
