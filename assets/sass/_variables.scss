@@ -1,43 +1,45 @@
 //Body font
-@font-face {
-    font-family: 'Atkinson Hyperlegible Next';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 400;
-    src: url('/fonts/atkinson-hyperlegible-next-regular.woff2') format('woff2');
+@mixin font-face($name, $path, $weight: 400, $style: normal) {
+    @font-face {
+        font-family: $name;
+        font-style: $style;
+        font-weight: $weight;
+        font-display: swap;
+        src: url("#{$path}.woff2") format("woff2");
+    }
 }
 
-//Display font
-@font-face {
-    font-family: 'LINE Seed Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 700;
-    src: url('/fonts/line-seed-sans-bold.woff2') format('woff2');
-}
+@include font-face(
+    "Atkinson Hyperlegible Next",
+    "/fonts/atkinson-hyperlegible-next-regular",
+    400
+);
+@include font-face(
+    "Atkinson Hyperlegible Next",
+    "/fonts/atkinson-hyperlegible-next-bold",
+    700
+);
 
-@font-face {
-    font-family: 'LINE Seed Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 400;
-    src: url('/fonts/line-seed-sans-regular.woff2') format('woff2');
-}
+@include font-face("LINE Seed Sans", "/fonts/line-seed-sans-bold.woff2", 700);
+@include font-face(
+    "LINE Seed Sans",
+    "/fonts/line-seed-sans-regular.woff2",
+    400
+);
 
 //Monoface font
 @font-face {
-    font-family: 'Adwaita Mono';
+    font-family: "Adwaita Mono";
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url('/fonts/adwaita-mono-regular.ttf') format('ttf');
+    src: url("/fonts/adwaita-mono-regular.ttf") format("ttf");
 }
 
 //Typography used
-$font-body-stack: 'Atkinson Hyperlegible Next', sans-serif;
-$font-display-stack: 'LINE Seed Sans', sans-serif;
-$font-mono-stack: 'Adwaita Mono', monospace;
-
+$font-body-stack: "Atkinson Hyperlegible Next", sans-serif;
+$font-display-stack: "LINE Seed Sans", sans-serif;
+$font-mono-stack: "Adwaita Mono", monospace;
 
 //Font size for headings
 $heading-sizes: (
@@ -49,12 +51,11 @@ $heading-sizes: (
     h6: 1rem,
 );
 
-
 //Rose Pine Dawn (Light variant)
 $rp-dawn-base: #faf4ed;
 $rp-dawn-surface: #fffaf3;
 $rp-dawn-overlay: #f2e9e1;
-$rp-dawn-muted:#9893a5;
+$rp-dawn-muted: #9893a5;
 $rp-dawn-subtle: #797593;
 $rp-dawn-text: #575279 !default;
 $rp-dawn-love: #b4637a;
@@ -83,4 +84,3 @@ $rp-iris: #c4a7e7;
 $rp-highlight-low: #21202e;
 $rp-highlight-med: #403d52;
 $rp-highlight-high: #524f67;
-
