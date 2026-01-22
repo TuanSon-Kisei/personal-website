@@ -17,7 +17,7 @@ body {
     background-color: $rp-dawn-base;
     font-family: $font-body-stack;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
     transition: all 0.3s ease;
 
     ul {
@@ -70,13 +70,12 @@ body {
 
         path {
             stroke: $rp-dawn-text;
-            }
         }
-
-    @media screen and (prefers-reduced-motion: reduce) { 
-        --swup-fade-theme-duration: 0s;
     }
 
+    @media screen and (prefers-reduced-motion: reduce) {
+        --swup-fade-theme-duration: 0s;
+    }
 }
 
 body.dark-mode {
