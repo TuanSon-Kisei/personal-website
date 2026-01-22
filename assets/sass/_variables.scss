@@ -40,10 +40,10 @@ $font-mono-stack: "Adwaita Mono", monospace;
 //Font size for headings
 $heading-sizes: (
     h1: clamp(1.75rem, 5vw, 2.75rem),
-    h2: clamp(1.5rem, 4vw, 2rem),
-    h3: clamp(1.35rem, 3.5vw, 1.75rem),
-    h4: clamp(1.25rem, 3vw, 1.5rem),
-    h5: clamp(1.05rem, 2vw, 1.25rem),
+    h2: clamp(1.5rem, 4vw, 2.25rem),
+    h3: clamp(1.25rem, 3.5vw, 1.75rem),
+    h4: clamp(1.2rem, 3vw, 1.5rem),
+    h5: clamp(1.125rem, 2vw, 1.25rem),
     h6: 1rem,
 );
 
@@ -53,7 +53,7 @@ $rp-dawn-surface: #fffaf3;
 $rp-dawn-overlay: #f2e9e1;
 $rp-dawn-muted: #9893a5;
 $rp-dawn-subtle: #797593;
-$rp-dawn-text: #575279 !default;
+$rp-dawn-text: #575279;
 $rp-dawn-love: #b4637a;
 $rp-dawn-gold: #ea9d34;
 $rp-dawn-rose: #d7827e;

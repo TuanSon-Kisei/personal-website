@@ -65,5 +65,16 @@ My UXR found that when participants join the road, they quickly found difficulty
 
 ---
 
-## Designing Dede
-As I worked on a variety of different concepts and ideations, with back-to-forth conversations with our leader and other designer buddies, we were able to pinpoint restrictions and thoroughly select, modify and debate between design patterns and interactions to produce deliverables. Through this process, we quickly gained alignment around what needs to be done and landed with the concept of "Alarms."
+## Ideation
+After we sketched our preliminary lo-fis, we headed to create mid-fidelity wireframes to explore our options, build our vision of Dede.
+### Tracking Iteration
+Since tracking and reporting mistakes when driving or riding on the road is our most prominent feature, we dived in it first to quickly explore potential key functions which could be highlighted. These included a tracking map for the user's road journey, detailed reports based on the severity of the mistakes were made, as well as some short light-hearted punish sentence. 
+
+While the initial screen conveyed most information, we ultimately decided to hide the detailed report and replace it with quick overview of numbers of mistakes. The reason is:
+
+{{< alert type="warning" >}} Too much information on screen which can overwhelm the users {{< /alert >}}
+{{< alert type="warning" >}} Users might confuse "Xu" - a digital currency point as real money {{< /alert >}}
+
+
+### Home and Challenge iteration
+
