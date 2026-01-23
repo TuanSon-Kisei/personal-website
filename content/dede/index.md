@@ -84,9 +84,30 @@ While the initial screen conveyed most information, we ultimately decided to hid
 
 
 ### Home and Challenge iteration
-We created low-fis prototypes for home and challenge screen next to help us refine how much information to show upfront. After a lengthy discussion, we ultimately keep them as they are and only added a few more final touch to the final design since we didn't have enough time to explore more screen options when the deadline hour is catching us.
+We created low-fis prototypes for home and challenge screen next to help us refine how much information to show upfront. After a lengthy discussion, we ultimately keep them as they are and only added minor UI since we didn't have enough time to explore more screen options when the deadline hour is catching us.
 
 ![](images/img8.webp)
 
-## Designing Dede
+## Final Design
 With the wireframes and low-fidelity mockups established, we transitioned to next phase to create high-fidelity mocks.
+
+{{< feature-showcase 
+  image="images/dede-tracking-journey.webp" 
+  title="Analyze your riding journey" 
+  description="Intelligently point out where you did wrong on the road and how to prevent them"
+  alt="Smart prompts feature demonstration"
+  >}}
+  
+  {{< feature-showcase 
+  image="images/dede-personalised-news.webp" 
+  title="Traffic news curated only for you" 
+  description="Selection news and advices personalized designed for you to read and take note"
+  alt="Smart prompts feature demonstration"
+>}}
+
+{{< feature-showcase 
+  image="images/dede-safety-challenges.webp" 
+  title="" 
+  description=""
+  alt="Smart prompts feature demonstration"
+>}}

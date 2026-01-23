@@ -1,0 +1,11 @@
+<div class="feature-showcase">
+  <div class="feature-media">
+    {{ if .Get "image" }}
+      <img src="{{ .Get "image" }}" alt="{{ .Get "alt" | default (.Get "title") }}" loading="lazy">
+    {{ end }}
+  </div>
+  <div class="feature-content">
+    <h5 class="feature-title">{{ .Get "title" }}</h5>
+    <p class="feature-description">{{ .Get "description" }}</p>
+  </div>
+</div>
