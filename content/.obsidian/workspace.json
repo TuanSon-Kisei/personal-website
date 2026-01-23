@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dede/index.md",
+                "file": "_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ]
@@ -183,11 +183,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "28eadd60eacab8b4",
+  "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
+    "dede/index.md",
     "dede/images/hero.webp",
     "about/index.md",
-    "dede/index.md",
     "dede/images/dede-personalised-news.webp",
     "dede/images/dede-safety-challenges.webp",
     "dede/images/dede-personal-news.webp",
@@ -197,7 +197,6 @@
     "dede/images/img6.webp",
     "dede/images/img5.webp",
     "dede/images/img4.webp",
-    "dede/images/img3.webp",
     "readmate/index.md",
     "petfren/index.md",
     "images.md",
