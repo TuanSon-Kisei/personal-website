@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3185289d1ea7fc29",
@@ -185,6 +186,9 @@
   },
   "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
+    "dede/images/img8.webp",
+    "dede/images/img7.webp",
+    "dede/images/img6.webp",
     "readmate/index.md",
     "petfren/index.md",
     "dede/index.md",
@@ -198,8 +202,6 @@
     "dede/images/hero.webp",
     "dede/images/Slide 16:9 - 2.webp",
     "petfren/images/hero.webp",
-    "petfren/images/Slide 16:9 - 3.webp",
-    "readmate/images/hero.webp",
     "_index.md",
     "readmate/images",
     "petfren/images",
