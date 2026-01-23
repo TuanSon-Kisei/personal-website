@@ -29,17 +29,16 @@ body {
     h1,
     h2,
     h3,
-    h4,
-    h5,
-    h6 {
+    h4 {
         font-family: $font-display-stack;
         margin: 0;
         padding: 0;
     }
 
-    h4,
     h5,
     h6 {
+        @extend h1;
+        font-family: $font-body-stack;
         font-weight: 400;
     }
 

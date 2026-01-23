@@ -1,7 +1,7 @@
 footer {
     width: 100%;
     border-top: 1px solid;
-    border-color: lighten($color: $rp-dawn-highlight-high, $amount: 0%);
+    border-color: $rp-dawn-highlight-high;
     padding: 0 3rem;
     margin: 3vw 0 1vw 0;
 
@@ -42,7 +42,6 @@ footer {
             .icon,
             .text {
                 vertical-align: middle;
-                display: inline-block;
             }
 
             &:hover {
@@ -97,7 +96,7 @@ footer {
 }
 body.dark-mode {
     footer {
-        border-color: darken($color: $rp-highlight-high, $amount: 0);
+        border-color: $rp-highlight-high;
     }
 
     #copy-email-button {

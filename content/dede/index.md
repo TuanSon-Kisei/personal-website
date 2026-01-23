@@ -93,7 +93,7 @@ With the wireframes and low-fidelity mockups established, we transitioned to nex
 
 {{< feature-showcase 
   image="images/dede-tracking-journey.webp" 
-  title="Analyze your riding journey" 
+  title="Analyze and deduce the problems" 
   description="Intelligently point out where you did wrong on the road and how to prevent them"
   alt="Smart prompts feature demonstration"
   >}}
