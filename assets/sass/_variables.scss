@@ -20,8 +20,8 @@
     700
 );
 
-@include font-face("LINE Seed Sans", "/fonts/line-seed-sans-bold", 700);
-@include font-face("LINE Seed Sans", "/fonts/line-seed-sans-regular", 400);
+@include font-face("Sentient", "/fonts/sentient-bold", 700);
+@include font-face("Sentient", "/fonts/sentient-regular", 400);
 
 //Monoface font
 @font-face {
@@ -34,7 +34,7 @@
 
 //Typography used
 $font-body-stack: "Atkinson Hyperlegible Next", sans-serif;
-$font-display-stack: "LINE Seed Sans", sans-serif;
+$font-display-stack: "Sentient", serif;
 $font-mono-stack: "Adwaita Mono", monospace;
 
 //Font size for headings

@@ -23,5 +23,9 @@
     .feature-showcase {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+
+        .feature-content {
+            order: -1;
+        }
     }
 }
