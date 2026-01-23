@@ -8,7 +8,7 @@ timeline: 24hr design marathon
 team:
 role:
 ---
-![hero.webp](images/hero.webp)
+![](images/hero.webp)
 
 
 
