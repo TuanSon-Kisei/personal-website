@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dede/index.md",
+                "file": "_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
+    "dede/index.md",
     "dede/images/designathon-me-giving-presentation.jpg",
     "dede/images/designathon-team-presentation.jpg",
     "dede/images/dede-personalised-news.webp",
@@ -192,13 +193,11 @@
     "dede/images/dede-tracking-journey.webp",
     "dede/images/hero.webp",
     "dede/images/img3.webp",
-    "dede/index.md",
     "_index.md",
     "about/index.md",
     "dede/images/dede-personal-news.webp",
     "dede/images/img9.webp",
     "dede/images/img8.webp",
-    "dede/images/img7.webp",
     "readmate/index.md",
     "petfren/index.md",
     "images.md",
