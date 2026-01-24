@@ -95,19 +95,28 @@ With the wireframes and low-fidelity mockups established, we transitioned to nex
   image="images/dede-tracking-journey.webp" 
   title="Analyze and deduce the problems" 
   description="Intelligently point out where you did wrong on the road and how to prevent them"
-  alt="Smart prompts feature demonstration"
+  alt="Tracking journey feature demonstration"
   >}}
   
   {{< feature-showcase 
   image="images/dede-personalised-news.webp" 
   title="Traffic news curated only for you" 
-  description="Selection news and advices personalized designed for you to read and take note"
-  alt="Smart prompts feature demonstration"
+  description="Selection news personalized for you to read and take note"
+  alt="News feature demonstration"
 >}}
 
 {{< feature-showcase 
   image="images/dede-safety-challenges.webp" 
-  title="" 
-  description=""
-  alt="Smart prompts feature demonstration"
+  title="Daily challenge" 
+  description="Gamify your journey and gets rewarded for your effort"
+  alt="Safety challenges demonstration"
 >}}
+## Outcome
+We had the once-in-a-lifetime opportunity to share the work we done with other designers in Ho Chi Minh City. Sadly we didn't gain any honorary reward at all but the senior designers gave us a lot of valuable feedbacks. I had the chance to demonstrate our work on the stage with hundreds of people watching our work unfold.
+
+![Image showing the team giving their presentation](images/designathon-team-presentation.jpg)
+![](images/designathon-me-giving-presentation.jpg)
+
+## What I learned
+{{< callout emoji="⚙️" title="Think in system" text="It's not just about design a feature, you have to learn how it can fit into a system, and how it matches with user's mental model." >}}
+{{< callout emoji="🔍️" title="There is no such thing as enough research" text="Design research is always both incremental and iterative process, and there will always be a room for more research." >}}

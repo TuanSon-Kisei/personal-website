@@ -1,6 +1,7 @@
 <div id="callout">
-  <div>{{ .Get "emoji" }}</div>
-	<p id="callout-inner">
-    {{ .Get "text" }}
-  </p>
+    <div id="callout-icon">{{ .Get "emoji" }}</div>
+    <div id="callout-content">
+        <h4 id="callout-title">{{.Get "title" }}</h4>
+        <p id="callout-inner">{{ .Get "text" }}</p>
+    </div>
 </div>
