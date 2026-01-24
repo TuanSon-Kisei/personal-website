@@ -115,7 +115,7 @@ With the wireframes and low-fidelity mockups established, we transitioned to nex
 We had the once-in-a-lifetime opportunity to share the work we done with other designers in Ho Chi Minh City. Sadly we didn't gain any honorary reward at all but the senior designers gave us a lot of valuable feedbacks. I had the chance to demonstrate our work on the stage with hundreds of people watching our work unfold.
 
 ![Image showing the team giving their presentation](images/designathon-team-presentation.jpg)
-![](images/designathon-me-giving-presentation.jpg)
+![](images/designathon-me-giving-presentation.webp)
 
 ## What I learned
 {{< callout emoji="⚙️" title="Think in system" text="It's not just about design a feature, you have to learn how it can fit into a system, and how it matches with user's mental model." >}}
