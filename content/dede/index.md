@@ -119,4 +119,4 @@ We had the once-in-a-lifetime opportunity to share the work we done with other d
 
 ## What I learned
 {{< callout emoji="⚙️" title="Think in system" text="It's not just about design a feature, you have to learn how it can fit into a system, and how it matches with user's mental model." >}}
-{{< callout emoji="🔍️" title="There is no such thing as enough research" text="Design research is always both incremental and iterative process, and there will always be a room for more research." >}}
+{{< callout emoji="🔍️" title="There is no such thing as enough research" text="Design research is always iterative process, and there is no answer to the question of enough, other than the point at which you feel sufficiently informed and inspired. " >}}

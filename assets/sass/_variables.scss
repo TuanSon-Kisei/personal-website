@@ -39,12 +39,12 @@ $font-mono-stack: "Adwaita Mono", monospace;
 
 //Font size for headings
 $heading-sizes: (
-    h1: 2.37rem,
-    h2: 1.78rem,
-    h3: 1.54rem,
-    h4: 1.33rem,
-    h5: 1.24rem,
-    h6: 1.15rem,
+    h1: clamp(1.618rem, calc(1.359rem + 1.297vw), 2.331rem),
+    h2: clamp(1.378rem, calc(1.24rem + 0.691vw), 1.758rem),
+    h3: clamp(1.272rem, calc(1.179rem + 0.463vw), 1.527rem),
+    h4: clamp(1.174rem, calc(1.119rem + 0.276vw), 1.326rem),
+    h5: clamp(1.128rem, calc(1.089rem + 0.196vw), 1.236rem),
+    h6: clamp(1.084rem, calc(1.059rem + 0.124vw), 1.152rem),
 );
 
 //Rose Pine Dawn (Light variant)
