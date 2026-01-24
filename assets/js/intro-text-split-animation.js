@@ -10,7 +10,7 @@ function initIntroAnimation() {
     y: [{ to: ["100%", "0%"] }],
     duration: 400,
     ease: "out(3)",
-    delay: stagger(200),
+    delay: stagger(100),
     loop: false,
   });
 }
