@@ -108,7 +108,13 @@ body.dark-mode {
         }
     }
 
-    a:hover h5 {
-        color: $rp-foam;
+    a {
+        &:hover {
+            h5,
+            svg {
+                color: $rp-foam;
+                transition: 400ms ease;
+            }
+        }
     }
 }
