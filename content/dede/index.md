@@ -4,12 +4,20 @@ description: AI native app for helping young peeps navigating the chaotic traffi
 type: work
 cover: images/hero.webp
 year: "2025"
-timeline: 24hr design marathon
+timeline: September 2025
 team:
-role:
+  - Product Owner
+  - 3 UI Designers
+  - 1 UX Designer
+  - 1 Visual Artist
+role: UX Designer
+skills:
+  - Design Research
+  - User Interview
+  - Wireframing
 ---
 ![](images/hero.webp)
-
+{{< project-info >}}
 
 
 ## Overview

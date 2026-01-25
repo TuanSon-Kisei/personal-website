@@ -43,16 +43,12 @@ body {
     h1,
     h2,
     h3,
-    h4 {
+    h4,
+    h5,
+    h6 {
         font-family: $font-display-stack;
         margin: 0;
         padding: 0;
-    }
-
-    h5,
-    h6 {
-        @extend h1;
-        font-weight: 400;
     }
 
     @each $heading, $size in $heading-sizes {
@@ -112,9 +108,5 @@ body.dark-mode {
 
     footer {
         color: $rp-text;
-    }
-
-    svg path {
-        stroke: $rp-text;
     }
 }

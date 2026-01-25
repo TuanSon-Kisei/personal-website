@@ -1,0 +1,24 @@
+<div class="project-info">
+    <div class="project-info-grid">
+        <div class="project-info-item">
+            <h6 class="project-info-label">ROLE</h6>
+            <p id="project-info-value">{{ $.Page.Params.role }}</p>
+        </div>
+        <div class="project-info-item">
+            <h6 class="project-info-label">TIMELINE</h6>
+            <p id="project-info-value">{{ $.Page.Params.timeline }}</p>
+        </div>
+        <div class="project-info-item">
+            <h6 class="project-info-label">TEAM</h6>
+            <p id="project-info-value">
+                {{ range $.Page.Params.team }}{{ . }}<br />{{ end }}
+            </p>
+        </div>
+        <div class="project-info-item">
+            <h6 class="project-info-label">SKILL</h6>
+            <p id="project-info-value">
+                {{ range $.Page.Params.skills }}{{ . }}<br />{{ end }}
+            </p>
+        </div>
+    </div>
+</div>

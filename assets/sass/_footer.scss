@@ -97,19 +97,17 @@ footer {
 body.dark-mode {
     footer {
         border-color: $rp-highlight-high;
-    }
 
-    #copy-email-button {
-        background-color: $rp-base;
-        color: $rp-text;
+        #copy-email-button {
+            background-color: $rp-base;
+            color: $rp-text;
 
-        &:hover {
-            background-color: $rp-overlay;
+            &:hover {
+                background-color: $rp-overlay;
+            }
         }
-    }
 
-    a {
-        &:hover {
+        .grid-left a:hover {
             h5,
             svg {
                 color: $rp-foam;

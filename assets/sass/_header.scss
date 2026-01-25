@@ -41,12 +41,20 @@ header {
             background: none;
             border: none;
 
-            .icon-close {display: none;}
-            .icon-menu {display: block;}
+            .icon-close {
+                display: none;
+            }
+            .icon-menu {
+                display: block;
+            }
 
             &.is-open {
-                .icon-close {display: block;}
-                .icon-menu {display: none;}
+                .icon-close {
+                    display: block;
+                }
+                .icon-menu {
+                    display: none;
+                }
             }
         }
 
@@ -70,7 +78,6 @@ header {
         }
 
         @media screen and (max-width: 768px) {
-
             .hamburger-menu {
                 display: flex;
                 position: relative;
@@ -99,7 +106,9 @@ header {
                 z-index: 98;
                 opacity: 0;
                 transform: translateY(80%);
-                transition: opacity 0.4s ease, transform 0.5s ease;
+                transition:
+                    opacity 0.4s ease,
+                    transform 0.5s ease;
 
                 li {
                     font-size: 2.5rem;
@@ -109,7 +118,6 @@ header {
                     display: flex;
                     opacity: 1;
                     transform: translateY(0);
-                    
                 }
             }
         }
@@ -152,6 +160,10 @@ header {
 }
 
 body.dark-mode {
+    svg {
+        color: $rp-text;
+    }
+
     ul {
         background-color: $rp-base;
     }
@@ -167,19 +179,18 @@ body.dark-mode {
         }
     }
     #dark-mode-toggle {
+        &:hover {
+            background-color: $rp-overlay;
+        }
 
-            &:hover {
-                background-color: $rp-overlay;
-            }
+        .cs-sun {
+            display: none;
+            opacity: 0;
+        }
 
-            .cs-sun {
-                display: none;
-                opacity: 0;
-            }
-
-            .cs-moon {
-                display: block;
-                opacity: 1;
-            }
+        .cs-moon {
+            display: block;
+            opacity: 1;
+        }
     }
 }

@@ -5,9 +5,17 @@
     word-break: keep-all;
     text-align: center;
 
-    h1 {
-        line-height: 1.4;
-        margin-bottom: 2rem;
+    .project-summary {
+        margin-bottom: 1.25rem;
+
+        h1 {
+            line-height: 1.4;
+            margin-bottom: 1rem;
+        }
+
+        h5 {
+            font-weight: 400;
+        }
     }
 
     article {
