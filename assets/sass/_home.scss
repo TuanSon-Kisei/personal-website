@@ -53,11 +53,11 @@
         .project-image img {
             max-width: 100%;
             height: auto;
-            transition: ease 450ms;
+            transition: transform ease-in 250ms;
         }
 
         .project-image img:hover {
-            transform: scale3d(1.05, 1.05, 1);
+            transform: scale(1.05);
         }
 
         &:hover {
@@ -81,10 +81,6 @@
         margin-top: 4px;
         margin-bottom: 6px;
     }
-
-    p {
-        margin: 0;
-    }
 }
 
 body.dark-mode {
@@ -103,7 +99,7 @@ body.dark-mode {
         }
 
         p {
-            color: $rp-subtle;
+            color: $rp-text;
         }
     }
 

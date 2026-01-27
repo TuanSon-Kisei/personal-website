@@ -27,28 +27,28 @@
 
         h2 {
             padding-top: 3rem;
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.75rem;
         }
 
         p {
-            margin-bottom: 1em;
+            margin-bottom: 1.5rem;
         }
 
         p img {
             max-width: 100%;
             height: auto;
-            padding-block: 1rem;
+            padding-block: 0.5rem;
         }
 
         img:has(+ img) {
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.25em;
+        }
+
+        h4 {
+            margin-bottom: 0.25em;
         }
 
         .feature-content {
-            h4 {
-                margin-bottom: 0.5em;
-            }
-
             p {
                 margin: 0;
             }
