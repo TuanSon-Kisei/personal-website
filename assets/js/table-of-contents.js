@@ -26,7 +26,7 @@ function initTableOfContents() {
       });
     },
     {
-      rootMargin: "-70px 0px -80% 0px",
+      rootMargin: "0px 0px -80% 0px",
       threshold: 0,
     },
   );
