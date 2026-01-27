@@ -96,6 +96,15 @@ We created low-fis prototypes for home and challenge screen next to help us refi
 
 ![](images/img8.webp)
 
+## Design Solution
+Before heading out, the users only have to wear a specialized motorcycle helmet that's equipped a **small camera**. The camera is configured to **automatically record and send data** with wi-fi signals to Dede **mobile app**. When the user finished their journey and their phone is connected to Internet, Dede **push** those data to AI so the AI can **analyze** the user's journey and **produce** the analysis after an amount of time.
+![](images/dash-cam-ai.webp)
+
+For the alarm part, the app will use phone's **readilly available GPS** sensors. The app will have the offline data of the current road the user riding on, send **vibrating** signals to notify the user if they **accidentally violated** the traffic regulations like **stepped over** the white line before the traffic lights or **exceeded** the speed limit within a threshold.
+![](images/gps-alarm.webp)
+![](images/gps-alarm-success.webp)
+
+
 ## Final Design
 With the wireframes and low-fidelity mockups established, we transitioned to next phase to create high-fidelity mocks.
 

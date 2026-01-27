@@ -70,7 +70,11 @@ While these are the most interesting and "weird" option, unfortunately we couldn
 
 ## Reflections
 #### The design process is never a linear journey, yet I enjoy every step I took
-Developing an application concept from the ground up was definitely a challenge, but the journey was what made the experience incredibly gratifying. I’ve learned an unfathomable amount about the power of Figma (auto layout, components, etc.), and the value of design as a vehicle for creating human good.
+Developing an application concept from the ground up was definitely a challenge, but the journey was what made the experience incredibly rewardingly. I've learned an unfathomable amount of UX concepts (user interview, customer journey map, etc) which I couldn't ask for a better experience and the value of design as a mean for creating human good.
 
 #### If I had more time
-Developing an application concept from the ground up was definitely a challenge, but the journey was what made the experience incredibly gratifying. I’ve learned an unfathomable amount about the power of Figma (auto layout, components, etc.), and the value of design as a vehicle for creating human good.
+If time allowed, I would like to conduct user testing to see how our product behave in the real world, which would enable us to gather real analytic data about how they use it, how they feel and what their feedback will be. This will help us to have real insights that will guide design adjustment to better suit user needs and enhance their experience. 
+
+## Team shoutout
+Despite me being literally the second youngest student in the class, it's so incredible to partner up with two talented individuals (shoutout to **Dung** - the leader of our team and **Thuy** - the sister who keep our alignment going in all of our late and productive, sometimes stressful nights). 
+![](images/graduation.png)
