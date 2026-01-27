@@ -13,6 +13,7 @@ skills:
 team:
   - 3 Designers
 role: UX Designer
+toc: "true"
 ---
 ![](images/hero.webp)
 {{< project-info >}}

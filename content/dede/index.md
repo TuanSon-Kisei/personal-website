@@ -15,6 +15,7 @@ skills:
   - Design Research
   - User Interview
   - Wireframing
+toc: "true"
 ---
 ![](images/hero.webp)
 {{< project-info >}}
@@ -66,7 +67,7 @@ Guided by user research and online survey, we turned these three key pain points
 
 
 
-## Team Coordination & Feature Ownership
+## Feature Ownership
 To achieve our team's goal of creating comprehensible and engaging platform for teaching and spreading traffic regulations awareness, we divided tasks for our focused features set. I took ownership and **co-led the design research process of our app's features**, prioritized **informative** and **simplicity** to help users deal with **complex traffic laws**.
 
 

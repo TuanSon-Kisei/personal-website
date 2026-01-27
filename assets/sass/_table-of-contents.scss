@@ -1,0 +1,45 @@
+#table-of-contents::-webkit-scrollbar {
+    display: none;
+}
+#table-of-contents {
+    top: 4rem;
+    position: sticky;
+    scrollbar-width: none;
+    align-self: baseline;
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    a {
+        color: $rp-dawn-muted;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            color: $rp-dawn-foam;
+        }
+
+        &.active {
+            color: $rp-dawn-text;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+body.dark-mode {
+    #table-of-contents {
+        a {
+            color: $rp-muted;
+
+            &:hover {
+                color: $rp-foam;
+            }
+
+            &.active {
+                color: $rp-text;
+            }
+        }
+    }
+}

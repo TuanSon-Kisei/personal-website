@@ -1,29 +1,39 @@
 .project-content {
-    max-width: 56rem;
-    margin: 3vw auto;
+    max-width: 100%;
+    margin: 3rem auto;
     padding-inline: 3rem;
     word-break: keep-all;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 3fr 12fr;
+    gap: 10rem;
 
-    .project-summary {
-        margin-bottom: 1.25rem;
+    @media screen and (max-width: 1024px) {
+        gap: 2rem;
+        grid-template-columns: 2fr 4fr;
+    }
 
-        h1 {
-            line-height: 1.4;
-            margin-bottom: 1rem;
-        }
-
-        h5 {
-            font-weight: 400;
-        }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        max-width: 48rem;
+        padding-inline: 1rem;
     }
 
     article {
         max-width: 60rem;
         text-align: left;
-        margin: 0 auto;
-        width: auto;
-        position: relative;
+
+        .project-summary {
+            margin-bottom: 1.25rem;
+
+            h1 {
+                line-height: 1.4;
+                margin-bottom: 1rem;
+            }
+
+            h5 {
+                font-weight: 400;
+            }
+        }
 
         h2 {
             padding-top: 3rem;
@@ -53,10 +63,5 @@
                 margin: 0;
             }
         }
-    }
-
-    @media screen and (max-width: 768px) {
-        max-width: 48rem;
-        padding: 3rem 1rem;
     }
 }

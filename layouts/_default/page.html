@@ -1,9 +1,14 @@
 {{ define "main" }}
 <main class="project-content">
-    <div class="project-summary">
-        <h1>{{ .Title }}</h1>
-        <h5>{{ .Params.description }}</h5>
-    </div>
-    <article>{{ .Content }}</article>
+    {{ if .Params.Toc}}
+    <aside id="table-of-contents">{{ .TableOfContents }}</aside>
+    {{ end }}
+    <article>
+        <div class="project-summary">
+            <h1>{{ .Title }}</h1>
+            <h5>{{ .Params.description }}</h5>
+        </div>
+        {{ .Content }}
+    </article>
 </main>
 {{ end }}
