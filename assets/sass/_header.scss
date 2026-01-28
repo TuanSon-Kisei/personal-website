@@ -160,14 +160,6 @@ header {
 }
 
 body.dark-mode {
-    svg {
-        color: $rp-text;
-    }
-
-    ul {
-        background-color: $rp-base;
-    }
-
     header nav .nav-links a {
         &:hover {
             background-color: $rp-overlay;

@@ -1,8 +1,8 @@
 .alert {
-  display: flex;  
-  gap: 1rem;
-  align-items: center;
-  margin-bottom: 1em;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1em;
 }
 
 .alert-icon {
@@ -13,27 +13,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 767px) {
+        vertical-align: text-top;
+    }
 }
 
 .alert-icon svg {
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 }
 
-.alert-success .alert-icon { 
+.alert-success .alert-icon {
     background-color: lighten($color: $rp-dawn-pine, $amount: 55);
     color: $rp-dawn-pine;
-    
 }
-.alert-warning .alert-icon { 
+.alert-warning .alert-icon {
     background-color: lighten($color: $rp-dawn-gold, $amount: 35);
     color: adjust-color($color: $rp-dawn-gold, $lightness: -20%);
-     
 }
-.alert-error .alert-icon { 
+.alert-error .alert-icon {
     background-color: lighten($color: $rp-dawn-rose, $amount: 23);
     color: adjust-color($color: $rp-dawn-rose, $lightness: -30%);
-    
 }
 
 body.dark-mode {
@@ -41,17 +42,16 @@ body.dark-mode {
         color: $rp-text;
     }
 
-    .alert-success .alert-icon { 
-    background-color: adjust-color($color: $rp-pine, $lightness: -10%);
-    color: adjust-color($color: $rp-dawn-pine, $lightness: 30%);
-    
+    .alert-success .alert-icon {
+        background-color: adjust-color($color: $rp-pine, $lightness: -10%);
+        color: adjust-color($color: $rp-dawn-pine, $lightness: 30%);
     }
-    .alert-warning .alert-icon { 
-    background-color: adjust-color($color: $rp-gold, $lightness: -45%);
-    color: $rp-gold; 
+    .alert-warning .alert-icon {
+        background-color: adjust-color($color: $rp-gold, $lightness: -45%);
+        color: $rp-gold;
     }
-    .alert-error .alert-icon { 
-    background-color: adjust-color($color: $rp-rose, $lightness: -40%);
-    color: $rp-rose;
+    .alert-error .alert-icon {
+        background-color: adjust-color($color: $rp-rose, $lightness: -40%);
+        color: $rp-rose;
     }
 }

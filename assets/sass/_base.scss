@@ -80,6 +80,7 @@ body {
     svg {
         width: 24px;
         height: 24px;
+        color: $rp-dawn-text;
     }
 
     @media screen and (prefers-reduced-motion: reduce) {
@@ -110,6 +111,10 @@ body.dark-mode {
         &:focus-visible {
             box-shadow: $rp-foam;
         }
+    }
+
+    svg {
+        color: $rp-text;
     }
 
     footer {
