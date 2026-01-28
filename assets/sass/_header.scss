@@ -6,14 +6,13 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
 
     @media screen and (max-width: 767px) {
         padding: 0 1rem;
     }
 
     .left {
-        flex: 1;
-        justify-content: flex-start;
         text-align: start;
         z-index: 102;
 
@@ -40,6 +39,7 @@ header {
             cursor: pointer;
             background: none;
             border: none;
+            display: none;
 
             .icon-close {
                 display: none;
@@ -170,6 +170,15 @@ body.dark-mode {
             box-shadow: $rp-foam;
         }
     }
+
+    header nav {
+        @media screen and (max-width: 768px) {
+            ul {
+                background-color: $rp-base;
+            }
+        }
+    }
+
     #dark-mode-toggle {
         &:hover {
             background-color: $rp-overlay;
