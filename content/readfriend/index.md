@@ -1,5 +1,5 @@
 ---
-title: Readmate
+title: Readfriend
 description: Reimagine the experience of purchasing books online
 type: work
 cover: images/hero.webp

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dede/index.md",
+                "file": "readfriend/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -183,10 +183,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "3f9c4d2c1ec8ec95",
+  "active": "28eadd60eacab8b4",
   "lastOpenFiles": [
-    "petfren/index.md",
     "dede/index.md",
+    "petfren/index.md",
     "images/g.md",
     "images",
     "dede/images/gps-alarm-success.webp",
@@ -201,9 +201,9 @@
     "petfren/images/img5.webp",
     "_index.md",
     "about/index.md",
-    "readmate/index.md",
+    "readfriend/index.md",
     "images.md",
-    "readmate/images",
+    "readfriend/images",
     "petfren/images",
     "dede/images",
     "project-3.md",

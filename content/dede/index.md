@@ -17,7 +17,7 @@ skills:
   - Wireframing
 toc: "true"
 ---
-![](images/hero.webp)
+![](dede/images/hero.webp)
 {{< project-info >}}
 
 

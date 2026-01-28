@@ -15,7 +15,7 @@ team:
 role: UX Designer
 toc: "true"
 ---
-![](images/hero.webp)
+![](petfren/images/hero.webp)
 {{< project-info >}}
 
 ## Context
