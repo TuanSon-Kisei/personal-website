@@ -183,10 +183,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "28eadd60eacab8b4",
+  "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
-    "dede/index.md",
     "petfren/index.md",
+    "dede/index.md",
+    "readfriend/index.md",
     "images/g.md",
     "images",
     "dede/images/gps-alarm-success.webp",
@@ -201,7 +202,6 @@
     "petfren/images/img5.webp",
     "_index.md",
     "about/index.md",
-    "readfriend/index.md",
     "images.md",
     "readfriend/images",
     "petfren/images",
