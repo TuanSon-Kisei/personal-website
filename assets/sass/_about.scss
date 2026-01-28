@@ -1,22 +1,20 @@
 .about-section {
+    padding-block: 2rem;
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    word-break: break-all;
-    margin: auto;
-    animation: fadeInUp 0.4s ease-in;
+    grid-template-columns: 6fr 4fr;
+    padding-inline: 3rem;
+    animation: fadeInUp 0.3s ease-in;
     align-items: center;
 
     @media screen and (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 1em;
+        padding-inline: 1rem;
     }
 
     article {
-        margin: auto;
         text-align: left;
-        max-width: 800px;
-        padding: 3em 1rem;
         word-break: keep-all;
+        max-width: 56rem;
 
         h1 {
             margin-bottom: 1.5rem;
@@ -32,16 +30,18 @@
                 color: $rp-dawn-pine;
             }
         }
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 2em;
+        }
     }
 
     .about-image {
-        flex-grow: 1;
-        animation: fadeInUp 0.4s ease;
+        animation: fadeInUp 0.3s ease-out;
 
         img {
             max-width: 100%;
             height: auto;
-            padding-inline: 1rem;
         }
     }
 }
