@@ -6,8 +6,11 @@
     animation: fadeInUp 0.3s ease-in;
     align-items: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media screen and (max-width: 768px) {
         padding-inline: 1rem;
     }
 
@@ -20,19 +23,15 @@
             margin-bottom: 1.5rem;
         }
 
-        p + p {
-            margin-top: 1rem;
+        p {
+            margin-bottom: 1rem;
         }
 
         a {
             &:hover {
                 text-decoration: underline;
-                color: $rp-dawn-pine;
+                color: $rp-dawn-foam;
             }
-        }
-
-        @media screen and (max-width: 768px) {
-            margin-bottom: 2em;
         }
     }
 
@@ -42,6 +41,7 @@
         img {
             max-width: 100%;
             height: auto;
+            padding-top: 1em;
         }
     }
 }
