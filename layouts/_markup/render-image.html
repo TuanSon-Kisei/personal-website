@@ -1,15 +1,26 @@
 {{- $img := .Page.Resources.GetMatch .Destination -}} {{- if not $img -}} {{-
-$img = resources.Get .Destination -}} {{- end -}} {{- if $img -}} {{- $small :=
-$img.Resize "800x webp q75" -}} {{- $medium := $img.Resize "1200x webp q75" -}}
+$img = resources.Get .Destination -}} {{- end -}} {{- if $img -}} {{- $mediaType
+:= $img.MediaType.SubType -}} {{- if or (eq $mediaType "svg+xml") (eq $mediaType
+"svg") -}}
 
+<img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" />
+{{- else if eq $mediaType "gif" -}}
+
+<img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" />
+{{- else if eq $mediaType "avif" -}}
+
+<img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" />
+
+{{- else -}} {{- $small := $img.Resize "800x webp q75" -}} {{- $medium :=
+$img.Resize "1200x webp q75" -}}
 <img
     srcset="{{ $small.RelPermalink }} 800w,
-               {{ $medium.RelPermalink }} 1200w"
+                {{ $medium.RelPermalink }} 1200w"
     sizes="(max-width: 800px) 100vw, 1200px"
     src="{{ $medium.RelPermalink }}"
     alt="{{ .Text }}"
     loading="lazy"
 />
-{{- else -}}
-<img src="{{ .Destination }}" alt="{{ .Text }}" />
+{{- end -}} {{- else -}} {{/* Fallback for external images */}}
+<img src="{{ .Destination }}" alt="{{ .Text }}" loading="lazy" />
 {{- end -}}

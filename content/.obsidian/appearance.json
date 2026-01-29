@@ -1,7 +1,8 @@
 {
-  "cssTheme": "Atom",
+  "cssTheme": "Tokyo Night",
   "interfaceFontFamily": "Inter",
   "textFontFamily": "Inter",
   "monospaceFontFamily": "Red Hat Mono",
-  "theme": "system"
+  "theme": "system",
+  "nativeMenus": true
 }

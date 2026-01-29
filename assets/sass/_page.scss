@@ -20,7 +20,7 @@
     }
 
     article {
-        max-width: 60rem;
+        max-width: 50rem;
         text-align: left;
 
         .project-summary {
@@ -36,8 +36,14 @@
             }
         }
 
+        ul {
+            list-style-position: inside;
+            list-style-type: disc;
+            margin-bottom: 1rem;
+        }
+
         h2 {
-            padding-top: 3rem;
+            padding-top: 2rem;
             padding-bottom: 0.75rem;
         }
 
@@ -48,7 +54,7 @@
         p img {
             max-width: 100%;
             height: auto;
-            padding-block: 0.5rem;
+            padding-block: 1rem;
         }
 
         img:has(+ img) {

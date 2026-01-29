@@ -35,7 +35,7 @@ With our in-depth analysis using Jobs-to-be-done framework, we **pinpointed** on
 
 After gathering our interview data and notable recurrent patterns, we were better comprehend the problems those interviewed parents are facing and quickly set **2** main opportunity areas to focus on:
 ![](images/affinity-mapping.png)
-![](images/img3.webp)
+![](petfren/images/img3.webp)
 
 ## Becoming my users
 Teaching children is something completely new to me that I wasn't prepared for. Starting with a "simple" afternoon of teaching Maths to our mentor's son, we quickly found that **"damn this #@$% hard lol"**. Unfortunately the video record of that day was gone which I can't upload here so you can feel how hard to make a child understand why 3 x 2 is 6 and not 5.
