@@ -40,6 +40,10 @@
             list-style-position: inside;
             list-style-type: disc;
             margin-bottom: 1rem;
+
+            li {
+                color: $rp-dawn-text;
+            }
         }
 
         h2 {
@@ -68,6 +72,15 @@
         .feature-content {
             p {
                 margin: 0;
+            }
+        }
+    }
+}
+body.dark-mode {
+    article {
+        ul {
+            li {
+                color: $rp-text;
             }
         }
     }
