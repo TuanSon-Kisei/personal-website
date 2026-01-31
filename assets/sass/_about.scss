@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 6fr 4fr;
     padding-inline: 3rem;
+    gap: 3rem;
     animation: fadeInUp 0.3s ease-in;
     align-items: center;
 
@@ -11,13 +12,14 @@
     }
 
     @media screen and (max-width: 768px) {
+        gap: 0;
         padding-inline: 1rem;
     }
 
     article {
         text-align: left;
-        word-break: keep-all;
-        max-width: 56rem;
+
+        max-width: 45rem;
 
         h1 {
             margin-bottom: 1.5rem;
@@ -41,7 +43,6 @@
         img {
             max-width: 100%;
             height: auto;
-            padding-top: 1em;
         }
     }
 }
