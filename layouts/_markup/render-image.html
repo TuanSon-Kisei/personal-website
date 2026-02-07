@@ -11,8 +11,8 @@ $img = resources.Get .Destination -}} {{- end -}} {{- if $img -}} {{- $mediaType
 
 <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" />
 
-{{- else -}} {{- $small := $img.Resize "800x webp q75" -}} {{- $medium :=
-$img.Resize "1200x webp q75" -}}
+{{- else -}} {{- $small := $img.Resize "800x" -}} {{- $medium := $img.Resize
+"1200x" -}}
 <img
     srcset="{{ $small.RelPermalink }} 800w,
                 {{ $medium.RelPermalink }} 1200w"
