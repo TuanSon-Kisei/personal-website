@@ -1,21 +1,27 @@
 {{- $img := .Page.Resources.GetMatch .Destination -}} {{- if not $img -}} {{-
 $img = resources.Get .Destination -}} {{- end -}} {{- if $img -}} {{- $mediaType
-:= $img.MediaType.SubType -}} {{- if or (eq $mediaType "svg+xml") (eq $mediaType
-"svg") -}}
-
-<img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" />
-{{- else if eq $mediaType "gif" -}}
-
-<img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" />
-{{- else if eq $mediaType "avif" -}}
-
+:= $img.MediaType.SubType -}} {{/* GIF, SVG, and AVIF: keep as-is */}} {{- if or
+(eq $mediaType "svg+xml") (eq $mediaType "svg") (eq $mediaType "gif") (eq
+$mediaType "avif") -}}
 <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" />
 
-{{- else -}} {{- $small := $img.Resize "800x" -}} {{- $medium := $img.Resize
-"1200x" -}}
+{{/* WebP: only resize */}} {{- else if eq $mediaType "webp" -}} {{- $small :=
+$img.Resize "800x" -}} {{- $medium := $img.Resize "1200x" -}}
 <img
     srcset="{{ $small.RelPermalink }} 800w,
-                {{ $medium.RelPermalink }} 1200w"
+              {{ $medium.RelPermalink }} 1200w"
+    sizes="(max-width: 800px) 100vw, 1200px"
+    src="{{ $medium.RelPermalink }}"
+    alt="{{ .Text }}"
+    loading="lazy"
+/>
+
+{{/* PNG and JPEG: convert to WebP with 90% quality and resize */}} {{- else -}}
+{{- $small := ($img.Resize "800x webp q90") -}} {{- $medium := ($img.Resize
+"1200x webp q90") -}}
+<img
+    srcset="{{ $small.RelPermalink }} 800w,
+              {{ $medium.RelPermalink }} 1200w"
     sizes="(max-width: 800px) 100vw, 1200px"
     src="{{ $medium.RelPermalink }}"
     alt="{{ .Text }}"
