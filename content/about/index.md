@@ -9,4 +9,4 @@ This curiosity led me to UX design, where I discovered I could transform individ
 
 I think critically about the intersection of people, business, and technology—especially as digital products evolve rapidly. Currently completing my Bachelor of Computer Science at the National Economic University (graduating June 2026), I combine technical knowledge with human-centered design thinking to create impactful solutions
 
-If you want to have a talk, I will happily share a coffee and sweets chat session about design, ideas or whatever on your mind. I can be easily reached at your convenience via either [Linkedin](https://www.linkedin.com/in/tuansonnguyen/) or [Email](mailto:kisei.tuanson.work@gmail.com?subject=Say%20Hi)
+If you want to have a talk, I will happily share a coffee chat session about design, ideas or whatever on your mind. I can be easily reached at your convenience via either [Linkedin](https://www.linkedin.com/in/tuansonnguyen/) or [Email](mailto:kisei.tuanson.work@gmail.com?subject=Say%20Hi)
