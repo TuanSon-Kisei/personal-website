@@ -18,7 +18,7 @@ skills:
 toc: "true"
 weight: "1"
 ---
-![](images/hero.webp)
+![](images/hero.png)
 {{< project-info >}}
 
 
@@ -32,13 +32,13 @@ In September 2025, I had privilege to join one of the most famous competition in
 The daily traffics in big cities are often chaotic and unpredictable at times. There is virtually no product that can help people to know if they accidentally violate traffic regulations on the road. And for sure none wants to read those long boring news about updated traffic rules either.
 
 This is also becoming a heavy burden on the government too. The government imposed stricter laws, hoping them will curb the traffic violation cases, but in turns created reinforcement loop for both of the parties.
-![](images/img1.webp)
+![](images/problem_space.png)
 
 
 
 ## Tackling the Problem
 This problem provided a huge opportunity to learn more about the huge gap between Vietnam's traffic regulations and its actual application to real life. And that's what we wanted to solve for.
-![](images/img2.webp)
+![](images/problem_statement.png)
 
 
 
@@ -52,8 +52,8 @@ I and my team conducted survey and interviewed various high-school and colleague
 
 The issue is clear: nobody actually bother to learn new and updated traffic regulations when the government's message is uninteresting, failed to grab attention.
 
-![](images/img3.webp)
-
+![](images/desk_research.png)
+![](images/user_research.png)
 
 
 ## Turn insights into opportunities
@@ -61,12 +61,7 @@ The issue is clear: nobody actually bother to learn new and updated traffic regu
 Guided by user research and online survey, we turned these three key pain points: outdated knowledge, uninteresting method when teaching updated regulations and only know new laws through words of mouth--- into corresponding opportunity goals for our designs.
 
 
-![An image showing three charts of the survey](images/img4.webp)
-![An image showing three rectangle notes speaking about goals](images/img5.webp)
-
-
-
-
+![An image showing three charts of the survey](images/opportunities.png)
 
 ## Feature Ownership
 To achieve our team's goal of creating comprehensible and engaging platform for teaching and spreading traffic regulations awareness, we divided tasks for our focused features set. I took ownership and **co-led the design research process of our app's features**, prioritized **informative** and **simplicity** to help users deal with **complex traffic laws**.
@@ -75,7 +70,7 @@ To achieve our team's goal of creating comprehensible and engaging platform for 
 
 ## Focusing on a focal goal
 My UXR found that when participants join the road, they quickly found difficulty so due to **obscured** and **complex** existing traffic system which **very hard** to notice of within a short time, this leads to **accidental** traffic violations. My approach was to how I can design features that **non-invasive** and **recognisable** about the problems and they must also be **engaging** and **humorous** for generation Z whom is our target audience.
-![An image showing two papers detailing about product specifications](images/img6.webp)
+![An image showing three papers detailing about product specifications](images/drafts.png)
 
 
 
@@ -90,21 +85,32 @@ While the initial screen conveyed most information, we ultimately decided to hid
 {{< alert type="warning" >}} The severity of the problems weren't explained clearly to users {{< /alert >}}
 {{< alert type="warning" >}} Users might confuse digital currency points in app as real money {{< /alert >}}
 
-![](images/img7.webp)
+![](images/tracking_iteration.png)
 
 
 ### Home and Challenge iteration
 We created low-fis prototypes for home and challenge screen next to help us refine how much information to show upfront. After a lengthy discussion, we ultimately keep them as they are and only added minor UI since we didn't have enough time to explore more screen options when the deadline hour is catching us.
 
-![](images/img8.webp)
+![](images/home_and_challenge.png)
+
+## Assumptions & Constraints
+Given the designathon timeline, we focused on designing the mobile experience and assumed certain technical capabilities would exist. In a real-world scenario, these would require significant research and validation:
+##### Hardware Dependency
+Our solution assumed a specialized camera exists and is affordable/accessible to our target users. We did not validate market readiness and manufacturing feasibility.
+##### Camera Accuracy
+We assumed AI could reliably analyze dash cam footage to identify traffic violations. The actual accuracy rate, edge cases, and training data requirements were outside our scope.
+##### Privacy and Data Security
+We did not design for data storage, user consent flows, or privacy policies. Privacy is a huge concern for real users when they interact with hardware that are capable of recording video footage, which would be critical for real implementation given the sensitive nature of location and video data.
+##### Safety Concerns
+Phone vibrations while riding may be distracting. Real-world testing would be needed to determine how much frequency, intensity and alert method is needed to alert riders without endangering them.
 
 ## Design Solution
 Before heading out, the users only have to wear a specialized motorcycle helmet that's equipped a **small camera**. The camera is configured to **automatically record and send data** with wi-fi signals to Dede **mobile app**. When the user finished their journey and their phone is connected to Internet, Dede **push** those data to AI so the AI can **analyze** the user's journey and **produce** the analysis after an amount of time.
-![](images/dash-cam-ai.webp)
+![](images/dash-cam-ai.png)
 
 For the alarm part, the app will use phone's **readilly available GPS** sensors. The app will have the offline data of the current road the user riding on, send **vibrating** signals to notify the user if they **accidentally violated** the traffic regulations like **stepped over** the white line before the traffic lights or **exceeded** the speed limit within a threshold.
-![](images/gps-alarm.webp)
-![](images/gps-alarm-success.webp)
+![](images/gps-alarm.png)
+![](images/gps-alarm-success.png)
 
 
 ## Final Design
@@ -137,5 +143,9 @@ We had the once-in-a-lifetime opportunity to share the work we done with other d
 ![](images/designathon-me-giving-presentation.webp)
 
 ## What I learned
-{{< callout emoji="⚙️" title="Think in system" text="It's not just about design a feature, you have to learn how it can fit into a system, and how it matches with user's mental model." >}}
-{{< callout emoji="🔍️" title="There is no such thing as enough research" text="Design research is always iterative process, and there is no answer to the question of enough, other than the point at which you feel sufficiently informed and inspired. " >}}
+##### Early validation matters - especially for hardware dependencies
+Can our users afford it? How should we integrate our camera hardware into their daily life? Who will manufacture it? How should we market it and present it not only for our users but also for those who want to invest in it? For something that is as critical as hardware, early validation like cost interview, value preposition and market research should come before interface design - not after. 
+##### Design for failures, not just when it works
+We designed screens showing "AI analysis results" without taking into consideration what happens when AI fails - misidentified a violation, extreme weather, poor lightning conditions like roads without lights at night. Real products need designed states for uncertainty, not just success cases.
+##### Privacy as priority, not an afterthought
+Recording users' driving journeys with cameras felt like an obvious solution to our problem. Only after we presented our solution did we realize that the ultimate choice when using product lies in our users. Optional data collection, data deletion option, and consent flows are all equally important for the whole customer's journey. 
