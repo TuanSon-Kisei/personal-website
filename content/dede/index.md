@@ -2,7 +2,7 @@
 title: Dede
 description: AI native app for helping young peeps navigating the chaotic traffics of Vietnam
 type: work
-cover: images/hero.webp
+cover: images/hero.png
 year: "2025"
 timeline: September 2025
 team:
