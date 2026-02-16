@@ -20,7 +20,7 @@ weight: "3"
 {{< project-info >}}
 
 ## About the project
-Petfren is a mobile app designed to help parents teaching Mathematics subject to their kids in a way that's more fun when learning together. Collaborating with 2 more experienced UX/UI designer and guided by my UX mentor, this project marks my very first UX project and venture beyond design. 
+Petfren is a mobile app designed to help parents teaching Mathematics subject to their kids in a way that's more fun when learning together. Collaborating with 2 more experienced UX/UI designers and guided by my UX mentor, this project marks my very first UX project and venture beyond design. 
 ![](images/graduation.png)
 ## The problem
 Teaching kids any study material is an arduous task that some parents dread to even think about. They feel impossible to make their children to understand the importance of learning, especially Maths, when the parents also have many many other things to stress over with. Having seen those cases are happening too often, we set out a goal to address the issue at hand: **How can we design a product that can remove some of the stress of teaching Maths subject for parents?**
@@ -68,14 +68,10 @@ We found that some parents might have hesitation when asking to AI so we also pr
 While these are the most interesting and "weird" option, unfortunately we couldn't do user testing to gather feedback to see if our recreational feature is useful or warrant enough attention for our users to try. With enough data and testing, we might decide to potentially explore this option further.
 ![](images/petfren_voice_changing.png)
 ![](images/petfren_math_games.png)
-
-## If I had more time
-If time allowed, I would like to conduct user testing to see how our product behaves in the real world, which would enable us to gather real analytic data about how they use it, how they feel and what their feedback will be. This will help us to have real insights that will guide design adjustment to better suit user needs and enhance their experience. 
 ## Reflections
 ##### We were designing for two users simultaneously
 We initially focused on the parent experience - dashboard, AI responses, progress tracking. But Petfren isn't a solo app; it's a tool for a parent-child teaching moment happening in real-time. This meant every feature needed to work for two people with different needs: the parent needs guidance and answers, while the child needs visual, engaging explanations. We learned to design for the interaction *between* them, not just for individual users.
 ##### Testing with actual families would have changed everything
 We never observed families actually using Petfren together. Would parents interrupt teaching to consult the app? Would kids engage with AI-generated visuals? Would the backup human tutor feature create dependency? In a real product, these questions would require in-home testing sessions to validate our assumptions before launch.
-
 ##### My first UX project taught me to embrace ambiguity
 Coming in as the youngest team member on my first UX project, I expected clear answers and linear progress. Instead, I learned that good design requires making decisions with incomplete information, iterating based on feedback, and being comfortable with "we don't know yet." The frameworks (JTBD, affinity mapping) gave structure, but the real learning came from navigating uncertainty.
