@@ -40,16 +40,16 @@ After gathering our interview data and notable recurrent patterns, we gained bet
 ## Becoming my users
 To truly understand our users, I spent an afternoon teaching Math to our mentor's 8-year-old son. Within 15 minutes, I realized why parents find this overwhelming: explaining _why_ 3 × 2 = 6 (and not 5) requires breaking down concepts I'd taken for granted. The experience was humbling and gave me deep appreciation for parents who do this daily while juggling work and household responsibilities.
 ## Competitor Audit
-We began to analyze our both direct and indirect competitors and found them are quite capable of doing these:
-{{< alert type="success" >}} Fun and engaging visuals to kids {{< /alert >}}
-{{< alert type="success" >}} Materials follow closely to what children learning in school {{< /alert >}}
-{{< alert type="success" >}} Provide math answers to parents {{< /alert >}}
+We analyzed leading math tutoring apps to identify opportunity gaps: **Monkey Math**, **Checkmath**, and **Duolingo Math**.
+![](images/competitor_screenshots.png)
+What they did well:
+{{< alert type="success" >}} Monkey Math provides instant fun and engaging visuals to kids {{< /alert >}}
+{{< alert type="success" >}} Checkmath provides instant answers so parents know the correct answer readily on hand {{< /alert >}}
+{{< alert type="success" >}} Duolingo Math offers game-like interfaces for children to practice doing questions {{< /alert >}}
 
 However they still failed to accomplish these areas:
-{{< alert type="error" >}} Math answers are either provided without explanation at all or too complicated explanation {{< /alert >}}
-{{< alert type="error" >}} There is little interactivity for both parents and children to learn together {{< /alert >}}
-
-![](images/competitor_audit.png)
+{{< alert type="error" >}} Checkmath shows step-to-step solution but it doesn't *coach* parents *how to teach* the concept. One mother told us: "Sometimes I just throw the phone showing the solution to my son. I just too tired to figure how to reteach it back to him" {{< /alert >}}
+{{< alert type="error" >}} All apps are designed for solo student use. There is little interactivity for both parents and children to learn together, which is how elementary math is typically taught at home. {{< /alert >}}
 ## Ideation
 We hosted a small brainstorm with our recruited peers who's interested in education or have knowledge in teaching children. After that, we began to vote the feature which had the most "likes" and analyse their effort and impact on users with impact - effort metrix.
 ![](images/ideation.png)
@@ -69,7 +69,8 @@ While these are the most interesting and "weird" option, unfortunately we couldn
 ![](images/petfren_voice_changing.png)
 ![](images/petfren_math_games.png)
 
-
+## If I had more time
+If time allowed, I would like to conduct user testing to see how our product behaves in the real world, which would enable us to gather real analytic data about how they use it, how they feel and what their feedback will be. This will help us to have real insights that will guide design adjustment to better suit user needs and enhance their experience. 
 ## Reflections
 ##### We were designing for two users simultaneously
 We initially focused on the parent experience - dashboard, AI responses, progress tracking. But Petfren isn't a solo app; it's a tool for a parent-child teaching moment happening in real-time. This meant every feature needed to work for two people with different needs: the parent needs guidance and answers, while the child needs visual, engaging explanations. We learned to design for the interaction *between* them, not just for individual users.
@@ -78,8 +79,3 @@ We never observed families actually using Petfren together. Would parents interr
 
 ##### My first UX project taught me to embrace ambiguity
 Coming in as the youngest team member on my first UX project, I expected clear answers and linear progress. Instead, I learned that good design requires making decisions with incomplete information, iterating based on feedback, and being comfortable with "we don't know yet." The frameworks (JTBD, affinity mapping) gave structure, but the real learning came from navigating uncertainty.
-## If I had more time
-If time allowed, I would like to conduct user testing to see how our product behaves in the real world, which would enable us to gather real analytic data about how they use it, how they feel and what their feedback will be. This will help us to have real insights that will guide design adjustment to better suit user needs and enhance their experience. 
-
-## Team shoutout
-Despite me being literally the second youngest student in the class, it's so incredible to partner up with two talented individuals (shoutout to **Dung** - the leader of our team and **Thuy** - the sister who keep our alignment going in all of our late and productive, sometimes stressful nights). 
