@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dede/index.md",
+                "file": "petfren/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3185289d1ea7fc29",
@@ -185,6 +186,7 @@
   },
   "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
+    "dede/index.md",
     "dede/images/hero.png",
     "readmate/images/hero.png",
     "dede/images/problem_space.png",
@@ -195,10 +197,8 @@
     "dede/images/image 45.png",
     "dede/images/image 44.png",
     "dede/images/home_and_challenge.png",
-    "dede/images/gps-alarm-success.png",
     "readmate/index.md",
     "about/index.md",
-    "dede/index.md",
     "petfren/index.md",
     "images/g.md",
     "images",
