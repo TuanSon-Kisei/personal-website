@@ -2,7 +2,7 @@
 title: Petfren
 description: Helping parents teach Math to their kids with AI-powered guidance
 type: work
-cover: images/hero.webp
+cover: images/hero.png
 year: "2024"
 timeline: May - July 2025
 skills:
@@ -16,7 +16,7 @@ role: UX Designer
 toc: "true"
 weight: "3"
 ---
-![](images/hero.webp)
+![](images/hero.png)
 {{< project-info >}}
 
 ## About the project
@@ -28,14 +28,14 @@ Teaching kids any study material is an arduous task that some parents dread to e
 ## Design Research
 #### How are parents teaching their children right now?
 We wanted to gain a better understanding of how parents navigate teaching Math to their kids. After some rounds of conducting desk research and interviewing parents, we identified a few common **patterns**:
-![An image showing 4 problem statements](images/img1.webp)
+![An image showing 4 problem statements](images/problems.png)
 
 With our in-depth analysis using Jobs-to-be-done framework, we **pinpointed** one main persona that's **best represented** our target audience pain points, needs and goals:
-![An image showing a parents persona about the project](images/img2.webp)
+![An image showing a parents persona about the project](images/persona.png)
 
 After gathering our interview data and notable recurrent patterns, we gained better comprehension of the problems those interviewed parents are facing and quickly set **2** main opportunity areas to focus on:
 ![An image showing affinity mapping made in Figma](images/affinity-mapping.png)
-![](petfren/images/img3.webp)
+![](petfren/images/empathy.png)
 
 ## Becoming my users
 To truly understand our users, I spent an afternoon teaching Math to our mentor's 8-year-old son. Within 15 minutes, I realized why parents find this overwhelming: explaining _why_ 3 × 2 = 6 (and not 5) requires breaking down concepts I'd taken for granted. The experience was humbling and gave me deep appreciation for parents who do this daily while juggling work and household responsibilities.
@@ -49,25 +49,25 @@ However they still failed to accomplish these areas:
 {{< alert type="error" >}} Math answers are either provided without explanation at all or too complicated explanation {{< /alert >}}
 {{< alert type="error" >}} There is little interactivity for both parents and children to learn together {{< /alert >}}
 
-![](images/img4.webp)
+![](images/competitor_audit.png)
 ## Ideation
 We hosted a small brainstorm with our recruited peers who's interested in education or have knowledge in teaching children. After that, we began to vote the feature which had the most "likes" and analyse their effort and impact on users with impact - effort metrix.
-![](images/img5.webp)
-![](images/impact-effort-matrix.webp)
+![](images/ideation.png)
+![](images/impact_effort_matrix.png)
 
 ## Final Designs
 #### How might we provide a better way to teach Maths that the child can understand in a reasonably short time?
 We started to explore by designing a better structured and more emphasis on creating visuals tailored to math-related questions, especially ones involving shapes or images.
-![](images/img6.webp)
+![](images/petfren_ai_response.png)
 
 #### What if our AI stuck at some problems?
 We found that some parents might have hesitation when asking to AI so we also provided a way to have a chat or call directly to one of many Math tutors. After all there should be multiple options to find and solve math answers for any situation.
-![](images/img7.webp)
+![](images/petfren_ask_tutor.png)
 
 #### How about some games or funny things to brighten up the mood?
 While these are the most interesting and "weird" option, unfortunately we couldn't do user testing to gather feedback to see if our recreational feature is useful or warrant enough attention for our users to try. With enough data and testing, we might decide to potentially explore this option further.
-![](images/img8.webp)
-![](images/img9.webp)
+![](images/petfren_voice_changing.png)
+![](images/petfren_math_games.png)
 
 
 ## Reflections

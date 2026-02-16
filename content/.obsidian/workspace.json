@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3185289d1ea7fc29",
@@ -186,17 +185,18 @@
   },
   "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
+    "petfren/images/hero.png",
+    "petfren/images/problems.png",
+    "petfren/images/petfren_voice_changing.png",
+    "petfren/images/petfren_math_games.png",
+    "petfren/images/petfren_ask_tutor.png",
+    "petfren/images/petfren_ai_response.png",
+    "petfren/images/persona.png",
+    "petfren/images/impact_effort_matrix.png",
+    "petfren/images/ideation.png",
+    "petfren/images/empathy.png",
+    "petfren/images/competitor_audit.png",
     "dede/index.md",
-    "dede/images/hero.png",
-    "readmate/images/hero.png",
-    "dede/images/problem_space.png",
-    "dede/images/user_research.png",
-    "dede/images/tracking_iteration.png",
-    "dede/images/problem_statement.png",
-    "dede/images/opportunities.png",
-    "dede/images/image 45.png",
-    "dede/images/image 44.png",
-    "dede/images/home_and_challenge.png",
     "readmate/index.md",
     "about/index.md",
     "petfren/index.md",
