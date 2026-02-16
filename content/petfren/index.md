@@ -35,7 +35,7 @@ With our in-depth analysis using Jobs-to-be-done framework, we **pinpointed** on
 
 After gathering our interview data and notable recurrent patterns, we gained better comprehension of the problems those interviewed parents are facing and quickly set **2** main opportunity areas to focus on:
 ![An image showing affinity mapping made in Figma](images/affinity-mapping.png)
-![](petfren/images/empathy.png)
+![](images/empathy.png)
 
 ## Becoming my users
 To truly understand our users, I spent an afternoon teaching Math to our mentor's 8-year-old son. Within 15 minutes, I realized why parents find this overwhelming: explaining _why_ 3 × 2 = 6 (and not 5) requires breaking down concepts I'd taken for granted. The experience was humbling and gave me deep appreciation for parents who do this daily while juggling work and household responsibilities.
