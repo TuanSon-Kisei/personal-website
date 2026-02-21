@@ -23,7 +23,7 @@ weight: "3"
 Petfren is a mobile app designed to help parents teaching Mathematics subject to their kids in a way that's more fun when learning together. Collaborating with 2 more experienced UX/UI designers and guided by my UX mentor, this project marks my very first UX project and venture beyond design. 
 ![](images/graduation.png)
 ## The problem
-Teaching kids any study material is an arduous task that some parents dread to even think about. They feel impossible to make their children to understand the importance of learning, especially Maths, when the parents also have many many other things to stress over with. Having seen those cases are happening too often, we set out a goal to address the issue at hand: **How can we design a product that can remove some of the stress of teaching Maths subject for parents?**
+Teaching kids any study material is an arduous task that some parents dread thinking about. They find it impossible to make their children to understand the importance of learning, especially Maths, when the parents also have many many other things to stress over with. Having seen those cases are happening too often, we set out a goal to address the issue at hand: **How can we design a product that can remove some of the stress of teaching Maths subject for parents?**
 
 ## Design Research
 #### How are parents teaching their children right now?
@@ -51,7 +51,7 @@ However they still failed to accomplish these areas:
 {{< alert type="error" >}} Checkmath shows step-to-step solution but it doesn't *coach* parents *how to teach* the concept. One mother told us: "Sometimes I just throw the phone showing the solution to my son. I just too tired to figure how to reteach it back to him" {{< /alert >}}
 {{< alert type="error" >}} All apps are designed for solo student use. There is little interactivity for both parents and children to learn together, which is how elementary math is typically taught at home. {{< /alert >}}
 ## Ideation
-We hosted a small brainstorm with our recruited peers who's interested in education or have knowledge in teaching children. After that, we began to vote the feature which had the most "likes" and analyse their effort and impact on users with impact - effort metrix.
+We hosted a small brainstorm with our recruited peers who is interested in education or have knowledge in teaching children. After that, we began to vote the feature which had the most "likes" and analyse their effort and impact on users with impact - effort metrix.
 ![](images/ideation.png)
 ![](images/impact_effort_matrix.png)
 

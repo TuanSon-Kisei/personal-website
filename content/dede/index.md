@@ -44,13 +44,13 @@ This problem provided a huge opportunity to learn more about the huge gap betwee
 
 ## User Research
 
-I and my team conducted survey and interviewed various high-school and colleague students to listen to their frustrations when participating in traffics. And these are the key insights my team and I synthesized:
+My team surveyed over 50 respondents and conducted 5 interviews with high school and university students in Hanoi. We focused on how they currently learn about traffic regulations and what happens when they unknowingly break them. And these are the key insights my team and I synthesized:
 
-{{< alert type="error" >}} Outdated traffic laws knowledge{{< /alert >}}
-{{< alert type="error" >}} Uninteresting method when teaching updated regulations {{< /alert >}}
-{{< alert type="error" >}} Only know new regulations through words of mouth  {{< /alert >}}
+{{< alert type="error" >}} Their knowledge about traffic laws is outdated or can't keep up with new ones {{< /alert >}}
+{{< alert type="error" >}} Government teaching methods failed to engage students {{< /alert >}}
+{{< alert type="error" >}} They only learn new laws through word of mouth from parents or only through social media posts  {{< /alert >}}
 
-The issue is clear: nobody actually bother to learn new and updated traffic regulations when the government's message is uninteresting, failed to grab attention.
+The issue is clear: young people ignored learning updated traffic regulations when government announcements are boring and failed to grab attention.
 
 ![](images/desk_research.png)
 ![](images/user_research.png)
