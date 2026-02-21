@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_index.md",
+                "file": "dede/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ]
@@ -185,9 +185,10 @@
   },
   "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
+    "petfren/index.md",
+    "_index.md",
     "about/index.md",
     "dede/index.md",
-    "petfren/index.md",
     "petfren/images/competitor_screenshots.png",
     "petfren/images/hero.png",
     "petfren/images/problems.png",
@@ -201,7 +202,6 @@
     "readmate/index.md",
     "images/g.md",
     "images",
-    "_index.md",
     "images.md",
     "readmate/images",
     "petfren/images",

@@ -89,7 +89,7 @@ While the initial screen conveyed most information, we ultimately decided to hid
 
 
 ### Home and Challenge iteration
-We created low-fis prototypes for home and challenge screen next to help us refine how much information to show upfront. After a lengthy discussion, we ultimately keep them as they are and only added minor UI since we didn't have enough time to explore more screen options when the deadline hour is catching us.
+We prototyped home and challenge screens but ran out of time to fully iterate on them. With 12 hours until deadline, we had to choose: polish secondary screens or perfect our core tracking feature. We chose the latter, accepting that some screens are ultimately kept minimal. In a 24-hour sprint, we prioritized depth in our primary feature over polish across all screens. We were transparent about this in our presentation, positioning these as areas for future iteration.
 
 ![](images/home_and_challenge.png)
 
