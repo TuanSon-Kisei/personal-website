@@ -2,17 +2,17 @@ import { animate, splitText, stagger } from "animejs";
 import swup from "./page-transition";
 
 function initIntroAnimation() {
-  const { words } = splitText(".text-intro", {
-    words: { wrap: "clip" },
-  });
-
-  animate(words, {
-    y: [{ to: ["100%", "0%"] }],
-    duration: 400,
-    ease: "out(3)",
-    delay: stagger(100),
-    loop: false,
-  });
+  splitText(".home-intro", {
+    lines: { wrap: "clip" },
+  }).addEffect(({ lines }) =>
+    animate(lines, {
+      y: [{ to: ["100%", "0%"] }],
+      duration: 750,
+      ease: "out(3)",
+      delay: stagger(250),
+      loop: false,
+    }),
+  );
 }
 
 initIntroAnimation();
