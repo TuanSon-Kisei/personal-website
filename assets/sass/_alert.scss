@@ -25,16 +25,13 @@
 }
 
 .alert-success .alert-icon {
-    background-color: lighten($color: $rp-dawn-pine, $amount: 55);
-    color: $rp-dawn-pine;
+    background-color: adjust-color($color: $rp-dawn-pine, $lightness: 50%);
 }
 .alert-warning .alert-icon {
-    background-color: lighten($color: $rp-dawn-gold, $amount: 35);
-    color: adjust-color($color: $rp-dawn-gold, $lightness: -20%);
+    background-color: adjust-color($color: $rp-dawn-gold, $lightness: 50%);
 }
 .alert-error .alert-icon {
-    background-color: lighten($color: $rp-dawn-rose, $amount: 23);
-    color: adjust-color($color: $rp-dawn-rose, $lightness: -30%);
+    background-color: adjust-color($color: $rp-dawn-rose, $lightness: 50%);
 }
 
 body.dark-mode {
@@ -44,14 +41,11 @@ body.dark-mode {
 
     .alert-success .alert-icon {
         background-color: adjust-color($color: $rp-pine, $lightness: -10%);
-        color: adjust-color($color: $rp-dawn-pine, $lightness: 30%);
     }
     .alert-warning .alert-icon {
         background-color: adjust-color($color: $rp-gold, $lightness: -45%);
-        color: $rp-gold;
     }
     .alert-error .alert-icon {
-        background-color: adjust-color($color: $rp-rose, $lightness: -40%);
-        color: $rp-rose;
+        background-color: adjust-color($color: $rp-rose, $lightness: -45%);
     }
 }
