@@ -3,10 +3,10 @@ image: images/about-me.webp
 title: About me
 description:
 ---
-Growing up in Hanoi, a place which has the perfect blend the ever-changing modern movements and rich historic and cultural values in human, it always make me wonder how people navigating their daily life. 
+Tuan Son, or Kisei (his online name) is a UX/UI designer who is living in Hanoi. He has strongly advocated for the importance of listening to people and slowly learning other things like how to make his research better suited in business's context and how to explain things better by just using plain language from a beginner's perspective since the dawn of things.
 
-This curiosity led me to UX design, where I discovered I could transform individual pain points into meaningful solutions. I approach design by deeply understanding user frustrations, identifying patterns, and creating experiences that make life easier and more delightful.
+Tuan Son is attending in National Economic University and he specializes in Computer Science. He now is focusing on doing design research, design strategy and other stuffs related to product design so that he can help company achieve their business goals and him earning money (he still haven't got a job by the way). 
 
-I think critically about the intersection of people, business, and technology—especially as digital products evolve rapidly. Currently completing my Bachelor of Computer Science at the National Economic University (graduating June 2026), I combine technical knowledge with human-centered design thinking to create impactful solutions
+He won't do any jobs that he certainly knows he can't do well (yet). He prefers to get honest opinions about his works so he can make those works (or products) actually become better. He won't do any jobs that involving harming people.
 
-If you want to have a talk, I will happily share a coffee chat session about design, ideas or whatever on your mind. I can be easily reached at your convenience via either [Linkedin](https://www.linkedin.com/in/tuansonnguyen/) or [Email](mailto:kisei.tuanson.work@gmail.com?subject=Say%20Hi)
+He can be easily reached at your convenience via either [Linkedin](https://www.linkedin.com/in/tuansonnguyen/) or [Email](mailto:kisei.tuanson.work@gmail.com?subject=Say%20Hi). He is **available for internship and junior** positions. 
