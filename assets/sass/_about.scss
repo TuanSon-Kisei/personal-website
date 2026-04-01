@@ -30,10 +30,7 @@
 
         a {
             color: $rp-dawn-foam;
-
-            &:hover {
-                text-decoration: underline;
-            }
+            text-decoration: underline;
         }
     }
 
@@ -43,6 +40,13 @@
         img {
             max-width: 100%;
             height: auto;
+        }
+    }
+}
+body.dark-mode {
+    article {
+        a {
+            color: $rp-foam;
         }
     }
 }
