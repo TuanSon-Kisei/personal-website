@@ -5,12 +5,13 @@
         {{ .Content }}
     </article>
     <div class="about-image">
-        {{ if .Params.image }}
-            {{ $image := resources.Get .Params.image }}
-            {{ if $image }}
-            <img src="{{ $image.RelPermalink}}" alt="An image of the author doing portrait shoot">
-            {{ end }}
-        {{ end }}
+        {{ if .Params.image }} {{ $image := resources.Get .Params.image }} {{ if
+        $image }}
+        <img
+            src="{{ $image.RelPermalink}}"
+            alt="An image of the creator - Tuan Son is giving his presentation in Designathon which was hosted in 2025"
+        />
+        {{ end }} {{ end }}
     </div>
 </div>
-{{ end }} 
+{{ end }}

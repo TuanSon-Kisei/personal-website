@@ -87,6 +87,15 @@ body {
         }
     }
 
+    span {
+        color: $rp-dawn-text;
+    }
+
+    figcaption {
+        color: $rp-dawn-text;
+        font-style: italic;
+    }
+
     svg {
         width: 24px;
         height: 24px;
@@ -124,6 +133,14 @@ body.dark-mode {
     }
 
     svg {
+        color: $rp-text;
+    }
+
+    span {
+        color: $rp-text;
+    }
+
+    figcaption {
         color: $rp-text;
     }
 

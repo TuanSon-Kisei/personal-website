@@ -1,15 +1,22 @@
 {{ define "main" }}
-    <main class="page-404">
-        <pre>
-████████ ████████  ████████   ███████  ████████  
-██       ██     ██ ██     ██ ██     ██ ██     ██ 
-██       ██     ██ ██     ██ ██     ██ ██     ██ 
-██████   ████████  ████████  ██     ██ ████████  
-██       ██   ██   ██   ██   ██     ██ ██   ██   
-██       ██    ██  ██    ██  ██     ██ ██    ██  
-████████ ██     ██ ██     ██  ███████  ██     ██ 
-        </pre>
-        <span>Page not found</span>
-        <p>Sorry the page you looking for doesn't exist or has been moved</p>
-    </main>
+<main class="page-404">
+    <div class="leading-404">
+        <span class="heading-404">Oh, you found my web's dead corner</span>
+        <p class="text-404">
+            I am terribly sorry; there is nothing here for you to see.
+            <br />
+            Perhaps a page was moved, or it was deleted, or me just not very
+            good at "web" information architecture design things.
+            <br />
+            You can check my header above to return back to the site. Or you can
+            drop me a line so I can help you find what you're looking for.
+        </p>
+    </div>
+    <div class="image-404">
+        <figure>
+            <img src="/images/my_lovely_cat.jpg" alt="" />
+            <figcaption>In loving memory of my cat</figcaption>
+        </figure>
+    </div>
+</main>
 {{ end }}
