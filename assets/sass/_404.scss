@@ -26,6 +26,15 @@
         .text-404 {
             font-size: clamp(1rem, 3vw, 1.25rem);
             line-height: 1.5;
+
+            a {
+                color: $rp-dawn-foam;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
     }
 
