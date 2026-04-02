@@ -22,27 +22,18 @@
     article {
         max-width: 50rem;
         text-align: left;
+        contain: content;
 
         .project-summary {
             margin-bottom: 1.25rem;
 
             h1 {
-                line-height: 1.4;
+                line-height: 1.2;
                 margin-bottom: 1rem;
             }
 
             h5 {
                 font-weight: 400;
-            }
-        }
-
-        ul {
-            list-style-position: inside;
-            list-style-type: disc;
-            margin-bottom: 1rem;
-
-            li {
-                color: $rp-dawn-text;
             }
         }
 

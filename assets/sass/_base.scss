@@ -40,8 +40,8 @@ body {
     color: $rp-dawn-text;
     background-color: $rp-dawn-base;
     font-family: $font-body-stack;
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: clamp(1.0625rem, 0.95rem + 0.25vw, 1.125rem);
+    line-height: 1.65;
     transition: all 0.2s ease;
 
     ul {
@@ -57,7 +57,7 @@ body {
         font-family: $font-display-stack;
         margin: 0;
         padding: 0;
-        line-height: 1.4;
+        line-height: 1.3;
     }
 
     h5,
