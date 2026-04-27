@@ -1,0 +1,25 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 0,
+  "workspaces": {
+    "": {
+      "dependencies": {
+        "animejs": "^4.3.4",
+        "swup": "^4.8.2",
+      },
+    },
+  },
+  "packages": {
+    "animejs": ["animejs@4.3.4", "", {}, "sha512-L80v2/pv74UPC4LCqllWvOABoFMrk8URwgHipMG+F/f3pph4NF4+7ho42kmVbZ5mA6Mgo/eh4kQh55ilM7EoFw=="],
+
+    "delegate-it": ["delegate-it@6.3.0", "", { "dependencies": { "typed-query-selector": "^2.11.2" } }, "sha512-WAa6cA61M5mfDR31PBgMNQQ3LY1q++TxnZzcm7E9XV8ODBPxDutxH0toTR/BXqIkLaVuU7ntFe1uOqDllhA22A=="],
+
+    "opencollective-postinstall": ["opencollective-postinstall@2.0.3", "", { "bin": "index.js" }, "sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q=="],
+
+    "path-to-regexp": ["path-to-regexp@6.3.0", "", {}, "sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ=="],
+
+    "swup": ["swup@4.8.2", "", { "dependencies": { "delegate-it": "^6.0.0", "opencollective-postinstall": "^2.0.2", "path-to-regexp": "^6.2.1" } }, "sha512-Art2vB4idZ7EFZQhhA47ZifkmZMPgcAwE6z28BhorbTYCO8jcovcc5MasX49GGdXYJWO43DTut7iZb5yrQdEfA=="],
+
+    "typed-query-selector": ["typed-query-selector@2.12.0", "", {}, "sha512-SbklCd1F0EiZOyPiW192rrHZzZ5sBijB6xM+cpmrwDqObvdtunOHHIk9fCGsoK5JVIYXoyEp4iEdE3upFH3PAg=="],
+  }
+}
