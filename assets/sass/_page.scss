@@ -1,72 +1,77 @@
-.project-content {
-    max-width: 100%;
+.page-wrapper {
     margin: 3rem auto;
     padding-inline: 3rem;
-    word-break: keep-all;
-    display: grid;
-    grid-template-columns: 3fr 12fr;
-    gap: 10rem;
-    animation: fadeInUp 0.4s ease-in;
-
-    @media screen and (max-width: 1024px) {
-        gap: 2rem;
-        grid-template-columns: 2fr 4fr;
-    }
 
     @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
-        max-width: 48rem;
         padding-inline: 1rem;
     }
 
-    article {
-        max-width: 50rem;
-        text-align: left;
-        contain: content;
+    .project-content {
+        word-break: keep-all;
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+        gap: 10rem;
+        animation: fadeInUp 0.4s ease-in;
 
-        .project-summary {
-            margin-bottom: 1.25rem;
+        @media screen and (max-width: 1024px) {
+            gap: 2rem;
+            grid-template-columns: 2fr 4fr;
+        }
 
-            h1 {
-                line-height: 1.2;
-                margin-bottom: 1rem;
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
+        article {
+            max-width: 50rem;
+            text-align: left;
+            contain: content;
+
+            .project-summary {
+                margin-bottom: 1.25rem;
+
+                h1 {
+                    line-height: 1.2;
+                    margin-bottom: 1rem;
+                }
+
+                h5 {
+                    font-weight: 400;
+                }
             }
 
-            h5 {
-                font-weight: 400;
+            h2 {
+                padding-top: 2rem;
+                padding-bottom: 0.75rem;
             }
-        }
 
-        h2 {
-            padding-top: 2rem;
-            padding-bottom: 0.75rem;
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-        }
-
-        p img {
-            max-width: 100%;
-            height: auto;
-            padding-block: 1rem;
-        }
-
-        img:has(+ img) {
-            padding-bottom: 0.25em;
-        }
-
-        h4 {
-            margin-bottom: 0.25em;
-        }
-
-        .feature-content {
             p {
-                margin: 0;
+                margin-bottom: 1.5rem;
+            }
+
+            p img {
+                max-width: 100%;
+                height: auto;
+                padding-block: 1rem;
+            }
+
+            img:has(+ img) {
+                padding-bottom: 0.25em;
+            }
+
+            h4 {
+                margin-bottom: 0.25em;
+            }
+
+            .feature-content {
+                p {
+                    margin: 0;
+                }
             }
         }
     }
 }
+
 body.dark-mode {
     article {
         ul {

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/index.md",
+                "file": "dede/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -185,10 +185,10 @@
   },
   "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
+    "about/index.md",
     "dede/index.md",
     "petfren/index.md",
     "_index.md",
-    "about/index.md",
     "petfren/images/competitor_screenshots.png",
     "petfren/images/hero.png",
     "petfren/images/problems.png",

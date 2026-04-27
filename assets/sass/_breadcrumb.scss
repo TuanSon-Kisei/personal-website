@@ -1,0 +1,30 @@
+.page-breadcrumb {
+    margin-bottom: 2rem;
+
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: end;
+
+        li {
+            a {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                span {
+                    font-family: $font-mono-stack;
+                    text-transform: uppercase;
+                    font-size: 1.25rem;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

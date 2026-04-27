@@ -3,7 +3,7 @@ image: images/about-me.webp
 title: About me
 description:
 ---
-Tuan Son, or Kisei (his online name) is a UX/UI designer who is living in Hanoi. He has strongly advocated for the importance of listening to people and slowly learning other things like how to make his research better suited in business's context and how to explain things better by just using plain language from a beginner's perspective since the dawn of things.
+Tuan Son, or Kisei (his online name) is a UX/UI designer who is living in Hanoi. He has strongly advocated for the importance of listening to people and he is learning other things like how to make his research better suited in business's context and how to explain things better by just using plain language from the receiver's perspective since the dawn of things.
 
 Tuan Son is attending in National Economic University and he specializes in Computer Science. He now is focusing on doing design research, design strategy and other stuffs related to product design so that he can help company achieve their business goals and him earning money (he still haven't got a job by the way). 
 
