@@ -1,0 +1,40 @@
+{
+  "readings": [
+    {
+      "type": "Article",
+      "title": "A website to destroy all websites",
+      "author": ["Henry Desroches"],
+      "url": "https://henry.codes/writing/a-website-to-destroy-all-websites/"
+    },
+    {
+      "type": "Book",
+      "title": "Design is a Job",
+      "author": ["Mike Monterio"],
+      "url": "https://www.designisajob.com/"
+    },
+    {
+      "type": "Book",
+      "title": "Just Enough Research",
+      "author": ["Erika Hall"],
+      "url": "https://www.mulebooks.com/just-enough-research"
+    },
+    {
+      "type": "Blog",
+      "title": "Every site needs a Links Page / Why linking matters",
+      "author": ["Melonking"],
+      "url": "https://thoughts.melonking.net/thoughts/every-site-needs-a-links-page-why-linking-matters"
+    },
+    {
+      "type": "Blog",
+      "title": "Designers will never have influence without understanding how organizations learn",
+      "author": ["Pavel Samsonov"],
+      "url": "https://productpicnic.beehiiv.com/p/designers-will-never-have-influence-without-understanding-how-organizations-learn"
+    },
+    {
+      "type": "Blog",
+      "title": "How to do the work",
+      "author": ["Mike Monterio"],
+      "url": "https://buttondown.com/monteiro/archive/how-to-do-the-work/"
+    }
+  ]
+}

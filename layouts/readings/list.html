@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="readings-section">
+    <h1 class="readings-section-title">
+        Blog posts, articles, videos, books I've recently read, enjoyed and
+        recommend. From who having brighter minds than me.
+    </h1>
+    <div class="recent-reading-stack styled-row">
+        {{ range sort site.Data.recentReading.readings }}
+        <article class="recent-reading-item">
+            <h1
+                class="recent-reading-item_title styled-row_cell styled-row_cell--wide with-sans"
+            >
+                {{ .title }}
+            </h1>
+            <h2
+                class="recent-reading-item_type styled-row_cell styled-row_cell with-sans"
+            >
+                {{ .type }}
+            </h2>
+            <p class="recent-reading-item_author styled-row_cell">
+                {{ delimit .author ", " }}
+            </p>
+            <a
+                class="recent-reading-item_link styled-row_cell-link with-arrow with-arrow_out"
+                href="{{ .url }}"
+                >Go to the link</a
+            >
+        </article>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
