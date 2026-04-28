@@ -15,7 +15,7 @@ header {
 
     .left {
         text-align: start;
-        z-index: 102;
+        z-index: 1;
 
         .header-title {
             font-family: $font-mono-stack;
@@ -40,28 +40,15 @@ header {
             cursor: pointer;
             background: none;
             border: none;
-            display: none;
-
-            .icon-close {
-                display: none;
-            }
-            .icon-menu {
-                display: block;
-            }
-
-            &.is-open {
-                .icon-close {
-                    display: block;
-                }
-                .icon-menu {
-                    display: none;
-                }
-            }
         }
 
         ul {
             display: flex;
             gap: 1rem;
+
+            li:has(.close-menu-btn) {
+                display: none;
+            }
 
             a {
                 display: inline-block;
@@ -82,13 +69,13 @@ header {
             .hamburger-menu {
                 display: flex;
                 position: relative;
-                z-index: 101;
+                z-index: 1;
                 order: 2;
             }
 
             #dark-mode-toggle {
                 order: 1;
-                z-index: 101;
+                z-index: 1;
             }
 
             ul {
@@ -104,8 +91,9 @@ header {
                 gap: 2rem;
                 background-color: $rp-dawn-base;
                 text-align: center;
-                z-index: 98;
+                z-index: 2;
                 opacity: 0;
+                visibility: hidden;
                 transform: translateY(80%);
                 transition:
                     opacity 0.2s ease-out,
@@ -115,10 +103,28 @@ header {
                     font-size: 2.5rem;
                 }
 
+                .close-menu-btn {
+                    display: flex;
+                    align-items: center;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+
                 &.active {
                     display: flex;
                     opacity: 1;
                     transform: translateY(0);
+                    visibility: visible;
+
+                    li:has(.close-menu-btn) {
+                        display: flex;
+                    }
                 }
             }
         }

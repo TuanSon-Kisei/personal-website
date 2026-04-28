@@ -6,10 +6,10 @@
             </div>
         </a>
     </div>
-    <nav class="navbar">
-        <button class="hamburger-menu" id="menu">
+    <nav class="navbar" aria-label="Main navigation">
+        <button class="hamburger-menu" id="menu" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
             <svg class="icon-menu" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-            <svg class="icon-close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+
         </button>
         <ul class="nav-links" id="nav-links">
             <li>
@@ -23,6 +23,11 @@
             </li>
             <li>
                 <a href="{{ "Tuan_Son_Resume.pdf" | relURL }}" target="_blank" rel="noopener noreferrer">Resume</a>
+            </li>
+            <li>
+                <button aria-label="close menu button" class="close-menu-btn">
+                    <svg aria-hidden="true" class="icon-close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </button>
             </li>
         </ul>
         <button id="dark-mode-toggle" aria-label="dark mode button toggle">

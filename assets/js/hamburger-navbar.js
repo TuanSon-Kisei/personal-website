@@ -1,22 +1,23 @@
-const hamburger = document.getElementById('menu');
-const navLinks = document.getElementById('nav-links'); 
+const hamburger = document.getElementById("menu");
+const navLinks = document.getElementById("nav-links");
+const closeMenuBtn = document.querySelector(".close-menu-btn");
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('is-open');
+const openMenu = () => {
+  navLinks.classList.add("active");
+  hamburger.setAttribute("aria-expanded", "true");
+  document.body.style.overflow = "hidden";
+};
 
-    if (navLinks.classList.contains('active')) {
-        document.body.style.overflow = 'hidden';
-    } else {
-        document.body.style.overflow = 'auto';
-    }
-})
+const closeMenu = () => {
+  navLinks.classList.remove("active");
+  hamburger.setAttribute("aria-expanded", "false");
+  document.body.style.overflow = "auto";
+};
 
-const links = document.querySelectorAll('a');
-links.forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('is-open');
-        document.body.style.overflow = 'auto';
-    })
-})
+hamburger.addEventListener("click", openMenu);
+closeMenuBtn.addEventListener("click", closeMenu);
+
+const links = document.querySelectorAll("a");
+links.forEach((link) => {
+  link.addEventListener("click", closeMenu);
+});
