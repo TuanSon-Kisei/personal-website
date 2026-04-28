@@ -2,6 +2,10 @@
     width: 100%;
     padding-inline: 3rem;
 
+    @media screen and (max-width: 768px) {
+        padding-inline: 1rem;
+    }
+
     .readings-section-title {
         text-align: center;
     }
@@ -19,7 +23,7 @@
             border-block-end: 2px solid $rp-dawn-highlight-high;
 
             .styled-row_cell {
-                grid-column-end: span 3;
+                grid-column-end: span 4;
                 font-size: clamp(1.0625rem, 0.95rem + 0.25vw, 1.125rem);
                 font-weight: normal;
                 font-family: $font-body-stack;
@@ -30,9 +34,9 @@
             }
 
             .styled-row_cell-link {
-                grid-column-end: span 2;
+                grid-column-end: span 4;
                 text-align: right;
-                font-size: 1rem;
+                font-size: 0.75rem;
                 text-transform: uppercase;
 
                 &:hover {
