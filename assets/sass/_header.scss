@@ -2,7 +2,7 @@
 header {
     max-width: 100%;
     padding: 0 3rem;
-    margin: 2vw auto;
+    margin: 2rem auto;
     display: flex;
     align-items: center;
     text-align: center;
@@ -94,10 +94,11 @@ header {
                 z-index: 2;
                 opacity: 0;
                 visibility: hidden;
-                transform: translateY(80%);
+                transform: translateY(110%);
+                overflow-y: scroll;
                 transition:
                     opacity 0.2s ease-out,
-                    transform 0.2s ease-out;
+                    transform 0.1s ease-in;
 
                 li {
                     font-size: 2.5rem;
