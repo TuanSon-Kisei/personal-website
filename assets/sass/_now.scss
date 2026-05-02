@@ -1,0 +1,36 @@
+.now-section {
+    max-width: 45rem;
+    padding-inline: 1rem;
+    margin: 3vw auto;
+
+    a {
+        text-decoration: underline;
+        color: $rp-dawn-foam;
+        .dark-mode & {
+            color: $rp-foam;
+        }
+    }
+
+    &_article {
+        line-height: 1.5;
+
+        li {
+            list-style: inside;
+            list-style-type: disc;
+        }
+
+        h3 {
+            margin-block: 1em;
+        }
+
+        h4 {
+            margin-block-start: 2em;
+            margin-block-end: 1em;
+            font-family: $font-mono-stack;
+        }
+
+        p {
+            margin-block-end: 1em;
+        }
+    }
+}

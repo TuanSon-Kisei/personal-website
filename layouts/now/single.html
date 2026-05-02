@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="now-section">
+    <h2 class="now-section_title">What I'm doing now</h2>
+    <p class="now-section_description">
+        This page is inspired by
+        <a class="now-section_link" href="https://nownownow.com/about"
+            >the /now page</a
+        >
+        and from
+        <a class="now-section_link" href="https://derek.silver/">Derek Silver</a
+        >. You should check it out!
+    </p>
+    <article class="now-section_article">{{ .Content }}</article>
+</div>
+{{ end }}
