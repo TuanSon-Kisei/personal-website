@@ -2,15 +2,11 @@
 <section class="page-wrapper">
     {{ partial "breadcrumb.html" . }}
     <main class="project-content">
-        {{ if .Params.Toc}}
-        <aside id="table-of-contents">{{ .TableOfContents }}</aside>
-        {{ end }}
-
         <article>
-            <div class="project-summary">
+            <header class="project-summary">
                 <h1>{{ .Title }}</h1>
                 <h5>{{ .Params.description }}</h5>
-            </div>
+            </header>
             {{ .Content }}
         </article>
     </main>
