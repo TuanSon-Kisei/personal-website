@@ -6,7 +6,7 @@ function initIntroAnimation() {
     lines: { wrap: "clip" },
   }).addEffect(({ lines }) =>
     animate(lines, {
-      y: [{ to: ["100%", "0%"] }],
+      y: [{ to: ["100%", "-10%"] }],
       duration: 750,
       ease: "out(3)",
       delay: stagger(250),
