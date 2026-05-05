@@ -16,7 +16,7 @@
         padding-inline: 1rem;
     }
 
-    article {
+    .about-article {
         text-align: left;
         max-width: 45rem;
 
@@ -30,7 +30,14 @@
 
         a {
             color: $rp-dawn-foam;
-            text-decoration: underline;
+
+            .dark-mode & {
+                color: $rp-foam;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
@@ -40,13 +47,6 @@
         img {
             max-width: 100%;
             height: auto;
-        }
-    }
-}
-body.dark-mode {
-    article {
-        a {
-            color: $rp-foam;
         }
     }
 }
