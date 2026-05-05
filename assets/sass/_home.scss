@@ -19,11 +19,12 @@
     }
 
     .year-chip {
-        border-radius: 100px;
+        border-radius: 0.25em;
+        font-size: 0.875em;
         border: 1px solid $rp-dawn-highlight-high;
         background-color: $rp-dawn-base;
-        padding: 0.5rem 0.5rem;
-        font-family: $font-display-stack;
+        padding: 3px 9px;
+        font-family: $font-mono-stack;
         color: $rp-dawn-subtle;
     }
 
@@ -66,9 +67,10 @@
 
         &:hover {
             background-color: $rp-dawn-overlay;
+            transform: translateY(-10px);
         }
 
-        &:focus {
+        &:focus-visible {
             box-shadow: 0 0 2px 2px $rp-dawn-foam;
             transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
             transition-duration: 0.15s;
