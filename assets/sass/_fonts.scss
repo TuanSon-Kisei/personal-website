@@ -1,0 +1,38 @@
+//Body font
+@mixin font-face($name, $path, $weight: 400, $style: normal) {
+    @font-face {
+        font-family: $name;
+        font-style: $style;
+        font-weight: $weight;
+        font-display: swap;
+        src: url("#{$path}.woff2") format("woff2");
+    }
+}
+
+@include font-face(
+    "Atkinson Hyperlegible Next",
+    "/fonts/atkinson-hyperlegible-next-regular",
+    400
+);
+@include font-face(
+    "Atkinson Hyperlegible Next",
+    "/fonts/atkinson-hyperlegible-next-bold",
+    700
+);
+
+@include font-face("Charter", "/fonts/charter_regular", 400);
+@include font-face("Charter", "/fonts/charter_bold", 700);
+
+//Monoface font
+@font-face {
+    font-family: "Adwaita Mono";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url("/fonts/adwaita-mono-regular.ttf") format("ttf");
+}
+
+//Typography used
+$font-body-stack: "Atkinson Hyperlegible Next", sans-serif;
+$font-display-stack: "Charter", serif;
+$font-mono-stack: "Adwaita Mono", monospace;
