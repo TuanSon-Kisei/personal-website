@@ -34,6 +34,7 @@ $reading-formats: (
             background-color: $rp-dawn-surface;
             border-radius: 0.75em;
             cursor: pointer;
+            transition: transform 0.2s ease-in-out;
             .dark-mode & {
                 border-color: $rp-highlight-med;
                 background-color: $rp-surface;
@@ -95,7 +96,6 @@ $reading-formats: (
             }
 
             &:hover {
-                transition: transform 0.2s ease-in-out;
                 background-color: $rp-dawn-overlay;
                 border-color: $rp-dawn-highlight-high;
                 transform: translateY(-5px);
