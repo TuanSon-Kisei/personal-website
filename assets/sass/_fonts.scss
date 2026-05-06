@@ -9,30 +9,15 @@
     }
 }
 
-@include font-face(
-    "Atkinson Hyperlegible Next",
-    "/fonts/atkinson-hyperlegible-next-regular",
-    400
-);
-@include font-face(
-    "Atkinson Hyperlegible Next",
-    "/fonts/atkinson-hyperlegible-next-bold",
-    700
-);
+@include font-face("Work Sans", "/fonts/WorkSans-Regular.woff2", 400);
+@include font-face("Work Sans", "/fonts/WorkSans-SemiBold.woff2", 500);
 
-@include font-face("Charter", "/fonts/charter_regular", 400);
-@include font-face("Charter", "/fonts/charter_bold", 700);
+@include font-face("Noto Serif", "/fonts/NotoSerif-Regular.woff2", 400);
 
 //Monoface font
-@font-face {
-    font-family: "Adwaita Mono";
-    font-style: normal;
-    font-display: swap;
-    font-weight: 400;
-    src: url("/fonts/adwaita-mono-regular.ttf") format("ttf");
-}
+@include font-face("Space Mono", "/fonts/SpaceMono-Regular.woff2", 400);
 
 //Typography used
-$font-body-stack: "Atkinson Hyperlegible Next", sans-serif;
-$font-display-stack: "Charter", serif;
-$font-mono-stack: "Adwaita Mono", monospace;
+$font-body-stack: "Work Sans", sans-serif;
+$font-display-stack: "Noto Serif", serif;
+$font-mono-stack: "Space Mono", monospace;

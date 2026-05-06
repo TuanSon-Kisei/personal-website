@@ -1,11 +1,17 @@
 //Font size for headings
 $heading-sizes: (
-    h1: clamp(1.618rem, calc(1.359rem + 1.297vw), 2.331rem),
-    h2: clamp(1.378rem, calc(1.24rem + 0.691vw), 1.758rem),
-    h3: clamp(1.272rem, calc(1.179rem + 0.463vw), 1.527rem),
-    h4: clamp(1.174rem, calc(1.119rem + 0.276vw), 1.326rem),
-    h5: clamp(1.128rem, calc(1.089rem + 0.196vw), 1.236rem),
-    h6: clamp(1.084rem, calc(1.059rem + 0.124vw), 1.152rem),
+    // h1: 1.80rem (28px) -> 2.50rem (40px)
+    h1: clamp(1.8rem, calc(1.57rem + 1.17vw), 2.5rem),
+    // h2: 1.60rem (25px) -> 2.10rem (33px)
+    h2: clamp(1.6rem, calc(1.43rem + 0.83vw), 2.1rem),
+    // h3: 1.42rem (22px) -> 1.75rem (28px)
+    h3: clamp(1.42rem, calc(1.31rem + 0.55vw), 1.75rem),
+    // h4: 1.26rem (20px) -> 1.45rem (23px)
+    h4: clamp(1.26rem, calc(1.2rem + 0.32vw), 1.45rem),
+    // h5: 1.12rem (18px) -> 1.20rem (19px)
+    h5: clamp(1.12rem, calc(1.09rem + 0.13vw), 1.2rem),
+    // h6: 1.05rem (16.8px) -> 1.10rem (17.6px)
+    h6: clamp(1.05rem, calc(1.03rem + 0.08vw), 1.1rem)
 );
 
 //Rose Pine Dawn (Light variant)
