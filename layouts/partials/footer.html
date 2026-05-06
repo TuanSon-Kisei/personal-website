@@ -1,7 +1,7 @@
 <footer>
     <section>
         <div class="footer-grid_right">
-            <h4>I can help you. Feel free to drop a email into my inbox and we'll work together to solve your problems (or just say hi).</h4>
+            <div class="footer__introduction">I can help you. Feel free to drop a email into my inbox and we'll work together to solve your problems (or just say hi).</div>
             <button id="copy-email-button">
                 <span class="text" id="text">kisei.tuanson.work@gmail.com</span>
                 <span class="icon">
@@ -10,39 +10,56 @@
             </button>
         </div>
         <div class="footer-grid_left">
-            <div class="footer-grid_left--contacts">
-                <h4>CONTACTS</h4>
-                <a href="https://www.linkedin.com/in/tuansonnguyen/" target="_blank" rel="noopener noreferrer">
-                    <h5>LinkedIn</h5>
-
-                </a>
-                <a href="mailto:kisei.tuanson.work@gmail.com?subject=Say%20Hi" target="_blank" rel="noopener noreferrer">
-                    <h5>Email</h5>
-                </a>
-                <a href="https://gitlab.com/DoctorKisei" target="_blank" rel="noopener noreferrer">
-                    <h5>Gitlab</h5>
-                </a>
+            <div class="footer-grid_left__section">
+                <div class="footer__section-title">CONTACTS</div>
+                <div>
+                    <a class="footer__link" href="https://www.linkedin.com/in/tuansonnguyen/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                </div>
+                <div>
+                    <a class="footer__link" href="mailto:kisei.tuanson.work@gmail.com?subject=Say%20Hi" target="_blank" rel="noopener noreferrer">
+                        Email
+                    </a>
+                </div>
+                <div>
+                    <a class="footer__link" href="https://gitlab.com/DoctorKisei" target="_blank" rel="noopener noreferrer">
+                        Gitlab
+                    </a>
+                </div>
             </div>
-            <div class="footer-grid_left--navigation">
-                <h4>NAVIGATION</h4>
-                <a href="{{ "" | relURL }}">
-                    <h5>Work</h5>
-                </a>
-                <a href="{{ "about" | relURL }}">
-                    <h5>About</h5>
-                </a>
-                <a href="https://blogs.tuansondesigns.com/" target="_blank" rel="noopener noreferrer">
-                    <h5>Writings</h5>
-                </a>
-                <a href="{{ "readings" | relURL }}" target="_blank" rel="noopener noreferrer">
-                    <h5>Readings</h5>
-                </a>
-                <a href="{{ "now" | relURL }}" target="_blank" rel="noopener noreferrer">
-                    <h5>Now</h5>
-                </a>
-                <a href="{{ "Tuan_Son_Resume.pdf" | relURL }}" target="_blank" rel="noopener noreferrer">
-                    <h5>Resume</h5>
-                </a>
+            <div class="footer-grid_left__section">
+                <div class="footer__section-title">NAVIGATION</div>
+                <div>
+                    <a class="footer__link" href="{{ "" | relURL }}">
+                        Work
+                    </a>
+                </div>
+                <div>
+                    <a class="footer__link" href="{{ "about" | relURL }}">
+                        About
+                    </a>
+                </div>
+                <div>
+                    <a class="footer__link" href="https://blogs.tuansondesigns.com/" target="_blank" rel="noopener noreferrer">
+                        Writings
+                    </a>
+                </div>
+                <div>
+                    <a class="footer__link" href="{{ "readings" | relURL }}" target="_blank" rel="noopener noreferrer">
+                        Readings
+                    </a>
+                </div>
+                <div>
+                    <a class="footer__link" href="{{ "now" | relURL }}" target="_blank" rel="noopener noreferrer">
+                        Now
+                    </a>
+                </div>
+                <div>
+                    <a class="footer__link" href="{{ "Tuan_Son_Resume.pdf" | relURL }}" target="_blank" rel="noopener noreferrer">
+                        Resume
+                    </a>
+                </div>
             </div>
         </div>
     </section>
