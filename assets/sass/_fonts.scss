@@ -10,10 +10,14 @@
 }
 @include font-face("Work Sans", "../fonts/WorkSans-Regular.woff2", 400);
 @include font-face("Work Sans", "../fonts/WorkSans-SemiBold.woff2", 500);
-@include font-face("Noto Serif", "../fonts/NotoSerif-Regular.woff2", 400);
+@include font-face(
+    "Merriweather",
+    "../fonts/Merriweather_96pt-Regular.woff2",
+    400
+);
 @include font-face("Space Mono", "../fonts/SpaceMono-Regular.woff2", 400);
 
 //Typography used
 $font-body-stack: "Work Sans", sans-serif;
-$font-display-stack: "Noto Serif", serif;
+$font-display-stack: "Merriweather", serif;
 $font-mono-stack: "Space Mono", monospace;

@@ -1,7 +1,7 @@
 .home-intro {
     max-width: 70rem;
     height: fit-content;
-    margin-block: 3rem;
+    margin-block: 6rem;
     margin-inline: auto;
     text-align: center;
     line-height: 1.2;
@@ -10,11 +10,10 @@
 }
 .projects-section {
     max-width: 1200px;
-    padding-inline: 3rem;
     margin: auto;
     margin-bottom: 6rem;
 
-    @media screen and (max-width: 767px) {
+    @media (min-width: 320px) {
         padding-inline: 1rem;
     }
 
@@ -43,15 +42,16 @@
 
     a {
         display: block;
-        padding: 2rem 1.5rem;
+        padding: 2rem 2rem;
+
         border-radius: 0.75rem;
         background-color: $rp-dawn-surface;
         border-radius: 1em;
-        transition: all 300ms ease;
+        transition: all 200ms ease;
         contain: paint;
 
         .project-image {
-            margin-top: 1rem;
+            margin-block: 1rem;
             overflow: hidden;
         }
 

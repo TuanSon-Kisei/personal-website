@@ -11,53 +11,69 @@ footer {
 
     section {
         display: grid;
-        grid-template-columns: 4fr 2fr;
-        margin-bottom: 7rem;
-        padding-top: 2rem;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        margin-block-end: 8rem;
+        padding-block-start: 2rem;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1024px) {
             grid-template-columns: 1fr;
             grid-template-rows: auto auto;
             gap: 2rem;
             margin-bottom: 3rem;
         }
 
-        #copy-email-button {
-            border: none;
-            background-color: $rp-dawn-base;
-            font-family: $font-body-stack;
-            color: $rp-dawn-text;
-            margin-block: 1.5rem;
-            font-size: inherit;
-            padding-inline: 0.5rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
+        .footer-grid_right {
+            grid-column: span 9;
+            #copy-email-button {
+                border: none;
+                background-color: $rp-dawn-base;
+                font-family: $font-body-stack;
+                color: $rp-dawn-text;
+                margin-block: 1.5rem;
+                font-size: inherit;
+                padding-inline: 0.5rem;
+                cursor: pointer;
+                transition: all 0.3s ease;
 
-            .icon {
-                margin-left: 4px;
-                vertical-align: middle;
-                width: 16px;
-                height: 16px;
-            }
+                .icon {
+                    margin-left: 4px;
+                    vertical-align: middle;
+                    width: 16px;
+                    height: 16px;
+                }
 
-            &:hover {
-                background-color: $rp-dawn-overlay;
-                border-radius: 6px;
+                &:hover {
+                    background-color: $rp-dawn-overlay;
+                    border-radius: 6px;
+                }
             }
         }
 
-        .grid-left {
+        .footer-grid_left {
+            grid-column: span 3;
             display: flex;
             flex-direction: row;
-            justify-content: end;
-            gap: 7rem;
+            justify-content: space-around;
 
             div:first-of-type {
                 margin-bottom: 1.5rem;
             }
 
-            a h5 {
-                font-weight: 400;
+            h5 {
+                font-weight: normal;
+                color: $rp-dawn-subtle;
+                transition: 200ms ease;
+
+                .dark-mode & {
+                    color: $rp-subtle;
+                }
+
+                &:hover {
+                    color: $rp-dawn-text;
+                    .dark-mode & {
+                        color: $rp-text;
+                    }
+                }
             }
 
             a {
@@ -66,17 +82,15 @@ footer {
                 align-items: center;
                 gap: 4px;
                 margin-top: 1.5rem;
+                width: fit-content;
+                transition: 200ms ease;
 
-                &:hover {
-                    h5,
-                    svg {
-                        color: $rp-dawn-foam;
-                        transition: 400ms ease;
-                    }
+                &:focus {
+                    box-shadow: 0 0 0 1px $rp-dawn-foam;
                 }
             }
 
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 1024px) {
                 flex-direction: column;
                 gap: 1.5rem;
                 justify-content: flex-start;
@@ -106,13 +120,6 @@ body.dark-mode {
 
         p {
             color: $rp-muted;
-        }
-
-        .grid-left a:hover {
-            h5,
-            svg {
-                color: $rp-foam;
-            }
         }
     }
 }

@@ -4,7 +4,7 @@
     grid-template-columns: 6fr 4fr;
     padding-inline: 3rem;
     gap: 3rem;
-    animation: fadeInUp 0.3s ease-in;
+
     align-items: center;
 
     @media screen and (max-width: 1024px) {
@@ -42,8 +42,6 @@
     }
 
     .about-image {
-        animation: fadeInUp 0.3s ease-out;
-
         img {
             max-width: 100%;
             height: auto;
