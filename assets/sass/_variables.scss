@@ -14,36 +14,36 @@ $heading-sizes: (
     h6: clamp(1.05rem, calc(1.03rem + 0.08vw), 1.1rem)
 );
 
-//Rose Pine Dawn (Light variant)
-$rp-dawn-base: oklch(0.9699 0.0113 71.9);
-$rp-dawn-surface: oklch(0.987 0.0107 76.6);
-$rp-dawn-overlay: oklch(0.9389 0.0145 64.34);
-$rp-dawn-muted: oklch(0.6734 0.0268 298.37);
-$rp-dawn-subtle: oklch(0.5768 0.0458 291);
-$rp-dawn-text: oklch(0.4597 0.0629 289.56);
-$rp-dawn-love: oklch(0.5989 0.1071 2.66);
-$rp-dawn-gold: oklch(0.7555 0.1459 69.74);
-$rp-dawn-rose: oklch(0.6957 0.1058 23.03);
-$rp-dawn-pine: oklch(0.4909 0.077 228);
-$rp-dawn-foam: oklch(0.6289 0.0661 210.12);
-$rp-dawn-iris: oklch(0.6171 0.0738 305.7);
-$rp-dawn-highlight-low: oklch(0.9502 0.0101 58.21);
-$rp-dawn-highlight-med: oklch(0.892 0.0057 31.05);
-$rp-dawn-highlight-high: oklch(0.8431 0.006 334);
+// Rose Pine Dawn
+$rp-dawn-base: #faf4ed;
+$rp-dawn-surface: #fffaf3;
+$rp-dawn-overlay: #f2e9e1;
+$rp-dawn-muted: #9893a5;
+$rp-dawn-subtle: #797593;
+$rp-dawn-text: #575279;
+$rp-dawn-love: #b4637a;
+$rp-dawn-gold: #ea9d34;
+$rp-dawn-rose: #d7827e;
+$rp-dawn-pine: #286983;
+$rp-dawn-foam: #56949f;
+$rp-dawn-iris: #907aa9;
+$rp-dawn-highlight-low: #f4ede8;
+$rp-dawn-highlight-med: #dfdad9;
+$rp-dawn-highlight-high: #cecacd;
 
-//Rose Pine (Dark variant)
-$rp-base: oklch(0.2134 0.0255 291.13);
-$rp-surface: oklch(0.2413 0.0322 289.14);
-$rp-overlay: oklch(0.2708 0.0423 289.23);
-$rp-muted: oklch(0.5383 0.0435 291.41);
-$rp-subtle: oklch(0.6539 0.0444 291.23);
-$rp-text: oklch(0.9088 0.0299 289.97);
-$rp-love: oklch(0.6977 0.1565 4.22);
-$rp-gold: oklch(0.8429 0.11 74.6);
-$rp-rose: oklch(0.8363 0.0544 21.14);
-$rp-pine: oklch(0.5277 0.0793 227.72);
-$rp-foam: oklch(0.8219 0.0543 209.56);
-$rp-iris: oklch(0.776 0.0945 304.99);
+// Rose Pine (Dark variant)
+$rp-base: #191724;
+$rp-surface: #1f1d2e;
+$rp-overlay: #26233a;
+$rp-muted: #6e6a86;
+$rp-subtle: #908caa;
+$rp-text: #e0def4;
+$rp-love: #eb6f92;
+$rp-gold: #f6c177;
+$rp-rose: #ebbcba;
+$rp-pine: #31748f;
+$rp-foam: #9ccfd8;
+$rp-iris: #c4a7e7;
 $rp-highlight-low: #21202e;
 $rp-highlight-med: #403d52;
 $rp-highlight-high: #524f67;
