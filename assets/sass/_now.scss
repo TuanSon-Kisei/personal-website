@@ -4,10 +4,13 @@
     margin: 3vw auto;
 
     a {
-        text-decoration: underline;
-        color: $rp-dawn-foam;
+        color: $rp-dawn-iris;
         .dark-mode & {
-            color: $rp-foam;
+            color: $rp-iris;
+        }
+
+        &:hover {
+            text-decoration: underline;
         }
     }
 
@@ -26,7 +29,6 @@
         h4 {
             margin-block-start: 2em;
             margin-block-end: 1em;
-            font-family: $font-mono-stack;
         }
 
         p {

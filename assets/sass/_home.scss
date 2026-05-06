@@ -58,11 +58,8 @@
         .project-image img {
             max-width: 100%;
             height: auto;
+            object-fit: cover;
             transition: transform ease-in 200ms;
-        }
-
-        .project-image img:hover {
-            transform: scale(1.05);
         }
 
         &:hover {
@@ -78,12 +75,11 @@
     }
 
     li + li {
-        margin-top: 3em;
+        margin-block-start: 4rem;
     }
 
     h3 {
-        margin-top: 4px;
-        margin-bottom: 6px;
+        margin-block: 0.5rem;
     }
 }
 
