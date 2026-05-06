@@ -5,17 +5,13 @@
         font-style: $style;
         font-weight: $weight;
         font-display: swap;
-        src: url("#{$path}.woff2") format("woff2");
+        src: url("#{$path}") format("woff2");
     }
 }
-
-@include font-face("Work Sans", "/fonts/WorkSans-Regular.woff2", 400);
-@include font-face("Work Sans", "/fonts/WorkSans-SemiBold.woff2", 500);
-
-@include font-face("Noto Serif", "/fonts/NotoSerif-Regular.woff2", 400);
-
-//Monoface font
-@include font-face("Space Mono", "/fonts/SpaceMono-Regular.woff2", 400);
+@include font-face("Work Sans", "../fonts/WorkSans-Regular.woff2", 400);
+@include font-face("Work Sans", "../fonts/WorkSans-SemiBold.woff2", 500);
+@include font-face("Noto Serif", "../fonts/NotoSerif-Regular.woff2", 400);
+@include font-face("Space Mono", "../fonts/SpaceMono-Regular.woff2", 400);
 
 //Typography used
 $font-body-stack: "Work Sans", sans-serif;
