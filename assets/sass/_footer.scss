@@ -81,10 +81,6 @@ footer {
                     color: inherit;
                     line-height: 1.2;
 
-                    .dark-mode & {
-                        color: $rp-subtle;
-                    }
-
                     &:after {
                         content: "";
                         position: absolute;
