@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dede/index.md",
+                "file": "readmate/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -185,6 +185,10 @@
   },
   "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
+    "readings/_index.md",
+    "petfren/index.md",
+    "now/index.md",
+    "dede/index.md",
     "dede/images/user_research.png.part",
     "dede/images/tracking_iteration.png.part",
     "dede/images/problem_statement.png.part",
@@ -199,10 +203,6 @@
     "dede/images/designathon-me-giving-presentation.webp",
     "_index.md",
     "readmate/index.md",
-    "readings/_index.md",
-    "petfren/index.md",
-    "dede/index.md",
-    "now/index.md",
     "about/index.md",
     "petfren/images/competitor_screenshots.png",
     "petfren/images/hero.png",
@@ -213,7 +213,6 @@
     "petfren/images/petfren_ai_response.png",
     "petfren/images/persona.png",
     "images/g.md",
-    "images",
     "images.md",
     "project-3.md",
     "project-2.md",

@@ -6,7 +6,7 @@ $mediaType "avif") -}}
 <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" />
 
 {{/* WebP: only resize */}} {{- else if eq $mediaType "webp" -}} {{- $small :=
-$img.Resize "800x" -}} {{- $medium := $img.Resize "1200x" -}}
+$img.Resize "800x" -}} {{- $medium := $img.Resize "1400x" -}}
 <img
     srcset="{{ $small.RelPermalink }} 800w,
               {{ $medium.RelPermalink }} 1400w"
@@ -18,7 +18,7 @@ $img.Resize "800x" -}} {{- $medium := $img.Resize "1200x" -}}
 
 {{/* PNG and JPEG: convert to WebP with 90% quality and resize */}} {{- else -}}
 {{- $small := ($img.Resize "800x webp q90") -}} {{- $medium := ($img.Resize
-"1280x webp q90") -}}
+"1400x webp q90") -}}
 <img
     srcset="{{ $small.RelPermalink }} 800w,
               {{ $medium.RelPermalink }} 1400w"

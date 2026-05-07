@@ -19,28 +19,37 @@ weight: "3"
 {{< project-info >}}
 
 ## About the project
+
 Petfren is a mobile app designed to help parents teaching Mathematics subject to their kids in a way that's more fun when learning together. Collaborating with 2 more experienced UX/UI designers and guided by my UX mentor, this project marks my very first UX project and venture beyond design. 
+
 ![](images/graduation.png)
 ## The problem
+
 Teaching kids any study material is an arduous task that some parents dread thinking about. They find it impossible to make their children to understand the importance of learning, especially Maths, when the parents also have many many other things to stress over with. Having seen those cases are happening too often, we set out a goal to address the issue at hand: **How can we design a product that can remove some of the stress of teaching Maths subject for parents?**
 
 ## Design Research
 #### How are parents teaching their children right now?
 We wanted to gain a better understanding of how parents navigate teaching Math to their kids. After some rounds of conducting desk research and interviewing parents, we identified a few common **patterns**:
+
 ![An image showing 4 problem statements](images/problems.png)
 
 With our in-depth analysis using Jobs-to-be-done framework, we **pinpointed** one main persona that's **best represented** our target audience pain points, needs and goals:
+
 ![An image showing a parents persona about the project](images/persona.png)
 
 After gathering our interview data and notable recurrent patterns, we gained better comprehension of the problems those interviewed parents are facing and quickly set **2** main opportunity areas to focus on:
+
 ![An image showing affinity mapping made in Figma](images/affinity-mapping.png)
 ![](images/empathy.png)
 
 ## Becoming my users
+
 To truly understand our users, I spent an afternoon teaching Math to our mentor's 8-year-old son. Within 15 minutes, I realized why parents find this overwhelming: explaining _why_ 3 × 2 = 6 (and not 5) requires breaking down concepts I'd taken for granted. The experience was humbling and gave me deep appreciation for parents who do this daily while juggling work and household responsibilities.
 ## Competitor Audit
 We analyzed leading math tutoring apps to identify opportunity gaps: **Monkey Math**, **Checkmath**, and **Duolingo Math**.
+
 ![](images/competitor_screenshots.png)
+
 What they did well:
 {{< alert type="success" >}} Monkey Math provides instant fun and engaging visuals to kids {{< /alert >}}
 {{< alert type="success" >}} Checkmath provides instant answers so parents know the correct answer readily on hand {{< /alert >}}
@@ -51,20 +60,24 @@ However they still failed to accomplish these areas:
 {{< alert type="error" >}} All apps are designed for solo student use. There is little interactivity for both parents and children to learn together, which is how elementary math is typically taught at home. {{< /alert >}}
 ## Ideation
 We hosted a small brainstorm with our recruited peers who is interested in education or have knowledge in teaching children. After that, we began to vote the feature which had the most "likes" and analyse their effort and impact on users with impact - effort metrix.
+
 ![](images/ideation.png)
 ![](images/impact_effort_matrix.png)
 
 ## Final Designs
 #### How might we provide a better way to teach Maths that the child can understand in a reasonably short time?
 We started to explore by designing a better structured and more emphasis on creating visuals tailored to math-related questions, especially ones involving shapes or images.
+
 ![](images/petfren_ai_response.png)
 
 #### What if our AI stuck at some problems?
 We found that some parents might have hesitation when asking to AI so we also provided a way to have a chat or call directly to one of many Math tutors. After all there should be multiple options to find and solve math answers for any situation.
+
 ![](images/petfren_ask_tutor.png)
 
 #### How about some games or funny things to brighten up the mood?
 While these are the most interesting and "weird" option, unfortunately we couldn't do user testing to gather feedback to see if our recreational feature is useful or warrant enough attention for our users to try. With enough data and testing, we might decide to potentially explore this option further.
+
 ![](images/petfren_voice_changing.png)
 ![](images/petfren_math_games.png)
 ## Reflections

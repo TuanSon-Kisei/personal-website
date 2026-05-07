@@ -13,10 +13,17 @@
         animation: fadeInUp 0.2s ease-in;
 
         article {
+            width: 100%;
+
             contain: content;
-            max-width: 70ch;
+            display: grid;
+            grid-template-columns: 1fr min(70ch, 100%) 1fr;
             margin: 0 auto;
             counter-reset: heading-counter;
+
+            > * {
+                grid-column: 2;
+            }
 
             .project-summary {
                 margin-block-end: 1rem;
@@ -64,10 +71,23 @@
                 margin-block-end: 1rem;
             }
 
-            img {
+            img,
+            p:has(img) {
+                grid-column: 1 / -1;
+                width: 100%;
                 max-width: 100%;
-                height: auto;
+
                 padding-block: 1rem;
+            }
+
+            img,
+            figure img,
+            p:has(img) img {
+                max-width: 1400px;
+                height: auto;
+
+                display: block;
+                margin: 0 auto;
             }
 
             img:has(+ img) {
