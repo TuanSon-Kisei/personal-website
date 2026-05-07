@@ -15,7 +15,6 @@ skills:
   - Design Research
   - User Interview
   - Wireframing
-toc: "true"
 weight: "1"
 ---
 ![](images/hero.png)
@@ -23,20 +22,30 @@ weight: "1"
 
 
 ## Overview
+
 In September 2025, I had privilege to join one of the most famous competition in Product Design field of Vietnam: Lollypop Designathon. Designathon is a unique event where teams match against each other in a 24hr race to research and deliver their solution matched with the given subject of the game.
 ## Problem Space
-The daily traffics in big cities are often chaotic and unpredictable at times. There is virtually no product that can help people to know if they accidentally violate traffic regulations on the road. And for sure none wants to read those long boring news about updated traffic rules either.
 
-This is also becoming a heavy burden on the government too. The government imposed stricter laws, hoping them will curb the traffic violation cases, but in turns created reinforcement loop for both of the parties.
+None of us wants to make mistake when we are riding motorbikes on the road. If we accidentally do and got caught, that means we will get fined heavily, our driver license might get revoked or worse, our motorbike will be temporarily held by the police.
+
+However, most young people have trouble when navigating in the traffic. It's not because they don't care about the road laws, it's that those laws are so confusing and hard to remember for most of them that for them, every time they get on the road is like a losing battle.
+
+The government imposed stricter laws, hoping they will reduce the number of traffic violation cases, which in fact can make the issue even worse. Because when riders feel cornered and overwhelmed, some of them will switch to "defensive" stance, tuning out the rules entirely rather than following them genuinely.
+
+Solutions were made to address this, however, most solutions fell short since they only provide on what laws there when we go on the road, and not the core issue of the problem: helping them understand those laws easily and know how to follow them.
+
 ![An image showing multiple images bundled together, showing the theme of Vietnam's traffics problems](images/problem_space.png)
-
-
 
 ## Tackling the Problem
 This problem provided a huge opportunity to learn more about the huge gap between Vietnam's traffic regulations and its actual application to real life. And that's what we wanted to solve for.
+
 ![An image with white background and black text saying "How can we get people to easily learn and absorb traffic laws and gets alerted to their traffic violations on the road"](images/problem_statement.png)
 
+## My Individual Contribution
 
+1. I led my team planning and executing user research. 
+   For quantitative research, we decided on conducting surveys to quickly gauge how widespread this problem was for young people. Alongside this, we also did qualitative research through short 15-minute interviews to dive deeper into how our respondents navigated the challenge of both going on the road and learning the laws themselves. With the way I led our team's research phase, we got a clearer picture of our waiting-to-be-solved problem at scale, and left us with deeper understanding of our user's pain.
+2. I also led my team with content design structure. Doing content design early helped us explore our design direction before investing more time in visual design, saved us significant time during the UI phase. 
 
 ## User Research
 
@@ -56,19 +65,33 @@ The issue is clear: young people ignored learning updated traffic regulations wh
 
 Guided by user research and online survey, we turned these three key pain points: outdated knowledge, uninteresting method when teaching updated regulations and only know new laws through words of mouth--- into corresponding opportunity goals for our designs.
 
+1. Close the knowledge gap between what young riders know and what the laws require them to do.
+2. Turn driving mistakes into actionable learning opportunities both on the ride and after the ride.
+3. Make learning the laws experience becoming a natural part of their journey, not something they are forced to do every day.
+
 
 ![An image showing three charts of the survey](images/opportunities.png)
 
-## Feature Ownership
-To achieve our team's goal of creating comprehensible and engaging platform for teaching and spreading traffic regulations awareness, we divided tasks for our focused features set. I took ownership and **co-led the design research process of our app's features**, prioritized **informative** and **simplicity** to help users deal with **complex traffic laws**.
+## Creating the goals
+Based on our user research, we started to define our core **user story** to guide our work:
 
+**As a** motorcyclist participating in the traffic.
 
+**I need to** understand the mistakes I've made on the road without thinking about them when I'm riding.
 
-## Focusing on a focal goal
-My UXR found that when participants join the road, they quickly found difficulty so due to **obscured** and **complex** existing traffic system which **very hard** to notice of within a short time, this leads to **accidental** traffic violations. My approach was to how I can design features that **non-invasive** and **recognisable** about the problems and they must also be **engaging** and **humorous** for generation Z whom is our target audience.
+**So I can** learn from them after each ride to become a safer rider over time.
+
+With that said, we defined **3** core user goals for our app:
+1. Stay safe and aware while on the road without distractions.
+2. Understand where I got wrong without the app interfering my ride.
+3. Learn about traffic laws in a way that make sense in a way for me, without feeling I have to read an university textbook.
+
+With our user goals defined, we translated them into business goals for our app:
+1. Establish our app as the go-to learning app for young riders when learning about traffic laws.
+2. Drive daily usage by making learning laws a habitual part of users' riding journey.
+3. Reduce the number of users violated traffic laws by improving their knowledge of the laws.
+
 ![An image showing three papers detailing about product specifications](images/drafts.png)
-
-
 
 ## Ideation
 After we sketched our preliminary lo-fis, we headed to create mid-fidelity wireframes to explore our options, build our vision of Dede.

@@ -9,8 +9,8 @@ $mediaType "avif") -}}
 $img.Resize "800x" -}} {{- $medium := $img.Resize "1200x" -}}
 <img
     srcset="{{ $small.RelPermalink }} 800w,
-              {{ $medium.RelPermalink }} 1200w"
-    sizes="(max-width: 800px) 100vw, 1200px"
+              {{ $medium.RelPermalink }} 1400w"
+    sizes="(max-width: 800px) 100vw, 1400px"
     src="{{ $medium.RelPermalink }}"
     alt="{{ .Text }}"
     loading="lazy"
@@ -18,11 +18,11 @@ $img.Resize "800x" -}} {{- $medium := $img.Resize "1200x" -}}
 
 {{/* PNG and JPEG: convert to WebP with 90% quality and resize */}} {{- else -}}
 {{- $small := ($img.Resize "800x webp q90") -}} {{- $medium := ($img.Resize
-"1200x webp q90") -}}
+"1280x webp q90") -}}
 <img
     srcset="{{ $small.RelPermalink }} 800w,
-              {{ $medium.RelPermalink }} 1200w"
-    sizes="(max-width: 800px) 100vw, 1200px"
+              {{ $medium.RelPermalink }} 1400w"
+    sizes="(max-width: 800px) 100vw, 1400px"
     src="{{ $medium.RelPermalink }}"
     alt="{{ .Text }}"
     loading="lazy"

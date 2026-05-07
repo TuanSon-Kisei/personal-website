@@ -25,13 +25,13 @@
 }
 
 .alert-success .alert-icon {
-    background-color: adjust-color($color: $rp-dawn-pine, $lightness: 50%);
+    background-color: adjust-color($color: $rp-dawn-pine, $lightness: 15%);
 }
 .alert-warning .alert-icon {
-    background-color: adjust-color($color: $rp-dawn-gold, $lightness: 50%);
+    background-color: adjust-color($color: $rp-dawn-gold, $lightness: 15%);
 }
 .alert-error .alert-icon {
-    background-color: adjust-color($color: $rp-dawn-rose, $lightness: 50%);
+    background-color: adjust-color($color: $rp-dawn-rose, $lightness: 15%);
 }
 
 body.dark-mode {

@@ -1,5 +1,4 @@
 .page-wrapper {
-    margin: 3rem auto;
     padding-inline: 3rem;
 
     @media screen and (max-width: 768px) {
@@ -7,23 +6,15 @@
     }
 
     .project-content {
+        max-width: 100%;
+
         position: relative;
         word-break: keep-all;
         animation: fadeInUp 0.2s ease-in;
 
-        @media screen and (max-width: 1024px) {
-            gap: 2rem;
-            grid-template-columns: 2fr 4fr;
-        }
-
-        @media screen and (max-width: 768px) {
-            grid-template-columns: 1fr;
-        }
-
         article {
-            max-width: 70ch;
-            text-align: left;
             contain: content;
+            max-width: 70ch;
             margin: 0 auto;
             counter-reset: heading-counter;
 
@@ -73,7 +64,7 @@
                 margin-block-end: 1rem;
             }
 
-            p img {
+            img {
                 max-width: 100%;
                 height: auto;
                 padding-block: 1rem;

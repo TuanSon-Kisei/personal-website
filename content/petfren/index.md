@@ -13,7 +13,6 @@ skills:
 team:
   - 3 Designers
 role: UX Designer
-toc: "true"
 weight: "3"
 ---
 ![](images/hero.png)

@@ -118,6 +118,11 @@ body.dark-mode {
         color: $rp-text;
     }
 
+    ul,
+    ol {
+        color: $rp-text;
+    }
+
     background-color: $rp-base;
 
     ::selection {
