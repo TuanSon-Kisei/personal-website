@@ -5,6 +5,7 @@
     "": {
       "dependencies": {
         "animejs": "^4.3.4",
+        "gsap": "^3.15.0",
         "sass": "^1.99.0",
         "swup": "^4.8.2",
       },
@@ -46,6 +47,8 @@
     "delegate-it": ["delegate-it@6.3.0", "", { "dependencies": { "typed-query-selector": "^2.11.2" } }, "sha512-WAa6cA61M5mfDR31PBgMNQQ3LY1q++TxnZzcm7E9XV8ODBPxDutxH0toTR/BXqIkLaVuU7ntFe1uOqDllhA22A=="],
 
     "detect-libc": ["detect-libc@2.1.2", "", {}, "sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ=="],
+
+    "gsap": ["gsap@3.15.0", "", {}, "sha512-dMW4CWBTUK1AEEDeZc1g4xpPGIrSf9fJF960qbTZmN/QwZIWY5wgliS6JWl9/25fpTGJrMRtSjGtOmPnfjZB+A=="],
 
     "immutable": ["immutable@5.1.5", "", {}, "sha512-t7xcm2siw+hlUM68I+UEOK+z84RzmN59as9DZ7P1l0994DKUWV7UXBMQZVxaoMSRQ+PBZbHCOoBt7a2wxOMt+A=="],
 

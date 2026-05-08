@@ -97,12 +97,6 @@ footer {
                     &:hover::after {
                         transform: scaleX(1);
                     }
-
-                    @media (prefers-reduced-motion: reduce) {
-                        &:after {
-                            transition-duration: 0s;
-                        }
-                    }
                 }
             }
 
