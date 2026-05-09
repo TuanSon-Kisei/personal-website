@@ -125,9 +125,11 @@ Phone vibrations while riding may be distracting. Real-world testing would be ne
 
 ## Design Solution
 Before heading out, the users only have to wear a specialized motorcycle helmet that's equipped a **small camera**. The camera is configured to **automatically record and send data** with wi-fi signals to Dede **mobile app**. When the user finished their journey and their phone is connected to Internet, Dede **push** those data to AI so the AI can **analyze** the user's journey and **produce** the analysis after an amount of time.
+
 ![](images/dash-cam-ai.png)
 
 For the alarm part, the app will use phone's **readilly available GPS** sensors. The app will have the offline data of the current road the user riding on, send **vibrating** signals to notify the user if they **accidentally violated** the traffic regulations like **stepped over** the white line before the traffic lights or **exceeded** the speed limit within a threshold.
+
 ![](images/gps-alarm.png)
 ![](images/gps-alarm-success.png)
 
@@ -162,9 +164,9 @@ We had the once-in-a-lifetime opportunity to share the work we done with other d
 ![](images/designathon-me-giving-presentation.webp)
 
 ## What I learned
-##### Early validation matters - especially for hardware dependencies
+### Early validation matters - especially for hardware dependencies
 Can our users afford it? How should we integrate our camera hardware into their daily life? Who will manufacture it? How should we market it and present it not only for our users but also for those who want to invest in it? For something that is as critical as hardware, early validation like cost interview, value preposition and market research should come before interface design - not after. 
-##### Design for failures, not just when it works
+### Design for failures, not just when it works
 We designed screens showing "AI analysis results" without taking into consideration what happens when AI fails - misidentified a violation, extreme weather, poor lightning conditions like roads without lights at night. Real products need designed states for uncertainty, not just success cases.
-##### Privacy as priority, not an afterthought
+### Privacy as priority, not an afterthought
 Recording users' driving journeys with cameras felt like an obvious solution to our problem. Only after we presented our solution did we realize that the ultimate choice when using product lies in our users. Optional data collection, data deletion option, and consent flows are all equally important for the whole customer's journey. 

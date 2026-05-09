@@ -4,6 +4,7 @@
   "workspaces": {
     "": {
       "dependencies": {
+        "@swup/js-plugin": "^3.2.0",
         "animejs": "^4.3.4",
         "gsap": "^3.15.0",
         "sass": "^1.99.0",
@@ -39,6 +40,10 @@
     "@parcel/watcher-win32-ia32": ["@parcel/watcher-win32-ia32@2.5.6", "", { "os": "win32", "cpu": "ia32" }, "sha512-k35yLp1ZMwwee3Ez/pxBi5cf4AoBKYXj00CZ80jUz5h8prpiaQsiRPKQMxoLstNuqe2vR4RNPEAEcjEFzhEz/g=="],
 
     "@parcel/watcher-win32-x64": ["@parcel/watcher-win32-x64@2.5.6", "", { "os": "win32", "cpu": "x64" }, "sha512-hbQlYcCq5dlAX9Qx+kFb0FHue6vbjlf0FrNzSKdYK2APUf7tGfGxQCk2ihEREmbR6ZMc0MVAD5RIX/41gpUzTw=="],
+
+    "@swup/js-plugin": ["@swup/js-plugin@3.2.0", "", { "dependencies": { "@swup/plugin": "^4.0.0" }, "peerDependencies": { "swup": "^4.6.0" } }, "sha512-lWqQqFEBs+ndEvBdyyGLrS+WQqLiPfX6aHzoCa6cxps8hSU3KK0/uXU/F6urMjMh7PHbJ7slaJe2acEqX9SDvw=="],
+
+    "@swup/plugin": ["@swup/plugin@4.0.0", "", { "dependencies": { "swup": "^4.0.0" } }, "sha512-3Kq31BJxnzoPg643YxGoWQggoU6VPKZpdE5CqqmP7wwkpCYTzkRmrfcQ29mGhsSS7xfS7D33iZoBiwY+wPoo2A=="],
 
     "animejs": ["animejs@4.3.4", "", {}, "sha512-L80v2/pv74UPC4LCqllWvOABoFMrk8URwgHipMG+F/f3pph4NF4+7ho42kmVbZ5mA6Mgo/eh4kQh55ilM7EoFw=="],
 

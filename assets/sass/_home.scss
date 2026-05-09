@@ -6,7 +6,11 @@
     text-align: center;
     line-height: 1.2;
     letter-spacing: -0.01em;
-    padding-inline: 1rem;
+    padding-inline: 3rem;
+
+    @media (min-width: 320px) {
+        padding-inline: 1rem;
+    }
 }
 .projects-section {
     max-width: 1200px;
@@ -15,6 +19,10 @@
 
     @media (min-width: 320px) {
         padding-inline: 1rem;
+    }
+
+    @media (min-width: 1024px) {
+        padding-inline: 3rem;
     }
 
     .year-chip {

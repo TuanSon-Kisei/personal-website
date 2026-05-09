@@ -1,5 +1,4 @@
 import { animate, splitText, stagger } from "animejs";
-import swup from "./page-transition";
 
 function initIntroAnimation() {
   splitText(".home-intro", {
@@ -16,4 +15,3 @@ function initIntroAnimation() {
 }
 
 initIntroAnimation();
-swup.hooks.on("page:view", initIntroAnimation);

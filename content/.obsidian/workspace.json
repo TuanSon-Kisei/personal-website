@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readmate/index.md",
+                "file": "dede/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -185,6 +185,7 @@
   },
   "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
+    "readmate/index.md",
     "readings/_index.md",
     "petfren/index.md",
     "now/index.md",
@@ -202,7 +203,6 @@
     "dede/images/dede-tracking-journey.webp",
     "dede/images/designathon-me-giving-presentation.webp",
     "_index.md",
-    "readmate/index.md",
     "about/index.md",
     "petfren/images/competitor_screenshots.png",
     "petfren/images/hero.png",

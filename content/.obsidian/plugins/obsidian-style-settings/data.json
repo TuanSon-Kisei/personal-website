@@ -4,5 +4,10 @@
   "obsidian-velocity@@enable-special-text": true,
   "obsidian-velocity@@enable-special-code": true,
   "obsidian-velocity@@theme-paint-light": "beige",
-  "obsidian-velocity@@file-line-width": 42.25
+  "obsidian-velocity@@file-line-width": 42.25,
+  "obsidian-prism-theme@@color-schemes-dt": "pt-color-scheme-mocha-dt",
+  "obsidian-prism-theme@@color-scheme-style-dt": "pt-color-scheme-style-two-tone-and-border-dt",
+  "obsidian-prism-theme@@dark-accent-color-preset": "pt-accent-color-orange-dt",
+  "obsidian-prism-theme@@pt-focused-mode": false,
+  "obsidian-prism-theme@@file-line-width": 870
 }

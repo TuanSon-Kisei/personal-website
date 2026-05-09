@@ -4,5 +4,5 @@ import "./lazy-loading-images-not-first.js";
 import "./toggle-dark-mode.js";
 import "./copy-to-clipboard.js";
 import "./hamburger-navbar.js";
-import "./table-of-contents.js";
 import "./clickable-reading-card.js";
+import "./page-transition.js";

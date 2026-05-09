@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@swup/js-plugin": "^3.2.0",
     "animejs": "^4.3.4",
     "gsap": "^3.15.0",
     "sass": "^1.99.0",
