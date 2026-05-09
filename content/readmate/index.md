@@ -24,19 +24,30 @@ We utilized the Double Diamond framework to maintain a holistic view of the proj
 
 ## Product Discovery
 
-After receiving a big challenge about **reading habits**, we started to break down the problem into smaller pieces, focusing on the readers' experience when reading new materials. 
-#### Research questions
+After receiving a big challenge about **reading habits**, we started to break down the problem into smaller pieces, focusing on the readers' experience when reading new materials.
+### User Interviews
 
-- How is their reading habits at the moment of interviewing right now?
-- What factors might affect the reading habits?
-- What are the challenges to their reading habits right now?
-- Do they use any tools or methods to overcome them? If yes, how are they using them and how effective are those tools?
+Before doing any user interviews, we started first and foremost the important activity: forming research questions. Research questions help us plan the right scope for our interviewing questions, and they also help us understand the world where our interviewees inhabits (their background, their situation, their mental model). Here are some research questions we made before conducting interviews:
 
- After interviewing, we found 8 potential interviewees: 
+1. How is their reading habits right now?
+2. What motivates them to read?
+3. Why do they want to continue reading? 
+4. What benefits does reading provide to them?
+5. What are the challenges to their reading habits right now?
+6. Do they use any tools or methods to overcome them? If yes, how are they using them and how effective are those tools? If no, why?
+
+ After interviewing, we found 8 potential interviewees. These 8 interviewees shared their story about their reading sessions and we found these common themes about their problems when reading:
+
+1. Complex materials (like Humanities, Philosophy books) discourage them from reading more due to they often require readers have some beforehand knowledge before reading.
+2. Took too much time researching the books (reading social media's reviews, reading Readwise reviews, suggestions from friends) and when reading them they lost all the strength. 
+3. They found that the reading materials were not matched to their expectations (knowledge, the author's point of view compared to them) and feel like they wasting time reading them.
+
   ![](images/img1.webp)
+
+### Jobs to be Done
+
+ To better understand and determine which problem is more valuable to solve, we decided to use the good old Jobs-to-be-Done framework. This approach helped us analyze deeper about their particular actions around their reading session, understand the appropriate context and situation where they took action.
  
- #### Jobs-to-be-Done
- The Jobs-to-be-Done framework always helps me focus on user needs independently of the solution. This approach was particularly valuable since "reading habits" is quite a broad a concept to grasp of. 
  ![](images/img2.webp)
  
  By using this framework, we grounded our work in specific, easy to recognize actions. The brainstorm resulted in three main clearly defined "jobs" for us to prioritize:
