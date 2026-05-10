@@ -34,11 +34,6 @@ $reading-formats: (
             background-color: $rp-dawn-surface;
             border-radius: 0.75em;
             cursor: pointer;
-            transition: transform 0.2s ease-in-out;
-
-            @media (prefers-reduced-motion: reduce) {
-                transition: none;
-            }
 
             .dark-mode & {
                 border-color: $rp-highlight-med;
@@ -103,17 +98,24 @@ $reading-formats: (
             &:hover {
                 background-color: $rp-dawn-overlay;
                 border-color: $rp-dawn-highlight-high;
-                transform: translateY(-5px);
 
                 .dark-mode & {
                     border-color: $rp-highlight-high;
                     background-color: $rp-overlay;
+                }
+
+                @media (prefers-reduced-motion: no-preference) {
+                    transform: translateY(-5px);
                 }
             }
 
             &:focus-visible {
                 outline: none;
                 box-shadow: 0 0 0 2px $rp-dawn-muted;
+            }
+
+            @media (prefers-reduced-motion: no-preference) {
+                transition: transform 0.2s ease-in-out;
             }
         }
     }

@@ -10,7 +10,6 @@
 
         position: relative;
         word-break: keep-all;
-        animation: fadeInUp 0.2s ease-in;
 
         article {
             width: 100%;
@@ -68,6 +67,13 @@
             }
 
             p {
+                margin-block-end: 1rem;
+            }
+
+            ul {
+                list-style: disc;
+                list-style-position: inside;
+                padding-inline-start: 1.5rem;
                 margin-block-end: 1rem;
             }
 
