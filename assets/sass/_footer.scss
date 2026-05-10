@@ -42,6 +42,10 @@ footer {
                 cursor: pointer;
                 transition: all 0.3s ease;
 
+                @media (prefers-reduced-motion: reduce) {
+                    transition: none;
+                }
+
                 .icon {
                     margin-left: 4px;
                     vertical-align: middle;
@@ -92,6 +96,9 @@ footer {
                         background-color: currentColor;
                         transform: scaleX(0);
                         transform-origin: 0 0;
+                        @media (prefers-reduced-motion: reduce) {
+                            transition: none;
+                        }
                     }
 
                     &:hover::after {

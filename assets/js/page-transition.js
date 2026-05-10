@@ -2,6 +2,10 @@ import gsap from "gsap";
 import Swup from "swup";
 import SwupJsPlugin from "@swup/js-plugin";
 
+const prefersReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)",
+).matches;
+
 const swup = new Swup({
   plugins: [
     new SwupJsPlugin({
@@ -12,8 +16,8 @@ const swup = new Swup({
           out(done) {
             gsap.to("#swup", {
               opacity: 0,
-              y: -20,
-              duration: 0.2,
+              y: prefersReducedMotion ? 0 : -20,
+              duration: prefersReducedMotion ? 0 : 0.2,
               ease: "power1.inOut",
               onComplete: done,
             });
@@ -23,13 +27,13 @@ const swup = new Swup({
               "#swup",
               {
                 opacity: 0,
-                y: 30,
+                y: prefersReducedMotion ? 0 : 30,
               },
               {
                 opacity: 1,
                 y: 0,
-                duration: 0.2,
-                ease: "power1.inOut",
+                duration: prefersReducedMotion ? 0 : 0.2,
+                ease: "power2.in",
                 onComplete: done,
               },
             );

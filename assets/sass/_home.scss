@@ -58,6 +58,10 @@
         transition: all 200ms ease;
         contain: paint;
 
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
+
         .project-image {
             margin-block: 1rem;
             overflow: hidden;

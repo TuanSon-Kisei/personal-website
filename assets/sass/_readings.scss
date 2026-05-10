@@ -35,6 +35,11 @@ $reading-formats: (
             border-radius: 0.75em;
             cursor: pointer;
             transition: transform 0.2s ease-in-out;
+
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
+
             .dark-mode & {
                 border-color: $rp-highlight-med;
                 background-color: $rp-surface;

@@ -4,16 +4,6 @@
     box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0ms !important;
-    }
-}
-
 *::selection {
     background: $rp-dawn-highlight-med;
 }
@@ -92,10 +82,6 @@ body {
         width: 24px;
         height: 24px;
         color: $rp-dawn-text;
-    }
-
-    @media screen and (prefers-reduced-motion: reduce) {
-        --swup-fade-theme-duration: 0s;
     }
 }
 
