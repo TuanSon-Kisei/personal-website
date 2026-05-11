@@ -18,7 +18,7 @@ const swup = new Swup({
               opacity: 0,
               y: prefersReducedMotion ? 0 : -20,
               duration: prefersReducedMotion ? 0 : 0.2,
-              ease: "power1.inOut",
+              ease: "circ.in",
               onComplete: done,
             });
           },
@@ -33,7 +33,7 @@ const swup = new Swup({
                 opacity: 1,
                 y: 0,
                 duration: prefersReducedMotion ? 0 : 0.2,
-                ease: "power2.in",
+                ease: "power2.out",
                 onComplete: done,
               },
             );
