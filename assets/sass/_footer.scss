@@ -2,11 +2,11 @@ footer {
     width: 100%;
     border-top: 1px solid;
     border-color: $rp-dawn-highlight-high;
-    padding: 0 3rem;
-    margin: 3vw 0 1vw 0;
+    padding-inline: 3rem;
+    margin-block: 2rem;
 
     @media screen and (max-width: 767px) {
-        padding: 0 1rem;
+        padding-inline: 1rem;
     }
 
     section {
