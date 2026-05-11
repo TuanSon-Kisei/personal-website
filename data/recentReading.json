@@ -35,6 +35,24 @@
       "author": ["Mike Monterio"],
       "format": "Article",
       "url": "https://buttondown.com/monteiro/archive/how-to-do-the-work/"
+    },
+    {
+      "title": "Meaningful Motion with Action-Driven Animation",
+      "author": ["Tobias Ahlin"],
+      "format": "Article",
+      "url": "https://tobiasahlin.com/blog/meaningful-motion-w-action-driven-animation/"
+    },
+    {
+      "title": "Don't chicken out about talking to people",
+      "author": ["Mike Monterio", "Erika Hall"],
+      "format": "Article",
+      "url": "https://buttondown.com/muledesign/archive/dont-chicken-out-about-talking-to-people/"
+    },
+    {
+      "title": "Start designing in content, not in code.",
+      "author": ["Pavel Samsonov"],
+      "format": "Article",
+      "url": "https://productpicnic.beehiiv.com/p/start-designing-in-content-not-in-code"
     }
   ]
 }
