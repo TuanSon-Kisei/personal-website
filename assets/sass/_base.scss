@@ -12,12 +12,6 @@ html {
     box-sizing: border-box;
 }
 
-.swup-transition-fade {
-    opacity: 1;
-    backface-visibility: hidden;
-    will-change: opacity;
-}
-
 body {
     color: $rp-dawn-text;
     background-color: $rp-dawn-base;
