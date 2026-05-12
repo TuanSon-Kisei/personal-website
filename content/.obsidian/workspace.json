@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readmate/index.md",
+                "file": "about/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -186,16 +186,16 @@
   "active": "3f9c4d2c1ec8ec95",
   "lastOpenFiles": [
     "dede/index.md",
+    "now/index.md",
     "readmate/index.md",
+    "petfren/index.md",
+    "readings/_index.md",
     "readmate/images/jtbd.png",
     "readmate/images/interview.png",
     "readmate/images/feature-exploration.png",
     "readmate/images/knowledge-map.png",
     "readmate/images/in-app-search.png",
     "readmate/images/user-story.png",
-    "now/index.md",
-    "petfren/index.md",
-    "readings/_index.md",
     "dede/images/user_research.png.part",
     "dede/images/tracking_iteration.png.part",
     "dede/images/problem_statement.png.part",

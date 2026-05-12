@@ -1,6 +1,6 @@
 ---
 title: Dede
-description: AI native app for helping young peeps navigating the chaotic traffics of Vietnam
+description: AI-powered mobile application to help young people learning traffic laws
 type: work
 cover: images/hero.png
 year: "2025"

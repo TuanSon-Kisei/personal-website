@@ -38,7 +38,8 @@
                     margin-bottom: 1rem;
                 }
 
-                h5 {
+                &_description {
+                    font-size: clamp(1.05rem, calc(1.03rem + 0.08vw), 1.1rem);
                     font-weight: 400;
                 }
             }

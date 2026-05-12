@@ -4,8 +4,10 @@
     <main class="project-content">
         <article>
             <header class="project-summary">
-                <h1>{{ .Title }}</h1>
-                <h5>{{ .Params.description }}</h5>
+                <h1 class="project-summary_title">{{ .Title }}</h1>
+                <p class="project-summary_description">
+                    {{ .Params.description }}
+                </p>
             </header>
             {{ .Content }}
         </article>

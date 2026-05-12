@@ -1,6 +1,6 @@
 ---
 title: Petfren
-description: Helping parents teach Math to their kids with AI-powered guidance
+description: AI-first mobile application help parents finding and explaining Maths problem to their kids easier
 type: work
 cover: images/hero.png
 year: "2024"
