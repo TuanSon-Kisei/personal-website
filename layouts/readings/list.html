@@ -4,9 +4,11 @@
         Blog posts, articles, videos, books I've recently read, enjoyed and
         recommend. From who having brighter minds than me.
     </h1>
-    <div class="readings-stack">
-        {{ range sort site.Data.recentReading.readings "title" }} {{ partial
-        "recent-reading-card.html" . }} {{ end }}
+    <div class="readings-wrapper">
+        <div class="readings-grid">
+            {{ range sort site.Data.recentReading.readings "title" }} {{ partial
+            "recent-reading-card.html" . }} {{ end }}
+        </div>
     </div>
 </div>
 {{ end }}

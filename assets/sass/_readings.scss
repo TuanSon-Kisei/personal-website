@@ -11,108 +11,114 @@
         padding-inline: 1rem;
     }
 
-    .readings-stack {
-        display: grid;
-        margin: 3rem auto;
+    .readings-wrapper {
         max-width: 60rem;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        margin: 3rem auto;
 
-        @media screen and (max-width: 768px) {
-            grid-template-columns: 1fr;
-        }
+        .readings-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fill,
+                minmax(var(--auto-grid-min-size, 24rem), 1fr)
+            );
+            gap: 1rem;
 
-        .reading-card {
-            padding: 1rem;
-            border: 2px solid $rp-dawn-highlight-med;
-            background-color: $rp-dawn-surface;
-            border-radius: 0.75em;
-            cursor: pointer;
-
-            .dark-mode & {
-                border-color: $rp-highlight-med;
-                background-color: $rp-surface;
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 1fr;
             }
 
-            &_format {
-                display: inline-block;
-                font-size: 0.875rem;
-                color: $rp-dawn-subtle;
-                margin-block-end: 0.5rem;
-                border: 1px solid $rp-dawn-highlight-high;
-                background-color: $rp-dawn-highlight-low;
-                border-radius: 0.25em;
-                padding: 3px 9px;
-                margin-block-end: 1rem;
+            .reading-card {
+                padding: 1rem;
+                border: 2px solid $rp-dawn-highlight-med;
+                background-color: $rp-dawn-surface;
+                border-radius: 0.75em;
+                cursor: pointer;
+
                 .dark-mode & {
-                    border-color: $rp-highlight-high;
-                    background-color: $rp-highlight-low;
-                    color: $rp-subtle;
-                }
-            }
-
-            &_title {
-                font-size: 1.2rem;
-                line-height: 1.2;
-                font-weight: normal;
-                margin-block-end: 0.5rem;
-                letter-spacing: -0.02em;
-                width: fit-content;
-            }
-
-            &_author {
-                text-transform: uppercase;
-                font-size: 0.875rem;
-                color: $rp-dawn-subtle;
-                .dark-mode & {
-                    color: $rp-subtle;
-                }
-            }
-
-            &_link {
-                display: block;
-                padding-block: 1rem;
-                margin-block-start: 1rem;
-
-                &:hover {
-                    text-decoration: underline;
+                    border-color: $rp-highlight-med;
+                    background-color: $rp-surface;
                 }
 
-                &:after {
-                    content: "";
+                &_format {
                     display: inline-block;
-                    vertical-align: middle;
-                    width: 24px;
-                    height: 24px;
-                    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6.343 17.657L17.657 6.343m0 0v8.485m0-8.485H9.172'/%3E%3C/svg%3E");
-                    background-color: $rp-dawn-text;
+                    font-size: 0.875rem;
+                    color: $rp-dawn-subtle;
+                    margin-block-end: 0.5rem;
+                    border: 1px solid $rp-dawn-highlight-high;
+                    background-color: $rp-dawn-highlight-low;
+                    border-radius: 0.25em;
+                    padding: 3px 9px;
+                    margin-block-end: 1rem;
                     .dark-mode & {
-                        background-color: $rp-text;
+                        border-color: $rp-highlight-high;
+                        background-color: $rp-highlight-low;
+                        color: $rp-subtle;
                     }
                 }
-            }
 
-            &:hover {
-                background-color: $rp-dawn-overlay;
-                border-color: $rp-dawn-highlight-high;
+                &_title {
+                    font-size: 1.2rem;
+                    line-height: 1.2;
+                    font-weight: normal;
+                    margin-block-end: 0.5rem;
+                    letter-spacing: -0.02em;
+                    width: fit-content;
+                }
 
-                .dark-mode & {
-                    border-color: $rp-highlight-high;
-                    background-color: $rp-overlay;
+                &_author {
+                    text-transform: uppercase;
+                    font-size: 0.875rem;
+                    color: $rp-dawn-subtle;
+                    .dark-mode & {
+                        color: $rp-subtle;
+                    }
+                }
+
+                &_link {
+                    display: block;
+                    padding-block: 1rem;
+                    margin-block-start: 1rem;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 24px;
+                        height: 24px;
+                        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6.343 17.657L17.657 6.343m0 0v8.485m0-8.485H9.172'/%3E%3C/svg%3E");
+                        background-color: $rp-dawn-text;
+                        .dark-mode & {
+                            background-color: $rp-text;
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: $rp-dawn-overlay;
+                    border-color: $rp-dawn-highlight-high;
+
+                    .dark-mode & {
+                        border-color: $rp-highlight-high;
+                        background-color: $rp-overlay;
+                    }
+
+                    @media (prefers-reduced-motion: no-preference) {
+                        transform: translateY(-5px);
+                    }
+                }
+
+                &:focus-visible {
+                    outline: none;
+                    box-shadow: 0 0 0 2px $rp-dawn-muted;
                 }
 
                 @media (prefers-reduced-motion: no-preference) {
-                    transform: translateY(-5px);
+                    transition: transform 0.2s ease-in-out;
                 }
-            }
-
-            &:focus-visible {
-                outline: none;
-                box-shadow: 0 0 0 2px $rp-dawn-muted;
-            }
-
-            @media (prefers-reduced-motion: no-preference) {
-                transition: transform 0.2s ease-in-out;
             }
         }
     }

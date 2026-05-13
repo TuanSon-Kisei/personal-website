@@ -16,7 +16,7 @@ const swup = new Swup({
           out(done) {
             gsap.to("#swup", {
               opacity: 0,
-              y: prefersReducedMotion ? 0 : -20,
+              y: prefersReducedMotion ? 0 : -12,
               duration: prefersReducedMotion ? 0 : 0.2,
               ease: "circ.in",
               onComplete: done,
@@ -32,7 +32,7 @@ const swup = new Swup({
               {
                 opacity: 1,
                 y: 0,
-                duration: prefersReducedMotion ? 0 : 0.2,
+                duration: prefersReducedMotion ? 0 : 0.3,
                 ease: "power2.out",
                 onComplete: done,
               },

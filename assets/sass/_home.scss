@@ -51,12 +51,12 @@
     a {
         display: block;
         padding: 2rem 2rem;
-
-        border-radius: 0.75rem;
         background-color: $rp-dawn-surface;
         border-radius: 1em;
-        transition: all 200ms ease;
         contain: paint;
+        transition:
+            background-color 150ms ease-out,
+            transform 150ms ease-out;
 
         @media (prefers-reduced-motion: reduce) {
             transition: none;
@@ -71,10 +71,15 @@
             max-width: 100%;
             height: auto;
             object-fit: cover;
-            transition: transform ease-in 200ms;
         }
 
         &:hover {
+            transition:
+                background-color 250ms ease-in,
+                transform 250ms ease-in;
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
             background-color: $rp-dawn-overlay;
             transform: translateY(-10px);
         }

@@ -10,7 +10,7 @@ document.querySelectorAll(".reading-card").forEach((card) => {
   card.addEventListener("click", readingLinkNavigate);
 
   card.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") {
+    if (e.key === "Enter") {
       e.preventDefault();
       readingLinkNavigate();
     }
