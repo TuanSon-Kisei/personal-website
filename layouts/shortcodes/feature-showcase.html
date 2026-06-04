@@ -1,11 +1,11 @@
-<div class="feature-showcase">
+<div class="[ feature-showcase ] [ switcher ]">
   <div class="feature-media">
     {{ if .Get "image" }}
       <img src="{{ .Get "image" }}" alt="{{ .Get "alt" | default (.Get "title") }}" loading="lazy">
     {{ end }}
   </div>
   <div class="feature-content">
-    <h4 class="feature-title">{{ .Get "title" }}</h4>
+    <h3 class="[ feature-title ] [ text-h4 ]">{{ .Get "title" }}</h3>
     <p class="feature-description">{{ .Get "description" }}</p>
   </div>
 </div>

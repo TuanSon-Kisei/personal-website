@@ -1,0 +1,27 @@
+.skip-link {
+    position: absolute;
+    top: -10000px;
+    left: 0;
+    z-index: 999;
+    padding: 0.5rem 0.25rem;
+    font-family: $font-sans;
+    color: var(--color-text);
+    text-decoration: underline;
+    border-radius: 0.25rem;
+
+    &:focus-visible {
+        position: static;
+        top: 0;
+        outline: 3px solid $rp-dawn-foam;
+        outline-offset: 3px;
+        border-radius: 0.75em;
+    }
+}
+
+[data-theme="dark"] {
+    .skip-link {
+        &:focus-visible {
+            outline-color: $rp-foam;
+        }
+    }
+}

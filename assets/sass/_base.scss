@@ -1,3 +1,7 @@
+/* Learning to apply CUBE CSS methodology: https://cube.fyi/composition.html#examples */
+
+/* [GLOBAL] - Reset & design tokens */
+/* There is no class selectors here. This allowed me to have base layer cascades freely into everything below it */
 *,
 *::after,
 *::before {
@@ -10,43 +14,73 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+
+    /* Design tokens here: font color, font type */
+    --color-text: #{$rp-dawn-text};
+    --color-background: #{$rp-dawn-base};
+    --color-accent: #{$rp-dawn-foam};
+
+    /* Smaller step sizes for smaller text */
+    --step--2: clamp(0.6944rem, 0.6492rem + 0.2011vw, 0.8rem);
+    --step--1: clamp(0.8333rem, 0.7619rem + 0.3175vw, 1rem);
+
+    @each $heading, $size in $heading-sizes {
+        --font-size-#{$heading}: #{$size};
+    }
+
+    /* Spacing tokens here, these should be consistent across the entire site */
+    --spacing-xs: clamp(0.75rem, 0.6818rem + 0.3409vw, 0.9375rem);
+    --spacing-sm: clamp(1rem, 0.9091rem + 0.4545vw, 1.25rem);
+    --spacing-md: clamp(1.5rem, 1.3636rem + 0.6818vw, 1.875rem);
+    --spacing-lg: clamp(2rem, 1.8182rem + 0.9091vw, 2.5rem);
+    --spacing-xl: clamp(3rem, 2.7273rem + 1.3636vw, 3.75rem);
+    --spacing-2xl: clamp(4rem, 3.6364rem + 1.8182vw, 5rem);
+    --spacing-3xl: clamp(6rem, 5.4545rem + 2.7273vw, 7.5rem);
+
+    [id] {
+        scroll-margin-top: var(--spacing-lg);
+    }
 }
 
+/* Bare element defaults */
+/* These are sensible, cascade-friendly starting points */
 body {
-    color: $rp-dawn-text;
-    background-color: $rp-dawn-base;
-    font-family: $font-body-stack;
-    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    font-family: $font-sans;
+    font-size: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+    text-rendering: optimizeLegibility;
     line-height: 1.5;
-    transition: background-color 250ms ease-out;
-
-    ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-    }
 
     h1,
     h2,
     h3,
-    h4 {
-        font-family: $font-display-stack;
-        margin: 0;
-        padding: 0;
-        line-height: 1.2;
-        letter-spacing: -0.01em;
-    }
-
+    h4,
     h5,
     h6 {
-        line-height: 1.4;
+        font-family: $font-serif-heading;
         margin: 0;
         padding: 0;
+        line-height: 1.1;
+        font-weight: 400;
+        font-variant-caps: titling-caps;
+        font-feature-settings:
+            "ss03" on,
+            "zero" on;
+        text-wrap: balance;
     }
 
     @each $heading, $size in $heading-sizes {
         #{$heading} {
-            font-size: $size;
+            font-size: var(--font-size-#{$heading});
         }
     }
 
@@ -61,76 +95,87 @@ body {
     a {
         color: inherit;
         text-decoration: none;
-        transition: background-color 500ms ease;
-
-        &:focus-visible {
-            box-shadow: 0 0 1px 2px $rp-dawn-foam;
-        }
     }
 
-    span {
-        color: $rp-dawn-text;
-    }
-
-    figcaption {
-        color: $rp-dawn-text;
-        font-style: italic;
-    }
-
-    svg {
-        width: 24px;
-        height: 24px;
-        color: $rp-dawn-text;
-    }
-}
-
-body.dark-mode {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-        color: $rp-text;
-    }
-
-    b {
-        color: $rp-text;
+    strong {
+        font-weight: 700;
     }
 
     ul,
     ol {
-        color: $rp-text;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
-    background-color: $rp-base;
-
-    ::selection {
-        background: $rp-highlight-med;
+    figure {
+        margin: 0;
+        padding: 0;
     }
 
-    a {
-        color: $rp-text;
+    figcaption {
+        font-style: italic;
+    }
 
-        &:focus-visible {
-            box-shadow: $rp-foam;
+    hr {
+        border: 0;
+        margin: 0;
+        text-align: center;
+        color: currentColor;
+        &::before {
+            content: "⁂ ⁂ ⁂";
+            display: block;
         }
     }
 
     svg {
-        color: $rp-text;
+        display: block;
+
+        stroke: currentColor;
     }
 
-    span {
-        color: $rp-text;
+    kbd {
+        border: 1.5px solid $rp-dawn-gold;
+        border-bottom-width: 4px;
+        padding-inline: 0.2rem;
     }
 
-    figcaption {
-        color: $rp-text;
+    blockquote {
+        margin-inline: 0;
+        padding-inline: 1.25em;
+        border: 0;
+        border-left: 5px solid $rp-dawn-iris;
     }
 
-    footer {
-        color: $rp-text;
+    .heading-anchor {
+        width: 0.5em;
+        height: 0.5em;
+        color: currentColor;
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+/* [E] Exceptions - overrides for specific elements or components - data-theme=[dark] */
+/* Toggled via JS: document.body.dataset.theme = 'dark' */
+/* https://cube.fyi/exception.html#why-data-attributes */
+[data-theme="dark"] {
+    --color-text: #{$rp-text};
+    --color-background: #{$rp-base};
+    --color-accent: #{$rp-foam};
+
+    ::selection {
+        background-color: $rp-highlight-med;
+    }
+
+    kbd {
+        border-color: $rp-gold;
+    }
+
+    blockquote {
+        border-color: $rp-iris;
     }
 }

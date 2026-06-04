@@ -5,25 +5,16 @@ type: work
 cover: images/hero.png
 year: "2025"
 timeline: September 2025
-team:
-  - Product Owner
-  - 3 UI Designers
-  - 1 UX Designer
-  - 1 Visual Artist
 role: UX Designer
-skills:
-  - Design Research
-  - User Interview
-  - Wireframing
 weight: "1"
 ---
-![](images/hero.png)
-{{< project-info >}}
+![The Dede app screens featuring the home screen and other components are map alert and news](images/hero.png)
+
 
 
 ## Overview
 
-In September 2025, I had privilege to join one of the most famous competition in Product Design field of Vietnam: Lollypop Designathon. Designathon is a unique event where teams match against each other in a 24hr race to research and deliver their solution matched with the given subject of the game.
+In September 2025, I had privilege to join one of the most famous competitions in Product Design field of Vietnam: Lollypop Designathon. This is a unique event where teams match against each other in a 24hr race to research and deliver their solution matched with the given subject of the game.
 ## Problem Space
 
 None of us wants to make mistake when we are riding motorbikes on the road. If we accidentally do and got caught, that means we will get fined heavily, our driver license might get revoked or worse, our motorbike will be temporarily held by the police.
@@ -43,22 +34,18 @@ This problem provided a huge opportunity to learn more about the huge gap betwee
 
 ## My Individual Contribution
 
-1. I led my team planning and executing user research. 
-   For quantitative research, we decided on conducting surveys to quickly gauge how widespread this problem was for young people. Alongside this, we also did qualitative research through short 15-minute interviews to dive deeper into how our respondents navigated the challenge of both going on the road and learning the laws themselves. With the way I led our team's research phase, we got a clearer picture of our waiting-to-be-solved problem at scale, and left us with deeper understanding of our user's pain.
-2. I also led my team with content design structure. Doing content design early helped us explore our design direction before investing more time in visual design, saved us significant time during the UI phase. 
+I led my team in planning and executing user research, ensuring that our user research is rooted in understanding user's problem. With the way I led our team’s research phase, we got a clearer picture of our waiting-to-be-solved problem at scale, and left us with deeper empathy of our user’s frustrations.
+
+I also led my team with content design structure. Doing content design early helped us explore our design direction before investing more time in visual design, saved us significant time during the UI phase.
 
 ## User Research
 
 My team surveyed over 50 respondents and conducted 5 interviews with high school and university students in Hanoi. We focused on how they currently learn about traffic regulations and what happens when they unknowingly break them. And these are the key insights my team and I synthesized:
 
-{{< alert type="error" >}} Their knowledge about traffic laws is outdated or can't keep up with new ones {{< /alert >}}
-{{< alert type="error" >}} Government teaching methods failed to engage students {{< /alert >}}
-{{< alert type="error" >}} They only learn new laws through word of mouth from parents or only through social media posts  {{< /alert >}}
-
 The issue is clear: young people ignored learning updated traffic regulations when government announcements are boring and failed to grab attention.
 
-![](images/desk_research.png)
-![](images/user_research.png)
+![An image showing bundle of image news together, signaling the serious theme of preventing traffic violations](images/desk_research.png)
+![An image showing the result of the survey in 3 bar charts](images/user_research.png)
 
 
 ## Turn insights into opportunities
@@ -70,7 +57,7 @@ Guided by user research and online survey, we turned these three key pain points
 3. Make learning the laws experience becoming a natural part of their journey, not something they are forced to do every day.
 
 
-![An image showing three charts of the survey](images/opportunities.png)
+![An image showing three sticky notes](images/opportunities.png)
 
 ## Creating the goals
 Based on our user research, we started to define our core **user story** to guide our work:
@@ -94,74 +81,87 @@ With our user goals defined, we translated them into business goals for our app:
 ![An image showing three papers detailing about product specifications](images/drafts.png)
 
 ## Ideation
-After we sketched our preliminary lo-fis, we headed to create mid-fidelity wireframes to explore our options, build our vision of Dede.
+After we sketched our preliminary content structure, we headed to create mid-fidelity wireframes to explore our options, build our vision of our mobile app.
 ### Tracking Iteration
-Since tracking and reporting mistakes when driving or riding on the road is our most prominent feature, we dived in it first to quickly explore potential key functions which could be highlighted. These included a tracking map for the user's road journey, detailed reports based on the severity of the mistakes were made, as well as some short light-hearted punish sentence. 
+Since tracking and reporting mistakes when driving or riding on the road is our most prominent feature, we dived in it first to quickly explore potential key functions which could be highlighted. These includes: 
 
-While the initial screen conveyed most information, we ultimately decided to hide the detailed report and replace it with quick overview of numbers of mistakes. The reason is:
+1. A tracking map based on user's recent journey, so they can have visual detail on how their latest journey look like.
+2. A detailed report that list their riding mistakes based on the severity, so they can know which actions have biggest adverse effect to their safety and their consequences. 
 
-{{< alert type="warning" >}} Too much unnecessary information on screen {{< /alert >}}
-{{< alert type="warning" >}} The severity of the problems weren't explained clearly to users {{< /alert >}}
-{{< alert type="warning" >}} Users might confuse digital currency points in app as real money {{< /alert >}}
-
-![](images/tracking_iteration.png)
+![An image showcasing the map alert feature which allows user to track and analyze the mistakes they made when on traffic](images/tracking_iteration.png)
 
 
-### Home and Challenge iteration
-We prototyped home and challenge screens but ran out of time to fully iterate on them. With 12 hours until deadline, we had to choose: polish secondary screens or perfect our core tracking feature. We chose the latter, accepting that some screens are ultimately kept minimal. In a 24-hour sprint, we prioritized depth in our primary feature over polish across all screens. We were transparent about this in our presentation, positioning these as areas for future iteration.
+### Home screen
 
-![](images/home_and_challenge.png)
+We listed the order of information with the latest report coming from recent analysis, a behavior score about user's license and last but not least, the up-to-dated news about the traffics popping up as a toast on the screen. 
+
+Quick report card being the most prominent so they can serve as a glance overview for users who want to know just enough what their mistakes are before opening the report to dive deep into detail. 
+
+The behavior score is also one of the main focuses on the home screen. Our users are now increasingly concerned about their score on their license and how it impacts their licensing status, so we decided to display it right below the report where users could reference it alongside the report. 
+
+![](images/home_screen.png)
+
+### News and Challenge screen iteration
+
+Instead of using AI for generative purpose, we designed it to identify behavioral patterns. The AI learns to recognize patterns like the road user usually travel or the times when they are often on the road. Using these data, it will display relevant news like recent traffic laws changes or safety cautions at the top of screen as a card, so user can know and prepare ahead of time before going on a next trip.
+
+We also decided to make their journey a challenge itself. Every time the user completed their journey on the road without violating a mistake, they will get a point. The more points they get, the higher their ranking. They can use the points as the app's exclusive currency to buy "badges", which they can display on their account and sharing them.
+
+
+![Two screens, one displaying the News screen and other displaying the Ranking screen](images/news_and_challenge_screen.png)
 
 ## Assumptions & Constraints
-Given the designathon timeline, we focused on designing the mobile experience and assumed certain technical capabilities would exist. In a real-world scenario, these would require significant research and validation:
-##### Hardware Dependency
+Given the hackathon timeline, we focused on designing the mobile experience and assumed certain technical capabilities would exist. In a real-world scenario, these would require significant research and validation:
+### Hardware Dependency
 Our solution assumed a specialized camera exists and is affordable/accessible to our target users. We did not validate market readiness and manufacturing feasibility.
-##### Camera Accuracy
+### Camera Accuracy
 We assumed AI could reliably analyze dash cam footage to identify traffic violations. The actual accuracy rate, edge cases, and training data requirements were outside our scope.
-##### Privacy and Data Security
+### Privacy and Data Security
 We did not design for data storage, user consent flows, or privacy policies. Privacy is a huge concern for real users when they interact with hardware that are capable of recording video footage, which would be critical for real implementation given the sensitive nature of location and video data.
-##### Safety Concerns
-Phone vibrations while riding may be distracting. Real-world testing would be needed to determine how much frequency, intensity and alert method is needed to alert riders without endangering them.
+### Safety Concerns
+Phone vibrations while riding may be distracting. Real-world testing would be needed to determine how much frequency, intensity, and alert method is needed to alert riders without endangering them.
 
 ## Design Solution
-Before heading out, the users only have to wear a specialized motorcycle helmet that's equipped a **small camera**. The camera is configured to **automatically record and send data** with wi-fi signals to Dede **mobile app**. When the user finished their journey and their phone is connected to Internet, Dede **push** those data to AI so the AI can **analyze** the user's journey and **produce** the analysis after an amount of time.
+Before heading out, the users only have to wear a specialized motorcycle helmet that's equipped a **small camera**. The camera is configured to **automatically record and send data** with wi-fi signals to **mobile app**. When the user finished their journey and their phone is connected to Internet, the app **pushes** those data to AI so the AI can **analyze** the user's journey and **produce** the analysis after an amount of time.
 
-![](images/dash-cam-ai.png)
+![The process of applying AI to analyze the riding journey, using the camera's data, recorded the journey and push to AI to analyze](images/dash-cam-ai.png)
 
-For the alarm part, the app will use phone's **readilly available GPS** sensors. The app will have the offline data of the current road the user riding on, send **vibrating** signals to notify the user if they **accidentally violated** the traffic regulations like **stepped over** the white line before the traffic lights or **exceeded** the speed limit within a threshold.
+For the alarm part, the app will use phone's **available GPS** sensors. It will receive the offline data of the current road the user is on, send **vibrating** signals to alert them if they **accidentally violated** the traffic regulations like **exceeded** the speed limit.
 
-![](images/gps-alarm.png)
-![](images/gps-alarm-success.png)
+![The situation when the user suddenly speeding up on to 70 km/h when the road only allows below 60 km/h](images/gps-alarm.png)
+![The app vibrating, sending the signals to alert the rider to slow down](images/gps-alarm-success.png)
 
 
 ## Final Design
-With the wireframes and low-fidelity mockups established, we transitioned to next phase to create high-fidelity mocks.
+With the wireframes and low-fidelity mock-ups established, we transitioned to next phase to create high-fidelity mocks.
 
 {{< feature-showcase 
   image="images/dede-tracking-journey.webp" 
   title="Analyze and deduce the problems" 
   description="Intelligently point out where you did wrong on the road and how to prevent them"
-  alt="Tracking journey feature demonstration"
+  alt="Tracking journey feature to pinpoint where user did wrong on the road and guide to not reproduce the action"
   >}}
   
   {{< feature-showcase 
   image="images/dede-personalised-news.webp" 
   title="Traffic news curated only for you" 
-  description="Selection news personalized for you to read and take note"
-  alt="News feature demonstration"
+  description="Selected news so you can notice ahead of time what is changing when participating traffics"
+  alt="News screen that use AI to filter and display relevant news based on user's activity"
 >}}
 
 {{< feature-showcase 
   image="images/dede-safety-challenges.webp" 
-  title="Daily challenge" 
-  description="Gamify your journey and gets rewarded for your effort"
+  title="Safety traffic challenge" 
+  description="Get rewarded for your effort for abiding the laws with humorous stickers and badges"
   alt="Safety challenges demonstration"
 >}}
 ## Outcome
-We had the once-in-a-lifetime opportunity to share the work we done with other designers in Ho Chi Minh City. Sadly we didn't gain any honorary reward at all but the senior designers gave us a lot of valuable feedbacks. I had the chance to demonstrate our work on the stage with hundreds of people watching our work unfold.
+We had the once-in-a-lifetime opportunity to share the work we done with other designers in Ho Chi Minh City. Sadly we didn't gain any honorary reward at all but the senior designers gave us a lot of valuable feedback. I had the chance to demonstrate our work on the stage with hundreds of people watching our work unfold.
 
-![Image showing the team giving their presentation](images/designathon-team-presentation.jpg)
-![](images/designathon-me-giving-presentation.webp)
+![The team giving their presentation](images/designathon-team-presentation.jpg "My team is giving our answers to judges in front of over 500+ audiences")
+
+![The author is giving his presentation in front of the screen](images/designathon-me-giving-presentation.webp "Yes, this is me giving presentation. Yes, I was so nervous. OMG")
+
 
 ## What I learned
 ### Early validation matters - especially for hardware dependencies
@@ -169,4 +169,4 @@ Can our users afford it? How should we integrate our camera hardware into their 
 ### Design for failures, not just when it works
 We designed screens showing "AI analysis results" without taking into consideration what happens when AI fails - misidentified a violation, extreme weather, poor lightning conditions like roads without lights at night. Real products need designed states for uncertainty, not just success cases.
 ### Privacy as priority, not an afterthought
-Recording users' driving journeys with cameras felt like an obvious solution to our problem. Only after we presented our solution did we realize that the ultimate choice when using product lies in our users. Optional data collection, data deletion option, and consent flows are all equally important for the whole customer's journey. 
+Recording users' driving journeys with cameras felt like an obvious solution to our problem. Only after we presented our solution did we realize that trust can only be earned when we place the choice and control onto our users. Optional data collection, data deletion option, and consent flows are all equally important for the whole customer's journey. 

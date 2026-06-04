@@ -1,0 +1,25 @@
+---
+title: Confidence
+description: It's not only you trust yourself, you also have to place that trust onto others too.
+date: 2026-03-28
+permalink: confidence
+draft: false
+---
+**Tl;dr**: I joined in a workshop to improve my presentation skills. What I got is learning how to sell my good works and more importantly, to inspire others to do the good work and have confidence in them. You need a person like Mike in your entire time life, I seriously meant it.
+
+I have issues with my confidence. I'm always thinking that I'm not good enough (in a bad way). I fear of falling behind. I haven't landed a single internship or a fresher job for 11 months and counting now. I feel useless, when all of my university peers already having their dream job, earning paycheck every month, while me sitting here with half-baked portfolio site, struggling to pass interview, even the hope of getting noticed of is already slim. 
+
+Then I decided enough is enough. I want to know the real core issue of my low confidence, grab it, and smash it to bloody pulp. Repeatedly. I decided to join the workshop "Presenting with Confidence" by **Mike Monterio** himself (yes, it's him, no I'm not kidding when I said I really stayed up at 12 AM to join in his workshop). Here is the link to the workshop I mentioned: [Presenting Work with Confidence](https://www.eventbrite.com/e/presenting-work-with-confidence-tickets-1253707586139#organizer-card)
+
+Mike is such a lovely person, and so is everyone in the workshop too. I'm so grateful to actually join in his workshop (even though only through the Zoom screen and only for 2 days). He firmly believes that all the work we done are good ones. It's just that we don't know how to sell our work. 
+
+The first thing is showing to them **you are** the **expert** at your work. Which means your usual do the work you got hired for (or creating) to the best of your best ability, and **persuade them it's good**. The former is easy no need to explain, the latter is where most people struggling the most. You need to be there to explain every decision you made in the project, to answer any question related to it, to ask and receive the feedback you want and to be there for the look of their eyes everytime they see you. All the things you did and will do should be related to your client's goal (or your company's product goal). People hired you to achieve the goal. You are the expert at the job to accomplish that goal. Show them you are the expert, show them you are the good shit that they placed their trust, their time, their money on you and always, always remind them that you are.
+
+The second thing is you need **a story**. I will just quote him here: 
+> Work like a scientist but present like a snake-charmer
+
+I prefer to make it like your classic superhero story. There is the **villain**, they are threatening to destroy, to trample your client's future (or anything that fits within your context). And you need an **ultimate weapon** (or multiple ones) to keep them from doing harm to your client (and also maybe "kill" them too). Show them that if you don't kill that villain asap their future will gone. Show to them that they have to ask you (or your team) for the help. My goal is to get you to walk into that rosier future, the one where everything works out, the one where the villain is destroyed forever. You don't (and shouldn't) tell them how to construct that weapon in every detail, you just need to persuade them that creating and using that weapon is **the right choice**. If you’re not persuading people, you’re not telling a good enough story (which something we have to learn everyday).
+
+The third thing is always remember that the **goal** of your "presentation" is for others to **break your work**. Piece by piece. You are not your work, and your work is not you. Yes, I did say that you are the expert at your work, didn't I? But that doesn't mean your work is perfect. You also don't know if it's perfect or not (no, it's not). The client (or your team) is free to criticize your work, and they are also have rights to believe it has met their goals or not. You also free to present evidence to those claims, but don't be too defensive about it. When the clients (or the team) starts critiquing your work, just start listening to them. You don't have to bring yourself to defend everything they saying about your work. You also don't have to promise them anything here and there. Let them finish what they want to say, and thank them: "Thank you for your critique. I'm very appreciated your opinion about my work. Let me think about it and I will get back to you after this meeting". "But their idea is horrible". Yeah just say thank to them and discard it later. You don't want to show that disgusted face for your client, leave it at home.
+
+Thank you to who really take this long to read my writing to reach this end, thank you to who actually won't give a damn about my over 4500 characters blog and still reach to this section, thank you to everyone who open this blog and will send tons of feedback to cut this blog down more and they need tldr. The world deserves you more than you thought. 

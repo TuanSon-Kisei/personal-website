@@ -1,0 +1,49 @@
+.badges-wrapper {
+    --flow-space: var(--spacing-xl);
+}
+
+.badges-notes {
+    h2 {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .box {
+        --flow-space: var(--spacing-lg);
+
+        > p {
+            margin-top: var(--spacing-xs);
+        }
+    }
+}
+
+.badges-container {
+    gap: var(--spacing-xs);
+
+    justify-content: center;
+    align-items: center;
+
+    a {
+        &:focus-visible {
+            outline: 4px dashed $rp-dawn-love;
+        }
+    }
+
+    img {
+        display: block;
+        image-rendering: pixelated;
+
+        &:hover {
+            filter: brightness(1.2);
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .badges-container {
+        a {
+            &:focus-visible {
+                outline-color: $rp-love;
+            }
+        }
+    }
+}

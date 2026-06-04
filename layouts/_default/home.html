@@ -1,25 +1,31 @@
 {{ define "main" }}
-<div class="home-intro">
-    <h1 class="text-intro">
-        I am Tuan Son, a Hanoi-based UI/UX designer. I connect user needs with
-        business goals through research-driven design.
+
+<div class="[ flow ] [ center ] [ wrapper ] [ homepage ]">
+    <h1 class="[ text-h2 ] homepage--intro">
+        I am <strong><a href="/about">Tuan Son</a></strong
+        >, a designer who likes to fiddle with CSS and cares about accessbility
+        design. Currently living in Hanoi.
     </h1>
+    <ul class="[ flow ] [ homepage_projects ]">
+        {{ range where .Site.RegularPages "Type" "work" }} {{ $project := . }}
+        <li class="[ flow ]">
+            <a
+                href="{{ .RelPermalink }}"
+                class="[ flow ] [ homepage_projects-card ] [ box ]"
+            >
+                <span class="year-chip">{{ .Params.year }}</span>
+                <div class="project-image">
+                    {{ with .Params.cover }} {{ $image :=
+                    $project.Resources.GetMatch . }} {{ with $image }}
+                    <img src="{{ .RelPermalink }}" alt="{{ $project.Title }}" />
+                    {{ end }} {{ end }}
+                </div>
+                <h2>{{ .LinkTitle }}</h2>
+                <p>{{ .Params.description }}</p>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
 </div>
-<ul class="projects-section">
-    {{ range where .Site.RegularPages "Type" "work" }} {{ $project := . }}
-    <li>
-        <a href="{{ .RelPermalink }}">
-            <span class="year-chip">{{ .Params.year }}</span>
-            <div class="project-image">
-                {{ with .Params.cover }} {{ $image :=
-                $project.Resources.GetMatch . }} {{ with $image }}
-                <img src="{{ .RelPermalink }}" alt="{{ $project.Title }}" />
-                {{ end }} {{ end }}
-            </div>
-            <h2>{{ .LinkTitle }}</h2>
-            <p>{{ .Params.description }}</p>
-        </a>
-    </li>
-    {{ end }}
-</ul>
+
 {{ end }}

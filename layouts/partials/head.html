@@ -3,21 +3,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta author="Kisei - Tuan Son" />
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/images/favicon/apple-touch-icon.png"
     />
-    <script
-        defer
-        src="https://cloud.umami.is/script.js"
-        data-website-id="7be6345a-b27a-4abb-b33c-9794bec2b67a"
-    ></script>
     <link
         rel="icon"
-        type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23d7827e%22></rect><path fill=%22%23fff%22 d=%22%22></path></svg>"
+        type="image/png"
+        sizes="32x32"
+        href="/images/favicon/favicon-32x32.png"
     />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/images/favicon/favicon-16x16.png"
+    />
+
     {{ partial "opengraph.html" . }}
-    <title>{{ .Site.Title }}</title>
+    <title>
+        {{ if .IsHome }} {{ .Site.Title }} {{ else }} {{ .Title }} {{ end }}
+    </title>
     {{ with resources.Get "sass/main.scss" }} {{ $opts := dict "enableSourceMap"
     hugo.IsDevelopment "outputStyle" (cond hugo.IsDevelopment "expanded"
     "compressed") "targetPath" "css/main.css" "transpiler" "dartsass" "vars"

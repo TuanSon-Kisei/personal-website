@@ -1,17 +1,26 @@
 {{ define "main" }}
-<div class="about-section">
-    <article class="about-article">
-        <h1>{{ .Params.title }}</h1>
-        {{ .Content }}
+<div class="[ wrapper ]">
+    <article class="[ about-article ] [ center ] [ flow ] [ h-card ]">
+        <header>
+            <h1>About me</h1>
+            <p>Pushing pixels (with intent)</p>
+        </header>
+        <div class="[ about-article--content ] [ flow ] e-note">
+            {{ .Content }}
+        </div>
+        <figure>
+            <img
+                src="/images/about-me-dithered.png"
+                loading="lazy"
+                alt="An dithered image showing Tuan Son - the creator of the site is giving his presentation"
+                class="about-image"
+            />
+            <figcaption class="text-center">
+                Me giving my presentation at Lollypop hackathon, Ho Chi Minh,
+                2025
+            </figcaption>
+        </figure>
+        <a class="u-url" href="{{ .Site.BaseURL }}" hidden></a>
     </article>
-    <div class="about-image">
-        {{ if .Params.image }} {{ $image := resources.Get .Params.image }} {{ if
-        $image }}
-        <img
-            src="{{ $image.RelPermalink}}"
-            alt="An image of the creator - Tuan Son is giving his presentation in Designathon which was hosted in 2025"
-        />
-        {{ end }} {{ end }}
-    </div>
 </div>
 {{ end }}

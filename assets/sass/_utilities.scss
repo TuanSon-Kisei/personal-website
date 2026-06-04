@@ -1,0 +1,22 @@
+.text-center {
+    text-align: center;
+}
+
+.text-align-end {
+    text-align: end;
+}
+
+.mono-font {
+    font-family: $font-mono;
+}
+
+.display-font {
+    font-family: $font-serif-display;
+}
+
+/* Font sizes utilities: decouple visual heading size from semantic heading level */
+@each $heading, $size in $heading-sizes {
+    .text-#{$heading} {
+        font-size: var(--font-size-#{$heading});
+    }
+}

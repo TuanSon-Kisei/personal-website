@@ -1,15 +1,63 @@
 {{ define "main" }}
-<div class="now-section">
-    <h2 class="now-section_title">What I'm doing now</h2>
-    <p class="now-section_description">
-        This page is inspired by
-        <a class="now-section_link" href="https://nownownow.com/about"
-            >the /now page</a
-        >
-        and from
-        <a class="now-section_link" href="https://derek.silver/">Derek Silver</a
-        >. You should check it out!
-    </p>
-    <article class="now-section_article">{{ .Content }}</article>
+<div class="now-container flow center wrapper">
+    <header>
+        <h1>What I'm doing now</h1>
+        <p>What I'm doing, focusing on and thinking about at the moment</p>
+    </header>
+
+    <article class="now-box now-box--intro box flow">
+        <h2 class="text-h3">What is a /now page?</h2>
+        <p>
+            A now page is a page on a personal website that tells you what a
+            person is focused on at the current time, day, or very recently. You
+            can learn more at <a href="nownownow.com">nownownow.com</a>
+        </p>
+    </article>
+    <article class="now-box now-box--content box flow">
+        <div class="with-icon">
+            <h2 class="text-h3">Reading</h2>
+        </div>
+        <p>"The Collected Anger" by Mike Monterio</p>
+        <time class="now-box--time" datetime="{{ now.Format "2 January, 2006 at 03:04 PM" }}">
+          {{ now.Format "2 January, 2006 at 03:04 PM" }}
+        </time>
+    </article>
+    <article class="now-box now-box--content box flow">
+        <div class="with-icon">
+            <h2 class="text-h3">Thinking</h2>
+        </div>
+        <p>
+            Thinking about my near future and how should I secure my dream job in this industry
+        </p>
+        <time class="now-box--time" datetime="{{ now.Format "2 January, 2006 at 03:04 PM" }}">
+          {{ now.Format "2 January, 2006 at 03:04 PM" }}
+        </time>
+    </article>
+    <article class="now-box now-box--content box flow">
+        <div class="with-icon">
+            <h2 class="text-h3">Studying</h2>
+        </div>
+        <p>
+            Computer Science
+            <br>
+            Expected to graduate soon in this month
+        </p>
+        <time class="now-box--time" datetime="{{ now.Format "2 January, 2006 at 03:04 PM" }}">
+          {{ now.Format "2 January, 2006 at 03:04 PM" }}
+        </time>
+    </article>
+    <article class="now-box now-box--content box flow">
+        <div class="with-icon">
+            <h2 class="text-h3">Coding</h2>
+        </div>
+        <p>
+            Learning Every Layout principles to make my website more adaptable
+            to many viewports, therefore making it more accessible
+        </p>
+        <time class="now-box--time" datetime="{{ now.Format "2 January, 2006 at 03:04 PM" }}">
+          {{ now.Format "2 January, 2006 at 03:04 PM" }}
+        </time>
+    </article>
 </div>
+
 {{ end }}

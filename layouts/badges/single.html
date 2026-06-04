@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="wrapper center flow badges-wrapper">
+    <header class="text-center">
+        <h1>Classic web badges collection</h1>
+        <p>
+            Retro, whimsical, memorial web badges from the remnants of the past
+            and the ideals for the future. If you have a badge you'd like me to
+            add here, just ask me.
+        </p>
+    </header>
+    <section class="box cluster badges-container">
+        {{ range hugo.Data.badges.images }} {{ if .url }}
+        <a
+            href="{{ .url }}"
+            title="{{ .title }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+                src="{{ .src }}"
+                alt="{{ .alt }}"
+                loading="lazy"
+                decoding="async"
+        /></a>
+        {{ else }}
+        <img
+            title="{{ .title }}"
+            src="{{ .src }}"
+            alt="{{ .alt }}"
+            loading="lazy"
+            decoding="async"
+        />
+        {{ end }} {{ end }}
+    </section>
+    <section class="badges-notes">
+        <h2 class="text-h3">A few notes</h2>
+        <div class="box flow">{{ .Content }}</div>
+    </section>
+</div>
+
+{{ end }}

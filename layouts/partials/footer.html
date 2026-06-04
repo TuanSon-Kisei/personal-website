@@ -1,69 +1,64 @@
-<footer>
-    <section>
-        <div class="footer-grid_right">
-            <div class="footer__introduction">I can help you. Feel free to drop a email into my inbox and we'll work together to solve your problems (or just say hi).</div>
-            <button id="copy-email-button">
-                <span class="text" id="text">kisei.tuanson.work@gmail.com</span>
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 5.4C4 4.622 4.622 4 5.4 4h7.2c.778 0 1.4.622 1.4 1.4V6a1 1 0 1 0 2 0v-.6C16 3.518 14.482 2 12.6 2H5.4A3.394 3.394 0 0 0 2 5.4v7.2C2 14.482 3.518 16 5.4 16H6a1 1 0 1 0 0-2h-.6c-.778 0-1.4-.622-1.4-1.4z"/><path fill="currentColor" d="M9 11.4A2.4 2.4 0 0 1 11.4 9h7.2a2.4 2.4 0 0 1 2.4 2.4v7.2a2.4 2.4 0 0 1-2.4 2.4h-7.2A2.4 2.4 0 0 1 9 18.6z"/></svg>
-                </span>
-            </button>
+<footer class="[ site_footer ]">
+    <div class="[ wrapper ] [ flow ] [ footer__wrapper ]">
+        <div class="[ footer-container_contacts ] [ text-center ]">
+            <address>
+                Connect with me on
+                <a
+                    href="https://www.linkedin.com/in/tuansonnguyen/"
+                    rel="me"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                >,
+                <a
+                    href="https://gitlab.com/DoctorKisei"
+                    rel="me"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Gitlab</a
+                >
+                or
+                <a
+                    href="mailto:kisei.tuanson.work@gmail.com"
+                    rel="me"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Email</a
+                >
+            </address>
         </div>
-        <div class="footer-grid_left">
-            <div class="footer-grid_left__section">
-                <div class="footer__section-title">CONTACTS</div>
-                <div>
-                    <a class="footer__link" href="https://www.linkedin.com/in/tuansonnguyen/" target="_blank" rel="noopener noreferrer">
-                        LinkedIn
-                    </a>
-                </div>
-                <div>
-                    <a class="footer__link" href="mailto:kisei.tuanson.work@gmail.com?subject=Say%20Hi" target="_blank" rel="noopener noreferrer">
-                        Email
-                    </a>
-                </div>
-                <div>
-                    <a class="footer__link" href="https://gitlab.com/DoctorKisei" target="_blank" rel="noopener noreferrer">
-                        Gitlab
-                    </a>
-                </div>
-            </div>
-            <div class="footer-grid_left__section">
-                <div class="footer__section-title">NAVIGATION</div>
-                <div>
-                    <a class="footer__link" href="{{ "" | relURL }}">
-                        Work
-                    </a>
-                </div>
-                <div>
-                    <a class="footer__link" href="{{ "about" | relURL }}">
-                        About
-                    </a>
-                </div>
-                <div>
-                    <a class="footer__link" href="https://blogs.tuansondesigns.com/" target="_blank" rel="noopener noreferrer">
-                        Writings
-                    </a>
-                </div>
-                <div>
-                    <a class="footer__link" href="{{ "readings" | relURL }}" target="_blank" rel="noopener noreferrer">
-                        Readings
-                    </a>
-                </div>
-                <div>
-                    <a class="footer__link" href="{{ "now" | relURL }}" target="_blank" rel="noopener noreferrer">
-                        Now
-                    </a>
-                </div>
-                <div>
-                    <a class="footer__link" href="{{ "Tuan_Son_Resume.pdf" | relURL }}" target="_blank" rel="noopener noreferrer">
-                        Resume
-                    </a>
-                </div>
-            </div>
+
+        <nav class="[ footer-container_web-badges ] [ center ] [ cluster ]">
+            {{ range hugo.Data.footer.images }} {{ if .url }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
+                ><img
+                    src="{{ .src }}"
+                    alt="{{ .alt }}"
+                    loading="lazy"
+                    decoding="async"
+            /></a>
+            {{ else }}
+            <img
+                src="{{ .src }}"
+                alt="{{ .alt }}"
+                loading="lazy"
+                decoding="async"
+            />
+            {{ end }} {{ end }}
+        </nav>
+        <p class="[ footer-container_author ] [ text-center ]">
+            2026, made with grit and love by Kisei
+        </p>
+        <div
+            class="[ footer-container_ribbon ]"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-hidden="true"
+            preserveAspectRatio="none"
+            height="15"
+            width="100%"
+        >
+            <title>Decorative footer ribbon</title>
         </div>
-    </section>
-    <p>
-        © 2026 Tuan Son - Kisei. Designed and code with love by Kisei.
-    </p>
+    </div>
 </footer>

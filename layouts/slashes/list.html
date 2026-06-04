@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="[ slashes-section ] [ center ] [ wrapper ] [ flow ]">
+    <header class="[ slashes-header ]">
+        <h1>Slashes</h1>
+        <p>A list of all pages on this site</p>
+    </header>
+    <div class="[ slashes-list ] [ flow ]">
+        {{ range hugo.Data.slashes }}
+        <a class="[ slash-entry ] [ switcher ] [ box ]" href="{{ .url }}">
+            <div class="[ slash-summary ]">
+                <h2 class="[ text-h5 ]">{{ .title }}</h2>
+                <p>{{ .description }}</p>
+            </div>
+            <span class="[ mono-font ] [ text-align-end ]">{{ .url }}</span>
+        </a>
+        {{ end }}
+    </div>
+</article>
+{{ end }}

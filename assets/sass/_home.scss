@@ -1,28 +1,57 @@
-.home-intro {
-    max-width: 70rem;
-    height: fit-content;
-    margin-block: 6rem;
-    margin-inline: auto;
-    text-align: center;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    padding-inline: 3rem;
+.homepage {
+    padding-block: var(--spacing-2xl);
+    --measure: 80rem;
 
-    @media (min-width: 320px) {
-        padding-inline: 1rem;
+    &--intro {
+        a {
+            text-decoration: underline;
+            text-decoration-color: $rp-dawn-muted;
+            transition: text-decoration 150ms ease-in;
+
+            &:hover {
+                text-decoration-color: $rp-dawn-foam;
+            }
+        }
+    }
+
+    &_projects {
+        --flow-space: var(--spacing-2xl);
     }
 }
-.projects-section {
-    max-width: 1200px;
-    margin-inline: auto;
-    margin-bottom: 6rem;
 
-    @media (min-width: 320px) {
-        padding-inline: 1rem;
+.homepage_projects-card {
+    display: block;
+    --flow-space: var(--spacing-sm);
+    --box-padding: var(--spacing-lg);
+    transition: background-color 100ms ease-out;
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
     }
 
-    @media (min-width: 1024px) {
-        padding-inline: 3rem;
+    &:hover,
+    &:focus-visible {
+        background-color: $rp-dawn-overlay;
+        outline: 1px solid $rp-dawn-foam;
+        transition: background-color 100ms ease-in;
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
+    }
+
+    &:focus-within {
+        h2,
+        p {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+    }
+
+    .project-image img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0.25em;
     }
 
     .year-chip {
@@ -31,98 +60,37 @@
         border: 1px solid $rp-dawn-highlight-high;
         background-color: $rp-dawn-base;
         padding: 3px 9px;
-        font-family: $font-mono-stack;
+        font-family: $font-mono;
         color: $rp-dawn-subtle;
-    }
-
-    li {
-        opacity: 0;
-        transform: translateY(60px);
-        transition:
-            opacity 0.8s ease,
-            transform 0.8s ease;
-    }
-
-    li.fade-in-visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    a {
-        display: block;
-        padding: 2rem 2rem;
-        background-color: $rp-dawn-surface;
-        border-radius: 1em;
-        contain: paint;
-        transition:
-            background-color 150ms ease-out,
-            transform 150ms ease-out;
-
-        @media (prefers-reduced-motion: reduce) {
-            transition: none;
-        }
-
-        .project-image {
-            margin-block: 1rem;
-            overflow: hidden;
-        }
-
-        .project-image img {
-            max-width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-
-        &:hover {
-            transition:
-                background-color 250ms ease-in,
-                transform 250ms ease-in;
-            @media (prefers-reduced-motion: reduce) {
-                transition: none;
-            }
-            background-color: $rp-dawn-overlay;
-            transform: translateY(-10px);
-        }
-
-        &:focus-visible {
-            box-shadow: 0 0 2px 2px $rp-dawn-foam;
-            transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            transition-duration: 0.15s;
-        }
-    }
-
-    li + li {
-        margin-block-start: 4rem;
-    }
-
-    h2 {
-        margin-block: 0.5rem;
     }
 }
 
-body.dark-mode {
-    .projects-section li {
-        a {
-            background-color: $rp-surface;
+[data-theme="dark"] {
+    .homepage {
+        &--intro {
+            a {
+                text-decoration-color: $rp-muted;
 
-            &:hover {
-                background-color: $rp-overlay;
+                &:hover {
+                    text-decoration-color: $rp-foam;
+                }
             }
-
-            &:focus {
-                background-color: $rp-overlay;
-                box-shadow: 0 0 2px 2px $rp-foam;
-            }
-        }
-
-        p {
-            color: $rp-text;
         }
     }
 
-    .year-chip {
-        background-color: $rp-base;
-        border: $rp-highlight-high;
-        color: $rp-subtle;
+    .homepage_projects-card {
+        background-color: $rp-surface;
+
+        &:hover,
+        &:focus-visible {
+            background-color: $rp-overlay;
+            outline-color: $rp-foam;
+        }
+
+        .year-chip {
+            background-color: $rp-overlay;
+            border: 1px solid $rp-dawn-highlight-low;
+            color: $rp-text;
+        }
     }
 }

@@ -3,6 +3,7 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "skills": "multitext"
+    "skills": "multitext",
+    "date": "date"
   }
 }

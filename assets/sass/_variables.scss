@@ -1,17 +1,17 @@
 //Font size for headings
 $heading-sizes: (
     // h1: 1.80rem (28px) -> 2.50rem (40px)
-    h1: clamp(1.8rem, calc(1.57rem + 1.17vw), 2.5rem),
+    h1: clamp(2.4883rem, 1.9199rem + 2.5264vw, 3.8147rem),
     // h2: 1.60rem (25px) -> 2.10rem (33px)
-    h2: clamp(1.6rem, calc(1.43rem + 0.83vw), 2.1rem),
+    h2: clamp(2.0736rem, 1.6544rem + 1.8632vw, 3.0518rem),
     // h3: 1.42rem (22px) -> 1.75rem (28px)
-    h3: clamp(1.42rem, calc(1.31rem + 0.55vw), 1.75rem),
+    h3: clamp(1.728rem, 1.4223rem + 1.3589vw, 2.4414rem),
     // h4: 1.26rem (20px) -> 1.45rem (23px)
-    h4: clamp(1.26rem, calc(1.2rem + 0.32vw), 1.45rem),
+    h4: clamp(1.44rem, 1.2201rem + 0.9774vw, 1.9531rem),
     // h5: 1.12rem (18px) -> 1.20rem (19px)
-    h5: clamp(1.12rem, calc(1.09rem + 0.13vw), 1.2rem),
+    h5: clamp(1.2rem, 1.0446rem + 0.6905vw, 1.5625rem),
     // h6: 1.05rem (16.8px) -> 1.10rem (17.6px)
-    h6: clamp(1.05rem, calc(1.03rem + 0.08vw), 1.1rem)
+    h6: clamp(1rem, 0.8929rem + 0.4762vw, 1.25rem)
 );
 
 // Rose Pine Dawn
@@ -19,14 +19,15 @@ $rp-dawn-base: #faf4ed;
 $rp-dawn-surface: #fffaf3;
 $rp-dawn-overlay: #f2e9e1;
 $rp-dawn-muted: #9893a5;
-$rp-dawn-subtle: #797593;
-$rp-dawn-text: #575279;
-$rp-dawn-love: #b4637a;
+$rp-dawn-subtle: oklch(43.56% 0.0697 289.68);
+$rp-dawn-text: oklch(32.82% 0.0629 289.56);
+$rp-dawn-love: oklch(46.01% 0.1387 2.78);
 $rp-dawn-gold: #ea9d34;
-$rp-dawn-rose: #d7827e;
-$rp-dawn-pine: #286983;
-$rp-dawn-foam: #56949f;
-$rp-dawn-iris: #907aa9;
+$rp-dawn-rose: oklch(45.71% 0.1535 26.99);
+$rp-dawn-pine: oklch(41.1% 0.077 228);
+$rp-dawn-foam: #007c8a;
+$rp-dawn-sea: oklch(40.8% 0.0569 248.53);
+$rp-dawn-iris: oklch(44.79% 0.0885 306.23);
 $rp-dawn-highlight-low: #f4ede8;
 $rp-dawn-highlight-med: #dfdad9;
 $rp-dawn-highlight-high: #cecacd;
@@ -36,14 +37,21 @@ $rp-base: #191724;
 $rp-surface: #1f1d2e;
 $rp-overlay: #26233a;
 $rp-muted: #6e6a86;
-$rp-subtle: #908caa;
-$rp-text: #e0def4;
-$rp-love: #eb6f92;
+$rp-subtle: #a4a0ba;
+$rp-text: oklch(92.94% 0.0299 289.97);
+$rp-love: #f2809e;
 $rp-gold: #f6c177;
 $rp-rose: #ebbcba;
-$rp-pine: #31748f;
-$rp-foam: #9ccfd8;
-$rp-iris: #c4a7e7;
+$rp-sea: oklch(81.69% 0.0569 248.53);
+$rp-pine: #88a8ba;
+$rp-foam: oklch(82.19% 0.0543 209.56);
+$rp-iris: oklch(82.82% 0.0945 304.99);
 $rp-highlight-low: #21202e;
 $rp-highlight-med: #403d52;
 $rp-highlight-high: #524f67;
+
+/* Fonts */
+$font-sans: "Work Sans", sans-serif;
+$font-serif-heading: "Redaction", serif;
+$font-serif-display: "Redaction 35", serif;
+$font-mono: "Space Mono", monospace;

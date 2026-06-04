@@ -1,0 +1,64 @@
+.blog-list {
+    --flow-space: var(--spacing-lg);
+
+    .blog-box {
+        display: block;
+        --flow-space: var(--spacing-xs);
+        transition:
+            border-color 100ms ease-out,
+            background-color 100ms ease-out;
+
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
+
+        &--metadata {
+            font-size: var(--step--1);
+            color: $rp-subtle;
+        }
+
+        &:hover {
+            --box-border-color: #{$rp-dawn-foam};
+            --box-background-color: #{$rp-dawn-overlay};
+            transition:
+                border-color 100ms ease-in,
+                background-color 100ms ease-in;
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
+        }
+
+        &:focus-visible {
+            outline: 2px solid $rp-dawn-foam;
+        }
+
+        &:focus-within {
+            h2 {
+                color: $rp-dawn-foam;
+                text-decoration: underline;
+                text-decoration-color: $rp-dawn-foam;
+                text-underline-offset: 2px;
+            }
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .blog-box {
+        &:hover {
+            --box-border-color: #{$rp-foam};
+            --box-background-color: #{$rp-overlay};
+        }
+
+        &:focus-visible {
+            outline-color: $rp-foam;
+        }
+
+        &:focus-within {
+            h2 {
+                color: $rp-foam;
+                text-decoration-color: $rp-foam;
+            }
+        }
+    }
+}

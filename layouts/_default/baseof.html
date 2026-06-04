@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en-US">
-    {{ partial "callout_banner.html" . }} {{ partial "head.html" . }}
-    <body>
-        <section>
-            {{ partial "header.html" . }}
-            <main id="swup">{{ block "main" . }} {{ end }}</main>
-            {{ partial "footer.html" . }}
-        </section>
+    {{ partial "head.html" . }}
+    <body data-theme="">
+        {{ partial "skip-link.html" . }} {{ partial "header.html" . }}
+        <main class="[ flow ]" id="main-content" tabindex="-1">
+            {{ block "main" . }} {{ end }}
+        </main>
+        {{ partial "footer.html" . }} {{ partial "callout_banner.html" . }}
     </body>
     {{ partial "scripts.html" . }}
 </html>

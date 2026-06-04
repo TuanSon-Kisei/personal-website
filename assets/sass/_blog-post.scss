@@ -1,0 +1,116 @@
+.blog-article {
+    --flow-space: var(--spacing-lg);
+    --measure: 48rem;
+
+    &_header {
+        --flow-space: var(--spacing-sm);
+    }
+
+    &_content {
+        --flow-space: var(--spacing-lg);
+
+        a {
+            color: $rp-dawn-foam;
+            text-decoration: underline;
+            text-decoration-thickness: 0.1em;
+            text-decoration-skip-ink: none;
+            transition: text-decoration-thickness 0.15s ease-out;
+
+            &:hover {
+                text-decoration-thickness: 0.3em;
+            }
+
+            &:focus-visible {
+                outline: 3px solid $rp-dawn-foam;
+                outline-offset: 3px;
+                border-radius: 0.75em;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
+        }
+
+        ul {
+            list-style: disc;
+            list-style-position: inside;
+        }
+
+        ol {
+            list-style: decimal;
+            list-style-position: inside;
+        }
+
+        ul,
+        ol {
+            > * + * {
+                margin-top: var(--spacing-xs);
+            }
+        }
+    }
+
+    &_nav {
+        --gap-space: var(--spacing-sm);
+        border: 0;
+        border-top: 1px dashed $rp-dawn-highlight-high;
+        padding-block-start: var(--spacing-md);
+
+        .box {
+            --box-padding: var(--spacing-xs);
+            transition: border-color 0.15s ease-out;
+
+            span {
+                font-size: var(--step--1);
+                color: $rp-dawn-subtle;
+            }
+
+            &:hover {
+                border: 1px solid $rp-dawn-foam;
+                color: $rp-dawn-foam;
+            }
+
+            &:focus-visible {
+                outline: 3px solid $rp-dawn-foam;
+            }
+
+            &:focus-within {
+                p {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .blog-article {
+        &_content {
+            a {
+                color: $rp-foam;
+
+                &:focus-visible {
+                    outline-color: $rp-foam;
+                }
+            }
+        }
+
+        &_nav {
+            border-color: $rp-highlight-high;
+
+            .box {
+                span {
+                    color: $rp-subtle;
+                }
+
+                &:hover {
+                    border-color: $rp-foam;
+                    color: $rp-foam;
+                }
+
+                &:focus-visible {
+                    outline-color: $rp-foam;
+                }
+            }
+        }
+    }
+}

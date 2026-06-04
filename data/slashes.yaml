@@ -1,0 +1,36 @@
+- title: "About"
+  description: "Basic facts about me"
+  url: "/about/"
+
+- title: "Now"
+  description: "What I'm doing, focusing on and thinking about at the moment"
+  url: "/now/"
+
+- title: "Blog"
+  description: "Writings, rants, reflections. Coming from me"
+  url: "/blog/"
+
+- title: "Colophon"
+  description: "The story behind this website and what its design philosophy"
+  url: "/colophon/"
+
+- title: "Brand"
+  description: "Visual identity and brand guidelines on my site"
+  url: "/uses/"
+
+- title: "Uses"
+  description: "A list of the tools and technologies I use on a daily basis"
+  url: "/uses/"
+
+- title: "Webrings"
+  description: "Webrings that I'm a member of"
+  url: "/webrings/"
+
+- title: "Badges"
+  description: "A collection of old school badges I've collected and displaying on my site"
+  url: "/badges/"
+
+- title: "Readings"
+  description: "Blog posts, articles, videos, books I've recently read, enjoyed
+    and recommend"
+  url: "/readings/"

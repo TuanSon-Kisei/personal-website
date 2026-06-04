@@ -1,29 +1,55 @@
-{{ define "main" }}
-<main class="page-404">
-    <div class="leading-404">
-        <span class="heading-404">Oh, you found my web's dead corner</span>
-        <p class="text-404">
-            I am terribly sorry; there is nothing here for you to see (besides
-            my cat).
-            <br />
-            Perhaps a page was moved, or it was deleted, or me just not very
-            good at "web" information architecture design things.
-            <br />
-            You can check my header above to return back to the site. Or you can
-            <a
-                href="mailto:kisei.tuanson.work@gmail.com?subject=Say%20Hi"
-                target="_blank"
-                rel="noopener noreferrer"
-                >drop me a line</a
-            >
-            so I can help you find what you're looking for.
-        </p>
-    </div>
-    <div class="image-404">
-        <figure>
-            <img src="/images/my_lovely_cat.jpg" alt="" />
-            <figcaption>In loving memory of my cat</figcaption>
-        </figure>
-    </div>
-</main>
-{{ end }}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>404 - Page Not Found</title>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+        <main class="[ page-404 ] [ stack ] [ wrapper ] [ center ] [ flow ]">
+            <header class="[ header-404 ] [ flow ]">
+                <h1 class="[ heading-404 ]">
+                    Oh, you found my web's dead corner
+                </h1>
+                <p class="[ text-404 ] [ text-h4 ]">
+                    I am terribly sorry; there is nothing here for you to see
+                    (besides my cat).
+                </p>
+                <p class="[ text-404 ] [ text-h4 ]">
+                    This page shouldn't exist. Well,... it existed for a reason.
+                    You probably don't want to see this page, don't you?
+                </p>
+                <p class="[ text-404 ] [ text-h4 ]">
+                    You can use your trusty mouse sidekick or your ever-reliable
+                    Tab key on your keyboard to get back to
+                    <a href="/">my home page</a> or
+                    <a href="slashes/">my sitemap page</a>.
+                </p>
+                <p class="[ text-h4 ] [ text-404 ]">
+                    If you notice any issue that will or might occur when you're
+                    visiting, please don't hesitate and
+                    <a href="mailto:kisei.tuanson.work@gmail.com">contact me</a>
+                    immediately. I will try my best to fix the issue. Help me
+                    help you to get better experience on my site.
+                </p>
+            </header>
+            <div class="image-404">
+                <figure>
+                    <img
+                        src="/images/my_lovely_cat.jpg"
+                        alt="My deceased cat, a lovely creature that lived too short and we met at a wrong time"
+                    />
+                    <figcaption class="text-center">
+                        In loving memory of my cat
+                    </figcaption>
+                </figure>
+            </div>
+        </main>
+    </body>
+    {{ $js := resources.Get "js/toggle-dark-mode.js" | minify | fingerprint }}
+    <script
+        src="{{ $js.RelPermalink }}"
+        integrity="{{ $js.Data.Integrity }}"
+    ></script>
+</html>

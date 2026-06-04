@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="blog-article wrapper center flow h-entry">
+    <header class="blog-article_header flow">
+        <h1 class="p-name">{{ .Title }}</h1>
+        <p class="meta">
+            <time class="dt-published"
+                >{{ .Date.Format "January 2, 2006" }}</time
+            >
+            <span aria-hidden="true">•</span>
+            <span>{{ .ReadingTime }} min read</span>
+        </p>
+    </header>
+    <div class="blog-article_content flow e-content">{{ .Content }}</div>
+    <nav class="switcher blog-article_nav">
+        {{ with .PrevInSection }}
+        <a href="{{ .RelPermalink }}" class="box stack">
+            <div class="with-icon">
+                <span class="icon">←</span>
+                <span>Previous post</span>
+            </div>
+            <p>{{ .LinkTitle }}</p>
+        </a>
+        {{ end }} {{ with .NextInSection }}
+        <a href="{{ .RelPermalink }}" class="box stack">
+            <div class="with-icon">
+                <span class="icon">→</span>
+                <span>Next post</span>
+            </div>
+            <p>{{ .LinkTitle }}</p>
+        </a>
+        {{ end }}
+    </nav>
+    <a class="u-url" href="{{ .Permalink }}" hidden></a>
+</article>
+{{ end }}

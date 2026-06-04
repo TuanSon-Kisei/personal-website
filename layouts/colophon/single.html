@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="[ colophon-article ] [ wrapper ] [ flow ] [ center ]">
+    <header>
+        {{ partial "image.html" (dict "src" "images/colophon-hero.webp" "alt"
+        "Colophon" "priority" "high") }}
+        <h1>Colophon</h1>
+        <p>The story behind this website and what its design philosophy</p>
+    </header>
+    <div class="[ flow ] [ colophon-article--content ]">{{ .Content }}</div>
+</article>
+{{ end }}

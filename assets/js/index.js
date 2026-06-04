@@ -1,8 +1,3 @@
-import "./scroll-animation.js";
-import "./intro-text-split-animation.js";
 import "./lazy-loading-images-not-first.js";
 import "./toggle-dark-mode.js";
-import "./copy-to-clipboard.js";
-import "./hamburger-navbar.js";
 import "./clickable-reading-card.js";
-import "./page-transition.js";

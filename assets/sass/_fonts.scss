@@ -1,23 +1,55 @@
-//Body font
-@mixin font-face($name, $path, $weight: 400, $style: normal) {
-    @font-face {
-        font-family: $name;
-        font-style: $style;
-        font-weight: $weight;
-        font-display: swap;
-        src: url("#{$path}") format("woff2");
-    }
+@font-face {
+    font-family: "Work Sans";
+    src: url("../fonts/WorkSans-Regular.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
-@include font-face("Work Sans", "../fonts/WorkSans-Regular.woff2", 400);
-@include font-face("Work Sans", "../fonts/WorkSans-SemiBold.woff2", 500);
-@include font-face(
-    "Merriweather",
-    "../fonts/Merriweather_96pt-Regular.woff2",
-    400
-);
-@include font-face("Space Mono", "../fonts/SpaceMono-Regular.woff2", 400);
 
-//Typography used
-$font-body-stack: "Work Sans", sans-serif;
-$font-display-stack: "Merriweather", serif;
-$font-mono-stack: "Space Mono", monospace;
+@font-face {
+    font-family: "Work Sans";
+    src: url("../fonts/WorkSans-Bold.woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Redaction";
+    src: url("../fonts/Redaction-Regular.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Redaction";
+    src: url("../fonts/Redaction-Bold.woff2");
+    font-weight: bold;
+    font-style: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Redaction 35";
+    src: url("../fonts/Redaction_35-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Redaction 35";
+    src: url("../fonts/Redaction_35-Bold.woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: url("../fonts/SpaceMono-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

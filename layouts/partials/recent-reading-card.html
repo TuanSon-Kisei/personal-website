@@ -1,8 +1,10 @@
-<article class="reading-card reading-card--{{ .format | lower }}">
+<article
+    class="[ box ] [ flow ] [ reading-card reading-card--{{ .format | lower }} ]"
+>
     <span class="reading-card_format reading-card_format--{{ .format | lower }}"
         >{{ .format }}</span
     >
-    <h1 class="reading-card_title">{{ .title }}</h1>
+    <h5 class="reading-card_title">{{ .title }}</h5>
     <p class="reading-card_author">{{ delimit .author ", " }}</p>
     <a href="{{ .url }}" class="reading-card_link">Go to the link</a>
 </article>

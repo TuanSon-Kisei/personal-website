@@ -1,47 +1,40 @@
 .page-404 {
-    text-align: left;
+    --measure: 70rem;
+    padding-block: var(--spacing-2xl);
+}
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    padding: 3rem;
+.text-404 {
+    a {
+        color: $rp-dawn-foam;
+        text-decoration: underline;
 
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    .leading-404 {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        .heading-404 {
-            font-family: $font-display-stack;
-            font-size: clamp(3rem, 5vw, 5rem);
-            line-height: 1.2;
+        &:hover {
+            text-underline-offset: 2px;
+            text-decoration-thickness: 4px;
         }
 
-        .text-404 {
-            font-size: clamp(1rem, 3vw, 1.25rem);
-            line-height: 1.5;
+        &:focus-visible {
+            outline: 2px solid $rp-dawn-foam;
+            border-radius: 0.75em;
+        }
+    }
+}
 
-            a {
-                color: $rp-dawn-foam;
-                text-decoration: underline;
+.image-404 {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
-                &:hover {
-                    text-decoration: none;
-                }
+[data-theme="dark"] {
+    .text-404 {
+        a {
+            color: $rp-foam;
+
+            &:focus-visible {
+                outline-color: $rp-foam;
             }
-        }
-    }
-
-    .image-404 {
-        img {
-            max-width: 100%;
-            height: auto;
         }
     }
 }
