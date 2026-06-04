@@ -1,7 +1,7 @@
 ---
 title: About me - Kisei's personal space
 ---
-Tuan Son, or Kisei (his online name) is a UX/UI designer who is living in Hanoi. Previously, he was working for [STEAM for Vietnam](https://steamforvietnam.org/), a nonprofit organization to help spreading AI knowledge in education. He is looking for <strong>internship and junior</strong> product designer or UX/UI designer position. You can [download his resume here.](https://tuansondesigns.com/Tuan_Son_Resume.pdf)
+Tuan Son, or Kisei (his online name) is a UX/UI designer who is living in Hanoi. Previously, he was working for [STEAM for Vietnam](https://steamforvietnam.org/), a nonprofit organization to help spreading AI knowledge in education. He is looking for <strong>internship and junior</strong> product designer or UX/UI designer position. You can [download his resume here.](https://tuansondesigns.com/resume)
 
 Tuan Son is attending in National Economic University and he specializes in Computer Science. He now is focusing on doing and learning design research, accessibility as a whole to deliver <strong>user-centered</strong>, <strong>inclusive</strong> and <strong>accessible</strong> experiences.  
 

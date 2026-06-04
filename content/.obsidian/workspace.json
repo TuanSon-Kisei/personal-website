@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "petfren/index.md",
+                "file": "about/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,11 +198,11 @@
   },
   "active": "cadc8875792717b4",
   "lastOpenFiles": [
+    "petfren/index.md",
     "about/index.md",
     "dede/index.md",
     "readmate/index.md",
     "readings/_index.md",
-    "petfren/index.md",
     "now/index.md",
     "_index.md",
     "slashes/_index.md",
