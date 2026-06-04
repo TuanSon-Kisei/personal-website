@@ -1,0 +1,89 @@
+.webring-page {
+    --flow-space: var(--spacing-xl);
+
+    &--introduction {
+        --flow-space: var(--spacing-sm);
+    }
+
+    &--nav {
+        display: flex;
+        --box-padding: 0;
+        --box-border-color: none;
+        background-color: var(--webring-bg-light);
+        color: var(--webring-text-light);
+
+        &--link {
+            flex-grow: 1;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-sm);
+
+            h2 {
+                font-family: $font-sans;
+                text-decoration: underline;
+            }
+
+            p {
+                margin-top: var(--spacing-xs);
+            }
+
+            &:hover {
+                background-color: var(--webring-bg-light-hover);
+            }
+        }
+
+        .prev,
+        .next {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+
+            &:hover {
+                background-color: var(--webring-bg-light-hover);
+            }
+
+            .icon {
+                display: block;
+                max-inline-size: 100%;
+            }
+        }
+
+        .prev {
+            border-inline-end: 1px solid var(--webring-border-light);
+        }
+
+        .next {
+            border-inline-start: 1px solid var(--webring-border-light);
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .webring-page {
+        &--nav {
+            background-color: var(--webring-bg-dark);
+            color: var(--webring-text-dark);
+
+            &--link {
+                &:hover {
+                    background-color: var(--webring-bg-dark-hover);
+                }
+            }
+            .prev,
+            .next {
+                &:hover {
+                    background-color: var(--webring-bg-dark-hover);
+                }
+            }
+            .prev {
+                border-color: var(--webring-border-dark);
+            }
+
+            .next {
+                border-color: var(--webring-border-dark);
+            }
+        }
+    }
+}

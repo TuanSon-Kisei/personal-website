@@ -40,6 +40,7 @@ For font used in headings and logo, I used [Redaction](https://www.redaction.us/
 ## Accessibility
 
 Accessibility is and has always been my core philosophy behind of my design. I welcome accessibility as my main <strong>constraints</strong> to express my design and also to challenge my creativity.
+This site aims to conform to the Level AA accessibility standards outlined in the [WCAG 2.2 specification](https://www.w3.org/TR/WCAG22/).
 
 For theme, there are two color modes are available for personal preference: light and dark. 
 

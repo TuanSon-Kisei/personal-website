@@ -1,0 +1,85 @@
+{{ define "main" }}
+<div class="wrapper center flow webring-page">
+    <header>
+        <hgroup>
+            <h1>Webrings</h1>
+            <p>
+                Webrings let you browse related websites in one big loop - and
+                my site is a part of them
+            </p>
+        </hgroup>
+    </header>
+    <div class="webring-page--introduction box flow">
+        <p>
+            A webring is a collection of websites made by like-minded folks,
+            usually centered around a topic, aesthetic, or common interest. This
+            website is part of these webrings.
+        </p>
+        <p>
+            Click on the links to visit my neighbors' sites, and other members',
+            if that webring has random functionality. Choose any ring you like!
+        </p>
+    </div>
+    <section class="webring-page--container flow">
+        {{ range hugo.Data.webrings }}
+        <nav
+            class="a11y-webring-club webring-page--nav box"
+            aria-labelledby="a11y-webring-club"
+            style="{{ partial "webrings-color.html" . | safeCSS }}"
+        >
+            <a
+                rel="external"
+                referrerpolicy="strict-origin"
+                href="https://a11y-webring.club/prev"
+                aria-label="Previous website"
+                title="Previous website"
+                class="prev"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                >
+                    <path
+                        d="M208,47.88V208.12a16,16,0,0,1-24.43,13.43L64,146.77V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0v69.23L183.57,34.45A15.95,15.95,0,0,1,208,47.88Z"
+                    ></path>
+                </svg>
+            </a>
+
+            <a
+                rel="external"
+                referrerpolicy="strict-origin"
+                href="https://a11y-webring.club/"
+                class="webring-page--nav--link text-center"
+            >
+                <h2 id="a11y-webring-clu" class="text-h5">a11y-webring.club</h2>
+                <p>A webring for digital accessibility practitioners</p>
+            </a>
+
+            <a
+                rel="external"
+                referrerpolicy="strict-origin"
+                href="https://a11y-webring.club/next"
+                aria-label="Next website"
+                title="Next website"
+                class="next"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                >
+                    <path
+                        d="M208,40V216a8,8,0,0,1-16,0V146.77L72.43,221.55A15.95,15.95,0,0,1,48,208.12V47.88A15.95,15.95,0,0,1,72.43,34.45L192,109.23V40a8,8,0,0,1,16,0Z"
+                    ></path>
+                </svg>
+            </a>
+        </nav>
+        {{ end }}
+    </section>
+</div>
+{{ end }}

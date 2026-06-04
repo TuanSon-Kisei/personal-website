@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/index.md",
+                "file": "colophon/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,8 +198,11 @@
   },
   "active": "cadc8875792717b4",
   "lastOpenFiles": [
-    "petfren/index.md",
     "about/index.md",
+    "webrings/_index.md",
+    "webrings/index.md",
+    "webrings",
+    "petfren/index.md",
     "dede/index.md",
     "readmate/index.md",
     "readings/_index.md",
@@ -236,7 +239,6 @@
     "dede/images/problem_statement.png.part",
     "dede/images/problem_space.png.part",
     "dede/images/home_and_challenge.png.part",
-    "dede/images/gps-alarm-success.png.part",
     "images/g.md",
     "images.md",
     "project-3.md",

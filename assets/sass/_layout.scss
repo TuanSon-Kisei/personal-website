@@ -20,7 +20,7 @@
 /* Box: a container with consistent padding and background */
 .box {
     padding: var(--box-padding, var(--spacing-md));
-    border-radius: 0.75em;
+    border-radius: 0.5rem;
     background-color: var(--box-background-color, #{$rp-dawn-surface});
     border: 1px solid var(--box-border-color, #{$rp-dawn-highlight-high});
 }

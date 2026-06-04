@@ -1,0 +1,10 @@
+# Pastel pink for A11y
+- name: "a11y-webring.club"
+  bgDark: "#530c35"
+  bgDarkHover: "#7f1753"
+  borderDark: "#b02475"
+  textDark: "#f8c8dc"
+  bgLight: "#f8c8dc"
+  bgLightHover: "#f8b8d4"
+  borderLight: "#f699c4"
+  textLight: "#530c35"
