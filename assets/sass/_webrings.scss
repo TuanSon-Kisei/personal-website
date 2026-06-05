@@ -2,7 +2,15 @@
     --flow-space: var(--spacing-xl);
 
     &--introduction {
-        --flow-space: var(--spacing-sm);
+        > * {
+            --flow-space: var(--spacing-sm);
+        }
+    }
+
+    &--container {
+        > * {
+            --flow-space: var(--spacing-md);
+        }
     }
 
     &--nav {
@@ -25,6 +33,7 @@
 
             p {
                 margin-top: var(--spacing-xs);
+                font-size: var(--step--1);
             }
 
             &:hover {

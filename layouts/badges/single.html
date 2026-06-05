@@ -1,12 +1,14 @@
 {{ define "main" }}
 <div class="wrapper center flow badges-wrapper">
-    <header class="text-center">
-        <h1>Classic web badges collection</h1>
-        <p>
-            Retro, whimsical, memorial web badges from the remnants of the past
-            and the ideals for the future. If you have a badge you'd like me to
-            add here, just ask me.
-        </p>
+    <header>
+        <hgroup>
+            <h1>Classic web badges collection</h1>
+            <p>
+                Retro, whimsical, memorial web badges from the remnants of the
+                past and the ideals for the future. If you have a badge you'd
+                like me to add here, just ask me.
+            </p>
+        </hgroup>
     </header>
     <section class="box cluster badges-container">
         {{ range hugo.Data.badges.images }} {{ if .url }}

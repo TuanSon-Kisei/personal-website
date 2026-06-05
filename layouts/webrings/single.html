@@ -23,14 +23,14 @@
     <section class="webring-page--container flow">
         {{ range hugo.Data.webrings }}
         <nav
-            class="a11y-webring-club webring-page--nav box"
-            aria-labelledby="a11y-webring-club"
+            class="webring-page--nav box"
+            aria-labelledby="webring-{{ .name | urlize }}"
             style="{{ partial "webrings-color.html" . | safeCSS }}"
         >
             <a
                 rel="external"
                 referrerpolicy="strict-origin"
-                href="https://a11y-webring.club/prev"
+                href="{{ .prevURL }}"
                 aria-label="Previous website"
                 title="Previous website"
                 class="prev"
@@ -51,17 +51,17 @@
             <a
                 rel="external"
                 referrerpolicy="strict-origin"
-                href="https://a11y-webring.club/"
+                href="{{ .homeURL }}"
                 class="webring-page--nav--link text-center"
             >
-                <h2 id="a11y-webring-clu" class="text-h5">a11y-webring.club</h2>
-                <p>A webring for digital accessibility practitioners</p>
+                <h2 id="webring-{{ .name | urlize }}" class="text-h5">{{ .name }}</h2>
+                <p>{{ .description }}</p>
             </a>
 
             <a
                 rel="external"
                 referrerpolicy="strict-origin"
-                href="https://a11y-webring.club/next"
+                href="{{ .nextURL }}"
                 aria-label="Next website"
                 title="Next website"
                 class="next"
