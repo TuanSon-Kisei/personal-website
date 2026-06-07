@@ -14,7 +14,7 @@
 
         &--metadata {
             font-size: var(--step--1);
-            color: $rp-subtle;
+            color: $rp-dawn-subtle;
         }
 
         &:hover {
@@ -45,6 +45,9 @@
 
 [data-theme="dark"] {
     .blog-box {
+        &--metadata {
+            color: $rp-subtle;
+        }
         &:hover {
             --box-border-color: #{$rp-foam};
             --box-background-color: #{$rp-overlay};
