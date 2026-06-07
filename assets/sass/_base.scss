@@ -59,6 +59,8 @@ body {
     font-size: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
     text-rendering: optimizeLegibility;
     line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     h1,
     h2,
