@@ -55,6 +55,9 @@
             height: auto;
             border-radius: 0.25em;
             outline: 1px solid $rp-dawn-highlight-high;
+            font-size: inherit;
+            color: inherit;
+            aspect-ratio: auto 1920 / 1080;
         }
     }
 }

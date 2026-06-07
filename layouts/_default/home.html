@@ -14,10 +14,15 @@
                 class="[ flow ] [ homepage_projects-card ] [ box ]"
             >
                 <span class="year-chip">{{ .Params.year }}</span>
-                <div class="project-image">
+                <div class="homepage_projects-card--image">
                     {{ with .Params.cover }} {{ $image :=
                     $project.Resources.GetMatch . }} {{ with $image }}
-                    <img src="{{ .RelPermalink }}" alt="{{ $project.Title }}" />
+                    <img
+                        src="{{ .RelPermalink }}"
+                        alt="{{ $project.Title }}"
+                        width="1920"
+                        height="1080"
+                    />
                     {{ end }} {{ end }}
                 </div>
                 <h2>{{ .LinkTitle }}</h2>

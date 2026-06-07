@@ -47,11 +47,16 @@
         }
     }
 
-    .project-image img {
+    &--image img {
         max-width: 100%;
         height: auto;
         object-fit: cover;
         border-radius: 0.25em;
+        font-size: inherit;
+        color: inherit;
+
+        display: block;
+        aspect-ratio: auto 1920 / 1080;
     }
 
     .year-chip {
