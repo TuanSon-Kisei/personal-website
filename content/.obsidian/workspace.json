@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "colophon/index.md",
+                "file": "badges/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,6 +198,7 @@
   },
   "active": "cadc8875792717b4",
   "lastOpenFiles": [
+    "colophon/index.md",
     "about/index.md",
     "webrings/_index.md",
     "webrings/index.md",
@@ -209,7 +210,6 @@
     "now/index.md",
     "_index.md",
     "slashes/_index.md",
-    "colophon/index.md",
     "blog/_index.md",
     "badges/index.md",
     "dede/images/halftone-hero.avif",
