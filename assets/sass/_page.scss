@@ -2,21 +2,25 @@
     --measure: 72rem;
 
     &--content {
-        --flow-space: var(--spacing-md);
         > * {
             max-inline-size: 48rem;
             margin-inline: auto;
             word-break: keep-all;
+            --flow-space: var(--spacing-md);
         }
 
         > h2 {
-            margin-top: var(--spacing-2xl);
+            --flow-space: var(--spacing-2xl);
             counter-increment: heading-counter;
 
             &::before {
                 content: counter(heading-counter, decimal-leading-zero) " - ";
                 font-family: $font-serif-heading;
             }
+        }
+
+        > h3 {
+            --flow-space: var(--spacing-lg);
         }
 
         ol {
@@ -46,6 +50,9 @@
         figcaption {
             font-size: var(--step--1);
             margin-block-start: var(--spacing-xs);
+            max-inline-size: 48rem;
+            margin-inline: auto;
+            color: $rp-dawn-subtle;
         }
 
         > figure img,
@@ -58,6 +65,7 @@
             font-size: inherit;
             color: inherit;
             aspect-ratio: auto 1920 / 1080;
+            background-color: $rp-dawn-surface;
         }
     }
 }
@@ -75,9 +83,14 @@
 [data-theme="dark"] {
     .project-page {
         &--content {
+            figcaption {
+                color: $rp-subtle;
+            }
+
             > figure img,
             > img {
                 outline-color: $rp-highlight-high;
+                background-color: $rp-surface;
             }
         }
     }

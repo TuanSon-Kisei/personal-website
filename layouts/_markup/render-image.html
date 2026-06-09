@@ -24,7 +24,7 @@ $img.Resize "800x" -}} {{- $medium := $img.Resize "1200x" -}}
         loading="lazy"
     />
     {{- if .Title }}
-    <figcaption class="text-center">{{ .Title }}</figcaption>
+    <figcaption><p>{{ .Title }}</p></figcaption>
     {{- end }}
 </figure>
 
@@ -41,7 +41,7 @@ $img.Resize "800x" -}} {{- $medium := $img.Resize "1200x" -}}
         loading="lazy"
     />
     {{- if .Title }}
-    <figcaption class="text-center">{{ .Title }}</figcaption>
+    <figcaption><p>{{ .Title }}</p></figcaption>
     {{- end }}
 </figure>
 {{- end -}} {{- else -}} {{/* Fallback for external images */}}
@@ -49,7 +49,7 @@ $img.Resize "800x" -}} {{- $medium := $img.Resize "1200x" -}}
 <figure>
     <img src="{{ .Destination }}" alt="{{ .Text }}" loading="lazy" />
     {{- if .Title }}
-    <figcaption>{{ .Title }}</figcaption>
+    <figcaption><p>{{ .Title }}</p></figcaption>
     {{- end }}
 </figure>
 {{- end -}}
