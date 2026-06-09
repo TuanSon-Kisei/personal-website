@@ -8,7 +8,7 @@ $img = resources.Get .Destination -}} {{- end -}} {{- if $img -}} {{- $mediaType
 <figure>
     <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" />
     {{- if .Title }}
-    <figcaption>{{ .Title }}</figcaption>
+    <figcaption><p>{{ .Title }}</p></figcaption>
     {{- end }}
 </figure>
 

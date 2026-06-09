@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0d14e79dcda302c9",
+        "id": "91c483ec8e609d5c",
         "type": "tabs",
         "children": [
           {
-            "id": "cadc8875792717b4",
+            "id": "9134b57a96daa295",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "badges/index.md",
+                "file": "dede/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -196,22 +196,28 @@
       "bases:Create new base": false
     }
   },
-  "active": "cadc8875792717b4",
+  "active": "9134b57a96daa295",
   "lastOpenFiles": [
+    "dede/images/opportunities.png",
+    "dede/index.md",
+    "dede/images/opportunities(2).png",
+    "dede/images/user_research.png",
+    "dede/images/tracking_iteration.png",
+    "dede/images/problem_statement.png",
+    "dede/images/problem_space.png",
+    "badges/index.md",
     "colophon/index.md",
     "about/index.md",
     "webrings/_index.md",
     "webrings/index.md",
     "webrings",
     "petfren/index.md",
-    "dede/index.md",
     "readmate/index.md",
     "readings/_index.md",
     "now/index.md",
     "_index.md",
     "slashes/_index.md",
     "blog/_index.md",
-    "badges/index.md",
     "dede/images/halftone-hero.avif",
     "dede/images/halftone-hero.png",
     "petfren/images/hero.png.part",
@@ -228,12 +234,6 @@
     "dede/images/home_screen.png",
     "dede/images/news_and_challenge_screen.png",
     "slashes",
-    "readmate/images/jtbd.png",
-    "readmate/images/interview.png",
-    "readmate/images/feature-exploration.png",
-    "readmate/images/knowledge-map.png",
-    "readmate/images/in-app-search.png",
-    "readmate/images/user-story.png",
     "dede/images/user_research.png.part",
     "dede/images/tracking_iteration.png.part",
     "dede/images/problem_statement.png.part",
@@ -242,7 +242,6 @@
     "images/g.md",
     "images.md",
     "project-3.md",
-    "project-2.md",
-    "project-1.md"
+    "project-2.md"
   ]
 }

@@ -6,7 +6,7 @@
             max-inline-size: 48rem;
             margin-inline: auto;
             word-break: keep-all;
-            --flow-space: var(--spacing-md);
+            --flow-space: var(--spacing-lg);
         }
 
         > h2 {
@@ -21,6 +21,10 @@
 
         > h3 {
             --flow-space: var(--spacing-lg);
+        }
+
+        > p {
+            --flow-space: var(--spacing-sm);
         }
 
         ol {
@@ -43,8 +47,16 @@
 
         > img,
         > figure {
-            max-width: none;
+            max-width: 100%;
             margin-inline: auto;
+        }
+
+        > figure + :not(h2) {
+            margin-block-start: var(--spacing-lg);
+        }
+
+        figure + figure {
+            margin-block-start: var(--spacing-lg);
         }
 
         figcaption {
@@ -52,7 +64,6 @@
             margin-block-start: var(--spacing-xs);
             max-inline-size: 48rem;
             margin-inline: auto;
-            color: $rp-dawn-subtle;
         }
 
         > figure img,
@@ -83,10 +94,6 @@
 [data-theme="dark"] {
     .project-page {
         &--content {
-            figcaption {
-                color: $rp-subtle;
-            }
-
             > figure img,
             > img {
                 outline-color: $rp-highlight-high;
