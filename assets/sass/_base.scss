@@ -23,7 +23,6 @@ html {
     /* Design tokens here: font color, font type */
     --color-text: #{$rp-dawn-text};
     --color-background: #{$rp-dawn-base};
-    --color-accent: #{$rp-dawn-foam};
 
     /* Smaller step sizes for smaller text */
     --step--2: clamp(0.6944rem, 0.6492rem + 0.2011vw, 0.8rem);
@@ -168,7 +167,6 @@ body {
 [data-theme="dark"] {
     --color-text: #{$rp-text};
     --color-background: #{$rp-base};
-    --color-accent: #{$rp-foam};
 
     ::selection {
         background-color: $rp-highlight-med;
