@@ -3,10 +3,10 @@
     {{ partial "head.html" . }}
     <body data-theme="">
         {{ partial "skip-link.html" . }} {{ partial "header.html" . }}
-        <main class="[ flow ]" id="main-content" tabindex="-1">
+        <main id="main-content" tabindex="-1">
             {{ block "main" . }} {{ end }}
         </main>
-        {{ partial "footer.html" . }} {{ partial "callout_banner.html" . }}
+        {{ partial "footer.html" . }}
     </body>
     {{ partial "scripts.html" . }}
 </html>
