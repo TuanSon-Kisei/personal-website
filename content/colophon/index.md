@@ -44,7 +44,7 @@ This site aims to conform to the Level AA accessibility standards outlined in th
 
 For theme, there are two color modes are available for personal preference: light and dark. 
 
-For color palette, I used [Rose Pine](https://rosepinetheme.com/) theme, with my own twists and modifications for colors to be at least meet WCAG 2 4.5 colour contrast criteria.
+For color palette, I used [Rose Pine](https://rosepinetheme.com/) theme, with my own twists and modifications for colors to be at least meet minimum [4.5:1 contrast criteria for small text](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
 
 For animations, I've added simple <strong>animations</strong> and <strong>page transitions</strong> with the goal of enhancing interactions. I also accommodate <strong>reduced motion preferences</strong> for who having motor sickness or have issues with tracking things that have movement. Back then, I used [Swup](https://swup.js.org/) as page transition library with [GSAP](https://gsap.com/) as animation but due to accessibility issue I decided to retire them altogether.
 

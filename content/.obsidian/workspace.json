@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readmate/index.md",
+                "file": "colophon/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,11 +198,11 @@
   },
   "active": "9134b57a96daa295",
   "lastOpenFiles": [
+    "dede/index.md",
+    "readmate/index.md",
     "readmate/images/hero.png",
     "readmate/images/hero(1).png",
     "petfren/index.md",
-    "dede/index.md",
-    "readmate/index.md",
     "dede/images/opportunities.png",
     "dede/images/opportunities(2).png",
     "dede/images/user_research.png",
@@ -233,7 +233,6 @@
     "blog",
     "().md",
     "colophon",
-    "dede/images/home_screen.png",
     "slashes",
     "dede/images/user_research.png.part",
     "dede/images/tracking_iteration.png.part",
