@@ -8,7 +8,7 @@ timeline: May - July 2025
 role: UX Designer
 weight: "3"
 ---
-![An image showing three phones illustrating the user interface of the app](images/hero.png)
+![The Petfren app with three screens showcased](images/hero.png)
 
 
 ## About the project
@@ -28,11 +28,11 @@ We wanted to gain a better understanding of how parents navigate teaching Math t
 
 With our in-depth analysis using Jobs-to-be-done framework, we **pinpointed** one main persona that's **best represented** our target audience pain points, needs and goals:
 
-![An image showing a persona about parents teaching and learning with kid with their goals to help the child understand and do homework properly and their pain point being they don't have teaching knowledge or their teaching method is different to the kid's teacher](images/persona.png)
+![A persona about parents teaching and learning with kid with their goals to help the child understand and do homework properly and their pain point being they don't have teaching knowledge or their teaching method is different to the kid's teacher](images/persona.png)
 
 After gathering our interview data and notable recurrent patterns, we gained better comprehension of the problems those interviewed parents are facing and quickly set **2** main opportunity areas to focus on:
 
-![An image showing affinity mapping made in Figma](images/affinity-mapping.png)
+![Affinity mapping made in Figma](images/affinity-mapping.png)
 ![](images/empathy.png)
 
 ## Becoming my users
@@ -72,7 +72,7 @@ We found that some parents might have hesitation when asking to AI so we also pr
 While these are the most interesting and "weird" option, unfortunately we couldn't do user testing to gather feedback to see if our recreational feature is useful or warrant enough attention for our users to try. With enough data and testing, we might decide to potentially explore this option further.
 
 ![Voice changing screen for user to create comically humorous voices to ease the frustration](images/petfren_voice_changing.png)
-![Quick, easy Math's questions to be done quick for children so they can understand and remember better](images/petfren_math_games.png)
+![Quick, easy Math's questions after homework for children so they can understand and remember better](images/petfren_math_games.png)
 ## Reflections
 ### We were designing for two users simultaneously
 We initially focused on the parent experience - dashboard, AI responses, progress tracking. But Petfren isn't a solo app; it's a tool for a parent-child teaching moment happening in real-time. This meant every feature needed to work for two people with different needs: the parent needs guidance and answers, while the child needs visual, engaging explanations. We learned to design for the interaction *between* them, not just for individual users.

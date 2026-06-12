@@ -8,7 +8,7 @@ timeline: September 2025
 role: UX Designer
 weight: "1"
 ---
-![The Dede app screens featuring the home screen and other components are map alert and news](images/hero.png)
+![The Dede app](images/hero.png)
 
 
 
@@ -75,7 +75,7 @@ With our user goals defined, we translated them into business goals for our app:
 2. Drive daily usage by making learning laws a habitual part of users' riding journey.
 3. Reduce the number of users violated traffic laws by improving their knowledge of the laws.
 
-![An image showing three papers detailing about product specifications](images/drafts.png "Sketching ideas. I explored how we might deliver our solution to our main audience, and what information content we should present to them.")
+![Papers detailing about product specifications](images/drafts.png "Sketching ideas. I explored how we might deliver our solution to our main audience, and what information content we should present to them.")
 
 ## Ideation
 After we sketched our preliminary content structure, we headed to create mid-fidelity wireframes to explore our options, build our vision of our mobile app.
@@ -104,7 +104,6 @@ Instead of using AI for generative purpose, we designed it to identify behaviora
 
 We also decided to make their journey a challenge itself. Every time the user completed their journey on the road without violating a mistake, they will get a point. The more points they get, the higher their ranking. They can use the points as the app's exclusive currency to buy "badges", which they can display on their account and sharing them.
 
-
 ![Two screens, one displaying the News screen and other displaying the Ranking screen](images/news_and_challenge_screen.png "The News and Ranking screen. While the News page displaying selected news for user, the Ranking screen offers engagement through safety challenges with gamification purpose.")
 
 ## Assumptions & Constraints
@@ -121,12 +120,12 @@ Phone vibrations while riding may be distracting. Real-world testing would be ne
 ## Design Solution
 Before heading out, the users only have to wear a specialized motorcycle helmet that's equipped a **small camera**. The camera is configured to **automatically record and send data** with wi-fi signals to **mobile app**. When the user finished their journey and their phone is connected to Internet, the app **pushes** those data to AI so the AI can **analyze** the user's journey and **produce** the analysis after an amount of time.
 
-![Diagram showing a three-step process: a helmet-mounted dashcam records the riding journey, pushes data to the app (shown as phone notification) and AI analyzes it - displaying a route map with 3 detected riding errors](images/dash-cam-ai.png "The camera on user's helmet continously records the journey. That footage is sent to the app in real time, where AI analyzes the route and flags risky behaviors - in this example, detected 3 errors when on the trip")
+![Diagram showing a three-step process: a helmet-mounted dashcam records the riding journey, pushes data to the app (shown as phone notification) and AI analyzes it](images/dash-cam-ai.png "The camera on user's helmet continously records the journey. That footage is sent to the app in real time, where AI analyzes the route and flags risky behaviors - in this example, detected 3 errors when on the trip")
 
 For the alarm part, the app will use phone's **available GPS** sensors. It will receive the offline data of the current road the user is on, send **vibrating** alerts if they **accidentally violated** the traffic regulations like **exceeded** the speed limit.
 
-![Illustration showing the situation when the scooter driver suddenly accelerating to 70 km/h when the road only allows below 60 km/h, which triggered the alarm](images/gps-alarm.png "When a rider exceeded the speed limit - for example, going from 60 km/h to 70 km/h - the app uses in-device GPS to detect the change and trigger the alert")
-![Illustration showing a rider receiving a phone vibration alert after exceeding the speed limit, then slowing back to 60 km/h - motivated by avoiding a 4 million vietnam dong fine](images/gps-alarm-success.png "When the app detects speeding, it sends an immediate vibration alert to the rider's phone. By responding in time and reducing the speed, the rider avoids a potential fine - shown here as 4 million VND fine")
+![The situation when the scooter driver suddenly accelerating to 70 km/h when the road only allows below 60 km/h, which triggered the alarm](images/gps-alarm.png "When a rider exceeded the speed limit - for example, going from 60 km/h to 70 km/h - the app uses in-device GPS to detect the change and trigger the alert")
+![The rider received a phone vibration alert after exceeding the speed limit, then they slow back to 60 km/h - motivated by avoiding a 4 million vietnam dong fine](images/gps-alarm-success.png "When the app detects speeding, it sends an immediate vibration alert to the rider's phone. By responding in time and reducing the speed, the rider avoids a potential fine - shown here as 4 million VND fine")
 
 
 ## Final Design
@@ -136,28 +135,28 @@ With the wireframes and low-fidelity mock-ups established, we transitioned to ne
   image="images/dede-tracking-journey.webp" 
   title="Analyze and deduce the problems" 
   description="Intelligently point out where you did wrong on the road and how to prevent them"
-  alt="Tracking journey feature to pinpoint where user did wrong on the road and guide to not reproduce the action"
+  alt="The Tracking journey screen"
   >}}
   
   {{< feature-showcase 
   image="images/dede-personalised-news.webp" 
   title="Traffic news curated only for you" 
   description="Selected news so you can notice ahead of time what is changing when participating traffics"
-  alt="News screen that use AI to filter and display relevant news based on user's activity"
+  alt="The News screen"
 >}}
 
 {{< feature-showcase 
   image="images/dede-safety-challenges.webp" 
   title="Safety traffic challenge" 
   description="Get rewarded for your effort for abiding the laws with humorous stickers and badges"
-  alt="Safety challenges demonstration"
+  alt="The Challenge and Ranking screen"
 >}}
 ## Outcome
 We had the once-in-a-lifetime opportunity to share the work we done with other designers in Ho Chi Minh City. Sadly we didn't gain any honorary reward at all but the senior designers gave us a lot of valuable feedback. I had the chance to demonstrate our work on the stage with hundreds of people watching our work unfold.
 
 ![The team giving their presentation](images/designathon-team-presentation.jpg "My team is giving our answers to judges and in front of over 500+ audiences")
 
-![The author is giving his presentation in front of the screen](images/designathon-me-giving-presentation.webp "Yes, this is me giving presentation. Yes, I was so nervous. OMG")
+![The author is giving his presentation](images/designathon-me-giving-presentation.webp "Yes, this is me giving presentation. Yes, I was so nervous. OMG")
 
 
 ## What I learned

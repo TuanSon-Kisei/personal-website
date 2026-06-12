@@ -59,9 +59,9 @@ Throughout our intensive  and empathy collaboration session, we found that many 
 
 With so many problems to solve and all of them are legitimate problems for our users, how do we decide which one is the problem worth solving for our users and for our solution? After many rounds of heated but passionate discussions, we decided upon the final verdict:
 
-###  Spending too much time on learning and researching new knowledge from the reading material demotivate reader to continue reading them.
+### Spending too much time on learning and researching new knowledge from the reading material demotivate reader to continue reading them.
 
-![Icon with a chat bubble next to them saying: "Finding and research information from the book makes me enjoy reading less, and I feel frustrated that I can’t enjoy reading them to fullest experience"](images/user-story.png)
+!["Finding and research information from the book makes me enjoy reading less, and I feel frustrated that I can’t enjoy reading them to fullest experience"](images/user-story.png)
 
 The reason we chose that user story is because of these 3 main supporting points:
 
