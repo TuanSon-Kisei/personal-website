@@ -27,6 +27,7 @@ html {
     /* Smaller step sizes for smaller text */
     --step--2: clamp(0.6944rem, 0.6492rem + 0.2011vw, 0.8rem);
     --step--1: clamp(0.8333rem, 0.7619rem + 0.3175vw, 1rem);
+    --step--0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
 
     @each $heading, $size in $heading-sizes {
         --font-size-#{$heading}: #{$size};
@@ -60,7 +61,8 @@ body {
     color: var(--color-text);
     background-color: var(--color-background);
     font-family: $font-sans;
-    font-size: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+    font-size: var(--step--0);
+    font-size: round(var(--step--0), 2px);
     text-rendering: optimizeLegibility;
     line-height: var(--line-height);
     -webkit-font-smoothing: antialiased;

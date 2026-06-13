@@ -31,7 +31,10 @@
             </address>
         </div>
 
-        <nav class="[ footer-container_web-badges ] [ center ] [ cluster ]">
+        <div
+            class="[ footer-container_web-badges ] [ center ] [ cluster ]"
+            aria-label="Web badges and external links"
+        >
             {{ range hugo.Data.footer.images }} {{ if .url }}
             <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
                 ><img
@@ -52,7 +55,7 @@
                 height="31"
             />
             {{ end }} {{ end }}
-        </nav>
+        </div>
         <p class="[ footer-container_author ] [ text-center ]">
             2026, made with grit and love by Kisei
         </p>
