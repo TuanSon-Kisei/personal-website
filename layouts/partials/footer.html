@@ -31,10 +31,7 @@
             </address>
         </div>
 
-        <div
-            class="[ footer-container_web-badges ] [ center ] [ cluster ]"
-            aria-label="Web badges and external links"
-        >
+        <div class="[ footer-container_web-badges ] [ center ] [ cluster ]">
             {{ range hugo.Data.footer.images }} {{ if .url }}
             <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
                 ><img

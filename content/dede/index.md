@@ -50,9 +50,9 @@ The issue is clear: young people ignored learning updated traffic regulations wh
 
 Guided by user research and online survey, we turned these three key pain points: outdated knowledge, uninteresting method when teaching updated regulations and only know new laws through words of mouth--- into corresponding opportunity goals for our designs.
 
-1. Close the knowledge gap between what young riders know and what the laws require them to do.
-2. Turn driving mistakes into actionable learning opportunities both on the ride and after the ride.
-3. Make learning the laws experience becoming a natural part of their journey, not something they are forced to do every day.
+- Close the knowledge gap between what young riders know and what the laws require them to do.
+- Turn driving mistakes into actionable learning opportunities both on the ride and after the ride.
+- Make learning the laws experience becoming a natural part of their journey, not something they are forced to do every day.
 
 ![Three problem–opportunity–outcome pairs from user research](images/opportunities.png "Our opportunities for the app. Derived from survey findings across 43–51 respondents.")
 
@@ -66,14 +66,14 @@ Based on our user research, we started to define our core **user story** to guid
 **So I can** learn from them after each ride to become a safer rider over time.
 
 With that said, we defined **3** core user goals for our app:
-1. Stay safe and aware while on the road without distractions.
-2. Understand where I got wrong without the app interfering my ride.
-3. Learn about traffic laws in a way that make sense in a way for me, without feeling I have to read an university textbook.
+- Stay safe and aware while on the road without distractions.
+- Understand where I got wrong without the app interfering my ride.
+- Learn about traffic laws in a way that make sense in a way for me, without feeling I have to read an university textbook.
 
 With our user goals defined, we translated them into business goals for our app:
-1. Establish our app as the go-to learning app for young riders when learning about traffic laws.
-2. Drive daily usage by making learning laws a habitual part of users' riding journey.
-3. Reduce the number of users violated traffic laws by improving their knowledge of the laws.
+- Establish our app as the go-to learning app for young riders when learning about traffic laws.
+- Drive daily usage by making learning laws a habitual part of users' riding journey.
+- Reduce the number of users violated traffic laws by improving their knowledge of the laws.
 
 ![Papers detailing about product specifications](images/drafts.png "Sketching ideas. I explored how we might deliver our solution to our main audience, and what information content we should present to them.")
 
@@ -165,4 +165,4 @@ Can our users afford it? How should we integrate our camera hardware into their 
 ### Design for failures, not just when it works
 We designed screens showing "AI analysis results" without taking into consideration what happens when AI fails - misidentified a violation, extreme weather, poor lightning conditions like roads without lights at night. Real products need designed states for uncertainty, not just success cases.
 ### Privacy as priority, not an afterthought
-Recording users' driving journeys with cameras felt like an obvious solution to our problem. Only after we presented our solution did we realize that trust can only be earned when we place the choice and control onto our users. Optional data collection, data deletion option, and consent flows are all equally important for the whole customer's journey. 
+Recording users' driving journeys with cameras felt like an obvious solution to our problem. Only after we presented our solution did we realize that trust can only be earned when we place the choice and control onto our users. Optional data collection, data deletion option, and consent flows are all equally important for the whole customer's journey.
