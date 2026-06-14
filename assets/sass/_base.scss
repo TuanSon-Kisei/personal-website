@@ -15,6 +15,10 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
 
     @media (prefers-reduced-motion: reduce) {
         scroll-behavior: auto;
@@ -45,7 +49,7 @@ html {
     /* Line height tokens here */
     --line-height: 1.5;
     --line-height-caption: 1.3;
-    --line-height-heading: 1.2;
+    --line-height-heading: 1.1;
 
     [id] {
         scroll-margin-top: var(--spacing-lg);
@@ -67,6 +71,39 @@ body {
     line-height: var(--line-height);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-decoration-skip-ink: auto;
+    font-optical-sizing: auto;
+    font-variant-ligatures: common-ligatures no-discretionary-ligatures
+        no-historical-ligatures contextual;
+    font-kerning: normal;
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    address,
+    p,
+    hr,
+    pre,
+    blockquote,
+    ol,
+    ul,
+    li,
+    dl,
+    dt,
+    dd,
+    figure,
+    figcaption,
+    div,
+    table,
+    caption,
+    form,
+    fieldset {
+        margin: 0;
+    }
 
     h1,
     h2,
@@ -75,15 +112,10 @@ body {
     h5,
     h6 {
         font-family: $font-serif-heading;
-        margin: 0;
-        padding: 0;
         line-height: var(--line-height-heading);
-        letter-spacing: -0.02em;
+        letter-spacing: -0.01em;
         font-weight: 400;
         font-variant-caps: titling-caps;
-        font-feature-settings:
-            "ss03" on,
-            "zero" on;
         text-wrap: balance;
     }
 
@@ -93,21 +125,16 @@ body {
         }
     }
 
-    p {
-        margin: 0;
-    }
-
-    b {
-        color: inherit;
-    }
-
     a {
         color: inherit;
         text-decoration: none;
     }
 
-    strong {
+    strong,
+    b,
+    th {
         font-weight: 700;
+        font-size-adjust: 0.514;
     }
 
     ul,
@@ -185,5 +212,26 @@ body {
 
     blockquote {
         border-color: $rp-iris;
+    }
+}
+
+.has-delivery-mode-lite {
+    body {
+        font-family: $font-fallback-sans;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $font-fallback-serif;
+    }
+
+    kbd,
+    code,
+    pre {
+        font-family: $font-fallback-mono;
     }
 }

@@ -4,7 +4,7 @@
     <span class="reading-card_format reading-card_format--{{ .format | lower }}"
         >{{ .format }}</span
     >
-    <h5 class="reading-card_title">{{ .title }}</h5>
+    <h2 class="reading-card_title text-h5">{{ .title }}</h2>
     <p class="reading-card_author">{{ delimit .author ", " }}</p>
     <a href="{{ .url }}" class="reading-card_link">Go to the link</a>
 </article>

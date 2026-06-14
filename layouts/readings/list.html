@@ -1,17 +1,15 @@
 {{ define "main" }}
-<div class="[ wrapper ]">
-    <div class="[ readings-section ]">
-        <header class="[ readings-header ] [ flow ]">
-            <h1 class="[ readings-section_title ] [ text-center ]">Readings</h1>
-            <p class="[ readings-section_description ] [ text-center ]">
-                Blog posts, articles, videos, books I've recently read, enjoyed
-                and recommend. From who having brighter minds than me.
-            </p>
-        </header>
-        <div class="[ readings-grid ] [ grid ] [ center ]">
-            {{ range sort site.Data.recentReading.readings "title" }} {{ partial
-            "recent-reading-card.html" . }} {{ end }}
-        </div>
+<div class="[ wrapper center ]">
+    <header class="[ readings-header ]">
+        <h1>Readings</h1>
+        <p>
+            Blog posts, articles, videos, books I've recently read, enjoyed and
+            recommend. From who having brighter minds than me.
+        </p>
+    </header>
+    <div class="[ readings-grid ] [ grid ]">
+        {{ range sort site.Data.recentReading.readings "title" }} {{ partial
+        "recent-reading-card.html" . }} {{ end }}
     </div>
 </div>
 {{ end }}

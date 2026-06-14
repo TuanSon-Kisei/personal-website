@@ -4,7 +4,6 @@
 
 .readings-grid {
     margin-block: var(--spacing-xl);
-    --measure: 50rem;
     --grid-column-gap: var(--spacing-lg);
     --grid-row-gap: var(--spacing-lg);
 }
@@ -16,18 +15,10 @@
 
     &_format {
         display: inline-block;
-        font-size: 0.875rem;
         color: $rp-dawn-text;
         border: 1px solid $rp-dawn-highlight-high;
         border-radius: 0.25em;
         padding: 3px 9px;
-    }
-
-    &_title {
-        line-height: 1.2;
-        font-weight: normal;
-        letter-spacing: -0.02em;
-        width: fit-content;
     }
 
     &_author {
