@@ -25,4 +25,4 @@ This code of conduct reflects how I make and evaluate my design works. Not every
 ## The rest of it
 In my personal free time, I play any sort of roguelike games and listen to classic soundtracks from movies and games alike. I like biking around my small village to admire the normality and idyllic of a world where technology works with people. 
 
-I like reading about designs, ethics, fiction works about dystopia. I'm always open to chats and coffees. Don't hesitate to say hello via either [Linkedin](https://www.linkedin.com/in/tuansonnguyen/) or [Email](mailto:kisei.tuanson.work@gmail.com?subject=Say%20Hi). 
+I like reading about designs, ethics, fiction works about dystopia. I'm always open to chats and coffees. Don't hesitate to say hello via either [Linkedin](https://www.linkedin.com/in/tuansonnguyen/) or [kisei.tuanson.work@gmail.com](mailto:kisei.tuanson.work@gmail.com?subject=Say%20Hi). 

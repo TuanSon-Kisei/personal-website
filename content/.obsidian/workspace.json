@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "badges/index.md",
+                "file": "about/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,6 +198,7 @@
   },
   "active": "9134b57a96daa295",
   "lastOpenFiles": [
+    "badges/index.md",
     "colophon/index.md",
     "dede/index.md",
     "readmate/index.md",
@@ -210,7 +211,6 @@
     "dede/images/tracking_iteration.png",
     "dede/images/problem_statement.png",
     "dede/images/problem_space.png",
-    "badges/index.md",
     "about/index.md",
     "webrings/_index.md",
     "webrings/index.md",
