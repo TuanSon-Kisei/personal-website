@@ -31,6 +31,10 @@
                 outline-offset: 3px;
             }
 
+            &:visited {
+                color: $rp-dawn-iris;
+            }
+
             @media (prefers-reduced-motion: reduce) {
                 transition: none;
             }
@@ -46,6 +50,10 @@
 
                 &:focus-visible {
                     outline-color: $rp-foam;
+                }
+
+                &:visited {
+                    color: $rp-iris;
                 }
             }
         }

@@ -29,7 +29,7 @@
         }
 
         &:focus-visible {
-            outline: 2px solid $rp-dawn-foam;
+            outline: 3px solid $rp-dawn-foam;
         }
 
         &:focus-within {
@@ -37,6 +37,7 @@
                 color: $rp-dawn-foam;
                 text-decoration: underline;
                 text-decoration-color: $rp-dawn-foam;
+                text-decoration-thickness: 0.1em;
                 text-underline-offset: 2px;
             }
         }

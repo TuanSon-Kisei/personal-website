@@ -3,37 +3,18 @@
         <div class="[ footer-container_contacts ] [ text-center ]">
             <address>
                 Connect with me on
-                <a
-                    href="https://www.linkedin.com/in/tuansonnguyen/"
-                    rel="me noopener noreferrer"
-                    target="_blank"
+                <a href="https://www.linkedin.com/in/tuansonnguyen/" rel="me"
                     >LinkedIn</a
-                >,
-                <a
-                    href="https://gitlab.com/DoctorKisei"
-                    rel="me noopener noreferrer"
-                    target="_blank"
-                    >Gitlab</a
-                >,
-                <a
-                    rel="me noopener noreferrer"
-                    href="https://mstdn.social/@drkisei"
-                    target="_blank"
-                    >Mastodon</a
-                >
+                >, <a href="https://gitlab.com/DoctorKisei" rel="me">Gitlab</a>,
+                <a rel="me" href="https://mstdn.social/@drkisei">Mastodon</a>
                 or
-                <a
-                    href="mailto:kisei.tuanson.work@gmail.com"
-                    rel="me noopener noreferrer"
-                    target="_blank"
-                    >Email</a
-                >
+                <a href="mailto:kisei.tuanson.work@gmail.com" rel="me">Email</a>
             </address>
         </div>
 
         <div class="[ footer-container_web-badges ] [ center ] [ cluster ]">
             {{ range hugo.Data.footer.images }} {{ if .url }}
-            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
+            <a href="{{ .url }}"
                 ><img
                     src="{{ .src }}"
                     alt="{{ .alt }}"

@@ -164,7 +164,6 @@
     &:focus-visible {
         outline: 3px solid $rp-dawn-foam;
         outline-offset: 3px;
-        border-radius: 0.5em;
     }
 
     &[aria-current="page"] {

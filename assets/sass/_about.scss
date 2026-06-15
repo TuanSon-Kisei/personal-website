@@ -24,8 +24,13 @@
             }
 
             &:focus-visible {
-                outline: 2px solid $rp-dawn-foam;
-                border-radius: 0.75em;
+                outline: 3px solid $rp-dawn-foam;
+                outline-offset: 3px;
+            }
+
+            &:visited {
+                color: $rp-dawn-iris;
+                text-decoration: wavy;
             }
         }
 
@@ -52,6 +57,10 @@
 
                 &:focus-visible {
                     outline-color: $rp-foam;
+                }
+
+                &:visited {
+                    color: $rp-iris;
                 }
             }
         }

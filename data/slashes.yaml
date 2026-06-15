@@ -30,7 +30,6 @@
   description: "A collection of old school badges I've collected and displaying on my site"
   url: "/badges/"
 
-- title: "Readings"
-  description: "Blog posts, articles, videos, books I've recently read, enjoyed
-    and recommend"
-  url: "/readings/"
+- title: "Links"
+  description: "Links, notes that I've recently read and put on here for reference"
+  url: "/links/"
