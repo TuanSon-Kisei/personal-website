@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="wrapper center flow post-content">
+    <header>
+        <h1 class="post-content--title">
+            {{ .Title }}
+        </h1>
+        <span>Read on <time datetime="{{ .Date | time.Format "2006-01-02" }}">
+          {{ .Date | time.Format "2 January 2006" }}
+        </time></span>
+    </header>
+
+        {{ .Content }}
+
+    <footer class="cluster">
+        <a href="/links" class="post-content--link"
+            >Back to the links list</a
+        >
+        <a href="{{ .Params.link }}" class="post-content--link"
+            >Go to the link</a
+        >
+    </footer>
+</article>
+{{ end }}

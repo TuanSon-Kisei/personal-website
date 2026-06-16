@@ -1,0 +1,26 @@
+<li class="reading-item">
+    <article class="reading-content flow">
+        <header>
+            <h2 class="reading-content--title">
+                <a href="{{ .Params.link }}" class="reading-content--link"
+                    >{{ .Title }}</a
+                >
+            </h2>
+            <span>Read on <time datetime="{{ .Date | time.Format "2006-01-02" }}">
+              {{ .Date | time.Format "2 January 2006" }}
+            </time></span>
+        </header>
+        {{ with .Content }}
+            {{ . }}
+        {{ end }}
+        <footer class="cluster">
+            {{ if .Content }}
+              <a href="{{ .Permalink }}" class="reading-content--link">(Permalink)</a>
+            {{ end }}
+
+            <a href="{{ .Params.link }}" class="reading-content--link"
+                >Go to the link</a
+            >
+        </footer>
+    </article>
+</li>
