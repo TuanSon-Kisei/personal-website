@@ -10,7 +10,7 @@
             <span>{{ .ReadingTime }} min read</span>
         </p>
     </header>
-    <div class="blog-article_content flow e-content">{{ .Content }}</div>
+    <div class="blog-article_content flow prose e-content">{{ .Content }}</div>
     <nav class="switcher blog-article_nav">
         {{ with .PrevInSection }}
         <a href="{{ .RelPermalink }}" class="box stack">

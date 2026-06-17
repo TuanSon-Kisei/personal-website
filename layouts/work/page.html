@@ -6,8 +6,6 @@
         <p class="project-summary_description">{{ .Params.description }}</p>
         {{ partial "project-info.html" . }}
     </header>
-    <div class="[ project-page--content ] [ prose ] [ flow ]">
-        {{ .Content }}
-    </div>
+    <div class="[ project-page--content ] prose [ flow ]">{{ .Content }}</div>
 </article>
 {{ end }}

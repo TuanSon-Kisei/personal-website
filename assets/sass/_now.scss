@@ -11,28 +11,6 @@
 
     &--intro {
         background-color: $rp-dawn-highlight-low;
-
-        a {
-            color: $rp-dawn-foam;
-            text-decoration: underline;
-            text-decoration-thickness: 0.1em;
-            text-decoration-skip-ink: none;
-            transition: text-decoration-thickness 0.15s ease-out;
-
-            &:hover {
-                text-decoration-thickness: 0.3em;
-            }
-
-            &:focus-visible {
-                outline: 3px solid $rp-dawn-foam;
-                outline-offset: 3px;
-                border-radius: 0.75em;
-            }
-
-            @media (prefers-reduced-motion: reduce) {
-                transition: none;
-            }
-        }
     }
 
     &--time {
@@ -46,14 +24,6 @@
     .now-box {
         &--intro {
             background-color: $rp-highlight-low;
-
-            a {
-                color: $rp-foam;
-
-                &:focus-visible {
-                    outline-color: $rp-foam;
-                }
-            }
         }
     }
 }

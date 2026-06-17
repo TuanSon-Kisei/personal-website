@@ -5,59 +5,21 @@
         <p>What I'm doing, focusing on and thinking about at the moment</p>
     </header>
 
-    <article class="now-box now-box--intro box flow">
-        <h2 class="text-h3">What is a /now page?</h2>
+    <article class="now-box now-box--intro box flow prose">
+        <h2>What is a /now page?</h2>
         <p>
             A now page is a page on a personal website that tells you what a
             person is focused on at the current time, day, or very recently. You
             can learn more at <a href="nownownow.com">nownownow.com</a>
         </p>
     </article>
-    <article class="now-box now-box--content box flow">
-        <div class="with-icon">
-            <h2 class="text-h3">Reading</h2>
-        </div>
-        <p>"The Collected Anger" by Mike Monterio</p>
-        <time class="now-box--time" datetime="{{ now.Format "2 January, 2006 at 03:04 PM" }}">
-          {{ now.Format "2 January, 2006 at 03:04 PM" }}
-        </time>
+    {{ range hugo.Data.now.items }}
+    <article class="now-box now-box--content box flow prose">
+        <h2>{{ .title }}</h2>
+        <p>{{ .content | markdownify }}</p>
+        <time class="now-box--time" datetime="{{ .date }}">{{ .date }}</time>
     </article>
-    <article class="now-box now-box--content box flow">
-        <div class="with-icon">
-            <h2 class="text-h3">Thinking</h2>
-        </div>
-        <p>
-            Thinking about my near future and how should I secure my dream job in this industry
-        </p>
-        <time class="now-box--time" datetime="{{ now.Format "2 January, 2006 at 03:04 PM" }}">
-          {{ now.Format "2 January, 2006 at 03:04 PM" }}
-        </time>
-    </article>
-    <article class="now-box now-box--content box flow">
-        <div class="with-icon">
-            <h2 class="text-h3">Studying</h2>
-        </div>
-        <p>
-            Computer Science
-            <br>
-            Expected to graduate soon in this month
-        </p>
-        <time class="now-box--time" datetime="{{ now.Format "2 January, 2006 at 03:04 PM" }}">
-          {{ now.Format "2 January, 2006 at 03:04 PM" }}
-        </time>
-    </article>
-    <article class="now-box now-box--content box flow">
-        <div class="with-icon">
-            <h2 class="text-h3">Coding</h2>
-        </div>
-        <p>
-            Learning Every Layout principles to make my website more adaptable
-            to many viewports, therefore making it more accessible
-        </p>
-        <time class="now-box--time" datetime="{{ now.Format "2 January, 2006 at 03:04 PM" }}">
-          {{ now.Format "2 January, 2006 at 03:04 PM" }}
-        </time>
-    </article>
+    {{ end }}
 </div>
 
 {{ end }}

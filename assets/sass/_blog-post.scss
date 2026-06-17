@@ -8,45 +8,6 @@
 
     &_content {
         --flow-space: var(--spacing-lg);
-
-        a {
-            color: $rp-dawn-foam;
-            text-decoration: underline;
-            text-decoration-thickness: 0.1em;
-            text-decoration-skip-ink: none;
-            transition: text-decoration-thickness 0.15s ease-out;
-
-            &:hover {
-                text-decoration-thickness: 0.3em;
-            }
-
-            &:focus-visible {
-                outline: 3px solid $rp-dawn-foam;
-                outline-offset: 3px;
-                border-radius: 0.75em;
-            }
-
-            @media (prefers-reduced-motion: reduce) {
-                transition: none;
-            }
-        }
-
-        ul {
-            list-style: disc;
-            list-style-position: inside;
-        }
-
-        ol {
-            list-style: decimal;
-            list-style-position: inside;
-        }
-
-        ul,
-        ol {
-            > * + * {
-                margin-top: var(--spacing-xs);
-            }
-        }
     }
 
     &_nav {
@@ -84,16 +45,6 @@
 
 [data-theme="dark"] {
     .blog-article {
-        &_content {
-            a {
-                color: $rp-foam;
-
-                &:focus-visible {
-                    outline-color: $rp-foam;
-                }
-            }
-        }
-
         &_nav {
             border-color: $rp-highlight-high;
 

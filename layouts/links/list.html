@@ -8,15 +8,14 @@
         </p>
     </div>
     <hr />
-    <ol class="stack flow reading-list">
+    <ol class="stack flow prose reading-list">
         {{ range $paginator.Pages }} {{ partial "recent-reading-item.html" . }}
         {{ end }}
     </ol>
     <nav class="reading-pagination">
         {{ with $paginator }} {{ if .HasPrev }}
         <a href="{{ .Prev.URL }}">&laquo; Newer entries</a>
-        {{ else }}
-        <span>&laquo; Newer entries</span>
+
         {{ end }}
 
         <span>Page {{ .PageNumber }} of {{ .TotalPages }}</span>
@@ -24,8 +23,6 @@
         {{ if .HasNext }}
         <a href="{{ .Next.URL }}">Older entries &raquo;</a>
 
-        {{ else }}
-        <span>Older entries &raquo;</span>
         {{ end }} {{ end }}
     </nav>
 </div>

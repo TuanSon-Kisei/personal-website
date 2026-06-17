@@ -3,7 +3,6 @@
 
     header {
         > img {
-            width: 100%;
             height: auto;
             border-radius: 0.5rem;
             margin-bottom: var(--spacing-md);
@@ -13,49 +12,6 @@
     &--content {
         > p {
             margin-top: var(--spacing-sm);
-        }
-
-        a {
-            color: $rp-dawn-foam;
-            text-decoration: underline;
-            text-decoration-thickness: 0.1em;
-            text-decoration-skip-ink: none;
-            transition: text-decoration-thickness 0.15s ease-out;
-
-            &:hover {
-                text-decoration-thickness: 0.3em;
-            }
-
-            &:focus-visible {
-                outline: 3px solid $rp-dawn-foam;
-                outline-offset: 3px;
-            }
-
-            &:visited {
-                color: $rp-dawn-iris;
-            }
-
-            @media (prefers-reduced-motion: reduce) {
-                transition: none;
-            }
-        }
-    }
-}
-
-[data-theme="dark"] {
-    .colophon-article {
-        &--content {
-            a {
-                color: $rp-foam;
-
-                &:focus-visible {
-                    outline-color: $rp-foam;
-                }
-
-                &:visited {
-                    color: $rp-iris;
-                }
-            }
         }
     }
 }
