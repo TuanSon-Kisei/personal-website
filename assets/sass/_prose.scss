@@ -1,0 +1,120 @@
+.prose {
+    a {
+        color: $rp-dawn-foam;
+        text-decoration: underline;
+        text-decoration-thickness: 0.1em;
+        text-decoration-skip-ink: none;
+        transition: text-decoration-thickness 0.15s ease-out;
+
+        &:hover {
+            text-decoration-thickness: 0.3em;
+        }
+        &:focus-visible {
+            outline: 3px solid $rp-dawn-foam;
+            outline-offset: 3px;
+        }
+        &:visited {
+            color: $rp-dawn-iris;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
+    }
+
+    ol {
+        list-style: none;
+        list-style-position: inside;
+        counter-reset: list-counter;
+
+        li {
+            counter-increment: list-counter;
+            margin-bottom: var(--spacing-xs);
+
+            text-indent: -1rem;
+
+            &::before {
+                content: counter(list-counter) ".";
+                display: inline-block;
+                width: 1rem;
+            }
+        }
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-inline-start: 1.625rem;
+
+        li {
+            margin-bottom: var(--spacing-xs);
+            padding-inline-start: 0.375rem;
+
+            &::marker {
+                color: $rp-dawn-muted;
+            }
+        }
+    }
+
+    img,
+    figure {
+        max-width: 100%;
+        margin-inline: auto;
+    }
+
+    figure img,
+    img {
+        height: auto;
+        border-radius: 0.25em;
+        outline: 1px solid $rp-dawn-highlight-high;
+        font-size: inherit;
+        color: inherit;
+        aspect-ratio: auto 1920 / 1080;
+        background-color: $rp-dawn-surface;
+    }
+
+    figcaption {
+        margin-block-start: var(--spacing-xs);
+        font-size: var(--step--1);
+        line-height: var(--line-height-caption);
+    }
+
+    blockquote {
+        margin-inline: 0;
+        padding-block: 0.5rem;
+        padding-inline: 1.5rem;
+        background-color: $rp-dawn-highlight-low;
+        border: 0.05rem solid $rp-dawn-highlight-high;
+        border-inline-start: 0.3rem solid $rp-dawn-highlight-high;
+    }
+}
+
+[data-theme="dark"] {
+    .prose {
+        a {
+            color: $rp-foam;
+
+            &:focus-visible {
+                outline-color: $rp-foam;
+            }
+            &:visited {
+                color: $rp-iris;
+            }
+        }
+
+        ul li::marker {
+            color: $rp-muted;
+        }
+
+        figure img,
+        img {
+            outline-color: $rp-highlight-high;
+            background-color: $rp-surface;
+        }
+
+        blockquote {
+            background-color: $rp-highlight-low;
+            border-color: $rp-highlight-high;
+            border-inline-start: 0.3rem solid $rp-highlight-high;
+        }
+    }
+}
