@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/index.md",
+                "file": "dede/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,6 +198,7 @@
   },
   "active": "9134b57a96daa295",
   "lastOpenFiles": [
+    "about/index.md",
     "links/delphi-tools.md",
     "colophon/index.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
@@ -223,7 +224,6 @@
     "readings/my-first-article copy copy copy copy.md",
     "readings/my-first-article copy copy copy.md",
     "readings/my-first-article copy copy.md",
-    "readings/my-first-article copy.md",
     "readmate/images/hero.png",
     "readmate/images/hero(1).png",
     "dede/images/opportunities.png",

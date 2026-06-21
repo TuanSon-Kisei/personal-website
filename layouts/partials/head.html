@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Kisei - Tuan Son" />
+    <meta name="author" content="Tuan Son - Kisei" />
     <meta name="text-scale" content="scale" />
     {{ partial "opengraph.html" . }}
     <link
@@ -18,9 +18,7 @@
         type="font/woff2"
         crossorigin
     />
-    <title>
-        {{ if .IsHome }} {{ .Site.Title }} {{ else }} {{ .Title }} {{ end }}
-    </title>
+    <title>{{ .Title }}</title>
     <script
         defer
         src="https://cloud.umami.is/script.js"

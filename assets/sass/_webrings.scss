@@ -39,6 +39,10 @@
             &:hover {
                 background-color: var(--webring-bg-light-hover);
             }
+
+            &:focus-visible {
+                outline: 3px solid currentColor;
+            }
         }
 
         .prev,
@@ -51,6 +55,10 @@
 
             &:hover {
                 background-color: var(--webring-bg-light-hover);
+            }
+
+            &:focus-visible {
+                outline: 3px solid currentColor;
             }
 
             .icon {
@@ -84,6 +92,10 @@
             .next {
                 &:hover {
                     background-color: var(--webring-bg-dark-hover);
+                }
+
+                &:focus-visible {
+                    outline-color: currentColor;
                 }
             }
             .prev {

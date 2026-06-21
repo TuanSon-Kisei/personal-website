@@ -9,9 +9,8 @@
     --box-padding: var(--spacing-sm);
     --gap-space: var(--spacing-sm);
 
-    p,
     span {
-        font-size: var(--step--1);
+        font-size: var(--text-step--1);
     }
 
     &:hover {
