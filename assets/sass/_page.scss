@@ -10,12 +10,10 @@
         }
 
         > h2 {
-            --flow-space: var(--spacing-2xl);
             counter-increment: heading-counter;
 
             &::before {
                 content: counter(heading-counter, decimal-leading-zero) " - ";
-                font-family: $font-serif-heading;
             }
         }
 

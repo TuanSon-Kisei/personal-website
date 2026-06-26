@@ -1,22 +1,34 @@
-{{- $src := .src -}} {{- $alt := .alt | default "" -}} {{- $priority :=
-.priority | default "lazy" -}} {{- $img := resources.Get $src -}}
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $priority := .priority | default "lazy" -}}
+{{- $img := resources.Get $src -}}
 
 <!-- Resolve loading attributes from priority -->
 
-{{- $loading := "lazy" -}} {{- $fetchpriority := "auto" -}} {{- $decoding
-:="async" -}} {{- if eq $priority "high" -}} {{- $loading = "eager" -}} {{-
-$fetchpriority = "high" -}} {{- $decoding = "sync" -}} {{- else if eq $priority
-"low" -}} {{- $fetchpriority = "low" -}} {{- end -}} {{- if $img -}} {{-
-$mediaType := $img.MediaType.SubType -}}
+{{- $loading := "lazy" -}}
+{{- $fetchpriority := "auto" -}}
+{{- $decoding:="async" -}}
 
-<!--WebP — resize only, never
-re-encode to avoid generation loss -->
+{{- if eq $priority "high" -}}
+    {{- $loading = "eager" -}}
+    {{- $fetchpriority = "high" -}}
+    {{- $decoding = "sync" -}}
+{{- else if eq $priority "low" -}}
+    {{- $fetchpriority = "low" -}}
+{{- end -}}
 
-{{- if eq $mediaType "webp" -}} {{- $small := $img.Resize "800x" -}} {{- $medium
-:= $img.Resize "1200x" -}}
+{{- if $img -}}
+    {{- $mediaType := $img.MediaType.SubType -}}
+
+{{- $small := $img.Resize "600x" -}}
+{{- $medium := $img.Resize "800x" -}}
+{{- $large := $img.Resize "1200x" -}}
+
+{{- if or (eq $mediaType "png") (eq $mediaType "jpeg") -}}
+<!-- png, jpg, etc — resize and serve as-is -->
 <img
-    srcset="{{ $small.RelPermalink }} 800w, {{ $medium.RelPermalink }} 1200w"
-    sizes="(max-width: 800px) 100vw, 1200px"
+    srcset="{{ $small.RelPermalink }} 600w, {{ $medium.RelPermalink }} 800w, {{ $large.RelPermalink }} 1200w"
+    sizes="(max-width: 600px) 100vw, (max-width: 800px) 800px, 1200px"
     src="{{ $medium.RelPermalink }}"
     width="{{ $medium.Width }}"
     height="{{ $medium.Height }}"
@@ -25,4 +37,18 @@ re-encode to avoid generation loss -->
     fetchpriority="{{ $fetchpriority }}"
     decoding="{{ $decoding }}"
 />
-{{- end -}} {{- end -}}
+{{- end -}}
+
+{{- if eq $mediaType "webp" -}}
+  <img
+      src="{{ $img.RelPermalink }}"
+      width="{{ $img.Width }}"
+      height="{{ $img.Height }}"
+      alt="{{ $alt }}"
+      loading="{{ $loading }}"
+      fetchpriority="{{ $fetchpriority }}"
+      decoding="{{ $decoding }}"
+  />
+{{- end -}}
+
+{{- end -}}

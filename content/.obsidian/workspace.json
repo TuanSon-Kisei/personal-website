@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dede/index.md",
+                "file": "blog/better words for 'slop'.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "better words for 'slop'"
             }
           }
         ]
@@ -198,8 +198,17 @@
   },
   "active": "9134b57a96daa295",
   "lastOpenFiles": [
-    "about/index.md",
+    "blog/confidence.md",
+    "blog/better words for 'slop'.md",
+    "blog/_index.md",
+    "blog/writing.md",
+    "blog/better-words-for-slop.md",
+    "links/against-the-luddites.md",
+    "links/on-Google-declaring-war-on-the-Web.md",
     "links/delphi-tools.md",
+    "dede/index.md",
+    "links/Untitled.md",
+    "about/index.md",
     "colophon/index.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
@@ -215,15 +224,6 @@
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy.md",
-    "readings/my-first-article copy copy copy.md",
-    "readings/my-first-article copy copy.md",
     "readmate/images/hero.png",
     "readmate/images/hero(1).png",
     "dede/images/opportunities.png",
