@@ -33,9 +33,7 @@ This site is optimized for as many kinds of screens as possible. This philosophy
 
 I am always fond of those geometric, round font. They look easier to read and you can differentiate between characters in a word when you reading them on screen (or in print form).
 
-For body text, I used [Work Sans](https://weiweihuanghuang.github.io/Work-Sans/), a free sans-serif font. I liked Open Sans because it is very readable at both large and small font size, you can clearly see some characters that are often being misinterpreted like B and 8, 0 and O or l and I. Work Sans also support many symbols too.
-
-For font used in headings and logo, I used [Redaction](https://www.redaction.us/), which is also a free serif font. I like this font a lot, since it has some quirks: its font variants with number like 10, 30, 50 and 70; similar to how the font getting "redacted" by being more and more "pixelated". 
+For body and headings, I am using [Golos Text](https://www.paratype.com/fonts/pt/golos-text). Back about 3 weeks ago, I used Work Sans as body text and Redaction as my heading font. However, since I like to experiment fonts (and messing them up), I decided to no longer use those 2 old fonts and only stick to Golos Text for all of my font on my site.
 
 ## Accessibility
 
@@ -65,4 +63,4 @@ Thank you to [Mark Wyner's colophon](https://markwyner.com/colophon/) page to in
 
 You can treat this page as my living document that will be constantly improved, revised and be structured all over again. 
 
-This page was last updated at **<time datetime="2026-05-25T23:50:00+07:00">May 25, 2026 at 23:50 GMT+7</time>**.
+This page was last updated at **<time datetime="2026-06-27T00:22:00+07:00">June 27, 2026 at 12:22 AM GMT+7</time>**.

@@ -1,16 +1,4 @@
 .homepage {
-    &--intro {
-        a {
-            text-decoration: underline;
-            text-decoration-color: $rp-dawn-muted;
-            transition: text-decoration 150ms ease-in;
-
-            &:hover {
-                text-decoration-color: $rp-dawn-foam;
-            }
-        }
-    }
-
     &_projects {
         --flow-space: var(--spacing-2xl);
     }

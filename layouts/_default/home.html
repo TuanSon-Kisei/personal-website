@@ -1,9 +1,14 @@
 {{ define "main" }}
 
 <div class="[ flow ] [ center ] [ wrapper ] [ homepage ]">
-    <h1 class="[ text-h2 ] homepage--intro">
-        I am <strong>Tuan Son</strong>
-    </h1>
+    <header class="homepage--intro flow">
+        <h1>
+            Hello there, I'm Tuan Son. I'm an UX designer based in Hanoi.
+        </h1>
+        <p>
+            I'm a human-navtive designer. I write blogs that only me reading them, I share links and articles so you can share the same enjoyment I had when reading them.
+        </p>
+    </header>
     <ul class="[ flow ] [ homepage_projects ]">
         {{ range where .Site.RegularPages "Type" "work" }} {{ $project := . }}
         <li class="[ flow ]">
