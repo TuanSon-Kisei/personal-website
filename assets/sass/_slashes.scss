@@ -8,6 +8,13 @@
     --threshold: 30rem;
     --box-padding: var(--spacing-sm);
     --gap-space: var(--spacing-sm);
+    transition:
+        box-shadow 250ms cubic-bezier(0.42, 0.77, 0.01, 1),
+        scale 250ms cubic-bezier(0.42, 0.77, 0.01, 1);
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
 
     span {
         font-size: var(--text-step--1);
@@ -15,16 +22,18 @@
 
     &:hover {
         --box-background-color: #{$rp-dawn-overlay};
-        --box-border-color: #{$rp-dawn-foam};
-        color: $rp-dawn-foam;
+        --box-border-color: #{$rp-dawn-rose};
+        color: $rp-dawn-rose;
+        box-shadow: 6px 6px 0 0 $rp-dawn-rose;
+        scale: 1.01;
     }
 
     &:focus-visible {
-        outline: 4px solid $rp-dawn-foam;
+        outline: 4px solid $rp-dawn-rose;
     }
 
     &:focus-within {
-        color: $rp-dawn-foam;
+        color: $rp-dawn-rose;
         text-decoration: underline;
     }
 }
@@ -37,16 +46,18 @@
     .slash-entry {
         &:hover {
             --box-background-color: #{$rp-overlay};
-            --box-border-color: #{$rp-foam};
-            color: $rp-foam;
+            --box-border-color: #{$rp-rose};
+            color: $rp-rose;
+            box-shadow: 6px 6px 0 0 $rp-rose;
+            scale: 1.01;
         }
 
         &:focus-visible {
-            outline-color: $rp-foam;
+            outline-color: $rp-rose;
         }
 
         &:focus-within {
-            color: $rp-foam;
+            color: $rp-rose;
         }
     }
 }

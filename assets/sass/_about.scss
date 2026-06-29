@@ -1,4 +1,10 @@
 .about-article {
+    header {
+        > * {
+            --flow-space: var(--spacing-sm);
+        }
+    }
+
     --flow-space: var(--spacing-md);
 
     &--content {

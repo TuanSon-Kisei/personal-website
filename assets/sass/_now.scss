@@ -1,5 +1,5 @@
 .now-container {
-    > * {
+    > * + * {
         --flow-space: var(--spacing-lg);
     }
 }
@@ -9,9 +9,7 @@
         --flow-space: var(--spacing-xs);
     }
 
-    &--intro {
-        background-color: $rp-dawn-highlight-low;
-    }
+    background-color: $rp-dawn-surface;
 
     &--time {
         display: inline-flex;
@@ -22,8 +20,6 @@
 
 [data-theme="dark"] {
     .now-box {
-        &--intro {
-            background-color: $rp-highlight-low;
-        }
+        background-color: $rp-surface;
     }
 }

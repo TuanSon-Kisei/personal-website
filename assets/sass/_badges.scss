@@ -24,7 +24,7 @@
 
     a {
         &:focus-visible {
-            outline: 4px dashed $rp-dawn-love;
+            outline: 4px dashed $rp-dawn-rose;
         }
     }
 
@@ -43,7 +43,7 @@
     .badges-container {
         a {
             &:focus-visible {
-                outline-color: $rp-love;
+                outline-color: $rp-rose;
             }
         }
     }
