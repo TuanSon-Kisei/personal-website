@@ -44,14 +44,14 @@
     .reading-item {
         .reading-content {
             footer {
-                border-top-color: $rp-highlight-high;
+                border-top-color: $rp-highlight-med;
             }
         }
     }
 
     .post-content {
         footer {
-            border-top: 1px solid $rp-highlight-high;
+            border-top: 1px solid $rp-highlight-med;
         }
     }
 }

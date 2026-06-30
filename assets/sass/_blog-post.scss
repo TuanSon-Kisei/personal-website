@@ -26,12 +26,12 @@
             }
 
             &:hover {
-                border: 1px solid $rp-dawn-foam;
-                color: $rp-dawn-foam;
+                border: 1px solid $rp-dawn-rose;
+                color: $rp-dawn-rose;
             }
 
             &:focus-visible {
-                outline: 3px solid $rp-dawn-foam;
+                outline: 3px solid $rp-dawn-rose;
             }
 
             &:focus-within {
@@ -46,7 +46,7 @@
 [data-theme="dark"] {
     .blog-article {
         &_nav {
-            border-color: $rp-highlight-high;
+            border-color: $rp-highlight-med;
 
             .box {
                 span {
@@ -54,12 +54,12 @@
                 }
 
                 &:hover {
-                    border-color: $rp-foam;
-                    color: $rp-foam;
+                    border-color: $rp-rose;
+                    color: $rp-rose;
                 }
 
                 &:focus-visible {
-                    outline-color: $rp-foam;
+                    outline-color: $rp-rose;
                 }
             }
         }

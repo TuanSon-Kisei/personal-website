@@ -1,5 +1,4 @@
 .header {
-    border-bottom: 1px solid $rp-dawn-highlight-high;
     view-transition-name: header;
 }
 
@@ -95,15 +94,15 @@
             }
 
             &:focus-visible {
-                outline: 2px solid $rp-dawn-foam;
+                outline: 2px solid $rp-dawn-rose;
             }
 
             &[aria-current="page"] {
                 font-weight: bold;
-                color: $rp-dawn-foam;
+                color: $rp-dawn-rose;
                 &::before {
                     transform: scaleX(1);
-                    background-color: $rp-dawn-foam;
+                    background-color: $rp-dawn-rose;
                 }
             }
         }
@@ -143,8 +142,8 @@
         transform-origin: left center;
         background-color: $rp-dawn-text;
         transition:
-            transform 100ms ease-out,
-            background-color 100ms ease-out;
+            transform 150ms cubic-bezier(0.78, 0.33, 0, 1.05),
+            background-color 150ms cubic-bezier(0.78, 0.33, 0, 1.05);
         @media (prefers-reduced-motion: reduce) {
             transition: none;
         }
@@ -153,24 +152,21 @@
     &:hover::before {
         transform: scaleX(1);
         transform-origin: left center;
-        transition:
-            transform 100ms ease-in,
-            background-color 100ms ease-in;
         @media (prefers-reduced-motion: reduce) {
             transition: none;
         }
     }
 
     &:focus-visible {
-        outline: 3px solid $rp-dawn-foam;
+        outline: 3px solid $rp-dawn-rose;
         outline-offset: 3px;
     }
 
     &[aria-current="page"] {
-        color: $rp-dawn-foam;
+        color: $rp-dawn-rose;
         &::before {
             transform: scaleX(1);
-            background-color: $rp-dawn-foam;
+            background-color: $rp-dawn-rose;
         }
     }
 }
@@ -199,7 +195,7 @@
     }
 
     &:focus-visible {
-        outline: 1px solid $rp-dawn-foam;
+        outline: 1px solid $rp-dawn-rose;
     }
 
     svg {
@@ -221,10 +217,6 @@
 }
 
 [data-theme="dark"] {
-    .header {
-        border-color: $rp-highlight-high;
-    }
-
     .mobile-nav {
         .hamburger-btn {
             &:hover {
@@ -243,7 +235,7 @@
 
                 &[aria-current="page"] {
                     font-weight: bold;
-                    color: $rp-foam;
+                    color: $rp-rose;
                 }
             }
         }
@@ -255,7 +247,7 @@
         }
 
         &:focus-visible {
-            outline-color: $rp-foam;
+            outline-color: $rp-rose;
         }
     }
 
@@ -278,14 +270,14 @@
         }
 
         &:focus-visible {
-            outline-color: $rp-foam;
+            outline-color: $rp-rose;
         }
 
         &[aria-current="page"] {
-            color: $rp-foam;
+            color: $rp-rose;
 
             &::before {
-                background-color: $rp-foam;
+                background-color: $rp-rose;
             }
         }
     }

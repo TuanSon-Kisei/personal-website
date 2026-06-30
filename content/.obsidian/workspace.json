@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "colophon/index.md",
+                "file": "blog/better words for 'slop'.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "better words for 'slop'"
             }
           }
         ]
@@ -198,6 +198,8 @@
   },
   "active": "9134b57a96daa295",
   "lastOpenFiles": [
+    "about/index.md",
+    "colophon/index.md",
     "blog/better words for 'slop'.md",
     "blog/confidence.md",
     "blog/_index.md",
@@ -208,8 +210,6 @@
     "links/delphi-tools.md",
     "dede/index.md",
     "links/Untitled.md",
-    "about/index.md",
-    "colophon/index.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",

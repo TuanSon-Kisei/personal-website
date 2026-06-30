@@ -56,6 +56,10 @@ html {
     --letter-spacing-condensed: -0.02em;
     --letter-spacing-relaxed: 0.01em;
 
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 16px;
+
     :target {
         scroll-margin-top: 2ex;
     }
@@ -138,7 +142,6 @@ body {
     b,
     th {
         font-weight: 700;
-        font-size-adjust: 0.514;
     }
 
     ul,
@@ -151,17 +154,6 @@ body {
     figure {
         margin: 0;
         padding: 0;
-    }
-
-    hr {
-        border: 0;
-        margin: 0;
-        text-align: center;
-        color: currentColor;
-        &::before {
-            content: "⁂ ⁂ ⁂";
-            display: block;
-        }
     }
 
     svg {

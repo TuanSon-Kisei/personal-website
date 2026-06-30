@@ -1,28 +1,48 @@
 ---
 title: About me - Kisei's personal space
 ---
-Tuan Son, or Kisei (his online name) is a UX/UI designer who is living in Hanoi. Previously, he was working for [STEAM for Vietnam](https://steamforvietnam.org/), a nonprofit organization to help spreading AI knowledge in education. He is looking for <strong>internship and junior</strong> product designer or UX/UI designer position. You can [download his resume here.](https://tuansondesigns.com/tuan_son_resume.pdf)
+Hello, welcome to my site.
 
-Tuan Son is attending in National Economic University and he specializes in Computer Science. He now is focusing on doing and learning design research, accessibility as a whole to deliver <strong>user-centered</strong>, <strong>inclusive</strong> and <strong>accessible</strong> experiences.  
+My name is <strong>Tuan Son</strong> (you can spell my name as "Son" with a little leviation of your voice.)
 
-<hr>
+I'm an UX designer with a little flavour of "engineering" based in Hanoi, Vietnam.
 
-## My code of design
+> What is this website?
 
-This is my personalized list of rough, incomplete and ever redefining principles that I apply and abide to whenever I approach my design works:
+> Why did you create it? 
 
-1. <strong>Be responsible for the works.</strong> My design is a discipline of action. I am responsible for the works I created. All of my works are consequential to anything that they affect. The works I created will outlive me. And they will speak about me what kind of person I was.
-2. <strong>Everything is part of a bigger system</strong>. Design does not exist in a vacuum. How does my decision within a smaller system help shape, modify or recreate a large system? I will judge my works based on that impact, no matter how aesthetically pleasing it might be.
-3. <strong>Be professional</strong>. I am hired and trusted based on my expertise on my works. My job is to evaluate the impact of my work to my client or employer, and eliminate negative impact of the work should I found them. Asking "why" is a design skill. Saying "no" is a design skill. 
-4. <strong>Welcome criticism</strong>. Encourage honest critiques. Asking "why" and "how" constantly. Criticism is a gift. It makes good work better. It keeps bad work from seeing the light of day. It’s my responsibility to ask for criticism. [Embrace friction](https://tante.cc/2025/07/30/friction-and-not-being-touched/)
-5. <strong>Know my audience</strong>. Design is the intentional solution to a problem within a set of constraints. I meet the people whom my works solving their problems. I strive to dive deep into those problems and understand them. Edge cases are just fancy term for not understanding the problems deep enough.
-6. <strong>Seek to learn</strong>. Confronting what I do not know. Welcome and encourage people who come from diverse backgrounds, diverse cultures. I must keep my ego in check, know when to shut up and listen, be aware of my own biases, and fights to make room for those who have been silenced. Diversity leads to better outcomes and solutions. Diversity leads to better design.
+This website is my own digital space on the Internet (some like to call theirs as digital garden), where I grow, tend and cut my own thoughts, away from the grasp of social media and tech overlords.
 
-This code of conduct reflects how I make and evaluate my design works. Not everyone can agree about it, but at least, they can know my personal stance about my works and therefore consider their choice about choosing me to work with them.
+I (sometimes) like to experiment some funky layouts, add some micro-interactions on random things (still learning the hang of it). My website is constantly a WIP (work in progress).
 
-<hr>
+> What is your work as you call it as "user experience"?
 
-## The rest of it
-In my personal free time, I play any sort of roguelike games and listen to classic soundtracks from movies and games alike. I like biking around my small village to admire the normality and idyllic of a world where technology works with people. 
+I learn how people doing their work, what their struggles are in their work, and I work to find a way to ease those struggles out from their shoulder by arranging rectangles on the screen (jokingly).
 
-I like reading about designs, ethics, fiction works about dystopia. I'm always open to chats and coffees. Don't hesitate to say hello via either [Linkedin](https://www.linkedin.com/in/tuansonnguyen/) or [kisei.tuanson.work@gmail.com](mailto:kisei.tuanson.work@gmail.com?subject=Say%20Hi). 
+Simply put, I design and make things that useful to people, be it one time or multiple times to come back (ideally one time though). 
+
+> What is your recent achievements? 
+
+🎉 Created this website from scratch.  I know that there are LLM tools that really speed up how you create a website, but for me I want my website to be more "handmade", and I enjoy the continuous journey of building it too.
+
+I got the 5th place in [Product Pioneer Candidate](https://productpioneerftu.com/), a competition to "simulate" the process of hiring candidates for product positions. Despite we can't join the finals due to not being 4th place (damn), I am still proud of what my team and I achieved in such a short time frame. 
+
+I also got graduated as Computer Science graduate of National Economic University in Hanoi. Five years of bittersweet and experiences did float by so fast phew.
+
+> How can I contact you if I want to know you more?
+
+You can contact me through these channels:
+
+My work email: [kisei.tuanson.work@gmail.com](mailto:kisei.tuanson.work@gmail.com)
+
+Mastodon: https://mstdn.social/@drkisei
+
+Linkedin: https://www.linkedin.com/in/tuansonnguyen/ (ideally don't chat to me on this platform though just shoot to me your email)
+
+Irl meeting: if we have chat a couple of times on these channels above, and you are near Hanoi, just hit me up and have a coffee (or cakes if you don't like caffeine.) I am admitted that while I can be quite introvert at times, I do enjoy meeting and chatting new people and know I should be more a little "adventurous" about it. 
+
+> Anything else?
+
+That's it. Thank you for your time reading these.
+
+Have a nice day on the web.

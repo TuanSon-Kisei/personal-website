@@ -1,6 +1,6 @@
 .site_footer {
     width: 100%;
-    border-top: 1px solid $rp-dawn-highlight-high;
+    border-top: 1px solid $rp-dawn-highlight-low;
     view-transition-name: footer;
 }
 
@@ -17,12 +17,12 @@
             text-decoration: underline;
 
             &:hover {
-                color: $rp-dawn-foam;
+                color: $rp-dawn-rose;
             }
 
             &:focus-visible {
-                color: $rp-dawn-foam;
-                outline: 2px solid $rp-dawn-foam;
+                color: $rp-dawn-rose;
+                outline: 2px solid $rp-dawn-rose;
             }
         }
     }
@@ -35,7 +35,7 @@
 
         a {
             &:focus-visible {
-                outline: 4px dashed $rp-dawn-love;
+                outline: 4px dashed $rp-dawn-rose;
             }
         }
 
@@ -76,19 +76,19 @@
 
 [data-theme="dark"] {
     .site_footer {
-        border-top: 1px solid $rp-highlight-high;
+        border-top: 1px solid $rp-highlight-low;
     }
 
     .footer-container {
         &_contacts {
             a {
                 &:hover {
-                    color: $rp-foam;
+                    color: $rp-rose;
                 }
 
                 &:focus-visible {
-                    color: $rp-foam;
-                    outline-color: $rp-foam;
+                    color: $rp-rose;
+                    outline-color: $rp-rose;
                 }
             }
         }
@@ -98,7 +98,7 @@
         &_web-badges {
             a {
                 &:focus-visible {
-                    outline-color: $rp-love;
+                    outline-color: $rp-rose;
                 }
             }
         }

@@ -8,20 +8,22 @@
     display: block;
     --flow-space: var(--spacing-sm);
     --box-padding: var(--spacing-lg);
-    transition: background-color 100ms ease-out;
+    transition:
+        box-shadow 250ms cubic-bezier(0.42, 0.77, 0.01, 1),
+        scale 250ms cubic-bezier(0.42, 0.77, 0.01, 1);
 
     @media (prefers-reduced-motion: reduce) {
         transition: none;
     }
 
-    &:hover,
+    &:hover {
+        box-shadow: 12px 12px 0 0 $rp-dawn-rose;
+        transform: scale(1.02);
+        outline: 1px solid $rp-dawn-rose;
+    }
+
     &:focus-visible {
-        background-color: $rp-dawn-overlay;
-        outline: 1px solid $rp-dawn-foam;
-        transition: background-color 100ms ease-in;
-        @media (prefers-reduced-motion: reduce) {
-            transition: none;
-        }
+        outline: 3px solid $rp-dawn-rose;
     }
 
     &:focus-within {
@@ -56,25 +58,16 @@
 }
 
 [data-theme="dark"] {
-    .homepage {
-        &--intro {
-            a {
-                text-decoration-color: $rp-muted;
-
-                &:hover {
-                    text-decoration-color: $rp-foam;
-                }
-            }
-        }
-    }
-
     .homepage_projects-card {
         background-color: $rp-surface;
 
-        &:hover,
+        &:hover {
+            box-shadow: 12px 12px 0 0 $rp-rose;
+            outline-color: $rp-rose;
+        }
+
         &:focus-visible {
-            background-color: $rp-overlay;
-            outline-color: $rp-foam;
+            outline-color: $rp-rose;
         }
 
         .year-chip {

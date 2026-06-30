@@ -1,11 +1,11 @@
 {{ define "main" }}
 <div class="[ wrapper ]">
-    <article class="[ about-article ] [ center ] [ flow ] [ h-card ]">
-        <header>
-            <h1>About me</h1>
+    <article class="[ about-article ] [ center ] flow [ h-card ]">
+        <header class="flow">
+            <h1>About</h1>
             <p>Pushing pixels (with intent)</p>
         </header>
-        <div class="[ about-article--content ] [ flow ] prose e-note">
+        <div class="[ about-article--content ] [ flow ] stack e-note">
             {{ .Content }}
         </div>
         <figure>

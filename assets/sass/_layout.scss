@@ -99,6 +99,6 @@
 [data-theme="dark"] {
     .box {
         background-color: var(--box-background-color, #{$rp-surface});
-        border: 1px solid var(--box-border-color, #{$rp-highlight-high});
+        border: 1px solid var(--box-border-color, #{$rp-highlight-med});
     }
 }

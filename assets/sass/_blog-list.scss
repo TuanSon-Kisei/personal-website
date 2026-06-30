@@ -5,8 +5,8 @@
         display: block;
         --flow-space: var(--spacing-xs);
         transition:
-            border-color 100ms ease-out,
-            background-color 100ms ease-out;
+            box-shadow 250ms cubic-bezier(0.42, 0.77, 0.01, 1),
+            scale 250ms cubic-bezier(0.42, 0.77, 0.01, 1);
 
         @media (prefers-reduced-motion: reduce) {
             transition: none;
@@ -18,25 +18,23 @@
         }
 
         &:hover {
-            --box-border-color: #{$rp-dawn-foam};
-            --box-background-color: #{$rp-dawn-overlay};
-            transition:
-                border-color 100ms ease-in,
-                background-color 100ms ease-in;
+            box-shadow: 6px 6px 0 0 $rp-dawn-rose;
+            transform: scale(1.02);
+
             @media (prefers-reduced-motion: reduce) {
                 transition: none;
             }
         }
 
         &:focus-visible {
-            outline: 3px solid $rp-dawn-foam;
+            outline: 3px solid $rp-dawn-rose;
         }
 
         &:focus-within {
             h2 {
-                color: $rp-dawn-foam;
+                color: $rp-dawn-rose;
                 text-decoration: underline;
-                text-decoration-color: $rp-dawn-foam;
+                text-decoration-color: $rp-dawn-rose;
                 text-decoration-thickness: 0.1em;
                 text-underline-offset: 2px;
             }
@@ -50,18 +48,17 @@
             color: $rp-subtle;
         }
         &:hover {
-            --box-border-color: #{$rp-foam};
-            --box-background-color: #{$rp-overlay};
+            box-shadow: 6px 6px 0 0 $rp-rose;
         }
 
         &:focus-visible {
-            outline-color: $rp-foam;
+            outline-color: $rp-rose;
         }
 
         &:focus-within {
             h2 {
-                color: $rp-foam;
-                text-decoration-color: $rp-foam;
+                color: $rp-rose;
+                text-decoration-color: $rp-rose;
             }
         }
     }

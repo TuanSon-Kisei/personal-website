@@ -5,7 +5,7 @@
 
 .text-404 {
     a {
-        color: $rp-dawn-foam;
+        color: $rp-dawn-rose;
         text-decoration: underline;
 
         &:hover {
@@ -14,7 +14,7 @@
         }
 
         &:focus-visible {
-            outline: 2px solid $rp-dawn-foam;
+            outline: 2px solid $rp-dawn-rose;
             border-radius: 0.75em;
         }
     }
@@ -30,10 +30,10 @@
 [data-theme="dark"] {
     .text-404 {
         a {
-            color: $rp-foam;
+            color: $rp-rose;
 
             &:focus-visible {
-                outline-color: $rp-foam;
+                outline-color: $rp-rose;
             }
         }
     }
