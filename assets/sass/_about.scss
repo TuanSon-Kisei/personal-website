@@ -16,8 +16,8 @@
             padding: 8px 12px;
             border-radius: var(--border-radius-md);
             background-color: $rp-dawn-overlay;
-            width: fit-content;
             max-inline-size: 60%;
+            overflow-wrap: break-word;
         }
 
         a {
