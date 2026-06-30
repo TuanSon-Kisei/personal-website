@@ -115,6 +115,16 @@
         border: 0.05rem solid $rp-dawn-highlight-high;
         border-inline-start: 0.3rem solid $rp-dawn-highlight-high;
     }
+
+    hr {
+        border: 0;
+        text-align: center;
+        color: $rp-dawn-love;
+        &::before {
+            content: "✿ ❀ ✿";
+            display: block;
+        }
+    }
 }
 
 [data-theme="dark"] {
@@ -148,6 +158,10 @@
             background-color: $rp-highlight-med;
             border-color: $rp-highlight-med;
             border-inline-start: 0.3rem solid $rp-highlight-med;
+        }
+
+        hr {
+            color: $rp-love;
         }
     }
 }
