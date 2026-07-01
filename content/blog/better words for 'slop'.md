@@ -3,13 +3,7 @@ title: Better words for 'slop'
 description: This is me arguing that we should "diversify" the word of "slop" so the word not become a "slop" itself
 date: 2026-06-30
 draft: false
-id: efc935b2-b3f1-4e42-9778-614a150ea339
-tags: []
-pinned: false
-created: 2026-07-01T08:14:51.364416580+00:00
-modified: 2026-07-01T08:15:11.591837049+00:00
 ---
-# Better words for 'slop'
 
 Why you ask?
 
