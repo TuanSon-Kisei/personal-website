@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/better words for 'slop'.md",
+                "file": "links/against-the-luddites.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "better words for 'slop'"
+              "title": "against-the-luddites"
             }
           }
         ]
@@ -198,18 +198,19 @@
   },
   "active": "9134b57a96daa295",
   "lastOpenFiles": [
-    "dede/index.md",
+    "links/delphi-tools.md",
+    "links/lets-get-creative.md",
+    "links/toolmen.md",
+    "links/against-the-luddites.md",
+    "links/on-Google-declaring-war-on-the-Web.md",
     "blog/better words for 'slop'.md",
+    "dede/index.md",
     "about/index.md",
     "colophon/index.md",
     "blog/confidence.md",
     "blog/_index.md",
     "blog/writing.md",
     "blog/better-words-for-slop.md",
-    "links/against-the-luddites.md",
-    "links/on-Google-declaring-war-on-the-Web.md",
-    "links/delphi-tools.md",
-    "links/Untitled.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
@@ -223,7 +224,6 @@
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy.md",
     "readmate/images/hero.png",
     "readmate/images/hero(1).png",
     "dede/images/opportunities.png",

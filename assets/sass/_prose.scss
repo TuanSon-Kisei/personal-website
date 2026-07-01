@@ -113,8 +113,8 @@
         padding-block: 0.5rem;
         padding-inline: 1.5rem;
         background-color: $rp-dawn-highlight-low;
-        border: 0.05rem solid $rp-dawn-highlight-high;
-        border-inline-start: 0.3rem solid $rp-dawn-highlight-high;
+        border: 1px solid $rp-dawn-highlight-high;
+        border-inline-start: 3px solid $rp-dawn-highlight-high;
     }
 
     hr {
@@ -156,9 +156,9 @@
         }
 
         blockquote {
-            background-color: $rp-highlight-med;
-            border-color: $rp-highlight-med;
-            border-inline-start: 0.3rem solid $rp-highlight-med;
+            background-color: $rp-highlight-low;
+            border-color: $rp-highlight-high;
+            border-inline-start: 0.3rem solid $rp-highlight-high;
         }
 
         hr {

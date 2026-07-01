@@ -9,7 +9,7 @@
     </div>
     <hr />
     <ol class="stack flow prose reading-list">
-        {{ range $paginator.Pages }} {{ partial "recent-reading-item.html" . }}
+        {{ range $paginator.Pages.ByDate.Reverse }} {{ partial "recent-reading-item.html" . }}
         {{ end }}
     </ol>
     <nav class="reading-pagination">
