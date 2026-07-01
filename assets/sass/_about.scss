@@ -1,12 +1,5 @@
 .about-article {
     --measure: 40rem;
-    header {
-        > * {
-            --flow-space: var(--spacing-sm);
-        }
-    }
-
-    --flow-space: var(--spacing-md);
 
     &--content {
         --flow-space: var(--spacing-xs);

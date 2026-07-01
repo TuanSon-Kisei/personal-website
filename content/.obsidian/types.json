@@ -4,6 +4,7 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "skills": "multitext",
-    "date": "date"
+    "date": "date",
+    "collaborators": "multitext"
   }
 }

@@ -1,15 +1,23 @@
-<div class="[ project-info ]">
-    <ul class="[ switcher ] [ project-meta ]">
-        <li>
-            <strong class="project-meta__label">Role:</strong>
-            <span class="project-meta__value">{{ $.Page.Params.role }}</span>
-        </li>
-
-        <li>
-            <strong class="project-meta__label">Timeline:</strong>
-            <span class="project-meta__value"
-                >{{ $.Page.Params.timeline }}</span
-            >
-        </li>
-    </ul>
-</div>
+<dl class="[ project-info ] center box stack flow">
+    <div class="project-info--block switcher">
+        <dt>Timeline</dt>
+        <dd>{{ $.Page.Params.timeline }}</dd>
+    </div>
+    <div class="project-info--block switcher">
+        <dt>My Role</dt>
+        <dd>{{ $.Page.Params.role }}</dd>
+    </div>
+    <div class="project-info--block switcher">
+        <dt>Collaborators</dt>
+        <dd>
+            <ul>
+                {{ range $.Page.Params.collaborators }}
+                      <li><a href="{{ .linkedin }}" class="collaborator">
+                          <img src="{{ .avatar }}" alt="A photo of {{ .name }}" class="avatar" />
+                          {{ .name }}
+                      </a></li>
+                {{ end }}
+              </ul>
+        </dd>
+    </div>
+</dl>

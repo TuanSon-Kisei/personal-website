@@ -3,12 +3,19 @@ title: Better words for 'slop'
 description: This is me arguing that we should "diversify" the word of "slop" so the word not become a "slop" itself
 date: 2026-06-30
 draft: false
+id: efc935b2-b3f1-4e42-9778-614a150ea339
+tags: []
+pinned: false
+created: 2026-07-01T08:14:51.364416580+00:00
+modified: 2026-07-01T08:15:11.591837049+00:00
 ---
+# Better words for 'slop'
+
 Why you ask?
 
-Ahem this is my pet peeve of mine so please bear with me (or you can just walk out.) I think that to combat the bad AI, we need to diversify the way we use our words to make the counterargument to them. It's so easy to overuse the word "slop" to express our anger towards how generative AI is forcing upon us. 
+Ahem this is my pet peeve of mine so please bear with me (or you can just walk out.) I think that to combat the bad AI, we need to diversify the way we use our words to make the counterargument to them. It's so easy to overuse the word "slop" to express our anger towards how generative AI is forcing upon us.
 
-But hearing that word thousand times repeatedly on any social media platforms make me laugh cringely a little. English is a wonderful language system (yes it's true, in fact every language deserve its own praise). We should use different words too, we should use a thesaurus dictionary, make them be known, make them be used. 
+But hearing that word thousand times repeatedly on any social media platforms make me laugh cringely a little. English is a wonderful language system (yes it's true, in fact every language deserve its own praise). We should use different words too, we should use a thesaurus dictionary, make them be known, make them be used.
 
 One word only should not describe the whole situation (or issue), else the word will become a "slop" itself.
 

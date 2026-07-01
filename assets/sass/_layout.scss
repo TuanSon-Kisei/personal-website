@@ -7,7 +7,7 @@
 
 /* Flow: add vertical rhythm between any sibling elements */
 .flow > * + * {
-    margin-top: var(--flow-space, 1em);
+    margin-top: var(--flow-space, var(--spacing-xs));
 }
 
 /* Wrapper: horizontal padding that keeps content off the viewport edes */
@@ -52,13 +52,12 @@
 /* Grid: a grid layout */
 .grid {
     display: grid;
-    column-gap: var(--grid-column-gap);
-    row-gap: var(--grid-row-gap);
+    gap: var(--grid-space, 0);
 }
 
 @supports (width: min(20rem, 100%)) {
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     }
 }
 

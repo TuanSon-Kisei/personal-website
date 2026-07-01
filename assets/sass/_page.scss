@@ -1,6 +1,10 @@
 .project-page {
     --measure: 72rem;
 
+    header {
+        padding-block-end: var(--spacing-sm);
+    }
+
     &--content {
         > * {
             max-inline-size: 48rem;

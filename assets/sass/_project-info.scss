@@ -1,15 +1,71 @@
 .project-info {
-    border-block: 1px solid $rp-dawn-highlight-high;
-    padding-block: var(--spacing-sm);
-}
+    border-block: 1px solid $rp-dawn-highlight-med;
+    --measure: 48rem;
+    --box-padding: var(--spacing-sm);
+    margin-block: var(--spacing-md);
 
-.project-meta {
-    --threshold: 30rem;
-    --gap-space: var(--spacing-sm);
+    > * + * {
+        --flow-space: var(--spacing-sm);
+    }
+
+    &--block {
+        --gap-space: var(--spacing-xs);
+
+        dt {
+            font-weight: var(--font-weight-bold);
+            max-width: 140px;
+        }
+
+        dd {
+            .collaborator {
+                position: relative;
+                display: inline;
+                padding-inline-start: var(--spacing-md);
+                text-decoration: underline;
+                color: $rp-dawn-subtle;
+                text-decoration-color: $rp-dawn-muted;
+                transition:
+                    color 150ms ease-out,
+                    text-decoration-color 150ms ease-out;
+
+                &:hover {
+                    color: $rp-dawn-text;
+                    text-decoration-color: $rp-dawn-text;
+                }
+
+                .avatar {
+                    background: $rp-dawn-surface;
+                    outline: $rp-dawn-highlight-high;
+                    width: var(--spacing-sm);
+                    height: var(--spacing-sm);
+                    border-radius: var(--border-radius-full);
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
 }
 
 [data-theme="dark"] {
     .project-info {
         border-color: $rp-highlight-med;
+
+        dd {
+            .collaborator {
+                color: $rp-subtle;
+                text-decoration-color: $rp-muted;
+
+                &:hover {
+                    color: $rp-text;
+                }
+
+                .avatar {
+                    background: $rp-surface;
+                    outline: $rp-highlight-high;
+                }
+            }
+        }
     }
 }
