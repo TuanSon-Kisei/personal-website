@@ -7,6 +7,7 @@ year: "2025"
 weight: "2"
 role: UX Designer
 timeline: August - September 2025
+category: case study
 ---
 ![](images/hero.png)
 

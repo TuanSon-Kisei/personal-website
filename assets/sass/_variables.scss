@@ -15,13 +15,13 @@ $heading-sizes: (
 );
 
 // Rose Pine Dawn
-$rp-dawn-base: #fcf4f6;
-$rp-dawn-surface: #f6eef0;
-$rp-dawn-overlay: #f0e8ea;
-$rp-dawn-background-alt: #bfddf0;
-$rp-dawn-muted: #8f8889;
-$rp-dawn-subtle: #4a4647;
-$rp-dawn-text: #2c292a;
+$rp-dawn-base: oklch(0.9739 0.009 0.13);
+$rp-dawn-surface: oklch(0.9559 0.009 0.13);
+$rp-dawn-overlay: oklch(0.9378 0.009 0.14);
+$rp-dawn-background-alt: oklch(0.8816 0.0413 235.75);
+$rp-dawn-muted: oklch(0.6331 0.0085 7.42);
+$rp-dawn-subtle: oklch(0.3984 0.0056 0.26);
+$rp-dawn-text: oklch(0.2845 0.0047 355.06);
 $rp-dawn-love: #870f3f;
 $rp-dawn-gold: #ea9d34;
 $rp-dawn-rose: #b0325d;
@@ -34,13 +34,13 @@ $rp-dawn-highlight-med: #dfdad9;
 $rp-dawn-highlight-high: #cecacd;
 
 // Rose Pine (Dark variant)
-$rp-base: #1f191b;
-$rp-surface: #2d2528;
-$rp-overlay: #43393c;
-$rp-background-alt: #2e4b59;
-$rp-muted: #aa9a9f;
-$rp-subtle: #cbc3c5;
-$rp-text: #e5e2e3;
+$rp-base: oklch(0.221 0.01 355.876);
+$rp-surface: oklch(0.275 0.013 353.401);
+$rp-overlay: oklch(0.356 0.015 357.829);
+$rp-background-alt: oklch(0.396 0.042 230.038);
+$rp-muted: oklch(0.702 0.02 356.685);
+$rp-subtle: oklch(0.824 0.009 0.185);
+$rp-text: oklch(0.915 0.004 354.698);
 $rp-love: #f2809e;
 $rp-gold: #ffdc9a;
 $rp-rose: #ffd1dc;

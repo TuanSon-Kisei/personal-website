@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "links/against-the-luddites.md",
+                "file": "blog/no, i don't want those \"dot\" custom cursor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "against-the-luddites"
+              "title": "no, i don't want those \"dot\" custom cursor"
             }
           }
         ]
@@ -198,18 +198,25 @@
   },
   "active": "9134b57a96daa295",
   "lastOpenFiles": [
+    "blog/template.md",
+    "blog/no, i don't want those \"dot\" custom cursor.md",
+    "blog/writing.md",
+    "blog/taste.md",
+    "blog/confidence.md",
+    "blog/design-is-a-job.md",
+    "blog/enshittification.md",
+    "blog/better words for 'slop'.md",
+    "blog/_index.md",
+    "readmate/index.md",
+    "petfren/index.md",
+    "dede/index.md",
+    "links/against-the-luddites.md",
     "links/delphi-tools.md",
     "links/lets-get-creative.md",
     "links/toolmen.md",
-    "links/against-the-luddites.md",
     "links/on-Google-declaring-war-on-the-Web.md",
-    "blog/better words for 'slop'.md",
-    "dede/index.md",
     "about/index.md",
     "colophon/index.md",
-    "blog/confidence.md",
-    "blog/_index.md",
-    "blog/writing.md",
     "blog/better-words-for-slop.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
@@ -217,13 +224,6 @@
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readmate/images/hero.png",
     "readmate/images/hero(1).png",
     "dede/images/opportunities.png",

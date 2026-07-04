@@ -8,21 +8,22 @@ timeline: 24 hours from 20 - 21 September 2025
 role: Strategy, Research, Content Design, Product Design, Pitching
 weight: "1"
 collaborators:
-- name: Tina Le
-  linkedin: https://www.linkedin.com/in/tina-le-086684213/
-  avatar: images/avatar/tina-le-photo.jpg
-- name: Tam Nhu
-  linkedin: https://www.linkedin.com/in/nh%C6%B0-h%C3%A0-9a79a1255/
-  avatar: images/avatar/nhu-ha-photo.jpg
-- name: Vu Bao Linh
-  linkedin: https://www.linkedin.com/in/linh-v%C5%A9-b%E1%BA%A3o-b81465199/
-  avatar: images/avatar/vu-bao-linh-photo.png
-- name: Vien Truong
-  linkedin: https://www.linkedin.com/in/vientruong1211/
-  avatar: images/avatar/vien-truong-photo.jpg
-- name: Ngoc Thanh
-  linkedin: https://www.linkedin.com/in/ngocthanh0211/
-  avatar: images/avatar/ngoc-thanh-photo.jpg
+  - name: Tina Le
+    linkedin: https://www.linkedin.com/in/tina-le-086684213/
+    avatar: images/avatar/tina-le-photo.jpg
+  - name: Tam Nhu
+    linkedin: https://www.linkedin.com/in/nh%C6%B0-h%C3%A0-9a79a1255/
+    avatar: images/avatar/nhu-ha-photo.jpg
+  - name: Vu Bao Linh
+    linkedin: https://www.linkedin.com/in/linh-v%C5%A9-b%E1%BA%A3o-b81465199/
+    avatar: images/avatar/vu-bao-linh-photo.png
+  - name: Vien Truong
+    linkedin: https://www.linkedin.com/in/vientruong1211/
+    avatar: images/avatar/vien-truong-photo.jpg
+  - name: Ngoc Thanh
+    linkedin: https://www.linkedin.com/in/ngocthanh0211/
+    avatar: images/avatar/ngoc-thanh-photo.jpg
+category: case study
 ---
 ![The Dede app](images/hero.png)
 

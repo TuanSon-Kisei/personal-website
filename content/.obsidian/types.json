@@ -5,6 +5,7 @@
     "tags": "tags",
     "skills": "multitext",
     "date": "date",
-    "collaborators": "multitext"
+    "collaborators": "multitext",
+    "permalink": "date"
   }
 }

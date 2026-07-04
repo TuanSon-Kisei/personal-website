@@ -1,55 +1,87 @@
-{{- $img := .Page.Resources.GetMatch .Destination -}} {{- if not $img -}} {{-
-$img = resources.Get .Destination -}} {{- end -}} {{- if $img -}} {{- $mediaType
-:= $img.MediaType.SubType -}}
+{{- $img := .Page.Resources.GetMatch .Destination -}}
+{{- if not $img -}}
+{{- $img = resources.Get .Destination -}}
+{{- end -}}
+{{- if $img -}}
+{{- $mediaType := $img.MediaType.SubType -}}
 <!--GIF, SVG, and AVIF: keep as-is -->
 
 {{- if or (eq $mediaType "svg+xml") (eq $mediaType "svg") (eq $mediaType "gif")
 (eq $mediaType "avif") -}}
 <figure>
-    <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" />
-    {{- if .Title }}
-    <figcaption><p>{{ .Title }}</p></figcaption>
+    <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" decoding="auto" />
+    {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
     {{- end }}
 </figure>
 
-{{/* WebP: only resize */}} {{- else if eq $mediaType "webp" -}} {{- $small :=
-$img.Resize "800x" -}} {{- $medium := $img.Resize "1200x" -}}
+{{/* WebP: only resize */}} {{- else if eq $mediaType "webp" -}}
+{{- $mobile := $img.Resize "600x" -}}
+{{- $tablet := $img.Resize "800x" -}}
+{{- $desktop := $img.Resize "1200x" -}}
 <figure>
-    <img
-        srcset="{{ $small.RelPermalink }} 800w,
-                  {{ $medium.RelPermalink }} 1200w"
-        sizes="(max-width: 800px) 100vw, 1200px"
-        src="{{ $medium.RelPermalink }}"
+    <picture>
+        <source srcset="{{ $mobile.RelPermalink }} 600w,
+                  {{ $tablet.RelPermalink }} 800w,
+                  {{ $desktop.RelPermalink }} 1200w"
+        sizes="(max-width: 600px) 100vw, (max-width: 800px) 90vw, 1200px"
+
         alt="{{ .Text }}"
         loading="lazy"
+        decoding="auto"
     />
-    {{- if .Title }}
-    <figcaption><p>{{ .Title }}</p></figcaption>
-    {{- end }}
-</figure>
-
-{{/* PNG and JPEG: convert to WebP with 90% quality and resize */}} {{- else -}}
-{{- $small := ($img.Resize "800x webp q90") -}} {{- $medium := ($img.Resize
-"1200x webp q90") -}}
-<figure>
     <img
-        srcset="{{ $small.RelPermalink }} 800w,
-                  {{ $medium.RelPermalink }} 1200w"
-        sizes="(max-width: 800px) 100vw, 1200px"
-        src="{{ $medium.RelPermalink }}"
+        srcset="{{ $mobile.RelPermalink }} 600w,
+                  {{ $tablet.RelPermalink }} 800w,
+                  {{ $desktop.RelPermalink }} 1200w"
+        sizes="(max-width: 600px) 100vw, (max-width: 800px) 90vw, 1200px"
+        src="{{ $desktop.RelPermalink }}"
         alt="{{ .Text }}"
         loading="lazy"
+        decoding="auto"
     />
-    {{- if .Title }}
-    <figcaption><p>{{ .Title }}</p></figcaption>
+    </picture>
+    {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
     {{- end }}
 </figure>
-{{- end -}} {{- else -}} {{/* Fallback for external images */}}
 
+{{/* PNG and JPEG: convert to WebP with 90% quality and resize */}}
+{{- else -}}
+{{- $mobile := $img.Resize "600x" -}}
+{{- $tablet := $img.Resize "800x" -}}
+{{- $desktop := $img.Resize "1200x" -}}
 <figure>
-    <img src="{{ .Destination }}" alt="{{ .Text }}" loading="lazy" />
-    {{- if .Title }}
-    <figcaption><p>{{ .Title }}</p></figcaption>
+    <picture>
+        <!-- WebP: convert to WebP with 90% quality and resize -->
+        <source srcset="{{ $mobile.RelPermalink }} 600w,
+                  {{ $tablet.RelPermalink }} 800w,
+                  {{ $desktop.RelPermalink }} 1200w"
+                  sizes="(max-width: 600px) 100vw, (max-width: 800px) 90vw, 1200px"
+                  type="image/webp"
+                  alt="{{ .Text }}"
+                  loading="lazy"
+                  decoding="auto"
+        />
+        <!-- Fallback to PNG or JPEG -->
+        <img
+            srcset="{{ $mobile.RelPermalink }} 600w,
+                  {{ $tablet.RelPermalink }} 800w,
+                  {{ $desktop.RelPermalink }} 1200w"
+            sizes="(max-width: 600px) 100vw, (max-width: 800px) 90vw, 1200px"
+            src="{{ $desktop.RelPermalink }}"
+            alt="{{ .Text }}"
+            loading="lazy"
+            decoding="auto"
+        />
+    </picture>
+    {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
+    {{- end }}
+</figure>
+{{- end -}} {{- else -}}
+
+{{/* Fallback for external images */}}
+<figure>
+    <img src="{{ .Destination }}" alt="{{ .Text }}" loading="lazy" decoding="auto" />
+    {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
     {{- end }}
 </figure>
 {{- end -}}

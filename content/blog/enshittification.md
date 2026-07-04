@@ -2,7 +2,6 @@
 title: Enshittification
 description: There is so few products worth my lifetime money nowadays.
 date: 2026-04-11
-permalink: enshittification
 draft: false
 ---
 Have you noticed that seemingly your favorite services or products recently has gone noticeably worse? It's not just about quality, it's also about back then what we all loved to our products was that they meet our expectations of what it should be doing and now it doing less (by removing features). The introduction of certain "new technologies" doesn't help it either.

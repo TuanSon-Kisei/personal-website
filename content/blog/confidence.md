@@ -2,7 +2,6 @@
 title: Confidence
 description: It's not only you trust yourself, you also have to place that trust onto others too.
 date: 2026-03-28
-permalink: confidence
 draft: false
 ---
 **Tl;dr**: I joined in a workshop to improve my presentation skills. What I got is learning how to sell my good works and more importantly, to inspire others to do the good work and have confidence in them. You need a person like Mike in your entire time life, I seriously meant it.

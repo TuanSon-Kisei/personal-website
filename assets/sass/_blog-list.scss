@@ -18,6 +18,7 @@
         }
 
         &:hover {
+            outline: 1px solid $rp-dawn-rose;
             box-shadow: 6px 6px 0 0 $rp-dawn-rose;
             transform: scale(1.02);
 
@@ -48,6 +49,7 @@
             color: $rp-subtle;
         }
         &:hover {
+            outline-color: $rp-rose;
             box-shadow: 6px 6px 0 0 $rp-rose;
         }
 

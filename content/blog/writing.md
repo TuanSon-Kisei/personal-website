@@ -2,7 +2,6 @@
 title: Writing is Thinking
 description: Write for yourself first, and then for others. It goes both ways.
 date: 2026-03-13
-permalink: writing
 draft: false
 ---
 Mike Monterio **writes** this in his book 'Design is a Job':

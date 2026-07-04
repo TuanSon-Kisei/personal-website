@@ -2,7 +2,6 @@
 title: Design is a job
 description: We forgot the real purpose of a designer even before the existence of LLM
 date: 2026-04-25
-permalink: design-is-a-job
 draft: false
 ---
 We are hallucinating ourselves that we are "exotic creatures". We look at those beautiful things, pretty screen, lollipop-filled posters and all that jazz and thinking: "Yeah, that's the job of a designer". 

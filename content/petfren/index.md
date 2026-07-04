@@ -1,12 +1,13 @@
 ---
 title: Petfren
-description: AI-first mobile application help parents finding and explaining Maths problem to their kids easier
+description: AI-first mobile app to help parents explaining Maths problem to their kids easier
 type: work
 cover: images/hero.png
 year: "2024"
 timeline: May - July 2025
 role: UX Designer
 weight: "3"
+category: case study
 ---
 ![The Petfren app with three screens showcased](images/hero.png)
 

@@ -1,79 +1,110 @@
 .homepage {
-    &_projects {
-        --flow-space: var(--spacing-2xl);
-    }
-}
+    --flow-space: var(--spacing-2xl);
 
-.homepage_projects-card {
-    display: block;
-    --flow-space: var(--spacing-sm);
-    --box-padding: var(--spacing-lg);
-    transition:
-        box-shadow 250ms cubic-bezier(0.42, 0.77, 0.01, 1),
-        scale 250ms cubic-bezier(0.42, 0.77, 0.01, 1);
+    section {
+        > * {
+            --flow-space: var(--spacing-md);
+        }
 
-    @media (prefers-reduced-motion: reduce) {
-        transition: none;
-    }
+        #greeting {
+            font-size: var(--text-step-1);
+            color: $rp-dawn-subtle;
 
-    &:hover {
-        box-shadow: 12px 12px 0 0 $rp-dawn-rose;
-        transform: scale(1.02);
-        outline: 1px solid $rp-dawn-rose;
-    }
-
-    &:focus-visible {
-        outline: 3px solid $rp-dawn-rose;
-    }
-
-    &:focus-within {
-        h2,
-        p {
-            text-decoration: underline;
-            text-underline-offset: 2px;
+            i {
+                margin-inline-start: 4px;
+            }
         }
     }
 
-    &--image img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 0.25em;
-        font-size: inherit;
-        color: inherit;
+    &__projects {
+        > * {
+            --flow-space: var(--spacing-2xl);
+        }
 
-        display: block;
-        aspect-ratio: auto 1920 / 1080;
-    }
+        &-card {
+            display: block;
+            --flow-space: var(--spacing-sm);
+            --box-padding: var(--spacing-lg);
+            transition:
+                box-shadow 250ms cubic-bezier(0.42, 0.77, 0.01, 1),
+                scale 250ms cubic-bezier(0.42, 0.77, 0.01, 1);
 
-    .year-chip {
-        border-radius: 0.25em;
-        font-size: 0.875em;
-        border: 1px solid $rp-dawn-highlight-high;
-        background-color: $rp-dawn-base;
-        padding: 3px 9px;
-        font-family: $font-mono;
-        color: $rp-dawn-subtle;
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
+
+            &:hover {
+                box-shadow: 12px 12px 0 0 $rp-dawn-rose;
+                transform: scale(1.02);
+                outline: 1px solid $rp-dawn-rose;
+            }
+
+            &:focus-visible {
+                outline: 3px solid $rp-dawn-rose;
+            }
+
+            &:active {
+                scale: 0.98;
+            }
+
+            &:focus-within {
+                h3,
+                p {
+                    text-decoration: underline;
+                    text-underline-offset: 2px;
+                }
+            }
+
+            &-image img {
+                border-radius: calc(
+                    var(--border-radius-sm) - var(--box-padding)
+                );
+                aspect-ratio: 16 / 9;
+            }
+
+            &-info {
+                &-year,
+                &-category {
+                    text-transform: capitalize;
+                    border-radius: var(--border-radius-xs);
+                    font-size: var(--text-step--1);
+                    border: 1px solid $rp-dawn-highlight-low;
+                    background-color: $rp-dawn-base;
+                    padding: 3px 9px;
+                    font-family: $font-mono;
+                    color: $rp-dawn-subtle;
+                }
+            }
+        }
     }
 }
 
 [data-theme="dark"] {
-    .homepage_projects-card {
-        background-color: $rp-surface;
-
-        &:hover {
-            box-shadow: 12px 12px 0 0 $rp-rose;
-            outline-color: $rp-rose;
+    .homepage {
+        #greeting {
+            color: $rp-subtle;
         }
 
-        &:focus-visible {
-            outline-color: $rp-rose;
-        }
+        &__projects-card {
+            background-color: $rp-surface;
 
-        .year-chip {
-            background-color: $rp-overlay;
-            border: 1px solid $rp-dawn-highlight-low;
-            color: $rp-text;
+            &:hover {
+                box-shadow: 12px 12px 0 0 $rp-rose;
+                outline-color: $rp-rose;
+            }
+
+            &:focus-visible {
+                outline-color: $rp-rose;
+            }
+
+            &-info {
+                &-year,
+                &-category {
+                    background-color: $rp-overlay;
+                    border: 1px solid $rp-highlight-low;
+                    color: $rp-subtle;
+                }
+            }
         }
     }
 }

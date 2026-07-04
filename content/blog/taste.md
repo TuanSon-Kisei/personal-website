@@ -2,7 +2,6 @@
 title: Taste
 description: Why are we obsessed with the word "taste" now?
 date: 2026-05-03
-permalink: taste
 draft: false
 ---
 Tl;dr: Taste is not the excuse we should use to push the changes for our product. Evidence-based research will make a stronger claim and let us have a voice on the table.
