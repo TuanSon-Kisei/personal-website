@@ -40,6 +40,10 @@
                 text-underline-offset: 2px;
             }
         }
+
+        &:active {
+            scale: 0.98;
+        }
     }
 }
 

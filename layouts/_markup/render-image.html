@@ -9,7 +9,7 @@
 {{- if or (eq $mediaType "svg+xml") (eq $mediaType "svg") (eq $mediaType "gif")
 (eq $mediaType "avif") -}}
 <figure>
-    <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" decoding="auto" />
+    <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" decoding="auto" data-props-for="visibility" />
     {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
     {{- end }}
 </figure>
@@ -24,7 +24,6 @@
                   {{ $tablet.RelPermalink }} 800w,
                   {{ $desktop.RelPermalink }} 1200w"
         sizes="(max-width: 600px) 100vw, (max-width: 800px) 90vw, 1200px"
-
         alt="{{ .Text }}"
         loading="lazy"
         decoding="auto"
@@ -38,6 +37,7 @@
         alt="{{ .Text }}"
         loading="lazy"
         decoding="auto"
+        data-props-for="visibility"
     />
     </picture>
     {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
@@ -71,6 +71,7 @@
             alt="{{ .Text }}"
             loading="lazy"
             decoding="auto"
+            data-props-for="visibility"
         />
     </picture>
     {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
@@ -80,7 +81,7 @@
 
 {{/* Fallback for external images */}}
 <figure>
-    <img src="{{ .Destination }}" alt="{{ .Text }}" loading="lazy" decoding="auto" />
+    <img src="{{ .Destination }}" alt="{{ .Text }}" loading="lazy" decoding="auto" data-props-for="visibility" />
     {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
     {{- end }}
 </figure>

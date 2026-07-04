@@ -29,7 +29,11 @@
     }
 
     &:focus-visible {
-        outline: 4px solid $rp-dawn-rose;
+        outline: 3px solid $rp-dawn-rose;
+    }
+
+    &:active {
+        scale: 0.98;
     }
 
     &:focus-within {
