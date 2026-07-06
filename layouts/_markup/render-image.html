@@ -17,13 +17,13 @@
 {{/* WebP: only resize */}} {{- else if eq $mediaType "webp" -}}
 {{- $mobile := $img.Resize "600x" -}}
 {{- $tablet := $img.Resize "800x" -}}
-{{- $desktop := $img.Resize "1200x" -}}
+{{- $desktop := $img.Resize "1280x" -}}
 <figure>
     <picture>
         <source srcset="{{ $mobile.RelPermalink }} 600w,
                   {{ $tablet.RelPermalink }} 800w,
-                  {{ $desktop.RelPermalink }} 1200w"
-        sizes="(max-width: 600px) 100vw, (max-width: 800px) 90vw, 1200px"
+                  {{ $desktop.RelPermalink }} 1280w"
+        sizes="(max-width: 480px) 100vw, (max-width: 800px) 90vw, 1280px"
         alt="{{ .Text }}"
         loading="lazy"
         decoding="auto"
@@ -31,8 +31,8 @@
     <img
         srcset="{{ $mobile.RelPermalink }} 600w,
                   {{ $tablet.RelPermalink }} 800w,
-                  {{ $desktop.RelPermalink }} 1200w"
-        sizes="(max-width: 600px) 100vw, (max-width: 800px) 90vw, 1200px"
+                  {{ $desktop.RelPermalink }} 1280w"
+        sizes="(max-width: 480px) 100vw, (max-width: 800px) 90vw, 1280px"
         src="{{ $desktop.RelPermalink }}"
         alt="{{ .Text }}"
         loading="lazy"
@@ -48,14 +48,14 @@
 {{- else -}}
 {{- $mobile := $img.Resize "600x" -}}
 {{- $tablet := $img.Resize "800x" -}}
-{{- $desktop := $img.Resize "1200x" -}}
+{{- $desktop := $img.Resize "1280x" -}}
 <figure>
     <picture>
         <!-- WebP: convert to WebP with 90% quality and resize -->
         <source srcset="{{ $mobile.RelPermalink }} 600w,
                   {{ $tablet.RelPermalink }} 800w,
                   {{ $desktop.RelPermalink }} 1200w"
-                  sizes="(max-width: 600px) 100vw, (max-width: 800px) 90vw, 1200px"
+                  sizes="(max-width: 480px) 100vw, (max-width: 800px) 90vw, 1200px"
                   type="image/webp"
                   alt="{{ .Text }}"
                   loading="lazy"
@@ -66,7 +66,7 @@
             srcset="{{ $mobile.RelPermalink }} 600w,
                   {{ $tablet.RelPermalink }} 800w,
                   {{ $desktop.RelPermalink }} 1200w"
-            sizes="(max-width: 600px) 100vw, (max-width: 800px) 90vw, 1200px"
+            sizes="(max-width: 480px) 100vw, (max-width: 800px) 90vw, 1200px"
             src="{{ $desktop.RelPermalink }}"
             alt="{{ .Text }}"
             loading="lazy"

@@ -46,6 +46,12 @@ html {
     --spacing-2xl: clamp(4rem, 3.6364rem + 1.8182vw, 5rem);
     --spacing-3xl: clamp(6rem, 5.4545rem + 2.7273vw, 7.5rem);
 
+    /* Max width for content */
+    --max-width-xs: 40rem;
+    --max-width-sm: 48rem;
+    --max-width-md: 54rem;
+    --max-width-lg: 60rem;
+
     /* Line height tokens here */
     --line-height: 1.5;
     --line-height-caption: 1.3;
@@ -64,6 +70,10 @@ html {
 
     --font-weight-normal: 400;
     --font-weight-bold: 600;
+
+    /* Animation easing */
+    --ease-out-fast: cubic-bezier(0.42, 0.77, 0.01, 1);
+    --ease-out-slow: cubic-bezier(0.265, 0.747, 0.68, 1);
 
     :target {
         scroll-margin-top: 2ex;

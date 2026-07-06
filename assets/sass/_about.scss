@@ -1,5 +1,5 @@
 .about-article {
-    --measure: 40rem;
+    --measure: var(--max-width-xs);
 
     &--content {
         --flow-space: var(--spacing-xs);
@@ -11,6 +11,15 @@
             background-color: $rp-dawn-overlay;
             max-inline-size: 60%;
             overflow-wrap: break-word;
+            opacity: 1;
+            @supports (animation-timeline: view()) {
+                animation: fadeInScroll 300ms var(--ease-out-slow);
+                animation-timeline: view();
+                animation-range: entry;
+                &:nth-child(n) {
+                    animation-delay: calc((n - 1) * 0.1s);
+                }
+            }
         }
 
         a {
