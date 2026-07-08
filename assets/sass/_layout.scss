@@ -61,6 +61,12 @@
     }
 }
 
+@media screen and (max-width < 30rem) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+    }
+}
+
 /* Switcher: a flexible layout to either stack or align items */
 
 .switcher {

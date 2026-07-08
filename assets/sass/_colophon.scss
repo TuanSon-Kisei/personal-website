@@ -1,9 +1,7 @@
 .colophon-article {
-    --flow-space: var(--spacing-md);
+    --flow-space: var(--spacing-lg);
 
     header {
-        padding-block-end: var(--spacing-lg);
-
         > * + * {
             --flow-space: var(--spacing-xs);
         }
