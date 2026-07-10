@@ -104,7 +104,9 @@ body {
     background-color: var(--color-background);
     font-family: $font-sans;
     font-size: var(--text-step--0);
-    font-size: round(var(--text-step--0), 2px);
+    @supports (font-size: round(1px, 2px)) {
+        font-size: round(var(--text-step--0), 2px);
+    }
     text-rendering: optimizeLegibility;
     line-height: var(--line-height);
     -webkit-font-smoothing: antialiased;
@@ -159,6 +161,12 @@ body {
     @each $heading, $size in $heading-sizes {
         #{$heading} {
             font-size: var(--font-size-#{$heading});
+        }
+    }
+
+    p {
+        @supports (text-wrap: balance) {
+            text-wrap: pretty;
         }
     }
 
