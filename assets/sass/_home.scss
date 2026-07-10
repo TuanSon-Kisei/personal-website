@@ -16,6 +16,19 @@
         }
     }
 
+    &__webring {
+        &-textLink {
+            text-decoration: underline;
+            text-decoration-color: $rp-dawn-highlight-med;
+            transition: text-decoration-color var(--duration-fast)
+                var(--ease-out-fast);
+
+            &:hover {
+                text-decoration-color: currentColor;
+            }
+        }
+    }
+
     &__projects {
         > * {
             --flow-space: var(--spacing-2xl);
@@ -83,6 +96,16 @@
     .homepage {
         #greeting {
             color: $rp-subtle;
+        }
+
+        &__webring {
+            &-textLink {
+                text-decoration-color: $rp-highlight-med;
+
+                &:hover {
+                    text-decoration-color: currentColor;
+                }
+            }
         }
 
         &__projects-card {

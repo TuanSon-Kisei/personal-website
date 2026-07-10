@@ -10,6 +10,11 @@
 
 *::selection {
     background: $rp-dawn-highlight-med;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+
+    color: $rp-dawn-foam;
+    text-decoration-color: $rp-dawn-sea;
 }
 
 html {
@@ -48,9 +53,9 @@ html {
 
     /* Max width for content */
     --max-width-xs: 40rem;
-    --max-width-sm: 48rem;
-    --max-width-md: 54rem;
-    --max-width-lg: 60rem;
+    --max-width-sm: 54rem;
+    --max-width-md: 72rem;
+    --max-width-lg: 80rem;
 
     /* Line height tokens here */
     --line-height: 1.5;
@@ -69,11 +74,16 @@ html {
     --border-radius-full: 9999px;
 
     --font-weight-normal: 400;
-    --font-weight-bold: 600;
+    --font-weight-bold: 700;
 
     /* Animation easing */
     --ease-out-fast: cubic-bezier(0.42, 0.77, 0.01, 1);
     --ease-out-slow: cubic-bezier(0.265, 0.747, 0.68, 1);
+
+    /* Animation duration */
+    --duration-fast: 200ms;
+    --duration-medium: 300ms;
+    --duration-slow: 400ms;
 
     :target {
         scroll-margin-top: 2ex;
@@ -170,6 +180,16 @@ body {
         margin: 0;
     }
 
+    mark {
+        background-color: $rp-dawn-carrot;
+        color: $rp-text;
+    }
+
+    em {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+    }
+
     figure {
         margin: 0;
         padding: 0;
@@ -215,6 +235,13 @@ body {
 
     ::selection {
         background-color: $rp-highlight-med;
+        color: $rp-foam;
+        text-decoration-color: $rp-sea;
+    }
+
+    mark {
+        background-color: $rp-carrot;
+        color: $rp-dawn-text;
     }
 
     kbd {

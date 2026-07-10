@@ -2,7 +2,10 @@
     --measure: var(--max-width-xs);
 
     &--content {
-        --flow-space: var(--spacing-xs);
+        --flow-space: var(--spacing-lg);
+        > * {
+            --flow-space: var(--spacing-xs);
+        }
 
         p {
             align-self: flex-start;
@@ -13,9 +16,12 @@
             overflow-wrap: break-word;
             opacity: 1;
             @supports (animation-timeline: view()) {
-                animation: fadeInScroll 300ms var(--ease-out-slow);
+                animation:
+                    fadeInScroll var(--duration-fast) linear forwards,
+                    slideInScroll var(--duration-fast) linear forwards;
                 animation-timeline: view();
-                animation-range: entry;
+                animation-range-start: entry 0%;
+                animation-range-end: cover 25%;
                 &:nth-child(n) {
                     animation-delay: calc((n - 1) * 0.1s);
                 }
