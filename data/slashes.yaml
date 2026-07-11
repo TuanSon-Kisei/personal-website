@@ -22,6 +22,14 @@
   description: "A list of the tools and technologies I use on a daily basis"
   url: "/uses/"
 
+- title: "Music"
+  description: "My digital music collection of ever-repeating, ever-growing tracks"
+  url: "/music/"
+
+- title: "Games"
+  description: "Games I have player and also playing concurrently"
+  url: "/games/"
+
 - title: "Webrings"
   description: "Webrings that I'm a member of"
   url: "/webrings/"
