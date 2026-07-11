@@ -17,18 +17,7 @@
     text-decoration-color: $rp-dawn-sea;
 }
 
-html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-    -webkit-font-smoothing: antialiased;
-
-    @media (prefers-reduced-motion: reduce) {
-        scroll-behavior: auto;
-    }
-
+:root {
     /* Design tokens here: font color, font type */
     --color-text: #{$rp-dawn-text};
     --color-background: #{$rp-dawn-base};
@@ -84,6 +73,20 @@ html {
     --duration-fast: 200ms;
     --duration-medium: 300ms;
     --duration-slow: 400ms;
+
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
 
     :target {
         scroll-margin-top: 2ex;
