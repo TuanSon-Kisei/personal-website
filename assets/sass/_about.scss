@@ -33,14 +33,20 @@
             text-decoration: underline;
             text-decoration-thickness: 0.1em;
             text-decoration-skip-ink: none;
-            transition: text-decoration-thickness 0.15s ease-out;
+            transition: text-decoration-thickness var(--duration-fast) var(--ease-out-fast);
 
             &:hover {
                 text-decoration-thickness: 0.3em;
             }
+
             &:focus-visible {
                 outline: 3px solid $rp-dawn-rose;
             }
+
+            &:active {
+                outline: 3px dashed currentColor;
+            }
+
             &:visited {
                 color: $rp-dawn-iris;
             }
