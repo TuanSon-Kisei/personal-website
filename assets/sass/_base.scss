@@ -223,17 +223,6 @@ body {
         font-size: inherit;
         color: inherit;
     }
-
-    .heading-anchor {
-        width: 0.5em;
-        height: 0.5em;
-        color: currentColor;
-        opacity: 0.5;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
 }
 
 /* [E] Exceptions - overrides for specific elements or components - data-theme=[dark] */

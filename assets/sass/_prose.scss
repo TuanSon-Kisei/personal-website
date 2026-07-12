@@ -144,6 +144,17 @@
             display: block;
         }
     }
+
+    .heading-anchor {
+        width: 0.75em;
+        height: 0.75em;
+        color: currentColor;
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 [data-theme="dark"] {
