@@ -4,7 +4,7 @@
   homeURL: "https://a11y-webring.club/"
   prevURL: "https://a11y-webring.club/prev"
   nextURL: "https://a11y-webring.club/next"
-  accent: "oklch(0.6273 0.209 12.37)"
+  accent: "oklch(0.712 0.181 22.839)"
 # Teal - color scheme for Meta Ring - webring for people who use /meta or /colophon in their URLs
 - name: "Meta Ring"
   description: "A webring for people who use /meta or /colophon in their URLs"

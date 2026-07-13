@@ -21,7 +21,7 @@
         --webring-border-dark: var(--webring-accent);
         --webring-border-light: var(--webring-accent);
 
-        --webring-bg-dark: oklch(from var(--webring-accent) l c h / 0.3);
+        --webring-bg-dark: oklch(from var(--webring-accent) l calc(c + 0.05) h / 0.3);
         --webring-bg-light: oklch(from var(--webring-accent) l c h / 0.25);
 
         --webring-bg-light-hover: oklch(from var(--webring-accent) l c h / 0.3);
