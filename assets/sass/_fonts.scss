@@ -9,7 +9,15 @@
 @font-face {
     font-family: "TASA Orbiter";
     src: url("../fonts/TASAOrbiter-Bold.woff2");
-    font-weight: 600;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("../fonts/Jost-Bold.woff2");
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }

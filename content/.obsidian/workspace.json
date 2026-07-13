@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/no, i don't want those \"dot\" custom cursor.md",
+                "file": "dede/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "no, i don't want those \"dot\" custom cursor"
+              "title": "index"
             }
           }
         ]
@@ -198,8 +198,8 @@
   },
   "active": "9134b57a96daa295",
   "lastOpenFiles": [
-    "blog/template.md",
     "blog/no, i don't want those \"dot\" custom cursor.md",
+    "blog/template.md",
     "blog/writing.md",
     "blog/taste.md",
     "blog/confidence.md",

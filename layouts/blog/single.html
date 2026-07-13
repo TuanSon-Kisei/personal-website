@@ -1,6 +1,6 @@
 {{ define "main" }}
-<article class="blog-article wrapper center flow h-entry">
-    <header class="blog-article_header flow">
+<article class="blog-article wrapper flow h-entry">
+    <header class="blog-article_header center flow">
         <h1 class="p-name">{{ .Title }}</h1>
         <p class="meta">
             <time class="dt-published"
@@ -10,7 +10,7 @@
             <span>{{ .ReadingTime }} min read</span>
         </p>
     </header>
-    <div class="blog-article_content flow prose e-content">{{ .Content }}</div>
+    <div class="blog-article_content prose e-content">{{ .Content }}</div>
     <nav class="switcher blog-article_nav">
         {{ with .PrevInSection }}
         <a href="{{ .RelPermalink }}" class="box stack">

@@ -60,7 +60,8 @@ My team surveyed over 50 respondents and conducted 5 interviews with high school
 The issue is clear: young people ignored learning updated traffic regulations when government announcements are boring and failed to grab attention.
 
 ![A collection of news articles focusing on Vietnam's traffic issues, including enforcement statistics and public awareness initiatives](images/desk_research.png "Our desk research from news articles. A problem that still haunting many people when travelling on the road and for officials to make the road safer for everyone.")
-![User interview and survey results showing three charts on Vietnamese road traffic law awareness](images/user_research.png "Key findings: over 50% of fined respondents cited inattentiveness or distraction, while most participants expressed strong interest in easier ways to learn and retain updated traffic laws. The majority also reported that studying traffic law helps them drive more safely and avoid fines.")
+
+![User interview and survey results showing three charts on Vietnamese road traffic law awareness](images/user_research.png "<strong>Key findings</strong>: over 50% of fined respondents cited inattentiveness or distraction, while most participants expressed strong interest in easier ways to learn and retain updated traffic laws. The majority also reported that studying traffic law helps them drive more safely and avoid fines.")
 
 
 ## Turn insights into opportunities

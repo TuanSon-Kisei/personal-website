@@ -1,5 +1,5 @@
 .slashes-list {
-    --measure: 60rem;
+
     --flow-space: var(--spacing-md);
 }
 
@@ -43,7 +43,7 @@
 }
 
 .slash-summary {
-    flex-grow: 7;
+    flex-grow: 5;
 }
 
 [data-theme="dark"] {

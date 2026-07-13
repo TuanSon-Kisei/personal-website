@@ -1,23 +1,28 @@
 {{ define "main" }}
-<div class="now-container flow center wrapper">
-    <header class="flow">
+<div class="now-container flow wrapper">
+    <header class="center flow">
         <h1>What I'm doing now</h1>
         <p>What I'm doing, focusing on and thinking about at the moment</p>
     </header>
 
-    <article class="now-box now-box--intro box flow prose">
-        <h2>What is a /now page?</h2>
-        <p>
-            A now page is a page on a personal website that tells you what a
-            person is focused on at the current time, day, or very recently. You
-            can learn more at <a href="https://nownownow.com/">nownownow.com</a>
-        </p>
+    <article class="prose">
+        <div class="now-box now-box--intro box flow">
+            <h2>What is a /now page?</h2>
+            <p>
+                A now page is a page on a personal website that tells you what a
+                person is focused on at the current time, day, or very recently. You
+                can learn more at <a href="https://nownownow.com/">nownownow.com</a>
+            </p>
+        </div>
     </article>
     {{ range hugo.Data.now.items }}
-    <article class="now-box now-box--content box flow prose">
-        <h2>{{ .title }}</h2>
-        <p>{{ .content | markdownify }}</p>
-        <time class="now-box--time" datetime="{{ .date }}">{{ .date }}</time>
+    <article class="prose">
+        <div class="now-box now-box--intro box flow">
+            <h2>{{ .title }}</h2>
+            <p>{{ .content | markdownify }}</p>
+            <time class="now-box--time" datetime="{{ .date }}">{{ .date }}</time>
+        </div>
+
     </article>
     {{ end }}
 </div>
