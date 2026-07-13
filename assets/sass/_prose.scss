@@ -40,13 +40,7 @@
         grid-column: full;
     }
 
-    h2 {
-        counter-increment: heading-counter;
 
-        &::before {
-            content: counter(heading-counter, decimal-leading-zero) " - ";
-        }
-    }
 
     a {
         &:link {
