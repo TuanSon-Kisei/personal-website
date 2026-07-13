@@ -1,12 +1,14 @@
 {{ define "main" }}
 
-<article class="[ project-page ] [ wrapper ] [ center ]">
+<article class="[ project-page ] [ wrapper ]">
     <header class="[ project-summary ] [ flow ] [ text-center ]">
         <h1 class="project-summary_title">{{ .Title }}</h1>
         <p class="project-summary_description">{{ .Params.description }}</p>
     </header>
     {{ partial "project-info.html" . }}
-    <div class="[ project-page--content ] prose [ flow ]">
-        {{ .Content }}</div>
+    <div class="[ project-page--content ] prose">
+
+        {{ .Content }}
+    </div>
 </article>
 {{ end }}

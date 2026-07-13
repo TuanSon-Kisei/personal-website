@@ -6,6 +6,48 @@
 }
 
 .prose {
+    text-align: start;
+    --gap: var(--spacing-lg);
+    --full: minmax(var(--gap), 1fr);
+    --content: min(48rem, 100% - var(--gap) * 2);
+    --popout: minmax(0, 4rem);
+    --feature: minmax(0, 8rem);
+    display: grid;
+    row-gap: var(--gap);
+    grid-template-columns:
+        [full-start] var(--full)
+        [feature-start] var(--feature)
+        [popout-start] var(--popout)
+        [content-start] var(--content) [content-end]
+        var(--popout) [popout-end]
+        var(--feature) [feature-end]
+        var(--full) [full-end];
+
+    > * {
+        grid-column: content;
+
+    }
+
+    .popout {
+        grid-column: popout;
+    }
+
+    .feature {
+        grid-column: feature;
+    }
+
+    .full {
+        grid-column: full;
+    }
+
+    h2 {
+        counter-increment: heading-counter;
+
+        &::before {
+            content: counter(heading-counter, decimal-leading-zero) " - ";
+        }
+    }
+
     a {
         &:link {
             color: $rp-dawn-rose;
@@ -97,33 +139,39 @@
 
     img,
     figure {
-        width: 100%;
-        max-width: 1280px;
-        margin-inline: auto;
-    }
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-column: feature;
 
-    figure img {
-        height: auto;
-        border-radius: 0.25em;
-        outline: 1px solid $rp-dawn-highlight-med;
-        font-size: inherit;
-        color: inherit;
-        aspect-ratio: auto 16/9;
-        background-color: $rp-dawn-surface;
-        opacity: 1;
-        @supports (animation-timeline: view()) {
-            animation:
-                fadeInScroll 200ms var(--ease-out-slow),
-                scaleUpScroll 200ms var(--ease-out-slow);
-            animation-timeline: view();
-            animation-range: entry;
+        picture {
+            display: contents;
         }
-    }
 
-    figcaption {
-        margin-block-start: var(--spacing-xs);
-        font-size: var(--text-step--1);
-        line-height: var(--line-height-caption);
+        figure img {
+            grid-column: full;
+            height: auto;
+
+            outline: 1px solid $rp-dawn-highlight-med;
+            font-size: inherit;
+            color: inherit;
+            aspect-ratio: auto 16/9;
+            background-color: $rp-dawn-surface;
+            opacity: 1;
+            @supports (animation-timeline: view()) {
+                animation:
+                    fadeInScroll 200ms var(--ease-out-slow),
+                    scaleUpScroll 200ms var(--ease-out-slow);
+                animation-timeline: view();
+                animation-range: entry;
+            }
+        }
+
+        figcaption {
+            margin-block-start: var(--spacing-xs);
+            font-size: var(--text-step--1);
+            line-height: var(--line-height-caption);
+            grid-column: content;
+        }
     }
 
     blockquote {
@@ -156,6 +204,7 @@
         }
     }
 }
+
 
 [data-theme="dark"] {
     .prose {
