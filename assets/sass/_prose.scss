@@ -8,8 +8,8 @@
 .prose {
     text-align: start;
     --gap: var(--spacing-lg);
-    --full: minmax(var(--gap), 1fr);
-    --content: min(48rem, 100% - var(--gap) * 2);
+    --full: minmax(0, 1fr);
+    --content: min(55ch, 100%);
     --popout: minmax(0, 4rem);
     --feature: minmax(0, 8rem);
     display: grid;
