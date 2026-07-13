@@ -1,20 +1,11 @@
 .colophon-article {
-    --flow-space: var(--spacing-lg);
 
     header {
-        > * + * {
-            --flow-space: var(--spacing-xs);
-        }
+        margin-block-end: var(--spacing-lg);
 
         > img {
             height: auto;
-            border-radius: 0.25rem;
         }
     }
 
-    &--content {
-        > h2 {
-            --flow-space: var(--spacing-xl);
-        }
-    }
 }
