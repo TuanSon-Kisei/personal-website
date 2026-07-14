@@ -1,0 +1,55 @@
+#townsquare-root#townsquare-root {
+  --scene: #e4e2dd;
+  --ground-fill: #efede9;
+  --page: #efede9;
+  --action-zone-fill: #efede9;
+  --surface: #fdf8f4;
+  --ink: #2a2926;
+  --you: #c8641f;
+  --tree-trunk: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
+  --tree-canopy: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
+  --other: #26241f;
+  --ground-line: rgba(42, 41, 38, 0.16);
+  --ground: rgba(42, 41, 38, 0.16);
+  --you-deep: var(--you);
+  --text: var(--ink);
+  --muted: var(--ink);
+}
+
+#townsquare-root#townsquare-root[data-townsquare-theme="dark"] {
+  --scene: #242521;
+  --ground-fill: #181917;
+  --page: #181917;
+  --action-zone-fill: #181917;
+  --surface: #24231f;
+  --ink: #f2eee6;
+  --you: #df8a43;
+  --tree-trunk: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
+  --tree-canopy: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
+  --other: #ddd7cc;
+  --ground-line: rgba(242, 238, 230, 0.18);
+  --ground: rgba(242, 238, 230, 0.18);
+  --you-deep: var(--you);
+  --text: var(--ink);
+  --muted: var(--ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  #townsquare-root#townsquare-root[data-townsquare-theme="auto"] {
+  --scene: #242521;
+  --ground-fill: #181917;
+  --page: #181917;
+  --action-zone-fill: #181917;
+  --surface: #24231f;
+  --ink: #f2eee6;
+  --you: #df8a43;
+  --tree-trunk: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
+  --tree-canopy: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
+  --other: #ddd7cc;
+  --ground-line: rgba(242, 238, 230, 0.18);
+  --ground: rgba(242, 238, 230, 0.18);
+  --you-deep: var(--you);
+  --text: var(--ink);
+  --muted: var(--ink);
+  }
+}
