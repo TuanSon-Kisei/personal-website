@@ -24,7 +24,7 @@ pages:
       # Install utilities
       echo "Installing utilities..."
       apt-get update
-      apt-get install -y brotli xz-utils zstd
+      apt-get install -y brotli xz-utils zstd unzip
 
       # Install Dart Sass
       echo "Installing Dart Sass ${DART_SASS_VERSION}..."
