@@ -5,13 +5,13 @@ function showTimeZoneGreeting() {
 
   let greeting, icon;
   if (hour < 12) {
-    greeting = "Good morning, how was your sleep?";
+    greeting = "Good morning";
     icon = "ri-bread-fill";
   } else if (hour < 18) {
-    greeting = "Good afternoon, have you had your lunch yet?";
+    greeting = "Good afternoon";
     icon = "ri-sun-fill";
   } else {
-    greeting = "Good evening, it's time to take a rest";
+    greeting = "Good evening";
     icon = "ri-moon-fill";
   }
 
