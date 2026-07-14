@@ -6,11 +6,11 @@
   --surface: #fdf8f4;
   --ink: $rp-dawn-text;
   --you: $rp-dawn-sea;
-  --tree-trunk: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
-  --tree-canopy: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
-  --other: #26241f;
-  --ground-line: rgba(42, 41, 38, 0.16);
-  --ground: rgba(42, 41, 38, 0.16);
+  --tree-trunk: $rp-dawn-forest;
+  --tree-canopy: oklch(from $rp-dawn-text l c h / 0.1);
+  --other: $rp-dawn-subtle;
+  --ground-line: $rp-dawn-highlight-high;
+  --ground: $rp-dawn-overlay;
   --you-deep: var(--you);
   --text: var(--ink);
   --muted: var(--ink);
@@ -42,7 +42,7 @@
   --action-zone-fill: #181917;
   --surface: #24231f;
   --ink: #f2eee6;
-  --you: #df8a43;
+  --you: $rp-sea;
   --tree-trunk: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
   --tree-canopy: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
   --other: #ddd7cc;
