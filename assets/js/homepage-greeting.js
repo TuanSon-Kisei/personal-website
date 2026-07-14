@@ -2,6 +2,9 @@ function showTimeZoneGreeting() {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   const now = new Date().toLocaleString("en-US", { timeZone: timezone });
   const hour = new Date(now).getHours();
+  const greetingEl = document.getElementById("greeting");
+
+  if (!greetingEl) return;
 
   let greeting, icon;
   if (hour < 12) {
@@ -15,8 +18,7 @@ function showTimeZoneGreeting() {
     icon = "ri-moon-fill";
   }
 
-  document.getElementById("greeting").innerHTML =
-    ` ${greeting} <i class="${icon}"></i>`;
+  greetingEl.innerHTML = ` ${greeting} <i class="${icon}"></i>`;
 }
 
 showTimeZoneGreeting();

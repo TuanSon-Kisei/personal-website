@@ -5,6 +5,7 @@
         {{ partial "skip-link.html" . }} {{ partial "header.html" . }}
         <main id="main-content" tabindex="-1">
             {{ block "main" . }} {{ end }}
+            <click-spark></click-spark>
         </main>
         {{ partial "footer.html" . }}
         <!--Town Square snipper-->
@@ -21,6 +22,7 @@
             theme: "host"
           });
         </script>
+
     </body>
     {{ partial "scripts.html" . }}
 </html>

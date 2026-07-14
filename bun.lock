@@ -4,6 +4,7 @@
   "workspaces": {
     "": {
       "dependencies": {
+        "click-spark": "^2.1.0",
         "prop-for-that": "^0.7.8",
         "sass": "^1.99.0",
       },
@@ -104,6 +105,8 @@
     "callsites": ["callsites@3.1.0", "", {}, "sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ=="],
 
     "chokidar": ["chokidar@4.0.3", "", { "dependencies": { "readdirp": "^4.0.1" } }, "sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA=="],
+
+    "click-spark": ["click-spark@2.1.0", "", {}, "sha512-/Jd1gPnMT6hqlkhARg+3Dh3Ziqf0enMSMovwgykLx6sQrgurg2/YiomHNAhLuRHB8qmcjWw1ch0yc+mreqctHg=="],
 
     "color-convert": ["color-convert@2.0.1", "", { "dependencies": { "color-name": "~1.1.4" } }, "sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ=="],
 

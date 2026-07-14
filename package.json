@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "click-spark": "^2.1.0",
     "prop-for-that": "^0.7.8",
     "sass": "^1.99.0"
   },
