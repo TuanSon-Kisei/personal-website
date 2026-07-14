@@ -1,11 +1,11 @@
 #townsquare-root#townsquare-root {
-  --scene: #e4e2dd;
+  --scene: $rp-dawn-base;
   --ground-fill: #efede9;
-  --page: #efede9;
+  --page: $rp-dawn-surface;
   --action-zone-fill: #efede9;
   --surface: #fdf8f4;
-  --ink: #2a2926;
-  --you: #c8641f;
+  --ink: $rp-dawn-text;
+  --you: $rp-dawn-sea;
   --tree-trunk: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
   --tree-canopy: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
   --other: #26241f;
@@ -17,13 +17,13 @@
 }
 
 #townsquare-root#townsquare-root[data-townsquare-theme="dark"] {
-  --scene: #242521;
+  --scene: $rp-base;
   --ground-fill: #181917;
-  --page: #181917;
+  --page: $rp-surface;
   --action-zone-fill: #181917;
   --surface: #24231f;
   --ink: #f2eee6;
-  --you: #df8a43;
+  --you: $rp-sea;
   --tree-trunk: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
   --tree-canopy: color-mix(in oklab, var(--text) 58%, var(--muted) 42%);
   --other: #ddd7cc;
@@ -36,9 +36,9 @@
 
 @media (prefers-color-scheme: dark) {
   #townsquare-root#townsquare-root[data-townsquare-theme="auto"] {
-  --scene: #242521;
+  --scene: $rp-base;
   --ground-fill: #181917;
-  --page: #181917;
+  --page: $rp-surface;
   --action-zone-fill: #181917;
   --surface: #24231f;
   --ink: #f2eee6;
