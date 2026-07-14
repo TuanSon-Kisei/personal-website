@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dede/index.md",
+                "file": "blog/no, i don't want those \"dot\" custom cursor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "no, i don't want those \"dot\" custom cursor"
             }
           }
         ]
@@ -198,6 +198,7 @@
   },
   "active": "9134b57a96daa295",
   "lastOpenFiles": [
+    "dede/index.md",
     "blog/no, i don't want those \"dot\" custom cursor.md",
     "blog/template.md",
     "blog/writing.md",
@@ -209,7 +210,6 @@
     "blog/_index.md",
     "readmate/index.md",
     "petfren/index.md",
-    "dede/index.md",
     "links/against-the-luddites.md",
     "links/delphi-tools.md",
     "links/lets-get-creative.md",

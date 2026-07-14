@@ -9,8 +9,8 @@
     --box-padding: var(--spacing-sm);
     --gap-space: var(--spacing-sm);
     transition:
-        box-shadow 250ms var(--ease-out-fast),
-        scale 250ms var(--ease-out-fast);
+        box-shadow var(--duration-fast) var(--ease-out-fast),
+        scale var(--duration-fast) var(--ease-out-fast);
 
     @media (prefers-reduced-motion: reduce) {
         transition: none;
