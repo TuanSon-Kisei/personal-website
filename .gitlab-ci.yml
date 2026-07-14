@@ -58,9 +58,17 @@ pages:
       echo "xz: $(xz --version)"
       echo "zstd: $(zstd --version)"
 
+      # Install Bun
+      echo "Installing Bun..."
+      curl -fsSL https://bun.sh/install | bash
+      export PATH="${HOME}/.bun/bin:${PATH}"
+      echo "Bun: $(bun --version)"
+
       # Install Node.js dependencies
       echo "Installing Node.js dependencies..."
-      [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci --prefer-offline || true
+      if [[ -f bun.lockb || -f bun.lock ]]; then
+        bun install --frozen-lockfile
+      fi
 
       # Configure Git
       echo "Configuring Git..."
