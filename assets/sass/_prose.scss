@@ -40,9 +40,20 @@
         grid-column: full;
     }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      &:target {
+          background-color: $rp-foam;
+      }
+    }
 
-
-    a {
+    a[href^="#"],
+    a[href^="https://"] {
+        position: relative;
         &:link {
             color: $rp-dawn-rose;
             text-decoration: underline;
@@ -69,6 +80,13 @@
 
         &:visited {
             color: $rp-dawn-iris;
+        }
+
+        &:after {
+            content: "↗";
+            line-height: 1;
+            text-decoration: none;
+            margin-inline-start: 0.1em;
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -202,6 +220,16 @@
 
 [data-theme="dark"] {
     .prose {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            &:target {
+                background-color: oklch(from $rp-foam calc(l - 0.55) c h);
+            }
+        }
         a {
             color: $rp-rose;
 
