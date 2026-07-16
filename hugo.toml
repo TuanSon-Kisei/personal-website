@@ -11,6 +11,9 @@ ogImage = "/images/open-graph-image.jpg"
     [markup.goldmark.parser.attribute]
         block = true
         title = true
+    [markup.highlight]
+        style = "catppuccin-mocha"
+        noClasses = false
 enableRobotsTXT = true
 
 [pagination]

@@ -225,6 +225,17 @@ body {
         font-size: inherit;
         color: inherit;
     }
+
+    code {
+        font-family: $font-mono;
+        padding-inline: 0.2rem;
+        border: 1px solid $rp-dawn-highlight-high;
+    }
+
+    pre {
+        overflow-x: auto;
+        padding: var(--spacing-sm);
+    }
 }
 
 /* [E] Exceptions - overrides for specific elements or components - data-theme=[dark] */
@@ -247,5 +258,9 @@ body {
 
     kbd {
         border-color: $rp-gold;
+    }
+
+    code {
+        border-color: $rp-highlight-high;
     }
 }
