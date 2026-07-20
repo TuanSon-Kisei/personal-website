@@ -51,7 +51,7 @@
       }
     }
 
-    a[href^="https://"] {
+    a[href^="https://"]:not([href*="tuansondesigns.com"]) {
         position: relative;
         &:link {
             color: $rp-dawn-rose;
@@ -148,32 +148,37 @@
         }
     }
 
-    img,
     figure {
-        display: grid;
-        grid-template-columns: subgrid;
-        grid-column: feature;
+        grid-column: full;
 
-        picture {
-            display: contents;
+        &.popout {
+            > :not(figcaption) {
+                grid-column: popout;
+                @media (width < 860px) {
+                    grid-column: full;
+                }
+            }
         }
 
-        figure{
-            grid-column: full;
-            height: auto;
-            opacity: 1;
-            aspect-ratio: auto;
-            @supports (animation-timeline: view()) {
-                animation:
-                    fadeInScroll 200ms var(--ease-out-slow),
-                    scaleUpScroll 200ms var(--ease-out-slow);
-                animation-timeline: view();
-                animation-range: entry;
+        &.feature {
+            > :not(figcaption) {
+                grid-column: feature;
+                @media (width < 860px) {
+                    grid-column: full;
+                }
+            }
+        }
+
+        &.full {
+            > :not(figcaption) {
+                grid-column: full;
             }
         }
 
         img {
-            outline: 1px solid $rp-dawn-highlight-med;
+            width: 100%;
+            height: auto;
+            outline-color: $rp-dawn-highlight-med;
             background-color: $rp-dawn-surface;
         }
 

@@ -1,4 +1,5 @@
 {{- $img := .Page.Resources.GetMatch .Destination -}}
+{{- $class := .Attributes.class | default "feature" -}}
 {{- if not $img -}}
 {{- $img = resources.Get .Destination -}}
 {{- end -}}
@@ -18,16 +19,7 @@
 {{- $mobile := $img.Resize "600x" -}}
 {{- $tablet := $img.Resize "800x" -}}
 {{- $desktop := $img.Resize "1280x" -}}
-<figure>
-    <picture>
-        <source srcset="{{ $mobile.RelPermalink }} 600w,
-                  {{ $tablet.RelPermalink }} 800w,
-                  {{ $desktop.RelPermalink }} 1280w"
-        sizes="(max-width: 480px) 100vw, (max-width: 800px) 90vw, 1280px"
-
-        loading="lazy"
-        decoding="auto"
-    />
+<figure class="{{ $class }}">
     <img
         srcset="{{ $mobile.RelPermalink }} 600w,
                   {{ $tablet.RelPermalink }} 800w,
@@ -39,7 +31,6 @@
         decoding="auto"
 
     />
-    </picture>
     {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
     {{- end }}
 </figure>
@@ -52,7 +43,7 @@
 {{- $mobile := $img.Resize "600x" -}}
 {{- $tablet := $img.Resize "800x" -}}
 {{- $desktop := $img.Resize "1280x" -}}
-<figure>
+<figure class="{{ $class }}">
     <picture>
         <!-- WebP: convert to WebP with 85% quality and resize -->
         <source srcset="{{ $mobileWebp.RelPermalink }} 600w,
@@ -82,7 +73,7 @@
 {{- end -}} {{- else -}}
 
 {{/* Fallback for external images */}}
-<figure>
+<figure class="{{ $class }}">
     <img src="{{ .Destination }}" alt="{{ .Text }}" loading="lazy" decoding="auto" />
     {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
     {{- end }}

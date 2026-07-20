@@ -25,9 +25,7 @@ collaborators:
     avatar: images/avatar/ngoc-thanh-photo.jpg
 category: case study
 ---
-![The Dede app](images/hero.png)
-
-
+![The Dede app](images/hero.png) 
 
 ## Overview
 
