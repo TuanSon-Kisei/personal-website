@@ -150,21 +150,21 @@ For the alarm part, the app will use phone's **available GPS** sensors. It will 
 With the wireframes and low-fidelity mock-ups established, we transitioned to next phase to create high-fidelity mocks.
 
 {{< feature-showcase 
-  image="images/dede-tracking-journey.webp" 
+  image="images/dede-tracking-journey.png" 
   title="Analyze and deduce the problems" 
   description="Intelligently point out where you did wrong on the road and how to prevent them"
   alt="The Tracking journey screen"
   >}}
   
   {{< feature-showcase 
-  image="images/dede-personalised-news.webp" 
+  image="images/dede-personalised-news.png" 
   title="Traffic news curated only for you" 
   description="Selected news so you can notice ahead of time what is changing when participating traffics"
   alt="The News screen"
 >}}
 
 {{< feature-showcase 
-  image="images/dede-safety-challenges.webp" 
+  image="images/dede-safety-challenges.png" 
   title="Safety traffic challenge" 
   description="Get rewarded for your effort for abiding the laws with humorous stickers and badges"
   alt="The Challenge and Ranking screen"

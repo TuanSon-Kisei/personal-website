@@ -1,11 +1,4 @@
 .feature-showcase {
     margin-block-start: var(--spacing-lg);
-    --gap-space: var(--spacing-sm);
-    --threshold: 35rem;
-}
-
-.feature-media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    --gap-space: var(--spacing-lg);
 }

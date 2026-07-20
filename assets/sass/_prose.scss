@@ -10,8 +10,8 @@
     --gap: var(--spacing-lg);
     --full: minmax(0, 1fr);
     --content: min(48rem, 100%);
-    --popout: minmax(0, 4rem);
-    --feature: minmax(0, 8rem);
+    --popout: minmax(0, 6rem);
+    --feature: minmax(0, 12rem);
     display: grid;
     row-gap: var(--gap);
     grid-template-columns:
@@ -158,16 +158,11 @@
             display: contents;
         }
 
-        figure img {
+        figure{
             grid-column: full;
             height: auto;
-
-            outline: 1px solid $rp-dawn-highlight-med;
-            font-size: inherit;
-            color: inherit;
-            aspect-ratio: auto 16/9;
-            background-color: $rp-dawn-surface;
             opacity: 1;
+            aspect-ratio: auto;
             @supports (animation-timeline: view()) {
                 animation:
                     fadeInScroll 200ms var(--ease-out-slow),
@@ -175,6 +170,11 @@
                 animation-timeline: view();
                 animation-range: entry;
             }
+        }
+
+        img {
+            outline: 1px solid $rp-dawn-highlight-med;
+            background-color: $rp-dawn-surface;
         }
 
         figcaption {
@@ -229,7 +229,8 @@
                 background-color: oklch(from $rp-foam calc(l - 0.55) c h);
             }
         }
-        a {
+
+        a[href^="https://"] {
             color: $rp-rose;
 
             &:focus-visible {
@@ -240,18 +241,19 @@
             }
         }
 
+        figure {
+            img {
+                outline-color: $rp-highlight-med;
+                background-color: $rp-surface;
+            }
+        }
+
         ul {
             li {
                 &::before {
                     color: $rp-rose;
                 }
             }
-        }
-
-        figure img,
-        img {
-            outline-color: $rp-highlight-med;
-            background-color: $rp-surface;
         }
 
         blockquote {

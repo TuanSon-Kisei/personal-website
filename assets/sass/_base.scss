@@ -197,11 +197,6 @@ body {
         color: $rp-text;
     }
 
-    em {
-        text-decoration: underline;
-        text-decoration-style: wavy;
-    }
-
     figure {
         margin: 0;
         padding: 0;
@@ -222,8 +217,7 @@ body {
     picture {
         display: block;
         max-width: 100%;
-        font-size: inherit;
-        color: inherit;
+
     }
 
     code {

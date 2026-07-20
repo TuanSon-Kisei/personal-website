@@ -9,7 +9,7 @@
 {{- if or (eq $mediaType "svg+xml") (eq $mediaType "svg") (eq $mediaType "gif")
 (eq $mediaType "avif") -}}
 <figure>
-    <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" decoding="auto" data-props-for="visibility" />
+    <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" decoding="auto" />
     {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
     {{- end }}
 </figure>
@@ -24,7 +24,7 @@
                   {{ $tablet.RelPermalink }} 800w,
                   {{ $desktop.RelPermalink }} 1280w"
         sizes="(max-width: 480px) 100vw, (max-width: 800px) 90vw, 1280px"
-        alt="{{ .Text }}"
+
         loading="lazy"
         decoding="auto"
     />
@@ -37,27 +37,29 @@
         alt="{{ .Text }}"
         loading="lazy"
         decoding="auto"
-        data-props-for="visibility"
+
     />
     </picture>
     {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
     {{- end }}
 </figure>
 
-{{/* PNG and JPEG: convert to WebP with 90% quality and resize */}}
+{{/* PNG and JPEG: convert to AVIF with 80% quality and resize */}}
 {{- else -}}
+{{- $mobileWebp := $img.Resize "600x webp q85 text catmullRom" -}}
+{{- $tabletWebp := $img.Resize "800x webp q85 text catmullRom" -}}
+{{- $desktopWebp := $img.Resize "1280x webp q85 text lanczos" -}}
 {{- $mobile := $img.Resize "600x" -}}
 {{- $tablet := $img.Resize "800x" -}}
 {{- $desktop := $img.Resize "1280x" -}}
 <figure>
     <picture>
-        <!-- WebP: convert to WebP with 90% quality and resize -->
-        <source srcset="{{ $mobile.RelPermalink }} 600w,
-                  {{ $tablet.RelPermalink }} 800w,
-                  {{ $desktop.RelPermalink }} 1200w"
+        <!-- WebP: convert to WebP with 85% quality and resize -->
+        <source srcset="{{ $mobileWebp.RelPermalink }} 600w,
+                  {{ $tabletWebp.RelPermalink }} 800w,
+                  {{ $desktopWebp.RelPermalink }} 1200w"
                   sizes="(max-width: 480px) 100vw, (max-width: 800px) 90vw, 1200px"
                   type="image/webp"
-                  alt="{{ .Text }}"
                   loading="lazy"
                   decoding="auto"
         />
@@ -71,7 +73,7 @@
             alt="{{ .Text }}"
             loading="lazy"
             decoding="auto"
-            data-props-for="visibility"
+
         />
     </picture>
     {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
@@ -81,7 +83,7 @@
 
 {{/* Fallback for external images */}}
 <figure>
-    <img src="{{ .Destination }}" alt="{{ .Text }}" loading="lazy" decoding="auto" data-props-for="visibility" />
+    <img src="{{ .Destination }}" alt="{{ .Text }}" loading="lazy" decoding="auto" />
     {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
     {{- end }}
 </figure>
