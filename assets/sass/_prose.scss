@@ -47,7 +47,9 @@
     h5,
     h6 {
       &:target {
-          background-color: $rp-foam;
+
+          scroll-margin-top: 2ex;
+          animation: highlightFade 2s var(--ease-out-slow);
       }
     }
 
@@ -224,17 +226,6 @@
 
 [data-theme="dark"] {
     .prose {
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            &:target {
-                background-color: oklch(from $rp-foam calc(l - 0.55) c h);
-            }
-        }
-
         a[href^="https://"] {
             color: $rp-rose;
 

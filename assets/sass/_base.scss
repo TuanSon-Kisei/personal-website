@@ -71,8 +71,8 @@
 
     /* Animation duration */
     --duration-fast: 200ms;
-    --duration-medium: 300ms;
-    --duration-slow: 400ms;
+    --duration-medium: 400ms;
+    --duration-slow: 600ms;
 }
 
 html {
@@ -85,10 +85,6 @@ html {
 
     @media (prefers-reduced-motion: reduce) {
         scroll-behavior: auto;
-    }
-
-    :target {
-        scroll-margin-top: 2ex;
     }
 }
 

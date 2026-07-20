@@ -16,6 +16,15 @@
     }
 }
 
+@keyframes highlightFade {
+    from {
+        background-color: oklch(from $rp-dawn-foam l c h / 0.5);
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
 @keyframes fadeInScroll {
     0% {
         opacity: 0;
