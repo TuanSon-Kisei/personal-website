@@ -1,6 +1,8 @@
 ---
 title: Colophon - Kisei's personal space
 ---
+![A table with scattered stationary like a typewriter, a colorful colour palette flyer and many other things](./colophon.jpg)
+{.full}
 ## Foreword
 
 I designed and built this site myself. Everything about this site is open source and published on my [Gitlab](https://gitlab.com/DoctorKisei/tuanson-portfolio) if you'd like to poke (or fork) around. Building my own portfolio which later evolved into something more personal, for me quite frankly is a little bit overkill. But I had and still having a lot of fun building and tinkering it. 
