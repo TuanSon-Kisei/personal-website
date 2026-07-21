@@ -21,7 +21,7 @@
     }
 
     &:hover {
-        --box-background-color: #{$rp-dawn-overlay};
+
         --box-border-color: #{$rp-dawn-rose};
         color: $rp-dawn-rose;
         box-shadow: 6px 6px 0 0 $rp-dawn-rose;
@@ -49,7 +49,7 @@
 [data-theme="dark"] {
     .slash-entry {
         &:hover {
-            --box-background-color: #{$rp-overlay};
+
             --box-border-color: #{$rp-rose};
             color: $rp-rose;
             box-shadow: 6px 6px 0 0 $rp-rose;
