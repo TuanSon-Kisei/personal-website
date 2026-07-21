@@ -10,6 +10,7 @@
         display: inline-block;
         line-height: 1;
         margin-inline-start: 0.5rem;
+        font-family: $font-mono;
     }
 
     img {
@@ -56,9 +57,7 @@
         padding: 0.5rem;
         border-radius: 0.5em;
         margin-inline-end: var(--spacing-xs);
-
         transition: background-color 200ms ease;
-
         &::-webkit-details-marker {
             display: none;
         }
@@ -66,13 +65,17 @@
         &:hover {
             background-color: $rp-dawn-overlay;
         }
+
+        .hamburger-icon {
+            margin-inline-end: 0.25rem;
+        }
     }
 
     .mobile-dropdown-menu {
         position: absolute;
         top: 100%;
         right: 0;
-        z-index: 999;
+        z-index: 9;
         min-width: 250px;
         margin-top: 0.5rem;
         background-color: $rp-dawn-base;
