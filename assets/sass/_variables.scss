@@ -1,23 +1,23 @@
 //Font size for headings
 $heading-sizes: (
     // h1: 1.80rem (28px) -> 2.50rem (40px)
-    h1: clamp(2.4883rem, 1.9199rem + 2.5264vw, 3.8147rem),
+    h1: clamp(2.7994rem, 2.3135rem + 2.4292vw, 4.1962rem),
     // h2: 1.60rem (25px) -> 2.10rem (33px)
-    h2: clamp(2.0736rem, 1.6544rem + 1.8632vw, 3.0518rem),
+    h2: clamp(2.3328rem, 1.9766rem + 1.7811vw, 3.3569rem),
     // h3: 1.42rem (22px) -> 1.75rem (28px)
-    h3: clamp(1.728rem, 1.4223rem + 1.3589vw, 2.4414rem),
+    h3: clamp(1.944rem, 1.6861rem + 1.2896vw, 2.6855rem),
     // h4: 1.26rem (20px) -> 1.45rem (23px)
-    h4: clamp(1.44rem, 1.2201rem + 0.9774vw, 1.9531rem),
+    h4: clamp(1.62rem, 1.4362rem + 0.919vw, 2.1484rem),
     // h5: 1.12rem (18px) -> 1.20rem (19px)
-    h5: clamp(1.2rem, 1.0446rem + 0.6905vw, 1.5625rem),
+    h5: clamp(1.35rem, 1.2217rem + 0.6413vw, 1.7188rem),
     // h6: 1.05rem (16.8px) -> 1.10rem (17.6px)
-    h6: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem)
+    h6: clamp(1.125rem, 1.038rem + 0.4348vw, 1.375rem)
 );
 
 // Rose Pine Dawn
-$rp-dawn-base: oklch(0.9739 0.009 0.13);
-$rp-dawn-surface: oklch(0.9559 0.009 0.13);
-$rp-dawn-overlay: oklch(0.9378 0.009 0.14);
+$rp-dawn-base: oklch(0.94 0.003 354.695);
+$rp-dawn-surface: oklch(0.959 0.004 359.998);
+$rp-dawn-overlay: oklch(0.909 0.007 354.811);
 $rp-dawn-background-alt: oklch(0.8816 0.0413 235.75);
 $rp-dawn-muted: oklch(0.6331 0.0085 7.42);
 $rp-dawn-subtle: oklch(0.3984 0.0056 0.26);
