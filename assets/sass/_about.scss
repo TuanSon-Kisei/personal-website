@@ -18,16 +18,18 @@
         }
 
         p, blockquote {
-            opacity: 1;
-            @supports (animation-timeline: view()) {
-                animation:
-                    fadeInScroll var(--duration-fast) linear forwards,
-                    slideInScroll var(--duration-fast) linear forwards;
-                animation-timeline: view();
-                animation-range-start: entry 0%;
-                animation-range-end: cover 50%;
-                &:nth-child(n) {
-                    animation-delay: calc((n - 1) * 0.1s);
+
+            @media (prefers-reduced-motion: no-preference) {
+                @supports (animation-timeline: view()) {
+                    animation:
+                        fadeInScroll var(--duration-fast) linear forwards,
+                        slideInScroll var(--duration-fast) linear forwards;
+                    animation-timeline: view();
+                    animation-range-start: entry 0%;
+                    animation-range-end: cover 50%;
+                    &:nth-child(n) {
+                        animation-delay: calc((n - 1) * 0.1s);
+                    }
                 }
             }
         }
