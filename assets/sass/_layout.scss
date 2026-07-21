@@ -53,15 +53,17 @@
 .grid {
     display: grid;
     gap: var(--grid-space, 0);
-
-    @media (width < 480px) {
-        grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
-    }
 }
 
 @supports (width: min(20rem, 100%)) {
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    }
+}
+
+@media (width < 680px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
 
