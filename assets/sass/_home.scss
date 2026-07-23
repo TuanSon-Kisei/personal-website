@@ -45,18 +45,52 @@
             display: block;
             --flow-space: var(--spacing-sm);
             --box-padding: var(--spacing-lg);
-            transition:
-                box-shadow var(--duration-fast) var(--ease-out-fast),
-                scale var(--duration-fast) var(--ease-out-fast);
+            transition: all var(--duration-fast) var(--ease-out-fast);
 
             @media (prefers-reduced-motion: reduce) {
                 transition: none;
             }
 
+            &::before {
+                content: "";
+                border-radius: inherit;
+                position: absolute;
+                z-index: -2;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                box-shadow: 16px 16px 0 0 $rp-love;
+                opacity: 0;
+                transition: all var(--duration-fast) var(--ease-out-fast);
+                -webkit-transition: all var(--duration-fast) var(--ease-out-fast);
+            }
+
+            &::after {
+                content: "";
+                border-radius: inherit;
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                box-shadow: 8px 8px 0 0 $rp-rose;
+                opacity: 0;
+                transition: all var(--duration-fast) var(--ease-out-fast);
+                -webkit-transition: all var(--duration-fast) var(--ease-out-fast);
+            }
+
             &:hover {
-                box-shadow: 12px 12px 0 0 $rp-dawn-rose;
-                transform: scale(1.02);
-                outline: 1px solid $rp-dawn-rose;
+                transform: scale(1.02, 1.02);
+            }
+
+            &:hover::after {
+                opacity: 1;
+            }
+
+            &:hover::before {
+                opacity: 1;
             }
 
             &:focus-visible {
