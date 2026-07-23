@@ -9,6 +9,10 @@
         --flow-space: var(--spacing-xs);
     }
 
+    > h2 {
+        margin-top: 0;
+    }
+
     background-color: $rp-dawn-surface;
 
     &--time {
