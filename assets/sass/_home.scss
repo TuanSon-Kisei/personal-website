@@ -152,11 +152,6 @@
         &__projects-card {
             background-color: $rp-surface;
 
-            &:hover {
-                box-shadow: 12px 12px 0 0 $rp-rose;
-                outline-color: $rp-rose;
-            }
-
             &:focus-visible {
                 outline-color: $rp-rose;
             }
