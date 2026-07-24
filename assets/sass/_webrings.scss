@@ -18,20 +18,20 @@
         --box-padding: 0;
         --box-border-color: none;
 
-        --webring-border-dark: var(--webring-accent);
+        --webring-border-dark: oklch(from var(--webring-accent) calc(l * 0.5) c h);
         --webring-border-light: var(--webring-accent);
 
-        --webring-bg-dark: oklch(from var(--webring-accent) l calc(c + 0.05) h / 0.3);
-        --webring-bg-light: oklch(from var(--webring-accent) l c h / 0.25);
+        --webring-bg-dark: oklch(from var(--webring-accent) calc(l * 0.32) c h);
+        --webring-bg-light: oklch(from var(--webring-accent) l c h / 0.5);
 
-        --webring-bg-light-hover: oklch(from var(--webring-accent) l c h / 0.3);
-        --webring-bg-dark-hover: oklch(from var(--webring-accent) l c h / 0.25);
+        --webring-bg-light-hover: oklch(from var(--webring-accent) l c h / 0.6);
+        --webring-bg-dark-hover: oklch(from var(--webring-accent) calc(l * 0.4) c h );
 
         --webring-text-dark: oklch(
-            from var(--webring-accent) calc(l + 0.5) c h
+            from var(--webring-accent) calc(l * 1.1) c h
         );
         --webring-text-light: oklch(
-            from var(--webring-accent) calc(l - 0.4) c h
+            from var(--webring-accent) calc(l * 0.32) c h
         );
 
         background-color: var(--webring-bg-light);
