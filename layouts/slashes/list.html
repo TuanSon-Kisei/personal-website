@@ -6,10 +6,10 @@
     </header>
     <div class="[ slashes-list ] [ flow ]">
         {{ range hugo.Data.slashes }}
-        <a class="[ slash-entry ] stack [ box ]" href="{{ .url }}">
+        <a class="[ slash-entry ] flow stack [ box ]" href="{{ .url }}">
                 <h2 class="[ text-h5 ]">{{ .title }}</h2>
                 <p>{{ .description }}</p>
-            <span class="[ mono-font ] [ text-align-end ]">{{ .url }}</span>
+            <span class="[ mono-font ]">{{ .url }}</span>
         </a>
         {{ end }}
     </div>
