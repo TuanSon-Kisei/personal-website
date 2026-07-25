@@ -81,16 +81,19 @@
                 -webkit-transition: all var(--duration-fast) var(--ease-out-fast);
             }
 
-            &:hover {
-                transform: scale(1.02, 1.02);
-            }
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    transform: scale(1.02, 1.02);
+                    transform: translate(-8px, -8px);
+                }
 
-            &:hover::after {
-                opacity: 1;
-            }
+                &:hover::after {
+                    opacity: 1;
+                }
 
-            &:hover::before {
-                opacity: 1;
+                &:hover::before {
+                    opacity: 1;
+                }
             }
 
             &:focus-visible {

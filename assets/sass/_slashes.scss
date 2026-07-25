@@ -5,7 +5,7 @@
 .slash-entry {
     position: relative;
     --box-padding: var(--spacing-sm);
-    transition: scale var(--duration-fast) var(--ease-out-fast);
+    transition: transform var(--duration-fast) var(--ease-out-fast);
 
     @media (prefers-reduced-motion: reduce) {
         transition: none;
@@ -51,6 +51,7 @@
 
     &:hover {
         transform: scale(1.02, 1.02);
+        transform: translate(-8px, -8px);
     }
 
     &:hover::after {
