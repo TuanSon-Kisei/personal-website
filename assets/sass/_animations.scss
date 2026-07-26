@@ -1,24 +1,38 @@
-@keyframes fadeIn {
-    from {
+@keyframes slideDownAndFadeIn {
+    0% {
         opacity: 0;
+        transform: translateY(-100%);
+        filter: blur(0px);
     }
-    to {
+    50% {
+        filter: blur(4px);
+    }
+    100% {
         opacity: 1;
+        transform: translateY(0);
+        filter: blur(0px);
     }
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateY(-100%);
+@keyframes slideUpAndFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+        filter: blur(16px);
     }
-    to {
+    50% {
+        filter: blur(8px);
+    }
+    100% {
+        opacity: 1;
         transform: translateY(0);
+        filter: blur(0px);
     }
 }
 
 @keyframes highlightFade {
     from {
-        background-color: oklch(from $rp-dawn-foam l c h / 0.5);
+        background-color: oklch(from $rp-dawn-carrot l c h / 0.5);
     }
     to {
         background-color: transparent;
