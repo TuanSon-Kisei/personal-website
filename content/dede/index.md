@@ -171,10 +171,7 @@ With the wireframes and low-fidelity mock-ups established, we transitioned to ne
 We had the once-in-a-lifetime opportunity to share the work we done with other designers in Ho Chi Minh City. Sadly we didn't gain any honorary reward at all but the senior designers gave us a lot of valuable feedback. I had the chance to demonstrate our work on the stage with hundreds of people watching our work unfold.
 
 ![The team giving their presentation](images/designathon-team-presentation.jpg "My team is giving our answers to judges and in front of over 500+ audiences")
-
-![The author is giving his presentation](images/designathon-me-giving-presentation.webp "Yes, this is me giving presentation. Yes, I was so nervous. OMG")
-
-
+{.full}
 ## What I learned
 ### Early validation matters - especially for hardware dependencies
 Can our users afford it? How should we integrate our camera hardware into their daily life? Who will manufacture it? How should we market it and present it not only for our users but also for those who want to invest in it? For something that is as critical as hardware, early validation like cost interview, value preposition and market research should come before interface design - not after. 

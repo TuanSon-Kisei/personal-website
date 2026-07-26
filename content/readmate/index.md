@@ -20,8 +20,6 @@ Having read some heavy research material and came across some difficult topics w
 
 We utilized the Double Diamond framework to maintain a holistic view of the project. By balancing how we expanding and narrowing down our ways of thinking, we systematically having a big picture view while pinning the right problem and solution. This approach ensured our final solution was both deeply researched and highly effective.
 
-![The Double Diamond framework](images/double-diamond.avif)
-
 ## Product Discovery
 
 After receiving a big challenge about **reading habits**, we started to break down the problem into smaller pieces, focusing on the readers' experience when reading new materials.
@@ -133,10 +131,10 @@ A short YouTube featuring our presentation for our web app can be found right be
 {{< youtube id=0S-x6QgQWmc start=45 loading=lazy >}}
 
 ## What I learned
-#### Empathy with users' problems
+### Empathy with users' problems
 A solution can only work if they can address the most painful problem of the users. That way a product can only truly show its value for solving the problem of the customers and bringing in value for the business.
 
-#### Design and development always work hand in hand
+### Design and development always work hand in hand
 By understanding how the product work through engineering architectures and business flows, I was able to make informed design decision and quickly ship the MVP for the presentation.
 
 
