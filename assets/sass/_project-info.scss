@@ -2,7 +2,7 @@
     border-block: 1px solid $rp-dawn-highlight-med;
     --measure: 48rem;
     --box-padding: var(--spacing-sm);
-    margin-block: var(--spacing-md);
+
 
     > * + * {
         --flow-space: var(--spacing-md);
@@ -10,7 +10,7 @@
 
     &--block {
         --gap-space: var(--spacing-xs);
-
+        font-size: 92%;
 
         dt {
             font-weight: var(--font-weight-bold);
@@ -40,10 +40,15 @@
                     }
 
                     @media (hover: hover) {
-                        &:hover {
+                        &:hover, &:focus {
                             color: $rp-dawn-text;
                             text-decoration-color: $rp-dawn-text;
                         }
+                    }
+
+                    &:focus-visible {
+                        outline: 2px solid currentColor;
+                        outline-offset: 2px;
                     }
 
                     &:active {
@@ -75,9 +80,16 @@
                 color: $rp-subtle;
                 text-decoration-color: $rp-muted;
 
-                &:hover {
-                    color: $rp-text;
-                    text-decoration-color: $rp-text;
+                @media (hover: hover) {
+                    &:hover, &:focus {
+                        color: $rp-text;
+                        text-decoration-color: $rp-text;
+                    }
+                }
+
+                &:focus-visible {
+                    outline-color: currentColor;
+                    outline-offset: 2px;
                 }
 
                 .avatar {

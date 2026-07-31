@@ -9,12 +9,11 @@
 }
 
 *::selection {
-    background: $rp-dawn-highlight-low;
+    background: oklch(from $rp-dawn-foam l c h / 0.1);
     text-decoration: underline;
     text-decoration-style: wavy;
-
     color: $rp-dawn-foam;
-    text-decoration-color: $rp-dawn-sea;
+
 }
 
 :root {
@@ -114,6 +113,9 @@ body {
     font-variant-ligatures: common-ligatures no-discretionary-ligatures
         no-historical-ligatures contextual;
     font-kerning: normal;
+    @media (prefers-reduced-motion: no-preference) {
+        transition: all var(--duration-fast) var(--ease-out-slow);
+    }
 
     body,
     h1,
@@ -236,9 +238,8 @@ body {
     --color-background: #{$rp-base};
 
     ::selection {
-        background-color: $rp-highlight-med;
+        background-color: oklch(from $rp-dawn-foam l c h / 0.1);
         color: $rp-foam;
-        text-decoration-color: $rp-sea;
     }
 
     mark {

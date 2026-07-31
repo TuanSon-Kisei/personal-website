@@ -83,6 +83,27 @@
         margin-top: var(--spacing-sm);
     }
 
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a {
+        text-decoration: none;
+        text-decoration-skip-ink: none;
+
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: $rp-dawn-subtle;
+            }
+        }
+
+        &:focus-visible {
+            outline: 3px solid currentColor;
+            outline-offset: 3px;
+        }
+    }
+
     a[href^="https://"] {
         position: relative;
         &:link {
@@ -274,6 +295,23 @@
             &:visited {
                 color: $rp-iris;
             }
+        }
+
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a,
+        h6 a {
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    text-decoration-color: $rp-subtle;
+                }
+            }
+
+            &:focus-visible {
+                outline-color: currentColor;
+            }
+
         }
 
         figure {
