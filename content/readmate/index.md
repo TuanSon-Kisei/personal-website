@@ -8,6 +8,22 @@ weight: "2"
 role: UX Designer
 timeline: August - September 2025
 category: case study
+collaborators:
+  - name: Ha Minh Le
+    linkedin: https://www.linkedin.com/in/haminhle192/
+    avatar: images/avatar/ha-minh-le.jpg
+  - name: My Dinh Ngoc Tra
+    linkedin: https://www.linkedin.com/in/my-dinh-ngoc-tra/
+    avatar: images/avatar/tra-my.jpg
+  - name: Duyen Tran
+    linkedin: https://www.linkedin.com/in/duyentran99/
+    avatar: images/avatar/duyen-tran.jpg
+  - name: Linh Pham
+    linkedin: https://www.linkedin.com/in/linhphamkhanh24/
+    avatar: images/avatar/linh-pham.jpg
+  - name: Trinh Nhat Minh
+    linkedin: https://www.linkedin.com/in/trinhnhatminh13/
+    avatar: images/avatar/trinh-nhat-minh.jpg
 ---
 ![](images/hero.png)
 
@@ -136,5 +152,3 @@ A solution can only work if they can address the most painful problem of the use
 
 ### Design and development always work hand in hand
 By understanding how the product work through engineering architectures and business flows, I was able to make informed design decision and quickly ship the MVP for the presentation.
-
-

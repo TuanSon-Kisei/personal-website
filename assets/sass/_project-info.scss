@@ -5,43 +5,61 @@
     margin-block: var(--spacing-md);
 
     > * + * {
-        --flow-space: var(--spacing-sm);
+        --flow-space: var(--spacing-md);
     }
 
     &--block {
         --gap-space: var(--spacing-xs);
 
+
         dt {
             font-weight: var(--font-weight-bold);
             max-width: 140px;
+
         }
 
         dd {
-            .collaborator {
-                position: relative;
-                display: inline;
-                padding-inline-start: var(--spacing-md);
-                text-decoration: underline;
-                color: $rp-dawn-subtle;
-                text-decoration-color: $rp-dawn-muted;
-                transition:
-                    color 150ms ease-out,
-                    text-decoration-color 150ms ease-out;
+            flex: 1;
+            ul {
+                column-gap: var(--spacing-xs);
+                display: flex;
+                flex-wrap: wrap;
 
-                &:hover {
-                    color: $rp-dawn-text;
-                    text-decoration-color: $rp-dawn-text;
-                }
+                .collaborator {
+                    position: relative;
+                    display: inline;
+                    padding-inline-start: var(--spacing-md);
+                    text-decoration: underline;
+                    color: $rp-dawn-subtle;
+                    text-decoration-color: $rp-dawn-subtle;
+                    transition: color var(--duration-fast) var(--ease-out-fast), text-decoration-color var(--duration-fast) var(--ease-out-fast);
 
-                .avatar {
-                    background: $rp-dawn-surface;
-                    outline: $rp-dawn-highlight-high;
-                    width: var(--spacing-sm);
-                    height: var(--spacing-sm);
-                    border-radius: var(--border-radius-full);
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
+                    &::after {
+                        content: ",";
+                        color: inherit;
+                    }
+
+                    @media (hover: hover) {
+                        &:hover {
+                            color: $rp-dawn-text;
+                            text-decoration-color: $rp-dawn-text;
+                        }
+                    }
+
+                    &:active {
+                        outline: 1px dashed currentColor;
+                    }
+
+                    .avatar {
+                        background: $rp-dawn-surface;
+                        outline: $rp-dawn-highlight-low;
+                        width: var(--spacing-sm);
+                        height: var(--spacing-sm);
+                        border-radius: var(--border-radius-full);
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
                 }
             }
         }
@@ -64,7 +82,7 @@
 
                 .avatar {
                     background: $rp-surface;
-                    outline: $rp-highlight-high;
+                    outline: $rp-highlight-low;
                 }
             }
         }

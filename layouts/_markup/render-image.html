@@ -24,7 +24,7 @@
         srcset="{{ $mobile.RelPermalink }} 600w,
                   {{ $tablet.RelPermalink }} 800w,
                   {{ $desktop.RelPermalink }} 1280w"
-        sizes="(max-width: 480px) 100vw, (max-width: 800px) 90vw, 1280px"
+        sizes="auto, (max-width: 480px) 100vw, (max-width: 800px) 90vw, 1280px"
         src="{{ $desktop.RelPermalink }}"
         alt="{{ .Text }}"
         loading="lazy"
