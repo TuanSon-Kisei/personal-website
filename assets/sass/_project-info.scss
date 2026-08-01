@@ -11,6 +11,7 @@
     &--block {
         --gap-space: var(--spacing-xs);
         font-size: 92%;
+        line-height: var(--line-height-caption);
 
         dt {
             font-weight: var(--font-weight-bold);
@@ -21,23 +22,23 @@
         dd {
             flex: 1;
             ul {
-                column-gap: var(--spacing-xs);
-                display: flex;
-                flex-wrap: wrap;
+                gap: 0.5rem;
 
-                .collaborator {
-                    position: relative;
-                    display: inline;
-                    padding-inline-start: var(--spacing-md);
-                    text-decoration: underline;
-                    color: $rp-dawn-subtle;
-                    text-decoration-color: $rp-dawn-subtle;
-                    transition: color var(--duration-fast) var(--ease-out-fast), text-decoration-color var(--duration-fast) var(--ease-out-fast);
-
+                li:not(:last-child) {
                     &::after {
                         content: ",";
                         color: inherit;
                     }
+                }
+                
+                .collaborator {
+                    position: relative;
+                    display: inline;
+                    padding-inline-start: calc(var(--spacing-lg) - var(--spacing-xs));
+                    text-decoration: underline;
+                    color: $rp-dawn-subtle;
+                    text-decoration-color: $rp-dawn-subtle;
+                    transition: color var(--duration-fast) var(--ease-out-fast), text-decoration-color var(--duration-fast) var(--ease-out-fast);
 
                     @media (hover: hover) {
                         &:hover, &:focus {
@@ -52,7 +53,8 @@
                     }
 
                     &:active {
-                        outline: 1px dashed currentColor;
+                        outline: 2px dashed currentColor;
+                        outline-offset: 2px;
                     }
 
                     .avatar {

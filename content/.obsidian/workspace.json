@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "91c483ec8e609d5c",
+        "id": "fde71d2fab2ba4d9",
         "type": "tabs",
         "children": [
           {
-            "id": "9134b57a96daa295",
+            "id": "8d79b6d757279708",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/abusive-technology-relationship.md",
+                "file": "petfren/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "abusive-technology-relationship"
+              "title": "index"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -196,12 +198,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "9134b57a96daa295",
+  "active": "8d79b6d757279708",
   "lastOpenFiles": [
+    "blog/respected-by-design.md",
     "blog/no, i don't want those \"dot\" custom cursor.md",
-    "blog/abusive-technology-relationship.md",
     "readmate/index.md",
     "dede/index.md",
+    "readmate/images/reading-pressure.jpg",
+    "dede/images/caught-by-police.jpg",
+    "dede/images/vietnam-heavy-traffics.jpg",
     "colophon/index.md",
     "colophon/colophon.jpg",
     "dede/images/dede-personalised-news.png",
@@ -225,15 +230,11 @@
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
-    "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readmate/images/hero.png",
     "readmate/images/hero(1).png",
     "dede/images/opportunities.png",
     "dede/images/opportunities(2).png",
     "dede/images/user_research.png",
-    "dede/images/tracking_iteration.png",
-    "dede/images/problem_statement.png",
-    "dede/images/problem_space.png",
     "webrings",
     "petfren/images/hero.png.part",
     "blog",

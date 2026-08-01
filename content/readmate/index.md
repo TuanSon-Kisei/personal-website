@@ -32,6 +32,9 @@ collaborators:
 
 Having read some heavy research material and came across some difficult topics when I'm reading books, I know that the act to thoroughly understand them in a short time is tough. And then when I decided to look up the words or the knowledge said in the books, I realized that my motivation to finish reading them waned and it's very difficult to focus back to the reading itself.
 
+![Teenage boy with glasses stressing over homework surrounded by stacks of books indoors.](images/reading-pressure.jpg)
+{.full}
+
 ## The Approach
 
 We utilized the Double Diamond framework to maintain a holistic view of the project. By balancing how we expanding and narrowing down our ways of thinking, we systematically having a big picture view while pinning the right problem and solution. This approach ensured our final solution was both deeply researched and highly effective.

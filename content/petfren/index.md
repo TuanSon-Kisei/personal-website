@@ -22,7 +22,7 @@ Petfren is a mobile app designed to help parents teaching Mathematics subject to
 Teaching kids any study material is an arduous task that some parents dread thinking about. They find it impossible to make their children to understand the importance of learning, especially Maths, when the parents also have many many other things to stress over with. Having seen those cases are happening too often, we set out a goal to address the issue at hand: **How can we design a product that can remove some of the stress of teaching Maths subject for parents?**
 
 ## Design Research
-#### How are parents teaching their children right now?
+### How are parents teaching their children right now?
 We wanted to gain a better understanding of how parents navigate teaching Math to their kids. After some rounds of conducting desk research and interviewing parents, we identified a few common **patterns**:
 
 ![Four problems identified: Parents struggle understanding how children learn; Parents feel left behind not knowing classroom teaching methods; Busy parents can't find time to teach on weekdays; Parents struggle staying calm when children can't do basic operations.](images/problems.png)
