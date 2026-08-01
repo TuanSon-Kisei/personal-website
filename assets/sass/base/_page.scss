@@ -1,0 +1,37 @@
+@use '../base/variables' as *;
+
+.project-page {
+    header {
+        padding-block-end: var(--spacing-sm);
+    }
+
+    h2 {
+        counter-increment: heading-counter;
+
+        &::before {
+            content: counter(heading-counter, decimal-leading-zero) " - ";
+        }
+    }
+}
+
+.project-summary {
+    --flow-space: var(--spacing-sm);
+}
+
+.feature-content {
+    p {
+        margin: 0;
+    }
+}
+
+[data-theme="dark"] {
+    .project-page {
+        &--content {
+            > figure img,
+            > img {
+                outline-color: $rp-highlight-med;
+                background-color: $rp-surface;
+            }
+        }
+    }
+}

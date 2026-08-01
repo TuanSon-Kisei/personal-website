@@ -1,0 +1,70 @@
+
+@use '../base/variables' as *;
+
+.blog-article {
+    --flow-space: var(--spacing-lg);
+    --measure: 48rem;
+
+    &_header {
+        --flow-space: var(--spacing-sm);
+    }
+
+    &_content {
+        --flow-space: var(--spacing-lg);
+    }
+
+    &_nav {
+        --gap-space: var(--spacing-sm);
+        border: 0;
+        border-top: 1px dashed $rp-dawn-highlight-high;
+        padding-block-start: var(--spacing-md);
+
+        .box {
+            --box-padding: var(--spacing-xs);
+            transition: border-color 0.15s ease-out;
+
+            span {
+                font-size: var(--step--1);
+                color: $rp-dawn-subtle;
+            }
+
+            &:hover {
+                border: 1px solid $rp-dawn-rose;
+                color: $rp-dawn-rose;
+            }
+
+            &:focus-visible {
+                outline: 3px solid $rp-dawn-rose;
+            }
+
+            &:focus-within {
+                p {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .blog-article {
+        &_nav {
+            border-color: $rp-highlight-med;
+
+            .box {
+                span {
+                    color: $rp-subtle;
+                }
+
+                &:hover {
+                    border-color: $rp-rose;
+                    color: $rp-rose;
+                }
+
+                &:focus-visible {
+                    outline-color: $rp-rose;
+                }
+            }
+        }
+    }
+}

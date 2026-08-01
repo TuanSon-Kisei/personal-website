@@ -1,0 +1,176 @@
+
+@use '../base/variables' as *;
+
+.homepage {
+    --flow-space: var(--spacing-2xl);
+
+    section {
+        > * {
+            --flow-space: var(--spacing-md);
+        }
+
+        #greeting {
+            font-size: var(--text-step--1);
+            color: $rp-dawn-subtle;
+
+            i {
+                margin-inline-start: 4px;
+            }
+        }
+    }
+
+    &__webring {
+        &-textLink {
+            text-decoration: underline;
+            text-decoration-color: oklch(from $rp-dawn-text l c h / 0.4);
+            text-decoration-thickness: 0.1em;
+            transition: text-decoration-color var(--duration-fast)
+                var(--ease-out-fast),
+                text-decoration-thickness var(--duration-fast) var(--ease-out-fast);
+
+            &:hover {
+                text-decoration-color: currentColor;
+                text-decoration-thickness: 0.3em;
+            }
+            &:focus-visible {
+                outline: 3px solid $rp-dawn-rose;
+            }
+
+        }
+    }
+
+    &__projects {
+        > * {
+            --flow-space: var(--spacing-2xl);
+        }
+
+        &-card {
+            display: block;
+            --flow-space: var(--spacing-sm);
+            --box-padding: var(--spacing-lg);
+            transition: all var(--duration-fast) var(--ease-out-fast);
+
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
+
+            &::before {
+                content: "";
+                border-radius: inherit;
+                position: absolute;
+                z-index: -2;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                box-shadow: 16px 16px 0 0 $rp-dawn-rose;
+                opacity: 0;
+                transition: all var(--duration-fast) var(--ease-out-fast);
+                -webkit-transition: all var(--duration-fast) var(--ease-out-fast);
+            }
+
+            &::after {
+                content: "";
+                border-radius: inherit;
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                box-shadow: 8px 8px 0 0 $rp-rose;
+                opacity: 0;
+                transition: all var(--duration-fast) var(--ease-out-fast);
+                -webkit-transition: all var(--duration-fast) var(--ease-out-fast);
+            }
+
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    transform: scale(1.02, 1.02);
+                    transform: translate(-8px, -8px);
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                }
+
+                &:hover::before {
+                    opacity: 1;
+                }
+            }
+
+            &:focus-visible {
+                outline: 3px solid $rp-dawn-rose;
+            }
+
+            &:active {
+                transform: scale(0.97);
+            }
+
+
+            &:focus-within {
+                h3,
+                p {
+                    text-decoration: underline;
+                    text-underline-offset: 2px;
+                }
+            }
+
+            &-image img {
+                border-radius: calc(
+                    var(--border-radius-sm) - var(--box-padding)
+                );
+                aspect-ratio: 16 / 9;
+            }
+
+            &-info {
+                &-year,
+                &-category {
+                    text-transform: capitalize;
+                    border-radius: var(--border-radius-xs);
+                    font-size: var(--text-step--1);
+                    border: 1px solid $rp-dawn-highlight-low;
+                    background-color: $rp-dawn-base;
+                    padding: 3px 9px;
+                    font-family: $font-mono;
+                    color: $rp-dawn-subtle;
+                }
+            }
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .homepage {
+        #greeting {
+            color: $rp-subtle;
+        }
+
+        &__webring {
+            &-textLink {
+                text-decoration-color: oklch(from $rp-text l c h / 0.4);
+
+                &:hover {
+                    text-decoration-color: currentColor;
+                }
+            }
+        }
+
+        &__projects-card {
+            background-color: $rp-surface;
+
+            &:focus-visible {
+                outline-color: $rp-rose;
+            }
+
+            &-info {
+                &-year,
+                &-category {
+                    background-color: $rp-overlay;
+                    border: 1px solid $rp-highlight-low;
+                    color: $rp-subtle;
+                }
+            }
+        }
+    }
+}

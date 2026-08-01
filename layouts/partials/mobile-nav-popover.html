@@ -1,0 +1,36 @@
+<div class="mobile-nav">
+    <button popovertarget="mobile-nav-menu" class="hamburger-btn with-icon" aria-label="Open navigation mobile menu">
+        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="hamburger-icon" aria-hidden="true">
+            <title>Open navigation</title>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21 5.5H3V7h18V5.5Zm0 5.75H3v1.5h18v-1.5ZM3 17h18v1.5H3V17Z" fill="currentColor"/>
+        </svg> 
+    </button>
+    <nav id="mobile-nav-menu" popover="hint" class="mobile-popover-menu">
+        <ul>
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            <li class="text-h3">
+                <a href="{{ .URL | relURL }}"
+                    {{ if $currentPage.IsMenuCurrent "main" . }}
+                        aria-current="page"
+                    {{ end }}
+    
+                    {{ if .Params.external }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    {{ end }}
+                >{{ .Name }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+        <button popovertarget="mobile-nav-menu" class="close-btn" aria-label="Close navigation mobile menu">
+            <title>Close navigation</title>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <title>Close navigation</title>
+                <path d="M18 6 6 18"/>
+                <path d="m6 6 12 12"/>
+            </svg>
+        </button>
+    </nav>
+</div>

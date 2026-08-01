@@ -1,0 +1,22 @@
+
+@use '../base/variables' as *;
+
+.skip-link {
+    &:focus-visible {
+        position: relative;
+        top: 0;
+        width: auto;
+        height: auto;
+        clip: unset;
+        overflow: visible;
+        outline: 3px solid $rp-dawn-rose;
+    }
+}
+
+[data-theme="dark"] {
+    .skip-link {
+        &:focus-visible {
+            outline-color: $rp-rose;
+        }
+    }
+}

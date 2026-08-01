@@ -1,0 +1,115 @@
+
+@use '../base/variables' as *;
+
+.hamburger-btn {
+    background-color: $rp-dawn-base;
+    color: inherit;
+    cursor: pointer;
+    align-items: center;
+    padding: 0.5rem;
+    border: none;
+    margin-inline-end: var(--spacing-xs);
+    transition: background-color 200ms ease;
+    
+    &::-webkit-details-marker {
+        display: none;
+    }
+
+    &:hover {
+        background-color: $rp-dawn-overlay;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $rp-dawn-rose;
+    }
+
+    .hamburger-icon {
+        margin-inline-end: 0.25rem;
+    }
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    color: $rp-dawn-text;
+}
+
+.mobile-popover-menu {
+    pointer-events: auto;
+    overflow-y: auto;
+    overscroll-behavior: none;
+    touch-action: pan-y;
+    block-size: 100dvh;
+    inline-size: 100dvw;
+    background-color: $rp-dawn-base;
+    border: none;
+    text-align: center;
+    
+
+    ul {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        margin-block: var(--spacing-md);
+    }
+
+    li {
+        inline-size: 100%;
+        a {
+            display: block;
+            color: $rp-dawn-text;
+            
+            padding: var(--spacing-xs);
+            text-decoration: none;
+    
+            &:hover {
+                background-color: $rp-dawn-overlay;
+                font-weight: 700;
+            }
+    
+            &:focus-visible {
+                outline: 2px solid $rp-dawn-rose;
+            }
+    
+            &[aria-current="page"] {
+                font-weight: bold;
+                color: $rp-dawn-rose;
+                &::before {
+                    transform: scaleX(1);
+                    background-color: $rp-dawn-rose;
+                }
+            }
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .hamburger-btn {
+        background-color: $rp-base;
+        &:hover {
+            background-color: $rp-overlay;
+        }
+    }
+
+    .close-btn {
+        color: $rp-text;
+    }
+
+    .mobile-popover-menu {
+        background-color: $rp-base;
+
+        a {
+            color: $rp-text;
+            
+            &:hover {
+                background-color: $rp-overlay;
+            }
+
+            &[aria-current="page"] {
+                color: $rp-rose;
+                &::before {
+                    background-color: $rp-rose;
+                }
+            }
+        }
+    }
+}

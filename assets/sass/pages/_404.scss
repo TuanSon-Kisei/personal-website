@@ -1,0 +1,43 @@
+
+@use '../base/variables' as *;
+
+.page-404 {
+    --measure: 70rem;
+    padding-block: var(--spacing-2xl);
+}
+
+.text-404 {
+    a {
+        color: $rp-dawn-rose;
+        text-decoration: underline;
+
+        &:hover {
+            text-underline-offset: 2px;
+            text-decoration-thickness: 4px;
+        }
+
+        &:focus-visible {
+            outline: 2px solid $rp-dawn-rose;
+            border-radius: 0.75em;
+        }
+    }
+}
+
+.image-404 {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+[data-theme="dark"] {
+    .text-404 {
+        a {
+            color: $rp-rose;
+
+            &:focus-visible {
+                outline-color: $rp-rose;
+            }
+        }
+    }
+}

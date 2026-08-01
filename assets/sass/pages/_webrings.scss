@@ -1,0 +1,130 @@
+
+@use '../base/variables' as *;
+
+.webring-page {
+    --flow-space: var(--spacing-md);
+
+    &--introduction {
+        > * {
+            --flow-space: var(--spacing-sm);
+        }
+    }
+
+    &--container {
+        > * {
+            --flow-space: var(--spacing-md);
+        }
+    }
+
+    &--nav {
+        display: flex;
+        --box-padding: 0;
+        --box-border-color: none;
+
+        --webring-border-dark: oklch(from var(--webring-accent) calc(l * 0.5) c h);
+        --webring-border-light: var(--webring-accent);
+
+        --webring-bg-dark: oklch(from var(--webring-accent) calc(l * 0.32) c h);
+        --webring-bg-light: oklch(from var(--webring-accent) l c h / 0.5);
+
+        --webring-bg-light-hover: oklch(from var(--webring-accent) l c h / 0.6);
+        --webring-bg-dark-hover: oklch(from var(--webring-accent) calc(l * 0.4) c h );
+
+        --webring-text-dark: oklch(
+            from var(--webring-accent) calc(l * 1.1) c h
+        );
+        --webring-text-light: oklch(
+            from var(--webring-accent) calc(l * 0.32) c h
+        );
+
+        background-color: var(--webring-bg-light);
+        color: var(--webring-text-light);
+
+        &--link {
+            flex-grow: 1;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-sm);
+
+            h2 {
+                text-decoration: underline;
+                font-weight: 700;
+            }
+
+            p {
+                margin-top: var(--spacing-xs);
+                font-size: var(--step--1);
+            }
+
+            &:hover {
+                background-color: var(--webring-bg-light-hover);
+            }
+
+            &:focus-visible {
+                outline: 3px solid currentColor;
+            }
+        }
+
+        .prev,
+        .next {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+
+            &:hover {
+                background-color: var(--webring-bg-light-hover);
+            }
+
+            &:focus-visible {
+                outline: 3px solid currentColor;
+            }
+
+            .icon {
+                display: block;
+                max-inline-size: 100%;
+            }
+        }
+
+        .prev {
+            border-inline-end: 1px solid var(--webring-border-light);
+        }
+
+        .next {
+            border-inline-start: 1px solid var(--webring-border-light);
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .webring-page {
+        &--nav {
+            background-color: var(--webring-bg-dark);
+            color: var(--webring-text-dark);
+
+            &--link {
+                &:hover {
+                    background-color: var(--webring-bg-dark-hover);
+                }
+            }
+            .prev,
+            .next {
+                &:hover {
+                    background-color: var(--webring-bg-dark-hover);
+                }
+
+                &:focus-visible {
+                    outline-color: currentColor;
+                }
+            }
+            .prev {
+                border-color: var(--webring-border-dark);
+            }
+
+            .next {
+                border-color: var(--webring-border-dark);
+            }
+        }
+    }
+}
