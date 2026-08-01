@@ -40,7 +40,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
 
     <!--Sass compiler-->
-    {{ with resources.Get "sass/main.scss" }} {{ $opts := dict "enableSourceMap"
+    {{ with resources.Get "sass/main.scss" }}
+    {{ $opts := dict "enableSourceMap"
     hugo.IsDevelopment "outputStyle" (cond hugo.IsDevelopment "expanded"
     "compressed") "targetPath" "css/main.css" "transpiler" "dartsass" "vars"
     site.Params.styles "includePaths" (slice "node_modules/bootstrap/scss") }}

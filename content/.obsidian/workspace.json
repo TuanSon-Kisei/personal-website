@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/no, i don't want those \"dot\" custom cursor.md",
+                "file": "blog/respected-by-design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "no, i don't want those \"dot\" custom cursor"
+              "title": "respected-by-design"
             }
           }
         ]
@@ -200,9 +200,9 @@
   },
   "active": "8d79b6d757279708",
   "lastOpenFiles": [
-    "petfren/index.md",
-    "blog/respected-by-design.md",
     "blog/no, i don't want those \"dot\" custom cursor.md",
+    "blog/respected-by-design.md",
+    "petfren/index.md",
     "readmate/index.md",
     "dede/index.md",
     "readmate/images/reading-pressure.jpg",

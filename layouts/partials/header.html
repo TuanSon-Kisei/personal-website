@@ -30,35 +30,8 @@
                     {{ end }}
                 </ul>
             </nav>
-            <details class="[ stack ] [ mobile-nav ]">
-                <summary class="hamburger-btn with-icon" aria-label="Open navigation mobile menu">
-                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="hamburger-icon" aria-hidden="true">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M21 5.5H3V7h18V5.5Zm0 5.75H3v1.5h18v-1.5ZM3 17h18v1.5H3V17Z" fill="currentColor"/>
-                    </svg>
-                    Menu
-                </summary>
-                <nav class="mobile-dropdown-menu" aria-label="Mobile Navigation">
-                        <ul>
-                            {{ $currentPage := . }}
-                            {{ range .Site.Menus.main }}
-                            <li>
-                                <a href="{{ .URL | relURL }}"
-                                    {{ if $currentPage.IsMenuCurrent "main" . }}
-                                        aria-current="page"
-                                    {{ end }}
-
-                                    {{ if .Params.external }}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    {{ end }}
-                                >{{ .Name }}
-                                </a>
-                            </li>
-                            {{ end }}
-                        </ul>
-                </nav>
-            </details>
         </div>
+        {{ partial "mobile-nav-popover.html" . }}
         <button type="button" id="dark-mode-toggle" aria-label="Toggle dark mode">
             <svg
                 class="cs-sun"
