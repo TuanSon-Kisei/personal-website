@@ -50,7 +50,7 @@ For animations, I've added simple <strong>animations</strong> and <strong>page t
 
 The javascript features of this site as enhancements only. They do not inhibit access or functionality. I also manually test <strong>keyboard-only navigation</strong> (yes I tested it by pressing <kbd>Tab</kbd> constantly). 
 
-Unfortunately, I can't know for sure how I can test screen readers to know what issues my site will create for them. If you can help me with this, please contact me at my email: <a href='mailto:kisei.tuanson.work@gmail.com?subject=Accessibility and site issue'>kisei.tuanson.work@gmail.com</a>.
+Unfortunately, I can't know for sure how I can test screen readers to know what issues my site will create for them. If you can help me with this, please contact me at my email: <a>kisei.tuanson.work@gmail.com</a>.
 ## Inspiration
 
 Like many other web designers or web developers (you can call them the wizards of the web), I've <em>borrowed</em> many ideas from external sources.

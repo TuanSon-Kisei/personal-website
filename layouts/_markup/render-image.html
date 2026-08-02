@@ -5,11 +5,17 @@
 {{- end -}}
 {{- if $img -}}
 {{- $mediaType := $img.MediaType.SubType -}}
+{{- $desktopWidth := "1280x" -}}
+{{- $sizesAttr := "(max-width: 480px) 100vw, (max-width: 800px) 90vw, 1280px" -}}
+{{- if eq $class "full" -}}
+{{- $desktopWidth = "1920x" -}}
+{{- $sizesAttr = "(max-width: 480px) 100vw, (max-width: 800px) 90vw, 1920px" -}}
+{{- end -}}
 <!--GIF, SVG, and AVIF: keep as-is -->
 
 {{- if or (eq $mediaType "svg+xml") (eq $mediaType "svg") (eq $mediaType "gif")
 (eq $mediaType "avif") -}}
-<figure>
+<figure class="{{ $class }}">
     <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" loading="lazy" decoding="auto" />
     {{ with .Title }}<figcaption>{{ . | markdownify }}</figcaption>
     {{- end }}
@@ -18,13 +24,13 @@
 {{/* WebP: only resize */}} {{- else if eq $mediaType "webp" -}}
 {{- $mobile := $img.Resize "600x" -}}
 {{- $tablet := $img.Resize "800x" -}}
-{{- $desktop := $img.Resize "1280x" -}}
+{{- $desktop := $img.Resize $desktopWidth -}}
 <figure class="{{ $class }}">
     <img
         srcset="{{ $mobile.RelPermalink }} 600w,
                   {{ $tablet.RelPermalink }} 800w,
-                  {{ $desktop.RelPermalink }} 1280w"
-        sizes="auto, (max-width: 480px) 100vw, (max-width: 800px) 90vw, 1280px"
+                  {{ $desktop.RelPermalink }} {{ $desktop.Width }}w"
+        sizes="{{ $sizesAttr }}"
         src="{{ $desktop.RelPermalink }}"
         alt="{{ .Text }}"
         loading="lazy"
@@ -39,17 +45,17 @@
 {{- else -}}
 {{- $mobileWebp := $img.Resize "600x webp q85 text catmullRom" -}}
 {{- $tabletWebp := $img.Resize "800x webp q85 text catmullRom" -}}
-{{- $desktopWebp := $img.Resize "1280x webp q85 text lanczos" -}}
+{{- $desktopWebp := $img.Resize (printf "%s webp q85 text lanczos" $desktopWidth) -}}
 {{- $mobile := $img.Resize "600x" -}}
 {{- $tablet := $img.Resize "800x" -}}
-{{- $desktop := $img.Resize "1280x" -}}
+{{- $desktop := $img.Resize $desktopWidth -}}
 <figure class="{{ $class }}">
     <picture>
         <!-- WebP: convert to WebP with 85% quality and resize -->
         <source srcset="{{ $mobileWebp.RelPermalink }} 600w,
                   {{ $tabletWebp.RelPermalink }} 800w,
-                  {{ $desktopWebp.RelPermalink }} 1200w"
-                  sizes="(max-width: 480px) 100vw, (max-width: 800px) 90vw, 1200px"
+                  {{ $desktopWebp.RelPermalink }} {{ $desktopWebp.Width }}w"
+                  sizes="{{ $sizesAttr }}"
                   type="image/webp"
                   loading="lazy"
                   decoding="auto"
@@ -58,8 +64,8 @@
         <img
             srcset="{{ $mobile.RelPermalink }} 600w,
                   {{ $tablet.RelPermalink }} 800w,
-                  {{ $desktop.RelPermalink }} 1200w"
-            sizes="(max-width: 480px) 100vw, (max-width: 800px) 90vw, 1200px"
+                  {{ $desktop.RelPermalink }} {{ $desktop.Width }}w"
+            sizes="{{ $sizesAttr }}"
             src="{{ $desktop.RelPermalink }}"
             alt="{{ .Text }}"
             loading="lazy"

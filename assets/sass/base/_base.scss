@@ -27,6 +27,7 @@
     --text-step--2: clamp(0.7813rem, 0.7469rem + 0.1717vw, 0.88rem);
     --text-step--1: clamp(0.9375rem, 0.881rem + 0.2826vw, 1.1rem);
     --text-step--0: clamp(1.125rem, 1.038rem + 0.4348vw, 1.375rem);
+    --blockquote-decoration-font-size: clamp(4.0311rem, 3.2418rem + 3.508vw, 5.9605rem);
 
     @each $heading, $size in $heading-sizes {
         --font-size-#{$heading}: #{$size};

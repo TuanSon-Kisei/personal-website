@@ -14,6 +14,7 @@
     --content: min(48rem, 100%);
     --popout: minmax(0, 6rem);
     --feature: minmax(0, 12rem);
+    --flow-space: var(--spacing-md);
     display: grid;
 
     grid-template-columns:
@@ -34,7 +35,6 @@
 
     > * {
         grid-column: content;
-
     }
 
     .popout {
@@ -64,27 +64,7 @@
       }
     }
 
-    h2 {
-        margin-top: var(--spacing-2xl);
-    }
-
-    h3 {
-        margin-top: var(--spacing-lg);
-    }
-
-    p {
-        margin-top: var(--spacing-sm);
-    }
-
-    h1 + p,
-    h2 + p,
-    h3 + p,
-    h4 + p,
-    h5 + p,
-    h6 + p {
-        margin-top: var(--spacing-sm);
-    }
-
+    
     h2 a,
     h3 a,
     h4 a,
@@ -106,7 +86,16 @@
         }
     }
 
-    a[href^="https://"] {
+    > :is(h1, h2, h3, h4, h5, h6) + :is(p, ul, ol, blockquote) {
+        --flow-space: var(--spacing-md);
+    } 
+
+    > :is(p, ul, ol, blockquote, hr, figure) + :is(h1, h2, h3, h4, h5, h6),
+    > :is(ul, ol, figure) + :is(p:not(:empty), ul, ol, blockquote) {
+        --flow-space: var(--spacing-xl);
+    }
+
+    a[href^="https://"], a[href^="mailto:"] {
         position: relative;
         &:link {
             color: $rp-dawn-rose;
@@ -149,9 +138,9 @@
     }
 
     ol {
-        list-style: none;
+        
         counter-reset: orderedList;
-        padding-inline-start: 1lh;
+        padding-inline-start: 1.75ch;
 
         li {
             margin-block-end: var(--spacing-sm);
@@ -178,7 +167,7 @@
 
     ul {
         list-style: none;
-        padding-inline-start: 2.5em;
+        padding-inline-start: 1.75ch;
         line-height: 1.25em;
 
         li {
@@ -203,13 +192,7 @@
         }
     }
 
-    *+ ul,
-    *+ ol {
-        margin-top: var(--spacing-sm);
-    }
-
     figure {
-        margin-top: var(--spacing-lg);
         display: grid;
         grid-template-columns: subgrid;
         grid-column: full;
@@ -239,11 +222,17 @@
         }
 
         img {
+            display: grid;
+            grid-template-columns: subgrid;
             width: 100%;
             height: auto;
             outline-color: $rp-dawn-highlight-med;
             background-color: $rp-dawn-surface;
             aspect-ratio: auto;
+            
+            &::before {
+                grid-column: content;
+            }
         }
 
         figcaption {
@@ -254,13 +243,19 @@
         }
     }
 
-    blockquote {
-        margin-inline: 0;
-        padding-block: 0.5rem;
-        padding-inline: 1.5rem;
-        background-color: $rp-dawn-highlight-low;
-        border: 1px solid $rp-dawn-highlight-high;
-        border-inline-start: 3px solid $rp-dawn-highlight-high;
+    blockquote:not([class]) {
+        &::before {
+            content: "❝";
+            font-size: var(--blockquote-decoration-font-size);
+            line-height: 0.8;
+            position: absolute;
+            top: var(--spacing-sm);
+            left: var(--spacing-md);
+        }
+        border-inline-start: 1px solid currentColor;
+        padding-inline: var(--spacing-md);
+        padding-block: var(--spacing-2xl) var(--spacing-sm);
+        position: relative;
     }
 
     hr {
@@ -288,7 +283,7 @@
 
 [data-theme="dark"] {
     .prose {
-        a[href^="https://"] {
+        a[href^="https://"], a[href^="mailto:"] {
             color: $rp-rose;
 
             &:focus-visible {
@@ -329,12 +324,6 @@
                     color: $rp-rose;
                 }
             }
-        }
-
-        blockquote {
-            background-color: $rp-highlight-low;
-            border-color: $rp-highlight-high;
-            border-inline-start: 0.3rem solid $rp-highlight-high;
         }
 
         hr {
