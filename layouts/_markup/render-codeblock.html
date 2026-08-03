@@ -1,0 +1,7 @@
+{{- $lang := .Type -}}
+{{- $label := .Attributes.filename | default .Attributes.title | default $lang -}}
+<div class="codeblock popout">
+  <div class="codeblock-body">
+    {{- (transform.HighlightCodeBlock .).Wrapped -}}
+  </div>
+</div>
