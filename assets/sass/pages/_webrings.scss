@@ -40,6 +40,12 @@
         background-color: var(--webring-bg-light);
         color: var(--webring-text-light);
 
+        a {
+            &:active {
+                scale: 0.96;
+            }
+        }
+
         &--link {
             flex-grow: 1;
             align-items: center;
@@ -48,7 +54,6 @@
 
             h2 {
                 text-decoration: underline;
-                font-weight: 700;
             }
 
             p {
