@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="wrapper flow">
+    <header class="center flow">
+        <h1>Music</h1>
+        <p>My digital music collection of ever-repeating, ever-growing tracks</p>
+    </header>
+    <div class="songs center">
+        <ul class="grid">
+            {{ range hugo.Data.music.tracks }}
+            <li>
+                <article class="song flow" data-genre="{{ .genre }}">
+                    {{- $img := resources.Get .image -}}
+                    <img src="{{ $img.RelPermalink }}" alt="{{ .title }}" class="song__cover" loading="lazy" decoding="async" />
+                    <div class="song__metadata flow">
+                        <h2 class="song__metadata-title text-h6">{{ .title }}</h2>
+                        <p class="song__metadata-artist">{{ .artist }}</p>
+                        <p class="song__metadata-album">{{ .album }}</p>
+                    </div>
+                </article>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}

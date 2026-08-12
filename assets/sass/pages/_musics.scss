@@ -1,0 +1,165 @@
+
+@use '../base/variables' as *;
+
+.songs {
+    --measure: var(--max-width-lg);
+    --flow-space: var(--spacing-lg);
+
+    .grid {
+        --grid-space: var(--spacing-md);
+        
+        
+        .song {
+            --base: 16px;
+            --flow-space: var(--spacing-sm);
+            background-color: $rp-dawn-surface;
+            container-type: inline-size;
+            outline: 1px solid oklch(from $rp-dawn-text calc(l - 0.8) c h / 0.2);
+            position: relative;
+            grid-area: 1/1;
+            overflow: hidden;        
+            height: round(down, 100%, var(--base));
+
+            &[data-genre="Pop"] {
+                outline-color: oklch(
+                    from $rp-dawn-love calc(l - 0.1) c h / 0.5
+                );
+            }
+
+            &[data-genre="Blues"] {
+                outline-color: oklch(from $rp-dawn-sea calc(l - 0.1) c h / 0.5);
+            }
+
+            &[data-genre="Heavy Metal"] {
+                outline-color: oklch(
+                    from $rp-dawn-pine calc(l - 0.1) c h / 0.5
+                );
+            }
+
+            &[data-genre="Jazz"] {
+                outline-color: oklch(
+                    from $rp-dawn-carrot calc(l - 0.1) c h / 0.5
+                );
+            }
+
+            &[data-genre="Soundtrack"] {
+                outline-color: oklch(
+                    from $rp-dawn-foam calc(l - 0.1) c h / 0.5
+                );
+            }
+
+            &__metadata {
+                --flow-space: var(--spacing-xs);
+                
+                @media (hover: none) and (pointer: coarse) {
+                    padding: var(--spacing-xs);
+                    background-color: $rp-dawn-surface;
+                    max-width: 100%;
+                    opacity: 1;
+                    filter: none;
+                    position: relative;
+                    transform: none;
+                }
+
+                @media (hover: hover) and (pointer: fine) {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    opacity: 0;
+                    width: max-content;
+                    max-inline-size: 75%;
+                    background-color: $rp-dawn-surface;
+                    padding: var(--spacing-sm);
+                    outline: 1px solid
+                        oklch(from $rp-dawn-text calc(l - 0.8) c h / 0.1);
+                    border-radius: var(--border-radius-xs);
+                    filter: blur(8px);
+                }
+
+                transition:
+                    opacity var(--duration-slow) var(--ease-out-fast),
+                    filter var(--duration-slow) var(--ease-out-fast),
+                    transform var(--duration-slow) var(--ease-out-fast);
+
+                &-artist,
+                &-album {
+                    line-height: var(--line-height-heading);
+                    @media (hover: none) and (pointer: coarse) {
+                        font-size: var(--text-step--1);
+                    }
+                }
+                
+                &-artist {
+                    color: oklch(from $rp-dawn-text l c h / 0.85);
+                }
+                
+                &-album {
+                    color: $rp-dawn-subtle;
+                }
+            }
+
+            &__cover {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                aspect-ratio: 1 / 1;
+            }
+
+            @media (hover: hover) and (pointer: fine) {
+                transition: all var(--duration-medium) var(--ease-out-fast);
+
+                &:hover {
+                    scale: 0.9;
+                    transform: rotate(3deg);
+
+                    .song__metadata {
+                        opacity: 1;
+                        transform: translateX(-50%) translateY(-50%);
+                        filter: blur(0px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .songs {
+        .song {
+            background-color: $rp-surface;
+            outline-color: oklch(from $rp-text l c h/ 0.2);
+
+            &[data-genre="Pop"] {
+                outline-color: oklch(from $rp-love calc(l - 0.1) c h / 0.5);
+            }
+
+            &[data-genre="Blues"] {
+                outline-color: oklch(from $rp-sea calc(l - 0.1) c h / 0.5);
+            }
+
+            &[data-genre="Heavy Metal"] {
+                outline-color: oklch(from $rp-pine calc(l - 0.1) c h / 0.5);
+            }
+
+            &[data-genre="Jazz"] {
+                outline-color: oklch(from $rp-carrot calc(l - 0.1) c h / 0.5);
+            }
+
+            &[data-genre="Soundtrack"] {
+                outline-color: oklch(from $rp-foam calc(l - 0.1) c h / 0.5);
+            }
+
+            &__metadata {
+                background-color: $rp-surface;
+                outline-color: oklch(from $rp-text calc(l - 0.8) c h / 0.1);
+                &-artist {
+                    color: oklch(from $rp-text l c h / 0.85);
+                }
+                &-album {
+                    color: $rp-subtle;
+                }
+            }
+        }
+    }
+}
