@@ -10,7 +10,7 @@
     <div class="project-info--block switcher">
         <dt>Collaborators</dt>
         <dd>
-            <ul class="cluster">
+            <ul class="cluster" role="list">
                 {{ range $.Page.Params.collaborators }}
                       <li><a href="{{ .linkedin }}" class="collaborator">
                           <img src="{{ .avatar }}" alt="A photo of {{ .name }}" class="avatar" />
