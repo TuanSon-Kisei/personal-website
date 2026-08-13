@@ -1,0 +1,235 @@
+@use "../base/variables" as *;
+
+@layer reset {
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        outline-offset: 0.2rem;
+    }
+
+    *::selection {
+        background: oklch(from $rp-gold l c h / 0.25);
+        color: oklch(from $rp-dawn-gold calc(l * 0.5) c h);
+
+        [data-theme='dark'] & {
+            background-color: oklch(from $rp-dawn-gold calc(l * 0.75) c h / 0.35);
+            color: oklch(from $rp-gold calc(l * 1.5) c h);
+        }
+    }
+
+    :focus-visible {
+        outline-offset: 3px;
+    }
+
+    html {
+        text-rendering: optimizeLegibility;
+        line-height: var(--line-height);
+        -webkit-font-smoothing: antialiased;
+        text-decoration-skip-ink: auto;
+        font-optical-sizing: auto;
+        font-variant-ligatures: common-ligatures no-discretionary-ligatures
+            no-historical-ligatures contextual;
+        font-kerning: normal;
+        -moz-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+        scroll-behavior: smooth;
+        @media (prefers-reduced-motion: reduce) {
+            scroll-behavior: auto;
+        }
+    }
+
+    body {
+        padding-top: env(safe-area-inset-top);
+        padding-right: env(safe-area-inset-right);
+        padding-bottom: env(safe-area-inset-bottom);
+        padding-left: env(safe-area-inset-left);
+        min-block-size: 100%;
+        min-height: 100vh;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    address,
+    p,
+    hr,
+    pre,
+    blockquote,
+    ol,
+    ul,
+    li,
+    dl,
+    dt,
+    dd,
+    figure,
+    figcaption,
+    div,
+    table,
+    caption,
+    form,
+    fieldset {
+        margin: 0;
+    }
+
+    ul[role='list'],
+    ol[role='list'] {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration-skip-ink: auto;
+      color: inherit;
+
+      &:focus-visible {
+        outline: 3px solid $rp-dawn-rose;
+      }
+
+      [data-theme="dark"] & {
+          outline-color: $rp-rose;
+      }
+    }
+
+    img,
+    iframe,
+    audio,
+    video,
+    canvas {
+      display: block;
+      max-inline-size: 100%;
+      block-size: auto;
+    }
+
+    svg {
+      max-inline-size: 100%;
+    }
+
+    svg:not([fill]) {
+      fill: currentColor;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    :where(
+		a[href],
+		area,
+		button,
+		input:where([type="button"], [type="submit"], [type="reset"], [type="checkbox"], [type="radio"]),
+		label[for],
+		select,
+		summary,
+		[tabindex]:not([tabindex*="-"])
+	) {
+	cursor: pointer;
+	touch-action: manipulation;
+    }
+
+    :where(
+		button,
+		button[type],
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"]
+	)[disabled] {
+	cursor: not-allowed;
+    }
+
+    textarea {
+		resize: vertical;
+	}
+    
+	fieldset,
+	iframe {
+		border: none;
+	}
+    
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		overflow-wrap: break-word;
+		font-variant-caps: titling-caps;
+        text-wrap: balance;
+	}
+
+    fieldset,
+    iframe {
+      border: none;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      overflow-wrap: break-word;
+      font-variant-caps: titling-caps;
+      font-variant-numeric: lining-nums;
+      text-wrap: balance;
+    }
+
+    p {
+      text-wrap: pretty;
+      font-variant-numeric: proportional-nums;
+    }
+
+    p,
+    blockquote,
+    q,
+    figcaption,
+    li {
+      hanging-punctuation: first allow-end last;
+    }
+
+    math,
+	time,
+	table {
+		font-variant-numeric: tabular-nums lining-nums slashed-zero;
+	}
+    
+	code {
+		font-variant-numeric: slashed-zero;
+	}
+    
+	table {
+		border-collapse: collapse;
+	}
+    
+	abbr {
+		font-variant-caps: all-small-caps;
+		text-decoration: none;
+    
+		&[title] {
+			cursor: help;
+			text-decoration: underline dotted;
+		}
+	}
+    
+	sup,
+	sub {
+		line-height: 0;
+	}
+    
+	:disabled {
+		opacity: 0.8;
+		cursor: not-allowed;
+	}
+}

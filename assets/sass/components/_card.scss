@@ -1,0 +1,58 @@
+@use "../base/variables" as *;
+
+@layer components {
+    .card {
+        display: block;
+        position: relative;
+        border-radius: var(--border-radius-sm);
+        --flow-space: var(--spacing-sm);
+        
+        @media (prefers-reduced-motion: no-preference) {
+            transition: transform var(--duration-fast) var(--ease-out-fast);
+            will-change: transform;
+        }
+
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            border-radius: inherit;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            @media (prefers-reduced-motion: no-preference) {
+                will-change: transform;
+                transition: transform var(--duration-fast) var(--ease-out-fast);
+                -webkit-transition: transform var(--duration-fast) var(--ease-out-fast);
+            }
+        }
+
+        &:before {
+            z-index: -1;
+            background-color: $rp-rose;
+        }
+
+        &:after {
+            z-index: -2;
+            background-color: $rp-dawn-rose;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                transform: translate(-8px, -8px);
+                
+                &:before {
+                    transform: translate(8px, 8px);
+                }
+
+                &:after {
+                    transform: translate(16px, 16px);
+                }
+            }
+        }
+
+        &:active {
+            transform: scale(0.97);
+        }
+    }
+}
