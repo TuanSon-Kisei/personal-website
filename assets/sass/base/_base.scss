@@ -4,19 +4,7 @@
 
 /* [GLOBAL] - Reset & design tokens */
 /* There is no class selectors here. This allowed me to have base layer cascades freely into everything below it */
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
-}
 
-*::selection {
-    background: oklch(from $rp-dawn-foam l c h / 0.1);
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    color: $rp-dawn-foam;
-
-}
 
 :root {
     /* Design tokens here: font color, font type */
@@ -77,29 +65,9 @@
     --duration-slow: 600ms;
 }
 
-html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-    -webkit-font-smoothing: antialiased;
-
-    @media (prefers-reduced-motion: reduce) {
-        scroll-behavior: auto;
-    }
-}
-
 /* Bare element defaults */
 /* These are sensible, cascade-friendly starting points */
 body {
-    margin: 0;
-    padding: 0;
-    padding-top: env(safe-area-inset-top);
-    padding-right: env(safe-area-inset-right);
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    height: 100vh;
     color: var(--color-text);
     background-color: var(--color-background);
     font-family: $font-body;
@@ -107,45 +75,8 @@ body {
     @supports (font-size: round(1px, 2px)) {
         font-size: round(var(--text-step--0), 2px);
     }
-    text-rendering: optimizeLegibility;
-    line-height: var(--line-height);
-    -webkit-font-smoothing: antialiased;
-
-    text-decoration-skip-ink: auto;
-    font-optical-sizing: auto;
-    font-variant-ligatures: common-ligatures no-discretionary-ligatures
-        no-historical-ligatures contextual;
-    font-kerning: normal;
     @media (prefers-reduced-motion: no-preference) {
         transition: all var(--duration-fast) var(--ease-out-slow);
-    }
-
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    address,
-    p,
-    hr,
-    pre,
-    blockquote,
-    ol,
-    ul,
-    li,
-    dl,
-    dt,
-    dd,
-    figure,
-    figcaption,
-    div,
-    table,
-    caption,
-    form,
-    fieldset {
-        margin: 0;
     }
 
     h1,
@@ -158,8 +89,6 @@ body {
         line-height: var(--line-height-heading);
         letter-spacing: var(--letter-spacing-condensed);
         font-weight: var(--font-weight-bold);
-        font-variant-caps: titling-caps;
-        text-wrap: balance;
     }
 
     @each $heading, $size in $heading-sizes {
@@ -169,9 +98,6 @@ body {
     }
 
     p {
-        @supports (text-wrap: balance) {
-            text-wrap: pretty;
-        }
         letter-spacing: var(--letter-spacing-relaxed);
     }
 
@@ -180,45 +106,15 @@ body {
         text-decoration: none;
     }
 
-    strong,
-    b,
-    th {
-        font-weight: 700;
-    }
-
-    ul,
-    ol {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
     mark {
         background-color: $rp-dawn-carrot;
         color: $rp-text;
-    }
-
-    figure {
-        margin: 0;
-        padding: 0;
-    }
-
-    svg {
-        display: block;
-        stroke: currentColor;
     }
 
     kbd {
         border: 1.5px solid $rp-dawn-gold;
         border-bottom-width: 4px;
         padding-inline: 0.2rem;
-    }
-
-    img,
-    picture {
-        display: block;
-        max-width: 100%;
-
     }
 
     code {
@@ -237,13 +133,9 @@ body {
 /* Toggled via JS: document.body.dataset.theme = 'dark' */
 /* https://cube.fyi/exception.html#why-data-attributes */
 [data-theme="dark"] {
+    color-scheme: dark;
     --color-text: #{$rp-text};
     --color-background: #{$rp-base};
-
-    ::selection {
-        background-color: oklch(from $rp-dawn-foam l c h / 0.1);
-        color: $rp-foam;
-    }
 
     mark {
         background-color: $rp-carrot;

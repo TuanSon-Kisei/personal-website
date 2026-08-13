@@ -1,111 +1,110 @@
 @use '../base/variables' as *;
 
-/* Stack: a vertical stack of elements */
-.stack {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-/* Flow: add vertical rhythm between any sibling elements */
-.flow > * + * {
-    margin-top: var(--flow-space, var(--spacing-xs));
-}
-
-/* Wrapper: horizontal padding that keeps content off the viewport edes */
-
-.wrapper {
-    padding-inline: var(--spacing-md);
-    padding-block: var(--spacing-2xl);
-}
-
-/* Box: a container with consistent padding and background */
-.box {
-    padding: var(--box-padding, var(--spacing-md));
-    border-radius: var(--border-radius-sm);
-    background-color: var(--box-background-color, #{$rp-dawn-surface});
-    border: 1px solid var(--box-border-color, #{$rp-dawn-highlight-high});
-}
-
-/* Center: this uitlity class centers content horizontally and vertically */
-.center {
-    box-sizing: content-box;
-    margin-inline: auto;
-    max-inline-size: var(--measure, 48rem);
-}
-
-/* Cluster: a cluster of elements with different lengths */
-.cluster {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-md, 1rem);
-}
-
-/* Flex grid: a flexible grid layout using flexbox */
-.flex-grid {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flex-grid > * {
-    flex: 1 1 60ch;
-}
-
-/* Grid: a grid layout */
-.grid {
-    display: grid;
-    gap: var(--grid-space, 0);
-}
-
-@supports (width: min(20rem, 100%)) {
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+@layer layout {
+    /* Stack: a vertical stack of elements */
+    .stack {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
-}
-
-@media (width < 680px) {
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    
+    /* Flow: add vertical rhythm between any sibling elements */
+    .flow > * + * {
+        margin-top: var(--flow-space, var(--spacing-sm));
     }
-}
-
-/* Switcher: a flexible layout to either stack or align items */
-
-.switcher {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--gap-space);
-}
-
-.switcher > * {
-    flex-grow: 1;
-    flex-basis: calc((30rem - 100%) * 999);
-}
-
-.switcher > :nth-last-child(n + 3),
-.switcher > :nth-last-child(n + 3) ~ * {
-    flex-basis: 100%;
-}
-
-/* The Icon: icons and any element that will be used with an icon */
-.icon {
-    height: 1em;
-    width: 1em;
-}
-
-.with-icon {
-    display: inline-flex;
-
-    align-items: baseline;
-}
-
-.with-icon .icon {
-    margin-inline-end: var(--space, 0.25em);
-}
-
-[data-theme="dark"] {
+    
+    /* Wrapper: horizontal padding that keeps content off the viewport edes */
+    
+    .wrapper {
+        padding-inline: var(--spacing-md);
+        padding-block: var(--spacing-2xl);
+    }
+    
+    /* Box: a container with consistent padding and background */
     .box {
-        background-color: var(--box-background-color, #{$rp-surface});
-        border: 1px solid var(--box-border-color, #{$rp-highlight-med});
+        padding: var(--box-padding, var(--spacing-sm));
+        border-radius: var(--border-radius-sm);
+        background-color: var(--box-background-color, #{$rp-dawn-surface});
+        border: 1px solid var(--box-border-color, #{$rp-dawn-highlight-high});
+
+        [data-theme="dark"] & {
+            background-color: var(--box-background-color, #{$rp-surface});
+            border: 1px solid var(--box-border-color, #{$rp-highlight-med});
+        }
+    }
+    
+    /* Center: this uitlity class centers content horizontally and vertically */
+    .center {
+        box-sizing: content-box;
+        margin-inline: auto;
+        max-inline-size: var(--measure, 48rem);
+    }
+    
+    /* Cluster: a cluster of elements with different lengths */
+    .cluster {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-md, 1rem);
+    }
+    
+    /* Flex grid: a flexible grid layout using flexbox */
+    .flex-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .flex-grid > * {
+        flex: 1 1 60ch;
+    }
+    
+    /* Grid: a grid layout */
+    .grid {
+        display: grid;
+        gap: var(--grid-space, 0);
+        grid-template-columns:repeat(var(--grid-placement,auto-fill),minmax(var(--grid-min-item-size,16rem),1fr))
+    }
+    .grid[data-layout="halves"] {
+        --grid-placement: auto-fit;
+        --grid-min-item-size: clamp(16rem, 5cqi, 32rem);
+    }
+    
+    .grid[data-layout="thirds"] {
+        --grid-placement: auto-fit;
+        --grid-min-item-size: clamp(15rem, 30%, 28rem);
+    }
+    
+    /* Switcher: a flexible layout to either stack or align items */
+    
+    .switcher {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap-space);
+    }
+    
+    .switcher > * {
+        flex-grow: 1;
+        flex-basis: calc((30rem - 100%) * 999);
+    }
+    
+    .switcher > :nth-last-child(n + 3),
+    .switcher > :nth-last-child(n + 3) ~ * {
+        flex-basis: 100%;
+    }
+    
+    /* The Icon: icons and any element that will be used with an icon */
+    .icon {
+        height: 1em;
+        width: 1em;
+    }
+    
+    .with-icon {
+        display: inline-flex;
+    
+        align-items: baseline;
+    }
+    
+    .with-icon .icon {
+        margin-inline-end: var(--space, 0.25em);
     }
 }
+

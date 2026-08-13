@@ -2,91 +2,25 @@
 @use '../base/variables' as *;
 
 .blog-list {
-    --flow-space: var(--spacing-lg);
+    > * {
+        --flow-space: var(--spacing-lg);
+    }
 
-    .blog-box {
+    a {
         display: block;
-        --flow-space: var(--spacing-xs);
-        transition: all var(--duration-fast) var(--ease-out-fast);
-
-        @media (prefers-reduced-motion: reduce) {
-            transition: none;
-        }
-
-        &--metadata {
+        --flow-space: var(--spacing-sm);
+        
+        .metadata {
             font-size: var(--text-step--1);
             color: $rp-dawn-subtle;
-        }
-
-        &::before {
-            content: "";
-            border-radius: inherit;
-            position: absolute;
-            z-index: -2;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            box-shadow: 16px 16px 0 0 $rp-dawn-rose;
-            opacity: 0;
-            transition: all var(--duration-fast) var(--ease-out-fast);
-            -webkit-transition: all var(--duration-fast) var(--ease-out-fast);
-        }
-
-        &::after {
-            content: "";
-            border-radius: inherit;
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            box-shadow: 8px 8px 0 0 $rp-rose;
-            opacity: 0;
-            transition: all var(--duration-fast) var(--ease-out-fast);
-            -webkit-transition: all var(--duration-fast) var(--ease-out-fast);
-        }
-
-        &:hover {
-            transform: scale(1.02, 1.02);
-            transform: translate(-8px, -8px);
-        }
-
-        &:hover::after {
-            opacity: 1;
-        }
-
-        &:hover::before {
-            opacity: 1;
-        }
-
-        &:focus-visible {
-            outline: 3px solid $rp-dawn-rose;
-            text-decoration: underline;
-        }
-
-        &:active {
-            scale: 0.97;
         }
     }
 }
 
 [data-theme="dark"] {
-    .blog-box {
-        &--metadata {
+    a {
+        .metadata {
             color: $rp-subtle;
-        }
-
-        &:focus-visible {
-            outline-color: $rp-rose;
-        }
-
-        &:focus-within {
-            h2 {
-                color: $rp-rose;
-                text-decoration-color: $rp-rose;
-            }
         }
     }
 }

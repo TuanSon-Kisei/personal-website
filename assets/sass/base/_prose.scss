@@ -70,14 +70,16 @@
     h4 a,
     h5 a,
     h6 a {
-        text-decoration: none;
+        text-decoration: underline;
+        text-decoration-thickness: 4px;
+        text-underline-offset: 3px;
         text-decoration-skip-ink: none;
-
-        @media (hover: hover) and (pointer: fine) {
-            &:hover {
-                text-decoration: underline;
-                text-decoration-color: $rp-dawn-subtle;
-            }
+        text-decoration-color: $rp-dawn-muted;
+        transition: text-decoration-color var(--ease-out-slow) var(--duration-fast);
+        
+        &:hover,
+        &:active {
+            text-decoration-color: $rp-dawn-subtle;
         }
 
         &:focus-visible {
@@ -299,11 +301,14 @@
         h4 a,
         h5 a,
         h6 a {
-            @media (hover: hover) and (pointer: fine) {
-                &:hover {
-                    text-decoration-color: $rp-subtle;
-                }
+            text-decoration-color: $rp-muted;
+            
+            &:hover,
+            &:active {
+                text-decoration-color: $rp-subtle;
             }
+            
+
 
             &:focus-visible {
                 outline-color: currentColor;

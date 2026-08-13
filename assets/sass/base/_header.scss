@@ -95,13 +95,8 @@
         }
     }
 
-    &:hover {
+    &:hover, &:focus-visible {
         font-weight: 700;
-    }
-
-    &:focus-visible {
-        outline: 3px solid $rp-dawn-rose;
-        outline-offset: 3px;
     }
 
     &[aria-current="page"] {
@@ -180,15 +175,6 @@
     .navigation-menu a {
         &::before {
             background-color: $rp-text;
-        }
-
-        &:hover::before {
-            transform: scaleX(1);
-            transition: transform 200ms ease-in;
-        }
-
-        &:focus-visible {
-            outline-color: $rp-rose;
         }
 
         &[aria-current="page"] {

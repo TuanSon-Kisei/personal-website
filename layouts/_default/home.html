@@ -16,32 +16,30 @@
         <h2>
             Projects
         </h2>
-            <ul class="[ flow ] [ homepage__projects ]">
+            <ul class="[ homepage__projects ] flow" role="list">
                     {{ range where .Site.RegularPages "Type" "work" }} {{ $project := . }}
-                    <li class="[ flow ]">
-                        <a
-                            href="{{ .RelPermalink }}"
-                            class="[ flow ] [ homepage__projects-card ] [ box ]"
-                        >
-
-                            <div class="homepage__projects-card-image">
-                                {{ with .Params.cover }} {{ $image :=
-                                $project.Resources.GetMatch . }} {{ with $image }}
-                                <img
-                                    src="{{ .RelPermalink }}"
-                                    alt="{{ $project.Title }}"
-
-                                />
-                                {{ end }} {{ end }}
-                            </div>
-                            <div class="homepage__projects-card-info flow">
-                                <div>
-                                    <span class="homepage__projects-card-info-category">{{ .Params.category }}</span>
-                                    <time datetime="{{ .Params.year }}" class="homepage__projects-card-info-year">{{ .Params.year }}</time>
-
+                    <li>
+                        <a href="{{ .RelPermalink }}" class="card">
+                            <div class="box flow">
+                                <div class="homepage__projects-card-image">
+                                    {{ with .Params.cover }} {{ $image :=
+                                    $project.Resources.GetMatch . }} {{ with $image }}
+                                    <img
+                                        src="{{ .RelPermalink }}"
+                                        alt="{{ $project.Title }}"
+    
+                                    />
+                                    {{ end }} {{ end }}
                                 </div>
-                                <h3>{{ .LinkTitle }}</h3>
-                                <p>{{ .Params.description }}</p>
+                                <div class="homepage__projects-card-info flow">
+                                    <div>
+                                        <span class="homepage__projects-card-info-category">{{ .Params.category }}</span>
+                                        <time datetime="{{ .Params.year }}" class="homepage__projects-card-info-year">{{ .Params.year }}</time>
+    
+                                    </div>
+                                    <h3>{{ .LinkTitle }}</h3>
+                                    <p>{{ .Params.description }}</p>
+                                </div>
                             </div>
                         </a>
                     </li>

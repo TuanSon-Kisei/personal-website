@@ -49,39 +49,11 @@
             }
 
             &__metadata {
-                --flow-space: var(--spacing-xs);
+                --flow-space: var(--spacing-xs);    
+                padding: var(--spacing-xs);
+                background-color: $rp-dawn-surface;
                 
-                @media (hover: none) and (pointer: coarse) {
-                    padding: var(--spacing-xs);
-                    background-color: $rp-dawn-surface;
-                    max-width: 100%;
-                    opacity: 1;
-                    filter: none;
-                    position: relative;
-                    transform: none;
-                }
-
-                @media (hover: hover) and (pointer: fine) {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    opacity: 0;
-                    width: max-content;
-                    max-inline-size: 75%;
-                    background-color: $rp-dawn-surface;
-                    padding: var(--spacing-sm);
-                    outline: 1px solid
-                        oklch(from $rp-dawn-text calc(l - 0.8) c h / 0.1);
-                    border-radius: var(--border-radius-xs);
-                    filter: blur(8px);
-                }
-
-                transition:
-                    opacity var(--duration-slow) var(--ease-out-fast),
-                    filter var(--duration-slow) var(--ease-out-fast),
-                    transform var(--duration-slow) var(--ease-out-fast);
-
+                
                 &-artist,
                 &-album {
                     line-height: var(--line-height-heading);
@@ -104,21 +76,6 @@
                 height: auto;
                 object-fit: cover;
                 aspect-ratio: 1 / 1;
-            }
-
-            @media (hover: hover) and (pointer: fine) {
-                transition: all var(--duration-medium) var(--ease-out-fast);
-
-                &:hover {
-                    scale: 0.9;
-                    transform: rotate(3deg);
-
-                    .song__metadata {
-                        opacity: 1;
-                        transform: translateX(-50%) translateY(-50%);
-                        filter: blur(0px);
-                    }
-                }
             }
         }
     }

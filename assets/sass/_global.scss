@@ -1,3 +1,5 @@
+
+@forward 'base/reset';
 @forward 'base/variables';
 @forward 'base/base';
 @forward 'base/layout';
@@ -9,7 +11,10 @@
 @forward 'base/syntax';
 @forward 'base/utilities';
 @forward 'base/animations';
+@forward 'base/layers';
 
+
+@forward 'components/card';
 @forward 'components/feature-showcase';
 @forward 'components/mobile-popover-menu';
 @forward 'components/project-info';

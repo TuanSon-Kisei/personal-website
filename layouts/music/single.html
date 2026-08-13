@@ -5,7 +5,7 @@
         <p>My digital music collection of ever-repeating, ever-growing tracks</p>
     </header>
     <div class="songs center">
-        <ul class="grid">
+        <ul class="grid" role="list" data-layout="thirds">
             {{ range hugo.Data.music.tracks }}
             <li>
                 <article class="song flow" data-genre="{{ .genre }}">

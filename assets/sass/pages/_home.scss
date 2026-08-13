@@ -32,6 +32,7 @@
                 text-decoration-color: currentColor;
                 text-decoration-thickness: 0.3em;
             }
+            
             &:focus-visible {
                 outline: 3px solid $rp-dawn-rose;
             }
@@ -40,87 +41,19 @@
     }
 
     &__projects {
+        margin-block-start: var(--spacing-md);
+        
         > * {
-            --flow-space: var(--spacing-2xl);
+            --flow-space: var(--spacing-lg);
         }
 
         &-card {
-            display: block;
-            --flow-space: var(--spacing-sm);
-            --box-padding: var(--spacing-lg);
-            transition: all var(--duration-fast) var(--ease-out-fast);
-
-            @media (prefers-reduced-motion: reduce) {
-                transition: none;
-            }
-
-            &::before {
-                content: "";
-                border-radius: inherit;
-                position: absolute;
-                z-index: -2;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                box-shadow: 16px 16px 0 0 $rp-dawn-rose;
-                opacity: 0;
-                transition: all var(--duration-fast) var(--ease-out-fast);
-                -webkit-transition: all var(--duration-fast) var(--ease-out-fast);
-            }
-
-            &::after {
-                content: "";
-                border-radius: inherit;
-                position: absolute;
-                z-index: -1;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                box-shadow: 8px 8px 0 0 $rp-rose;
-                opacity: 0;
-                transition: all var(--duration-fast) var(--ease-out-fast);
-                -webkit-transition: all var(--duration-fast) var(--ease-out-fast);
-            }
-
-            @media (hover: hover) and (pointer: fine) {
-                &:hover {
-                    transform: scale(1.02, 1.02);
-                    transform: translate(-8px, -8px);
-                }
-
-                &:hover::after {
-                    opacity: 1;
-                }
-
-                &:hover::before {
-                    opacity: 1;
-                }
-            }
-
-            &:focus-visible {
-                outline: 3px solid $rp-dawn-rose;
-            }
-
-            &:active {
-                transform: scale(0.97);
-            }
-
-
             &:focus-within {
                 h3,
                 p {
                     text-decoration: underline;
                     text-underline-offset: 2px;
                 }
-            }
-
-            &-image img {
-                border-radius: calc(
-                    var(--border-radius-sm) - var(--box-padding)
-                );
-                aspect-ratio: 16 / 9;
             }
 
             &-info {
@@ -157,12 +90,6 @@
         }
 
         &__projects-card {
-            background-color: $rp-surface;
-
-            &:focus-visible {
-                outline-color: $rp-rose;
-            }
-
             &-info {
                 &-year,
                 &-category {

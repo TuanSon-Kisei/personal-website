@@ -6,10 +6,10 @@
     </header>
     <div class="center flow blog-list">
         {{ range .Pages }}
-        <article class="h-entry">
-            <a href="{{ .RelPermalink }}" class="flow box blog-box u-url">
+        <article class="h-entry card">
+            <a href="{{ .RelPermalink }}" class="flow box u-url">
                 <h2 class="text-h3 p-name">{{ .Title }}</h2>
-                <div class="cluster blog-box--metadata">
+                <div class="metadata">
                     <div class="with-icon">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
