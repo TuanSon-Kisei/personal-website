@@ -35,9 +35,9 @@
         -moz-text-size-adjust: none;
         -webkit-text-size-adjust: none;
         text-size-adjust: none;
-        scroll-behavior: smooth;
-        @media (prefers-reduced-motion: reduce) {
-            scroll-behavior: auto;
+        
+        @media (prefers-reduced-motion: no-preference) {
+            scroll-behavior: smooth;
         }
     }
 

@@ -7,332 +7,312 @@
     speak-as: bullets;
 }
 
-.prose {
-    text-align: start;
-    --gap: var(--spacing-lg);
-    --full: minmax(0, 1fr);
-    --content: min(48rem, 100%);
-    --popout: minmax(0, 6rem);
-    --feature: minmax(0, 12rem);
-    --flow-space: var(--spacing-md);
-    display: grid;
-
-    grid-template-columns:
-        [full-start] var(--full)
-        [feature-start] var(--feature)
-        [popout-start] var(--popout)
-        [content-start] var(--content) [content-end]
-        var(--popout) [popout-end]
-        var(--feature) [feature-end]
-        var(--full) [full-end];
-
-    @media (width < 860px) {
-        grid-template-columns:
-            [full-start feature-start popout-start content-start]
-            minmax(0, 100%)
-            [content-end popout-end feature-end full-end];
-    }
-
-    > * {
-        grid-column: content;
-    }
-
-    .popout {
-        grid-column: popout;
-    }
-
-    .feature {
-        grid-column: feature;
-    }
-
-    .full {
-        grid-column: full;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      &:target {
-          scroll-margin-top: 2ex;
-          animation: highlightFade 2s var(--ease-out-slow);
-          @media (prefers-reduced-motion: reduce) {
-              animation: none;
-          }
-      }
-    }
-
-    
-    h2 a,
-    h3 a,
-    h4 a,
-    h5 a,
-    h6 a {
-        text-decoration: underline;
-        text-decoration-thickness: 4px;
-        text-underline-offset: 3px;
-        text-decoration-skip-ink: none;
-        text-decoration-color: $rp-dawn-muted;
-        transition: text-decoration-color var(--ease-out-slow) var(--duration-fast);
-        
-        &:hover,
-        &:active {
-            text-decoration-color: $rp-dawn-subtle;
-        }
-
-        &:focus-visible {
-            outline: 3px solid currentColor;
-            outline-offset: 3px;
-        }
-    }
-
-    > :is(h1, h2, h3, h4, h5, h6) + :is(p, ul, ol, blockquote) {
+@layer prose-base {
+    .prose {
+        text-align: start;
+        --gap: var(--spacing-lg);
+        --full: minmax(0, 1fr);
+        --content: min(48rem, 100%);
+        --popout: minmax(0, 6rem);
+        --feature: minmax(0, 12rem);
         --flow-space: var(--spacing-md);
-    } 
-
-    > :is(p, ul, ol, blockquote, hr, figure) + :is(h1, h2, h3, h4, h5, h6),
-    > :is(ul, ol, figure) + :is(p:not(:empty), ul, ol, blockquote) {
-        --flow-space: var(--spacing-xl);
-    }
-
-    a[href^="https://"], a[href^="mailto:"] {
-        position: relative;
-        &:link {
+        display: grid;
+    
+        grid-template-columns:
+            [full-start] var(--full)
+            [feature-start] var(--feature)
+            [popout-start] var(--popout)
+            [content-start] var(--content) [content-end]
+            var(--popout) [popout-end]
+            var(--feature) [feature-end]
+            var(--full) [full-end];
+    
+        @media (width < 860px) {
+            grid-template-columns:
+                [full-start feature-start popout-start content-start]
+                minmax(0, 100%)
+                [content-end popout-end feature-end full-end];
+        }
+    
+        > * {
+            grid-column: content;
+        }
+    
+        .popout {
+            grid-column: popout;
+        }
+    
+        .feature {
+            grid-column: feature;
+        }
+    
+        .full {
+            grid-column: full;
+        }
+    
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          &:target {
+              scroll-margin-top: 2ex;
+              animation: highlightFade 2s var(--ease-out-slow);
+              @media (prefers-reduced-motion: reduce) {
+                  animation: none;
+              }
+          }
+        }
+    
+        > :is(h1, h2, h3, h4, h5, h6) + :is(p, ul, ol, blockquote) {
+            --flow-space: var(--spacing-md);
+        } 
+    
+        > :is(p, ul, ol, blockquote, hr, figure) + :is(h1, h2, h3, h4, h5, h6),
+        > :is(ul, ol, figure) + :is(p:not(:empty), ul, ol, blockquote) {
+            --flow-space: var(--spacing-xl);
+        }
+    
+        :is(a[href^="https://"], a[href^="mailto:"]) {
             color: $rp-dawn-rose;
             text-decoration: underline;
-            text-decoration-thickness: 0.1em;
-            text-decoration-skip-ink: none;
-            transition: text-decoration-color var(--duration-fast)
-                var(--ease-out-fast),
-                text-decoration-thickness var(--duration-fast) var(--ease-out-fast);
+            text-decoration-color: currentColor;
+
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    color: oklch(from $rp-dawn-rose calc(l * 1.1) c h);
+                }
+            }
+
+            &:active, &:focus-within {
+                outline: 3px solid currentColor;
+            }
+
+            &:active {
+                text-decoration: none;
+            }            
         }
 
-        &:hover {
-            text-decoration-thickness: 0.3em;
-            text-underline-offset: 0.3em;
-        }
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            &:has(a) {
+                text-decoration: underline;
+                text-decoration-thickness: 4px;
+                text-underline-offset: 3px;
+                text-decoration-skip-ink: none;
+                text-decoration-color: $rp-dawn-muted;
+                transition: text-decoration-color var(--ease-out-slow) var(--duration-fast);
 
-        &:focus-visible {
-            outline: 3px solid $rp-dawn-rose;
-
-        }
-
-        &:active {
-            outline: 3px dashed currentColor;
-        }
-
-        &:visited {
-            color: $rp-dawn-iris;
-        }
-
-        &:after {
-            content: "↗";
-            line-height: 1;
-            text-decoration: none;
-            margin-inline-start: 0.1em;
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            transition: none;
-        }
-    }
-
-    ol {
+                &:hover {
+                    text-decoration-color: $rp-dawn-subtle;
+                }
+                
+                &:active {
+                    outline: 3px solid currentColor;
+                    text-decoration: none;
+                    width: fit-content;
+                }
         
-        counter-reset: orderedList;
-        padding-inline-start: 1.75ch;
-
-        li {
-            margin-block-end: var(--spacing-sm);
-            padding-inline-start: 0.5em;
-            position: relative;
-
-            &::before {
-                position: absolute;
-                inset-inline-start: 0;
-                counter-increment: orderedList;
-                content: counter(orderedList);
-                width: 1.5rem;
-                inset-block-start: 0;
-                inset-inline-start: -1.75lh;
-                padding-block: 0.25em;
-
-                text-box: trim-start cap alphabetic;
-                text-align: center;
-                line-height: 1;
-                border-radius: 0.25em;
-            }
-        }
-    }
-
-    ul {
-        list-style: none;
-        padding-inline-start: 1.75ch;
-        line-height: 1.25em;
-
-        li {
-            margin-block-end: var(--spacing-sm);
-            padding-inline-start: 0.5em;
-            position: relative;
-            text-box: trim-start cap alphabetic;
-
-            &::before {
-                position: absolute;
-                inset-block-start: 0;
-                inset-inline-start: -1.25em;
-                inline-size: 1em;
-                text-box: trim-start cap alphabetic;
-                text-align: end;
-                font-size: 1.25em;
-                line-height: 1;
-                font-weight: bold;
-                color: $rp-dawn-rose;
-                content: counter(list-item, --fleurons);
-            }
-        }
-    }
-
-    figure {
-        display: grid;
-        grid-template-columns: subgrid;
-        grid-column: full;
-
-        &.popout {
-            > :not(figcaption) {
-                grid-column: popout;
-                @media (width < 860px) {
-                    grid-column: full;
+                &:focus-visible {
+                    outline: 3px solid currentColor;
+                    outline-offset: 3px;
                 }
             }
         }
-
-        &.feature {
-            > :not(figcaption) {
-                grid-column: feature;
-                @media (width < 860px) {
-                    grid-column: full;
+    
+        ol {
+            counter-reset: orderedList;
+            padding-inline-start: 1.75ch;
+    
+            li {
+                margin-block-end: var(--spacing-sm);
+                padding-inline-start: 0.5em;
+                position: relative;
+    
+                &::before {
+                    position: absolute;
+                    inset-inline-start: 0;
+                    counter-increment: orderedList;
+                    content: counter(orderedList);
+                    width: 1.5rem;
+                    inset-block-start: 0;
+                    inset-inline-start: -1.75lh;
+                    padding-block: 0.25em;
+    
+                    text-box: trim-start cap alphabetic;
+                    text-align: center;
+                    line-height: 1;
+                    border-radius: 0.25em;
                 }
             }
         }
-
-        &.full {
-            > :not(figcaption) {
-                grid-column: full;
+    
+        ul {
+            list-style: none;
+            padding-inline-start: 1.75ch;
+            line-height: 1.25em;
+    
+            li {
+                margin-block-end: var(--spacing-sm);
+                padding-inline-start: 0.5em;
+                position: relative;
+                text-box: trim-start cap alphabetic;
+    
+                &::before {
+                    position: absolute;
+                    inset-block-start: 0;
+                    inset-inline-start: -1.25em;
+                    inline-size: 1em;
+                    text-box: trim-start cap alphabetic;
+                    text-align: end;
+                    font-size: 1.25em;
+                    line-height: 1;
+                    font-weight: bold;
+                    color: $rp-dawn-rose;
+                    content: counter(list-item, --fleurons);
+                }
             }
         }
-
-        img {
+    
+        figure {
             display: grid;
             grid-template-columns: subgrid;
-            width: 100%;
-            height: auto;
-            outline-color: $rp-dawn-highlight-med;
-            background-color: $rp-dawn-surface;
-            aspect-ratio: auto;
-            
-            &::before {
+            grid-column: full;
+    
+            &.popout {
+                > :not(figcaption) {
+                    grid-column: popout;
+                    @media (width < 860px) {
+                        grid-column: full;
+                    }
+                }
+            }
+    
+            &.feature {
+                > :not(figcaption) {
+                    grid-column: feature;
+                    @media (width < 860px) {
+                        grid-column: full;
+                    }
+                }
+            }
+    
+            &.full {
+                > :not(figcaption) {
+                    grid-column: full;
+                }
+            }
+    
+            img {
+                display: grid;
+                grid-template-columns: subgrid;
+                width: 100%;
+                height: auto;
+                outline-color: $rp-dawn-highlight-med;
+                background-color: $rp-dawn-surface;
+                aspect-ratio: auto;
+                
+                &::before {
+                    grid-column: content;
+                }
+            }
+    
+            figcaption {
+                margin-block-start: var(--spacing-xs);
+                font-size: var(--text-step--1);
+                line-height: var(--line-height-caption);
                 grid-column: content;
             }
         }
-
-        figcaption {
-            margin-block-start: var(--spacing-xs);
-            font-size: var(--text-step--1);
-            line-height: var(--line-height-caption);
-            grid-column: content;
+    
+        blockquote:not([class]) {
+            &::before {
+                content: "❝";
+                font-size: var(--blockquote-decoration-font-size);
+                line-height: 0.8;
+                position: absolute;
+                top: var(--spacing-sm);
+                left: var(--spacing-md);
+            }
+            border-inline-start: 1px solid currentColor;
+            padding-inline: var(--spacing-md);
+            padding-block: var(--spacing-2xl) var(--spacing-sm);
+            position: relative;
         }
-    }
-
-    blockquote:not([class]) {
-        &::before {
-            content: "❝";
-            font-size: var(--blockquote-decoration-font-size);
-            line-height: 0.8;
-            position: absolute;
-            top: var(--spacing-sm);
-            left: var(--spacing-md);
+    
+        hr {
+            border: 0;
+            text-align: center;
+            color: $rp-dawn-love;
+            &::before {
+                content: "✿ ❀ ✿";
+                display: block;
+            }
         }
-        border-inline-start: 1px solid currentColor;
-        padding-inline: var(--spacing-md);
-        padding-block: var(--spacing-2xl) var(--spacing-sm);
-        position: relative;
-    }
-
-    hr {
-        border: 0;
-        text-align: center;
-        color: $rp-dawn-love;
-        &::before {
-            content: "✿ ❀ ✿";
-            display: block;
-        }
-    }
-
-    .heading-anchor {
-        width: 0.75em;
-        height: 0.75em;
-        color: currentColor;
-        opacity: 0.5;
-
-        &:hover {
-            opacity: 1;
+    
+        .heading-anchor {
+            width: 0.75em;
+            height: 0.75em;
+            color: currentColor;
+            opacity: 0.5;
+    
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 }
 
-
-[data-theme="dark"] {
-    .prose {
-        a[href^="https://"], a[href^="mailto:"] {
-            color: $rp-rose;
-
-            &:focus-visible {
-                outline-color: $rp-rose;
-            }
-            &:visited {
-                color: $rp-iris;
-            }
-        }
-
-        h2 a,
-        h3 a,
-        h4 a,
-        h5 a,
-        h6 a {
-            text-decoration-color: $rp-muted;
+@layer prose-theme {
+    [data-theme="dark"] {
+        .prose {
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                &:has(a) {
+                    text-decoration-color: $rp-muted;
             
-            &:hover,
-            &:active {
-                text-decoration-color: $rp-subtle;
-            }
-            
-
-
-            &:focus-visible {
-                outline-color: currentColor;
-            }
-
-        }
-
-        figure {
-            img {
-                outline-color: $rp-highlight-med;
-                background-color: $rp-surface;
-            }
-        }
-
-        ul {
-            li {
-                &::before {
-                    color: $rp-rose;
+                    &:hover,
+                    &:active {
+                        text-decoration-color: $rp-subtle;
+                        outline-color: currentColor;
+                    }
+                    
+                    &:focus-visible {
+                        outline-color: currentColor;
+                    }
                 }
             }
-        }
 
-        hr {
-            color: $rp-love;
+            :is(a[href^="https://"], a[href^="mailto:"]) {
+                color: $rp-rose;
+                text-decoration-color: currentColor;
+            }
+    
+            figure {
+                img {
+                    outline-color: $rp-highlight-med;
+                    background-color: $rp-surface;
+                }
+            }
+    
+            ul {
+                li {
+                    &::before {
+                        color: $rp-rose;
+                    }
+                }
+            }
+    
+            hr {
+                color: $rp-love;
+            }
         }
     }
 }

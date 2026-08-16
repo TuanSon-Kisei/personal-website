@@ -5,148 +5,152 @@
 /* [GLOBAL] - Reset & design tokens */
 /* There is no class selectors here. This allowed me to have base layer cascades freely into everything below it */
 
-
-:root {
-    /* Design tokens here: font color, font type */
-    --color-text: #{$rp-dawn-text};
-    --color-background: #{$rp-dawn-base};
-
-    /* Smaller step sizes for smaller text */
-    --text-step--2: clamp(0.7813rem, 0.7469rem + 0.1717vw, 0.88rem);
-    --text-step--1: clamp(0.9375rem, 0.881rem + 0.2826vw, 1.1rem);
-    --text-step--0: clamp(1.125rem, 1.038rem + 0.4348vw, 1.375rem);
-    --blockquote-decoration-font-size: clamp(4.0311rem, 3.2418rem + 3.508vw, 5.9605rem);
-
-    @each $heading, $size in $heading-sizes {
-        --font-size-#{$heading}: #{$size};
+@layer base {
+    :root {
+        /* Design tokens here: font color, font type */
+        --color-text: #{$rp-dawn-text};
+        --color-background: #{$rp-dawn-base};
+    
+        /* Smaller step sizes for smaller text */
+        --text-step--2: clamp(0.7813rem, 0.7469rem + 0.1717vw, 0.88rem);
+        --text-step--1: clamp(0.9375rem, 0.881rem + 0.2826vw, 1.1rem);
+        --text-step--0: clamp(1.125rem, 1.038rem + 0.4348vw, 1.375rem);
+        --blockquote-decoration-font-size: clamp(4.0311rem, 3.2418rem + 3.508vw, 5.9605rem);
+    
+        @each $heading, $size in $heading-sizes {
+            --font-size-#{$heading}: #{$size};
+        }
+    
+        /* Spacing tokens here, these should be consistent across the entire site */
+        --spacing-xs: clamp(0.75rem, 0.6818rem + 0.3409vw, 0.9375rem);
+        --spacing-sm: clamp(1rem, 0.9091rem + 0.4545vw, 1.25rem);
+        --spacing-md: clamp(1.5rem, 1.3636rem + 0.6818vw, 1.875rem);
+        --spacing-lg: clamp(2rem, 1.8182rem + 0.9091vw, 2.5rem);
+        --spacing-xl: clamp(3rem, 2.7273rem + 1.3636vw, 3.75rem);
+        --spacing-2xl: clamp(4rem, 3.6364rem + 1.8182vw, 5rem);
+    
+    
+        /* Max width for content */
+        --max-width-xs: 40rem;
+        --max-width-sm: 54rem;
+        --max-width-md: 72rem;
+        --max-width-lg: 80rem;
+    
+        /* Line height tokens here */
+        --line-height: 1.5;
+        --line-height-caption: 1.6;
+        --line-height-heading: 1;
+    
+        /* letter-spacing: ; */
+        --letter-spacing-normal: 0;
+        --letter-spacing-condensed: -0.02em;
+        --letter-spacing-relaxed: 0.01em;
+    
+        --border-radius-xs: 4px;
+        --border-radius-sm: 8px;
+        --border-radius-md: 12px;
+        --border-radius-lg: 16px;
+        --border-radius-full: 9999px;
+    
+        --font-weight-normal: 400;
+        --font-weight-bold: 700;
+    
+        /* Animation easing */
+        --ease-out-fast: cubic-bezier(0.42, 0.77, 0.01, 1);
+        --ease-out-slow: cubic-bezier(0.265, 0.747, 0.68, 1);
+    
+        /* Animation duration */
+        --duration-fast: 200ms;
+        --duration-medium: 400ms;
+        --duration-slow: 600ms;
     }
-
-    /* Spacing tokens here, these should be consistent across the entire site */
-    --spacing-xs: clamp(0.75rem, 0.6818rem + 0.3409vw, 0.9375rem);
-    --spacing-sm: clamp(1rem, 0.9091rem + 0.4545vw, 1.25rem);
-    --spacing-md: clamp(1.5rem, 1.3636rem + 0.6818vw, 1.875rem);
-    --spacing-lg: clamp(2rem, 1.8182rem + 0.9091vw, 2.5rem);
-    --spacing-xl: clamp(3rem, 2.7273rem + 1.3636vw, 3.75rem);
-    --spacing-2xl: clamp(4rem, 3.6364rem + 1.8182vw, 5rem);
-
-
-    /* Max width for content */
-    --max-width-xs: 40rem;
-    --max-width-sm: 54rem;
-    --max-width-md: 72rem;
-    --max-width-lg: 80rem;
-
-    /* Line height tokens here */
-    --line-height: 1.5;
-    --line-height-caption: 1.6;
-    --line-height-heading: 1;
-
-    /* letter-spacing: ; */
-    --letter-spacing-normal: 0;
-    --letter-spacing-condensed: -0.02em;
-    --letter-spacing-relaxed: 0.01em;
-
-    --border-radius-xs: 4px;
-    --border-radius-sm: 8px;
-    --border-radius-md: 12px;
-    --border-radius-lg: 16px;
-    --border-radius-full: 9999px;
-
-    --font-weight-normal: 400;
-    --font-weight-bold: 700;
-
-    /* Animation easing */
-    --ease-out-fast: cubic-bezier(0.42, 0.77, 0.01, 1);
-    --ease-out-slow: cubic-bezier(0.265, 0.747, 0.68, 1);
-
-    /* Animation duration */
-    --duration-fast: 200ms;
-    --duration-medium: 400ms;
-    --duration-slow: 600ms;
-}
-
-/* Bare element defaults */
-/* These are sensible, cascade-friendly starting points */
-body {
-    color: var(--color-text);
-    background-color: var(--color-background);
-    font-family: $font-body;
-    font-size: var(--text-step--0);
-    @supports (font-size: round(1px, 2px)) {
-        font-size: round(var(--text-step--0), 2px);
-    }
-    @media (prefers-reduced-motion: no-preference) {
-        transition: all var(--duration-fast) var(--ease-out-slow);
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: $font-heading;
-        line-height: var(--line-height-heading);
-        letter-spacing: var(--letter-spacing-condensed);
-        font-weight: var(--font-weight-bold);
-    }
-
-    @each $heading, $size in $heading-sizes {
-        #{$heading} {
-            font-size: var(--font-size-#{$heading});
+    
+    /* Bare element defaults */
+    /* These are sensible, cascade-friendly starting points */
+    body {
+        color: var(--color-text);
+        background-color: var(--color-background);
+        font-family: $font-body;
+        font-size: var(--text-step--0);
+        @supports (font-size: round(1px, 2px)) {
+            font-size: round(var(--text-step--0), 2px);
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            transition: all var(--duration-fast) var(--ease-out-slow);
+        }
+    
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: $font-heading;
+            line-height: var(--line-height-heading);
+            letter-spacing: var(--letter-spacing-condensed);
+            font-weight: var(--font-weight-bold);
+        }
+    
+        @each $heading, $size in $heading-sizes {
+            #{$heading} {
+                font-size: var(--font-size-#{$heading});
+            }
+        }
+    
+        p {
+            letter-spacing: var(--letter-spacing-relaxed);
+        }
+    
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    
+        mark {
+            background-color: $rp-dawn-carrot;
+            color: $rp-text;
+        }
+    
+        kbd {
+            border: 1.5px solid $rp-dawn-gold;
+            border-bottom-width: 4px;
+            padding-inline: 0.2rem;
+        }
+    
+        code {
+            font-family: $font-mono;
+            padding-inline: 0.2rem;
+            border: 1px solid $rp-dawn-highlight-high;
+        }
+    
+        pre {
+            overflow-x: auto;
+            padding: var(--spacing-sm);
         }
     }
+}
 
-    p {
-        letter-spacing: var(--letter-spacing-relaxed);
-    }
-
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    mark {
-        background-color: $rp-dawn-carrot;
-        color: $rp-text;
-    }
-
-    kbd {
-        border: 1.5px solid $rp-dawn-gold;
-        border-bottom-width: 4px;
-        padding-inline: 0.2rem;
-    }
-
-    code {
-        font-family: $font-mono;
-        padding-inline: 0.2rem;
-        border: 1px solid $rp-dawn-highlight-high;
-    }
-
-    pre {
-        overflow-x: auto;
-        padding: var(--spacing-sm);
+@layer base-theme {
+    [data-theme="dark"] {
+        color-scheme: dark;
+        --color-text: #{$rp-text};
+        --color-background: #{$rp-base};
+    
+        mark {
+            background-color: $rp-carrot;
+            color: $rp-dawn-text;
+        }
+    
+        kbd {
+            border-color: $rp-gold;
+        }
+    
+        code {
+            border-color: $rp-highlight-high;
+        }
     }
 }
 
 /* [E] Exceptions - overrides for specific elements or components - data-theme=[dark] */
 /* Toggled via JS: document.body.dataset.theme = 'dark' */
 /* https://cube.fyi/exception.html#why-data-attributes */
-[data-theme="dark"] {
-    color-scheme: dark;
-    --color-text: #{$rp-text};
-    --color-background: #{$rp-base};
-
-    mark {
-        background-color: $rp-carrot;
-        color: $rp-dawn-text;
-    }
-
-    kbd {
-        border-color: $rp-gold;
-    }
-
-    code {
-        border-color: $rp-highlight-high;
-    }
-}

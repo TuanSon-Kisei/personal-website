@@ -33,7 +33,7 @@ After all, at its core of design is about how people interact with design and ho
 > 
 > <cite>Eric Balley</cite>
 
-To close off this post, I want you to offer you [a video to show how custom cursor hurting ways to view content on website](https://www.youtube.com/watch?v=mgTdX8_8Bik) and [Inclusive Design Principles](https://inclusivedesignprinciples.info/)so you can make better choice for your website that both benefit your freedom in creative and respect user's choice.
+To close off this post, I want you to offer you [a video to show how custom cursor hurting ways to view content on website](https://www.youtube.com/watch?v=mgTdX8_8Bik) and [Inclusive Design Principles](https://inclusivedesignprinciples.info/) so you can make better choice for your website that both benefit your freedom in creative and respect user's choice.
 
 
 
