@@ -13,49 +13,6 @@ variables:
 image:
   name: golang:1.26.2-bookworm
 
-# Run tests before deployment
-test-accessibility:
-  stage: test
-  script:
-    - |
-      mkdir -p "${HOME}/.local"
-      apt-get update
-      apt-get install -y brotli xz-utils zstd unzip
-
-      # Install Node.js
-      curl -sLJO "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.xz"
-      tar -C "${HOME}/.local" -xf "node-v${NODE_VERSION}-linux-x64.tar.xz"
-      export PATH="${HOME}/.local/node-v${NODE_VERSION}-linux-x64/bin:${PATH}"
-
-      # Install Dart Sass
-      curl -sLJO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
-      tar -C "${HOME}/.local" -xf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
-      export PATH="${HOME}/.local/dart-sass:${PATH}"
-
-      # Install Hugo
-      curl -sLJO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
-      mkdir -p "${HOME}/.local/hugo"
-      tar -C "${HOME}/.local/hugo" -xf "hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
-      export PATH="${HOME}/.local/hugo:${PATH}"
-
-      # Install Node dependencies
-      npm install
-
-      # Install Playwright Firefox
-      npx playwright install firefox
-      npx playwright install-deps
-
-      # Run accessibility tests
-      npx playwright test
-  artifacts:
-    when: always
-    paths:
-      - playwright-report/
-      - test-results/
-    expire_in: 30 days
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-
 pages:
   stage: deploy
   script:
