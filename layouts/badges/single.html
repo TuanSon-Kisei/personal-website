@@ -15,8 +15,6 @@
         <a
             href="{{ .url }}"
             title="{{ .title }}"
-            target="_blank"
-            rel="noopener noreferrer"
             ><img
                 src="{{ .src }}"
                 alt="{{ .alt }}"
@@ -37,9 +35,9 @@
         />
         {{ end }} {{ end }}
     </section>
-    <section class="badges-notes">
+    <section class="flow">
         <h2 class="text-h3">A few notes</h2>
-        <div class="box flow">{{ .Content }}</div>
+        <div class="box flow prose">{{ .Content }}</div>
     </section>
 </div>
 
