@@ -18,6 +18,10 @@ test-accessibility:
   stage: test
   script:
     - |
+      # Create directory for user-specific executable files
+      echo "Creating directory for user-specific executable files..."
+      mkdir -p "${HOME}/.local"
+      
       # Install utilities
       echo "Installing utilities..."
       apt-get update
