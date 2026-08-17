@@ -86,7 +86,5 @@ pages:
   artifacts:
     paths:
       - public
-  dependencies:
-    - test-accessibility
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
