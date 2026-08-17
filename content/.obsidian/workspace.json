@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/no, i don't want those \"dot\" custom cursor.md",
+                "file": "badges/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "no, i don't want those \"dot\" custom cursor"
+              "title": "index"
             }
           }
         ]
@@ -200,10 +200,13 @@
   },
   "active": "8d79b6d757279708",
   "lastOpenFiles": [
+    "about/index.md",
+    "badges/index.md",
+    "blog/no, i don't want those \"dot\" custom cursor.md",
+    "Untitled",
     "dede/index.md",
     "colophon/index.md",
     "blog/respected-by-design.md",
-    "blog/no, i don't want those \"dot\" custom cursor.md",
     "petfren/index.md",
     "readmate/index.md",
     "readmate/images/reading-pressure.jpg",
@@ -224,7 +227,6 @@
     "links/lets-get-creative.md",
     "links/toolmen.md",
     "links/on-Google-declaring-war-on-the-Web.md",
-    "about/index.md",
     "blog/better-words-for-slop.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
     "readings/my-first-article copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy.md",
@@ -243,7 +245,6 @@
     "dede/images/user_research.png.part",
     "dede/images/tracking_iteration.png.part",
     "dede/images/problem_statement.png.part",
-    "dede/images/problem_space.png.part",
-    "dede/images/home_and_challenge.png.part"
+    "dede/images/problem_space.png.part"
   ]
 }

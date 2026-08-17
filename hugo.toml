@@ -12,8 +12,10 @@ ogImage = "/images/open-graph-image.jpg"
         block = true
         title = true
     [markup.highlight]
-        style = "catppuccin-mocha"
-        noClasses = false
+        style = "dracula"
+        noClasses = true
+        codeFences = true
+        guessSyntax = false
 enableRobotsTXT = true
 
 [pagination]

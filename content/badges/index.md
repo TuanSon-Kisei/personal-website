@@ -1,5 +1,5 @@
 ---
-title:
+title: Web badges - Kisei's personal site
 id: 264c0d4f-f45e-4ed6-aebf-2ce550da2b14
 tags: []
 pinned: false
