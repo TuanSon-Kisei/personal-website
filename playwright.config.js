@@ -13,12 +13,12 @@ export default defineConfig({
     navigationTimeout: 60000,
   },
   webServer: {
-    command: '/home/linuxbrew/.linuxbrew/bin/hugo server',
+    command: 'hugo server',
     url: 'http://localhost:1313',
     reuseExistingServer: !process.env.CI,
     timeout: 120000,
     env: {
-      PATH: `/home/linuxbrew/.linuxbrew/bin:${process.env.PATH}`,
+      PATH: `${process.env.PATH}`,
     },
   },
   projects: [
