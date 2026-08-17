@@ -18,6 +18,11 @@ test-accessibility:
   stage: test
   script:
     - |
+      # Install utilities
+      echo "Installing utilities..."
+      apt-get update
+      apt-get install -y brotli xz-utils zstd unzip
+      
       # Install Node.js
       echo "Installing Node.js ${NODE_VERSION}..."
       curl -sLJO "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.xz"
